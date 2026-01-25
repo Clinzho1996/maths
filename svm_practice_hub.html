@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 	<head>
 		<meta charset="UTF-8" />
@@ -383,7 +383,7 @@
 			}
 
 			.case-study-box .label::before {
-				content: "🏢";
+				content: "🐍Â¢";
 			}
 
 			.agentic-ai-box {
@@ -424,7 +424,7 @@
 			}
 
 			.agentic-ai-box .label::before {
-				content: "🤓";
+				content: "📝¤“";
 			}
 
 			.quiz-container {
@@ -564,7 +564,7 @@
 			}
 
 			.demo-header::before {
-				content: "⚡";
+				content: "âš¡";
 			}
 
 			.demo-number {
@@ -871,7 +871,7 @@
 	</head>
 	<body>
 		<!-- Floating Back to Main Page Button -->
-		<a href="index.html" class="floating-back-btn">← Main Page</a>
+		<a href="index.html" class="floating-back-btn">← Main Page</a>
 
 		<header class="header">
 			<div class="header-content">
@@ -886,7 +886,7 @@
 						><span class="stat-value" id="headerAccuracy">0%</span>
 					</div>
 				</div>
-				<button class="mobile-menu-btn" onclick="toggleSidebar()">☰</button>
+				<button class="mobile-menu-btn" onclick="toggleSidebar()">â˜°</button>
 			</div>
 		</header>
 
@@ -902,7 +902,7 @@
 						alt="Quanskill"
 						style="height: 36px; border-radius: 6px"
 				/></a>
-				<div class="chapter-title">Chapter 12 · Support Vector Machines</div>
+				<div class="chapter-title">Chapter 12 Â· Support Vector Machines</div>
 			</div>
 
 			<div class="score-display">
@@ -916,7 +916,7 @@
 			<div class="nav-section">
 				<div class="nav-section-title">Overview</div>
 				<a href="#intro" class="nav-link active">🎯 Practice Hub Home</a>
-				<a href="#interactive" class="nav-link">⚡ Interactive Labs (15)</a>
+				<a href="#interactive" class="nav-link">âš¡ Interactive Labs (15)</a>
 			</div>
 
 			<div class="nav-section">
@@ -978,7 +978,7 @@
 					><span class="difficulty-badge difficulty-medium">Medium</span></a
 				>
 				<a href="#q14" class="nav-link"
-					><span>Q14: Margin = 1/‗w‗</span
+					><span>Q14: Margin = 1/â€—wâ€—</span
 					><span class="difficulty-badge difficulty-medium">Medium</span></a
 				>
 				<a href="#q15" class="nav-link"
@@ -1050,8 +1050,9 @@
 							the dual problem.
 						</p>
 						<div class="hero-equation">
-							<strong>SVM:</strong> min (1/2)‗w‗² + C Σξₙ<br />
-							<strong>s.t.</strong> yₙ(⟨w,xₙ⟩ + b) ≥ 1 - ξₙ, ξₙ ≥ 0
+							<strong>SVM:</strong> min (1/2)â€—wâ€—Â² + C Î£Î¾â‚™<br />
+							<strong>s.t.</strong> yâ‚™(âŸ¨w,xâ‚™âŸ© + b) â‰¥ 1 - Î¾â‚™, Î¾â‚™
+							â‰¥ 0
 						</div>
 						<div class="topic-tags">
 							<span class="topic-tag">Binary Classification</span>
@@ -1098,7 +1099,7 @@
 						</div>
 						<div class="demo-controls">
 							<div class="control-group">
-								<label>w₁</label>
+								<label>wâ‚</label>
 								<input
 									type="range"
 									id="w1"
@@ -1108,7 +1109,7 @@
 									value="1" />
 							</div>
 							<div class="control-group">
-								<label>w₂</label>
+								<label>wâ‚‚</label>
 								<input
 									type="range"
 									id="w2"
@@ -1133,7 +1134,8 @@
 						</div>
 						<canvas id="hyperplaneCanvas" class="demo-canvas"></canvas>
 						<div class="demo-output" id="hyperplaneOutput">
-							Adjust w and b to see the separating hyperplane ⟨w,x⟩ + b = 0...
+							Adjust w and b to see the separating hyperplane âŸ¨w,xâŸ© + b =
+							0...
 						</div>
 					</div>
 
@@ -1145,7 +1147,7 @@
 						</div>
 						<div class="demo-controls">
 							<div class="control-group">
-								<label>‗w‗ (norm)</label>
+								<label>â€—wâ€— (norm)</label>
 								<input
 									type="range"
 									id="wNorm"
@@ -1160,7 +1162,7 @@
 						</div>
 						<canvas id="marginCanvas" class="demo-canvas"></canvas>
 						<div class="demo-output" id="marginOutput">
-							See how margin = 1/‗w‗ changes with the weight norm...
+							See how margin = 1/â€—wâ€— changes with the weight norm...
 						</div>
 					</div>
 
@@ -1191,7 +1193,7 @@
 					<!-- Lab 4: Slack Variables -->
 					<div class="demo-container" id="lab4">
 						<div class="demo-header">
-							<h4>Slack Variables ξₙ</h4>
+							<h4>Slack Variables Î¾â‚™</h4>
 							<span class="demo-number">Lab 4/15</span>
 						</div>
 						<div class="demo-controls">
@@ -1228,7 +1230,7 @@
 						</div>
 						<canvas id="hingeCanvas" class="demo-canvas"></canvas>
 						<div class="demo-output" id="hingeOutput">
-							Click to see the hinge loss ℓ(t) = max{0, 1-t}...
+							Click to see the hinge loss â„“(t) = max{0, 1-t}...
 						</div>
 					</div>
 
@@ -1257,11 +1259,11 @@
 						</div>
 						<div class="demo-controls">
 							<div class="control-group">
-								<label>Point x₁</label>
+								<label>Point xâ‚</label>
 								<input type="number" id="pointX1" value="2" step="0.5" />
 							</div>
 							<div class="control-group">
-								<label>Point x₂</label>
+								<label>Point xâ‚‚</label>
 								<input type="number" id="pointX2" value="1" step="0.5" />
 							</div>
 							<button class="btn btn-primary" onclick="computeDistance()">
@@ -1359,20 +1361,20 @@
 						</div>
 					</div>
 
-					<!-- Lab 12: Lagrange Multipliers α -->
+					<!-- Lab 12: Lagrange Multipliers Î± -->
 					<div class="demo-container" id="lab12">
 						<div class="demo-header">
-							<h4>Lagrange Multipliers αₙ</h4>
+							<h4>Lagrange Multipliers Î±â‚™</h4>
 							<span class="demo-number">Lab 12/15</span>
 						</div>
 						<div class="demo-controls">
 							<button class="btn btn-orange" onclick="showAlphas()">
-								Show αₙ Values
+								Show Î±â‚™ Values
 							</button>
 						</div>
 						<canvas id="alphaCanvas" class="demo-canvas"></canvas>
 						<div class="demo-output" id="alphaOutput">
-							See which αₙ > 0 (support vectors) vs αₙ = 0...
+							See which Î±â‚™ > 0 (support vectors) vs Î±â‚™ = 0...
 						</div>
 					</div>
 
@@ -1404,8 +1406,10 @@
 							<div class="control-group">
 								<label>Kernel</label>
 								<select id="gramKernel">
-									<option value="linear">Linear: xᵀ¢ᵀx∂¼</option>
-									<option value="rbf">RBF: exp(-γ‗xᵀ¢-x∂¼‖²)</option>
+									<option value="linear">Linear: xáµ€Â¢áµ€xâˆ‚Â¼</option>
+									<option value="rbf">
+										RBF: exp(-Î³â€—xáµ€Â¢-xâˆ‚Â¼â€–Â²)
+									</option>
 								</select>
 							</div>
 							<button class="btn btn-orange" onclick="showGramMatrix()">
@@ -1414,7 +1418,7 @@
 						</div>
 						<canvas id="gramCanvas" class="demo-canvas"></canvas>
 						<div class="demo-output" id="gramOutput">
-							Click to see the Gram matrix K[i,j] = k(xᵀ¢, x∂¼)...
+							Click to see the Gram matrix K[i,j] = k(xáµ€Â¢, xâˆ‚Â¼)...
 						</div>
 					</div>
 
@@ -1466,7 +1470,7 @@
 								A) {+1, -1} (two possible labels)
 							</div>
 							<div class="quiz-option" onclick="checkAnswer(1, 1)">
-								B) ℝ (any real number)
+								B) â„ (any real number)
 							</div>
 							<div class="quiz-option" onclick="checkAnswer(1, 2)">
 								C) {1, 2, 3, ..., K} (multiple classes)
@@ -1483,9 +1487,9 @@
 							<span class="quiz-number">Question 2</span>
 							<span class="quiz-difficulty difficulty-easy">Easy</span>
 						</div>
-						<div class="quiz-context">{x ∈ ℝᴰ : ⟨w,x⟩ + b = 0}</div>
+						<div class="quiz-context">{x âˆˆ â„á´° : âŸ¨w,xâŸ© + b = 0}</div>
 						<div class="quiz-question">
-							A hyperplane in ℝᴰ is an affine subspace of dimension:
+							A hyperplane in â„á´° is an affine subspace of dimension:
 						</div>
 						<div class="quiz-options">
 							<div class="quiz-option" onclick="checkAnswer(2, 0)">
@@ -1510,7 +1514,7 @@
 							<span class="quiz-difficulty difficulty-easy">Easy</span>
 						</div>
 						<div class="quiz-question">
-							The SVM decision function f(x) = ⟨w,x⟩ + b computes:
+							The SVM decision function f(x) = âŸ¨w,xâŸ© + b computes:
 						</div>
 						<div class="quiz-options">
 							<div class="quiz-option" onclick="checkAnswer(3, 0)">
@@ -1534,7 +1538,9 @@
 							<span class="quiz-number">Question 4</span>
 							<span class="quiz-difficulty difficulty-easy">Easy</span>
 						</div>
-						<div class="quiz-question">The vector w in ⟨w,x⟩ + b = 0 is:</div>
+						<div class="quiz-question">
+							The vector w in âŸ¨w,xâŸ© + b = 0 is:
+						</div>
 						<div class="quiz-options">
 							<div class="quiz-option" onclick="checkAnswer(4, 0)">
 								A) Normal (perpendicular) to the hyperplane
@@ -1562,13 +1568,13 @@
 						</div>
 						<div class="quiz-options">
 							<div class="quiz-option" onclick="checkAnswer(5, 0)">
-								A) f(x) = ⟨w,x⟩ + b ≥ 0
+								A) f(x) = âŸ¨w,xâŸ© + b â‰¥ 0
 							</div>
 							<div class="quiz-option" onclick="checkAnswer(5, 1)">
-								B) f(x) = ⟨w,x⟩ + b < 0
+								B) f(x) = âŸ¨w,xâŸ© + b < 0
 							</div>
 							<div class="quiz-option" onclick="checkAnswer(5, 2)">
-								C) ‗w‗ = 1
+								C) â€—wâ€— = 1
 							</div>
 							<div class="quiz-option" onclick="checkAnswer(5, 3)">
 								D) b = 0
@@ -1590,7 +1596,7 @@
 								A) Distance from hyperplane to the closest training points
 							</div>
 							<div class="quiz-option" onclick="checkAnswer(6, 1)">
-								B) The norm ‗w‗
+								B) The norm â€—wâ€—
 							</div>
 							<div class="quiz-option" onclick="checkAnswer(6, 2)">
 								C) The bias b
@@ -1622,7 +1628,7 @@
 								C) Passes through the origin
 							</div>
 							<div class="quiz-option" onclick="checkAnswer(7, 3)">
-								D) Has the smallest possible ‗w‗
+								D) Has the smallest possible â€—wâ€—
 							</div>
 						</div>
 						<div class="quiz-feedback" id="feedback7"></div>
@@ -1675,12 +1681,12 @@
 							<span class="quiz-difficulty difficulty-medium">Medium</span>
 						</div>
 						<div class="quiz-context">
-							min (1/2)‗w‗² s.t. yₙ(⟨w,xₙ⟩ + b) ≥ 1
+							min (1/2)â€—wâ€—Â² s.t. yâ‚™(âŸ¨w,xâ‚™âŸ© + b) â‰¥ 1
 						</div>
 						<div class="quiz-question">The hard margin SVM requires:</div>
 						<div class="quiz-options">
 							<div class="quiz-option" onclick="checkAnswer(9, 0)">
-								A) All points correctly classified with margin ≥ 1 (no
+								A) All points correctly classified with margin â‰¥ 1 (no
 								violations)
 							</div>
 							<div class="quiz-option" onclick="checkAnswer(9, 1)">
@@ -1702,12 +1708,14 @@
 							<span class="quiz-difficulty difficulty-medium">Medium</span>
 						</div>
 						<div class="quiz-context">
-							min (1/2)‗w‗² + C Σξₙ s.t. yₙ(⟨w,xₙ⟩ + b) ≥ 1 - ξₙ, ξₙ ≥ 0
+							min (1/2)â€—wâ€—Â² + C Î£Î¾â‚™ s.t. yâ‚™(âŸ¨w,xâ‚™âŸ© + b) â‰¥ 1 -
+							Î¾â‚™, Î¾â‚™ â‰¥ 0
 						</div>
 						<div class="quiz-question">The soft margin SVM allows:</div>
 						<div class="quiz-options">
 							<div class="quiz-option" onclick="checkAnswer(10, 0)">
-								A) Points inside margin or misclassified via slack variables ξₙ
+								A) Points inside margin or misclassified via slack variables
+								Î¾â‚™
 							</div>
 							<div class="quiz-option" onclick="checkAnswer(10, 1)">
 								B) Only correctly classified points
@@ -1727,10 +1735,10 @@
 							<span class="quiz-number">Question 11</span>
 							<span class="quiz-difficulty difficulty-medium">Medium</span>
 						</div>
-						<div class="quiz-question">The slack variable ξₙ measures:</div>
+						<div class="quiz-question">The slack variable Î¾â‚™ measures:</div>
 						<div class="quiz-options">
 							<div class="quiz-option" onclick="checkAnswer(11, 0)">
-								A) How much point xₙ violates the margin constraint
+								A) How much point xâ‚™ violates the margin constraint
 							</div>
 							<div class="quiz-option" onclick="checkAnswer(11, 1)">
 								B) The distance to the origin
@@ -1751,12 +1759,12 @@
 							<span class="quiz-difficulty difficulty-medium">Medium</span>
 						</div>
 						<div class="quiz-context">
-							ℓ(t) = max{0, 1 - t} where t = y·f(x)
+							â„“(t) = max{0, 1 - t} where t = yÂ·f(x)
 						</div>
 						<div class="quiz-question">The hinge loss equals 0 when:</div>
 						<div class="quiz-options">
 							<div class="quiz-option" onclick="checkAnswer(12, 0)">
-								A) t ≥ 1 (correctly classified with margin ≥ 1)
+								A) t â‰¥ 1 (correctly classified with margin â‰¥ 1)
 							</div>
 							<div class="quiz-option" onclick="checkAnswer(12, 1)">
 								B) t = 0 (on the hyperplane)
@@ -1802,19 +1810,21 @@
 							<span class="quiz-difficulty difficulty-medium">Medium</span>
 						</div>
 						<div class="quiz-question">
-							If the margin is scaled so closest points satisfy |⟨w,x⟩ + b| = 1,
-							then margin r equals:
+							If the margin is scaled so closest points satisfy |âŸ¨w,xâŸ© + b|
+							= 1, then margin r equals:
 						</div>
 						<div class="quiz-options">
 							<div class="quiz-option" onclick="checkAnswer(14, 0)">
-								A) 1 / ‗w‗
+								A) 1 / â€—wâ€—
 							</div>
-							<div class="quiz-option" onclick="checkAnswer(14, 1)">B) ‗w‗</div>
+							<div class="quiz-option" onclick="checkAnswer(14, 1)">
+								B) â€—wâ€—
+							</div>
 							<div class="quiz-option" onclick="checkAnswer(14, 2)">
-								C) ‗w‗²
+								C) â€—wâ€—Â²
 							</div>
 							<div class="quiz-option" onclick="checkAnswer(14, 3)">
-								D) b / ‗w‗
+								D) b / â€—wâ€—
 							</div>
 						</div>
 						<div class="quiz-feedback" id="feedback14"></div>
@@ -1825,13 +1835,14 @@
 							<span class="quiz-number">Question 15</span>
 							<span class="quiz-difficulty difficulty-medium">Medium</span>
 						</div>
-						<div class="quiz-context">yₙ(⟨w,xₙ⟩ + b) ≥ 1</div>
+						<div class="quiz-context">yâ‚™(âŸ¨w,xâ‚™âŸ© + b) â‰¥ 1</div>
 						<div class="quiz-question">
 							This constraint combines positive and negative examples by:
 						</div>
 						<div class="quiz-options">
 							<div class="quiz-option" onclick="checkAnswer(15, 0)">
-								A) Multiplying by yₙ ∈ {+1,-1} flips the inequality direction
+								A) Multiplying by yâ‚™ âˆˆ {+1,-1} flips the inequality
+								direction
 							</div>
 							<div class="quiz-option" onclick="checkAnswer(15, 1)">
 								B) Adding a constant
@@ -1856,13 +1867,13 @@
 						</div>
 						<div class="quiz-options">
 							<div class="quiz-option" onclick="checkAnswer(16, 0)">
-								A) Lie on or within the margin (αₙ > 0)
+								A) Lie on or within the margin (Î±â‚™ > 0)
 							</div>
 							<div class="quiz-option" onclick="checkAnswer(16, 1)">
 								B) Are far from the hyperplane
 							</div>
 							<div class="quiz-option" onclick="checkAnswer(16, 2)">
-								C) Have αₙ = 0
+								C) Have Î±â‚™ = 0
 							</div>
 							<div class="quiz-option" onclick="checkAnswer(16, 3)">
 								D) Are always misclassified
@@ -1877,11 +1888,11 @@
 							<span class="quiz-difficulty difficulty-medium">Medium</span>
 						</div>
 						<div class="quiz-question">
-							Minimizing (1/2)‗w‗² is equivalent to maximizing:
+							Minimizing (1/2)â€—wâ€—Â² is equivalent to maximizing:
 						</div>
 						<div class="quiz-options">
 							<div class="quiz-option" onclick="checkAnswer(17, 0)">
-								A) The margin 1/‗w‗
+								A) The margin 1/â€—wâ€—
 							</div>
 							<div class="quiz-option" onclick="checkAnswer(17, 1)">
 								B) The number of features
@@ -1942,15 +1953,16 @@
 							<span class="quiz-difficulty difficulty-hard">Hard</span>
 						</div>
 						<div class="quiz-context">
-							min_α (1/2) Σᵀ¢∂¼ yᵀ¢y∂¼αᵀ¢α∂¼⟨xᵀ¢,x∂¼⟩ - Σᵀ¢ αᵀ¢ s.t. Σᵀ¢ yᵀ¢αᵀ¢
-							= 0, 0 ≤ αᵀ¢ ≤ C
+							min_Î± (1/2) Î£áµ€Â¢âˆ‚Â¼
+							yáµ€Â¢yâˆ‚Â¼Î±áµ€Â¢Î±âˆ‚Â¼âŸ¨xáµ€Â¢,xâˆ‚Â¼âŸ© - Î£áµ€Â¢ Î±áµ€Â¢
+							s.t. Î£áµ€Â¢ yáµ€Â¢Î±áµ€Â¢ = 0, 0 â‰¤ Î±áµ€Â¢ â‰¤ C
 						</div>
 						<div class="quiz-question">
 							The dual SVM optimization is expressed in terms of:
 						</div>
 						<div class="quiz-options">
 							<div class="quiz-option" onclick="checkAnswer(18, 0)">
-								A) Lagrange multipliers αₙ (one per training point)
+								A) Lagrange multipliers Î±â‚™ (one per training point)
 							</div>
 							<div class="quiz-option" onclick="checkAnswer(18, 1)">
 								B) The weight vector w directly
@@ -1959,7 +1971,7 @@
 								C) The bias b only
 							</div>
 							<div class="quiz-option" onclick="checkAnswer(18, 3)">
-								D) The slack variables ξₙ
+								D) The slack variables Î¾â‚™
 							</div>
 						</div>
 						<div class="quiz-feedback" id="feedback18"></div>
@@ -1970,7 +1982,7 @@
 							<span class="quiz-number">Question 19</span>
 							<span class="quiz-difficulty difficulty-hard">Hard</span>
 						</div>
-						<div class="quiz-context">w = Σₙ αₙyₙxₙ</div>
+						<div class="quiz-context">w = Î£â‚™ Î±â‚™yâ‚™xâ‚™</div>
 						<div class="quiz-question">
 							The representer theorem states that the optimal w is:
 						</div>
@@ -2001,8 +2013,8 @@
 						</div>
 						<div class="quiz-options">
 							<div class="quiz-option" onclick="checkAnswer(20, 0)">
-								A) Objective (1/2)‗w‗² + CΣξₙ minus constraint violations with
-								multipliers αₙ, γₙ
+								A) Objective (1/2)â€—wâ€—Â² + CÎ£Î¾â‚™ minus constraint
+								violations with multipliers Î±â‚™, Î³â‚™
 							</div>
 							<div class="quiz-option" onclick="checkAnswer(20, 1)">
 								B) Only the objective function
@@ -2023,15 +2035,15 @@
 							<span class="quiz-difficulty difficulty-hard">Hard</span>
 						</div>
 						<div class="quiz-question">
-							The KKT condition αₙ(yₙf(xₙ) - 1 + ξₙ) = 0 implies:
+							The KKT condition Î±â‚™(yâ‚™f(xâ‚™) - 1 + Î¾â‚™) = 0 implies:
 						</div>
 						<div class="quiz-options">
 							<div class="quiz-option" onclick="checkAnswer(21, 0)">
-								A) Either αₙ = 0 or point is on/inside margin (constraint
+								A) Either Î±â‚™ = 0 or point is on/inside margin (constraint
 								active)
 							</div>
 							<div class="quiz-option" onclick="checkAnswer(21, 1)">
-								B) All αₙ must equal 1
+								B) All Î±â‚™ must equal 1
 							</div>
 							<div class="quiz-option" onclick="checkAnswer(21, 2)">
 								C) The margin is always 0
@@ -2048,12 +2060,14 @@
 							<span class="quiz-number">Question 22</span>
 							<span class="quiz-difficulty difficulty-hard">Hard</span>
 						</div>
-						<div class="quiz-context">k(xᵀ¢, x∂¼) = ⟨ϕ(xᵀ¢), φ(x∂¼)⟩</div>
+						<div class="quiz-context">
+							k(xáµ€Â¢, xâˆ‚Â¼) = âŸ¨Ï•(xáµ€Â¢), Ï†(xâˆ‚Â¼)âŸ©
+						</div>
 						<div class="quiz-question">The kernel trick allows us to:</div>
 						<div class="quiz-options">
 							<div class="quiz-option" onclick="checkAnswer(22, 0)">
 								A) Compute inner products in high-D feature space without
-								explicit φ
+								explicit Ï†
 							</div>
 							<div class="quiz-option" onclick="checkAnswer(22, 1)">
 								B) Reduce the number of features
@@ -2073,7 +2087,7 @@
 							<span class="quiz-number">Question 23</span>
 							<span class="quiz-difficulty difficulty-hard">Hard</span>
 						</div>
-						<div class="quiz-context">K[i,j] = k(xᵀ¢, x∂¼)</div>
+						<div class="quiz-context">K[i,j] = k(xáµ€Â¢, xâˆ‚Â¼)</div>
 						<div class="quiz-question">The Gram matrix K must be:</div>
 						<div class="quiz-options">
 							<div class="quiz-option" onclick="checkAnswer(23, 0)">
@@ -2231,14 +2245,14 @@
 
 					<div class="formula-box">
 						<strong>Key Formulas to Remember:</strong><br /><br />
-						• Decision function: f(x) = ⟨w,x⟩ + b<br />
-						• Hyperplane: {x : ⟨w,x⟩ + b = 0}<br />
-						• Margin: r = 1/‗w‗<br />
-						• Soft margin: min (1/2)‗w‗² + C Σξₙ<br />
-						• Constraint: yₙ(⟨w,xₙ⟩ + b) ≥ 1 - ξₙ<br />
-						• Hinge loss: ℓ(t) = max{0, 1-t}<br />
-						• Representer: w = Σₙ αₙyₙxₙ<br />
-						• Kernel: k(xᵀ¢,x∂¼) = ⟨ϕ(xᵀ¢), φ(x∂¼)⟩
+						â€¢ Decision function: f(x) = âŸ¨w,xâŸ© + b<br />
+						â€¢ Hyperplane: {x : âŸ¨w,xâŸ© + b = 0}<br />
+						â€¢ Margin: r = 1/â€—wâ€—<br />
+						â€¢ Soft margin: min (1/2)â€—wâ€—Â² + C Î£Î¾â‚™<br />
+						â€¢ Constraint: yâ‚™(âŸ¨w,xâ‚™âŸ© + b) â‰¥ 1 - Î¾â‚™<br />
+						â€¢ Hinge loss: â„“(t) = max{0, 1-t}<br />
+						â€¢ Representer: w = Î£â‚™ Î±â‚™yâ‚™xâ‚™<br />
+						â€¢ Kernel: k(xáµ€Â¢,xâˆ‚Â¼) = âŸ¨Ï•(xáµ€Â¢), Ï†(xâˆ‚Â¼)âŸ©
 					</div>
 
 					<div class="agentic-ai-box">
@@ -2259,7 +2273,7 @@
 								<strong>Chapter 10:</strong> Dimensionality Reduction with PCA
 							</li>
 							<li><strong>Chapter 11:</strong> Density Estimation with GMM</li>
-							<li><strong>Chapter 12:</strong> Classification with SVM ✓</li>
+							<li><strong>Chapter 12:</strong> Classification with SVM âœ“</li>
 						</ul>
 						<p style="margin-top: 1rem; font-weight: 600">
 							🎓 Join Quanskill's Agentic AI Bootcamp for advanced topics!
@@ -2271,12 +2285,12 @@
 							class="btn btn-primary"
 							onclick="resetQuiz()"
 							style="margin-right: 1rem">
-							🔄 Reset Quiz
+							🔍„ Reset Quiz
 						</button>
 						<button
 							class="btn btn-orange"
-							onclick="window.scrollTo({top: 0, behavior: 'smooth'})">
-							⬆ Back to Top
+							onclick="window.scrollTo({ top: 0, behavior: 'smooth' })">
+							â¬† Back to Top
 						</button>
 					</div>
 				</section>
@@ -2316,27 +2330,27 @@
 
 			const explanations = {
 				1: "Binary classification outputs one of two labels: {+1, -1} or equivalently {True, False}, {0, 1}.",
-				2: "A hyperplane in ℝᴰ is a (D-1)-dimensional affine subspace, e.g., a line in 2D, a plane in 3D.",
-				3: "f(x) = ⟨w,x⟩ + b gives a signed score proportional to distance from the hyperplane.",
+				2: "A hyperplane in â„á´° is a (D-1)-dimensional affine subspace, e.g., a line in 2D, a plane in 3D.",
+				3: "f(x) = âŸ¨w,xâŸ© + b gives a signed score proportional to distance from the hyperplane.",
 				4: "Vector w is normal (perpendicular) to the hyperplane, defining its orientation.",
-				5: "SVM predicts +1 if f(x) ≥ 0 (positive side of hyperplane), -1 if f(x) < 0.",
+				5: "SVM predicts +1 if f(x) â‰¥ 0 (positive side of hyperplane), -1 if f(x) < 0.",
 				6: "The margin is the distance from the separating hyperplane to the closest training points.",
 				7: "SVM finds the maximum margin hyperplane that correctly classifies training data.",
 				8: "Linearly separable data can be perfectly separated by a hyperplane with zero errors.",
-				9: "Hard margin SVM requires yₙ(⟨w,xₙ⟩ + b) ≥ 1 for all n - no violations allowed.",
-				10: "Soft margin SVM introduces slack ξₙ ≥ 0 allowing points inside margin or misclassified.",
-				11: "Slack ξₙ measures how much point xₙ violates the margin constraint yₙf(xₙ) ≥ 1.",
-				12: "Hinge loss ℓ(t) = max{0, 1-t} = 0 when t ≥ 1, i.e., correctly classified with margin.",
-				13: "C controls the trade-off: large C → small slack (fit data), small C → large margin.",
-				14: "With scaling yₙf(xₙ) = 1 on closest points, the margin r = 1/‗w‗.",
-				15: "Multiplying by yₙ ∈ {+1,-1} converts separate positive/negative constraints into one.",
-				16: "Support vectors have αₙ > 0, lying on or inside the margin. They 'support' the hyperplane.",
-				17: "Minimizing ‗w‗² is equivalent to maximizing margin r = 1/‗w‗.",
-				18: "The dual SVM is expressed in terms of Lagrange multipliers αₙ, one per training point.",
-				19: "Representer theorem: optimal w = Σₙ αₙyₙxₙ is a linear combination of training examples.",
-				20: "Lagrangian L = (1/2)‗w‗² + CΣξₙ - Σαₙ(yₙf(xₙ)-1+ξₙ) - Σγₙξₙ includes all terms.",
-				21: "KKT complementary slackness: either αₙ = 0 (inactive) or constraint is tight (active).",
-				22: "Kernel trick: compute k(xᵀ¢,x∂¼) = ⟨ϕ(xᵀ¢),φ(x∂¼)⟩ without explicit high-D mapping φ.",
+				9: "Hard margin SVM requires yâ‚™(âŸ¨w,xâ‚™âŸ© + b) â‰¥ 1 for all n - no violations allowed.",
+				10: "Soft margin SVM introduces slack Î¾â‚™ â‰¥ 0 allowing points inside margin or misclassified.",
+				11: "Slack Î¾â‚™ measures how much point xâ‚™ violates the margin constraint yâ‚™f(xâ‚™) â‰¥ 1.",
+				12: "Hinge loss â„“(t) = max{0, 1-t} = 0 when t â‰¥ 1, i.e., correctly classified with margin.",
+				13: "C controls the trade-off: large C ←’ small slack (fit data), small C ←’ large margin.",
+				14: "With scaling yâ‚™f(xâ‚™) = 1 on closest points, the margin r = 1/â€—wâ€—.",
+				15: "Multiplying by yâ‚™ âˆˆ {+1,-1} converts separate positive/negative constraints into one.",
+				16: "Support vectors have Î±â‚™ > 0, lying on or inside the margin. They 'support' the hyperplane.",
+				17: "Minimizing â€—wâ€—Â² is equivalent to maximizing margin r = 1/â€—wâ€—.",
+				18: "The dual SVM is expressed in terms of Lagrange multipliers Î±â‚™, one per training point.",
+				19: "Representer theorem: optimal w = Î£â‚™ Î±â‚™yâ‚™xâ‚™ is a linear combination of training examples.",
+				20: "Lagrangian L = (1/2)â€—wâ€—Â² + CÎ£Î¾â‚™ - Î£Î±â‚™(yâ‚™f(xâ‚™)-1+Î¾â‚™) - Î£Î³â‚™Î¾â‚™ includes all terms.",
+				21: "KKT complementary slackness: either Î±â‚™ = 0 (inactive) or constraint is tight (active).",
+				22: "Kernel trick: compute k(xáµ€Â¢,xâˆ‚Â¼) = âŸ¨Ï•(xáµ€Â¢),Ï†(xâˆ‚Â¼)âŸ© without explicit high-D mapping Ï†.",
 				23: "Valid kernels produce symmetric positive semi-definite Gram matrices (Mercer's condition).",
 				24: "SVM hyperplane bisects the shortest line between convex hulls of positive/negative classes.",
 				25: "Maximum margin provides robustness: small perturbations don't change classification.",
@@ -2366,14 +2380,14 @@
 					correctCount++;
 					container.classList.add("answered-correct");
 					feedback.className = "quiz-feedback show correct";
-					feedback.innerHTML = `✅ <strong>Correct!</strong> ${explanations[q]}`;
+					feedback.innerHTML = `âœ… <strong>Correct!</strong> ${explanations[q]}`;
 					if (q <= 8) easyCorrect++;
 					else if (q <= 17) mediumCorrect++;
 					else hardCorrect++;
 				} else {
 					container.classList.add("answered-wrong");
 					feedback.className = "quiz-feedback show incorrect";
-					feedback.innerHTML = `❌ <strong>Incorrect.</strong> ${explanations[q]}`;
+					feedback.innerHTML = `âŒ <strong>Incorrect.</strong> ${explanations[q]}`;
 				}
 				updateStats();
 			}
@@ -2384,25 +2398,21 @@
 						? Math.round((correctCount / attemptedCount) * 100)
 						: 0;
 				const prog = Math.round((attemptedCount / totalQuestions) * 100);
-				document.getElementById(
-					"headerScore"
-				).textContent = `${correctCount}/${totalQuestions}`;
+				document.getElementById("headerScore").textContent =
+					`${correctCount}/${totalQuestions}`;
 				document.getElementById("headerAccuracy").textContent = `${acc}%`;
-				document.getElementById(
-					"sidebarScore"
-				).textContent = `${correctCount}/${totalQuestions}`;
-				document.getElementById("scoreProgress").style.width = `${
-					(correctCount / totalQuestions) * 100
-				}%`;
+				document.getElementById("sidebarScore").textContent =
+					`${correctCount}/${totalQuestions}`;
+				document.getElementById("scoreProgress").style.width =
+					`${(correctCount / totalQuestions) * 100}%`;
 				document.getElementById("progressFill").style.width = `${prog}%`;
 				document.getElementById("totalCorrect").textContent = correctCount;
 				document.getElementById("totalAttempted").textContent = attemptedCount;
 				document.getElementById("accuracyPercent").textContent = `${acc}%`;
 				document.getElementById("progressPercent").textContent = `${prog}%`;
 				document.getElementById("easyScore").textContent = `${easyCorrect}/8`;
-				document.getElementById(
-					"mediumScore"
-				).textContent = `${mediumCorrect}/9`;
+				document.getElementById("mediumScore").textContent =
+					`${mediumCorrect}/9`;
 				document.getElementById("hardScore").textContent = `${hardCorrect}/8`;
 			}
 
@@ -2417,7 +2427,7 @@
 					const c = document.getElementById(`q${i}`);
 					c.classList.remove("answered-correct", "answered-wrong");
 					c.querySelectorAll(".quiz-option").forEach((o) =>
-						o.classList.remove("disabled", "correct", "incorrect")
+						o.classList.remove("disabled", "correct", "incorrect"),
 					);
 					document.getElementById(`feedback${i}`).className = "quiz-feedback";
 				}
@@ -2481,7 +2491,7 @@
 					ctx.moveTo(cx, cy);
 					ctx.lineTo(
 						cx + (w1 / wNorm) * arrowLen,
-						cy - (w2 / wNorm) * arrowLen
+						cy - (w2 / wNorm) * arrowLen,
 					);
 					ctx.stroke();
 
@@ -2531,18 +2541,17 @@
 					ctx.stroke();
 				});
 
-				document.getElementById(
-					"hyperplaneOutput"
-				).innerHTML = `Separating Hyperplane
-═════════════════════
-Equation: ${w1.toFixed(2)}x₁ + ${w2.toFixed(2)}x₂ + ${b.toFixed(2)} = 0
+				document.getElementById("hyperplaneOutput").innerHTML =
+					`Separating Hyperplane
+â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
+Equation: ${w1.toFixed(2)}xâ‚ + ${w2.toFixed(2)}xâ‚‚ + ${b.toFixed(2)} = 0
 
 Parameters:
-• w = [${w1.toFixed(2)}, ${w2.toFixed(2)}]ᵀ (normal vector, orange)
-• b = ${b.toFixed(2)} (bias/intercept)
-• ‗w‗ = ${Math.sqrt(w1 * w1 + w2 * w2).toFixed(3)}
+â€¢ w = [${w1.toFixed(2)}, ${w2.toFixed(2)}]áµ€ (normal vector, orange)
+â€¢ b = ${b.toFixed(2)} (bias/intercept)
+â€¢ â€—wâ€— = ${Math.sqrt(w1 * w1 + w2 * w2).toFixed(3)}
 
-Blue line: Hyperplane ⟨w,x⟩ + b = 0
+Blue line: Hyperplane âŸ¨w,xâŸ© + b = 0
 Blue circles: Positive class (+1)
 Orange crosses: Negative class (-1)`;
 			}
@@ -2552,23 +2561,22 @@ Orange crosses: Negative class (-1)`;
 				const wNorm = parseFloat(document.getElementById("wNorm").value);
 				const margin = 1 / wNorm;
 
-				document.getElementById(
-					"marginOutput"
-				).innerHTML = `Margin Visualization
-════════════════════
-‗w‗ = ${wNorm.toFixed(2)}
-Margin r = 1/‗w‗ = ${margin.toFixed(3)}
+				document.getElementById("marginOutput").innerHTML =
+					`Margin Visualization
+â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
+â€—wâ€— = ${wNorm.toFixed(2)}
+Margin r = 1/â€—wâ€— = ${margin.toFixed(3)}
 
 Key relationship:
-• Smaller ‗w‗ → Larger margin
-• Minimizing (1/2)‗w‗² maximizes margin
+â€¢ Smaller â€—wâ€— ←’ Larger margin
+â€¢ Minimizing (1/2)â€—wâ€—Â² maximizes margin
 
 With scaling convention:
-• Points on margin satisfy |⟨w,x⟩ + b| = 1
-• Distance to hyperplane = 1/‗w‗
+â€¢ Points on margin satisfy |âŸ¨w,xâŸ© + b| = 1
+â€¢ Distance to hyperplane = 1/â€—wâ€—
 
-SVM objective: min (1/2)‗w‗²
-              ≡ max margin`;
+SVM objective: min (1/2)â€—wâ€—Â²
+              â‰¡ max margin`;
 			}
 
 			// Lab 3: Compare Margins
@@ -2578,34 +2586,34 @@ SVM objective: min (1/2)‗w‗²
 				document.getElementById("compareMarginOutput").innerHTML =
 					type === "hard"
 						? `Hard Margin SVM
-═══════════════
-Constraint: yₙ(⟨w,xₙ⟩ + b) ≥ 1 for ALL n
+â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
+Constraint: yâ‚™(âŸ¨w,xâ‚™âŸ© + b) â‰¥ 1 for ALL n
 
 Properties:
-• NO slack variables (ξₙ = 0)
-• ALL points outside margin
-• Only works for linearly separable data
-• Can overfit to outliers
+â€¢ NO slack variables (Î¾â‚™ = 0)
+â€¢ ALL points outside margin
+â€¢ Only works for linearly separable data
+â€¢ Can overfit to outliers
 
 Optimization:
-min (1/2)‗w‗²
-s.t. yₙ(⟨w,xₙ⟩ + b) ≥ 1
+min (1/2)â€—wâ€—Â²
+s.t. yâ‚™(âŸ¨w,xâ‚™âŸ© + b) â‰¥ 1
 
-If data not separable → INFEASIBLE`
+If data not separable ←’ INFEASIBLE`
 						: `Soft Margin SVM
-═══════════════
-Constraint: yₙ(⟨w,xₙ⟩ + b) ≥ 1 - ξₙ, ξₙ ≥ 0
+â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
+Constraint: yâ‚™(âŸ¨w,xâ‚™âŸ© + b) â‰¥ 1 - Î¾â‚™, Î¾â‚™ â‰¥ 0
 
 Properties:
-• Slack variables allow violations
-• Points CAN be inside margin or misclassified
-• Works for non-separable data
-• More robust to outliers
+â€¢ Slack variables allow violations
+â€¢ Points CAN be inside margin or misclassified
+â€¢ Works for non-separable data
+â€¢ More robust to outliers
 
 Optimization:
-min (1/2)‗w‗² + C Σξₙ
-s.t. yₙ(⟨w,xₙ⟩ + b) ≥ 1 - ξₙ
-     ξₙ ≥ 0
+min (1/2)â€—wâ€—Â² + C Î£Î¾â‚™
+s.t. yâ‚™(âŸ¨w,xâ‚™âŸ© + b) â‰¥ 1 - Î¾â‚™
+     Î¾â‚™ â‰¥ 0
 
 C controls trade-off`;
 			}
@@ -2614,27 +2622,28 @@ C controls trade-off`;
 			function showSlack() {
 				const C = parseFloat(document.getElementById("regC").value);
 
-				document.getElementById("slackOutput").innerHTML = `Slack Variables ξₙ
-══════════════════
+				document.getElementById("slackOutput").innerHTML =
+					`Slack Variables Î¾â‚™
+â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
 C = ${C.toFixed(1)}
 
-Meaning of ξₙ:
-• ξₙ = 0: Point outside margin (correct)
-• 0 < ξₙ < 1: Inside margin but correct side
-• ξₙ = 1: On decision boundary
-• ξₙ > 1: Misclassified
+Meaning of Î¾â‚™:
+â€¢ Î¾â‚™ = 0: Point outside margin (correct)
+â€¢ 0 < Î¾â‚™ < 1: Inside margin but correct side
+â€¢ Î¾â‚™ = 1: On decision boundary
+â€¢ Î¾â‚™ > 1: Misclassified
 
 Effect of C:
-• C = ${C.toFixed(1)} ${C < 1 ? "(low)" : C > 5 ? "(high)" : "(medium)"}
-• ${
-					C < 1
-						? "Large margin, tolerates more errors"
-						: C > 5
-						? "Small margin, penalizes errors heavily"
-						: "Balanced margin/error trade-off"
-				}
+â€¢ C = ${C.toFixed(1)} ${C < 1 ? "(low)" : C > 5 ? "(high)" : "(medium)"}
+â€¢ ${
+						C < 1
+							? "Large margin, tolerates more errors"
+							: C > 5
+								? "Small margin, penalizes errors heavily"
+								: "Balanced margin/error trade-off"
+					}
 
-Total slack penalty: C × Σξₙ = ${C.toFixed(1)} × Σξₙ`;
+Total slack penalty: C × Î£Î¾â‚™ = ${C.toFixed(1)} × Î£Î¾â‚™`;
 			}
 
 			// Lab 5: Hinge Loss
@@ -2663,8 +2672,8 @@ Total slack penalty: C × Σξₙ = ${C.toFixed(1)} × Σξₙ`;
 				// Labels
 				ctx.fillStyle = "#666";
 				ctx.font = "12px Space Grotesk";
-				ctx.fillText("t = y·f(x)", W - 60, cy + 20);
-				ctx.fillText("ℓ(t)", cx + 10, 30);
+				ctx.fillText("t = yÂ·f(x)", W - 60, cy + 20);
+				ctx.fillText("â„“(t)", cx + 10, 30);
 				ctx.fillText("0", cx - 15, cy + 15);
 				ctx.fillText("1", cx + scaleX - 5, cy + 15);
 
@@ -2703,44 +2712,44 @@ Total slack penalty: C × Σξₙ = ${C.toFixed(1)} × Σξₙ`;
 				ctx.setLineDash([]);
 
 				document.getElementById("hingeOutput").innerHTML = `Hinge Loss
-══════════
-ℓ(t) = max{0, 1 - t}  where t = y·f(x)
+â•â•â•â•â•â•â•â•â•â•
+â„“(t) = max{0, 1 - t}  where t = yÂ·f(x)
 
 Blue: Hinge loss (convex upper bound)
 Orange: 0-1 loss (step function)
 
 Regions:
-• t < 0: Misclassified (loss > 1)
-• 0 < t < 1: Inside margin (0 < loss < 1)
-• t ≥ 1: Outside margin (loss = 0)
+â€¢ t < 0: Misclassified (loss > 1)
+â€¢ 0 < t < 1: Inside margin (0 < loss < 1)
+â€¢ t â‰¥ 1: Outside margin (loss = 0)
 
 Advantages of hinge loss:
-✓ Convex (enables efficient optimization)
-✓ Sparse solutions (many αₙ = 0)
-✓ Margin-based (promotes generalization)`;
+âœ“ Convex (enables efficient optimization)
+âœ“ Sparse solutions (many Î±â‚™ = 0)
+âœ“ Margin-based (promotes generalization)`;
 			}
 
 			// Lab 6: Support Vectors
 			function findSupportVectors() {
 				document.getElementById("svOutput").innerHTML = `Support Vectors
-═══════════════
-Definition: Points with αₙ > 0
+â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
+Definition: Points with Î±â‚™ > 0
 
 Support vectors are points that:
-• Lie exactly ON the margin (αₙ ∈ (0, C))
-• Or violate the margin (αₙ = C in soft SVM)
+â€¢ Lie exactly ON the margin (Î±â‚™ âˆˆ (0, C))
+â€¢ Or violate the margin (Î±â‚™ = C in soft SVM)
 
 Key properties:
-• Only support vectors define w = Σₙ αₙyₙxₙ
-• Points with αₙ = 0 don't contribute to w
-• Removing non-SVs doesn't change the solution
-• Typically a small fraction of training data
+â€¢ Only support vectors define w = Î£â‚™ Î±â‚™yâ‚™xâ‚™
+â€¢ Points with Î±â‚™ = 0 don't contribute to w
+â€¢ Removing non-SVs doesn't change the solution
+â€¢ Typically a small fraction of training data
 
 Why "support"?
 These points literally "support" the margin -
 if moved, the optimal hyperplane would change.
 
-Sparse solution → efficient prediction!`;
+Sparse solution ←’ efficient prediction!`;
 			}
 
 			// Lab 7: Distance
@@ -2755,28 +2764,21 @@ Sparse solution → efficient prediction!`;
 				const fx = w[0] * x1 + w[1] * x2 + b;
 				const dist = fx / wNorm;
 
-				document.getElementById(
-					"distOutput"
-				).innerHTML = `Distance from Point to Hyperplane
-══════════════════════════════════
-Point: x = [${x1}, ${x2}]ᵀ
-Hyperplane: x₁ + x₂ = 0 (w = [1,1], b = 0)
+				document.getElementById("distOutput").innerHTML =
+					`Distance from Point to Hyperplane
+â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
+Point: x = [${x1}, ${x2}]áµ€
+Hyperplane: xâ‚ + xâ‚‚ = 0 (w = [1,1], b = 0)
 
 Calculation:
-f(x) = ⟨w,x⟩ + b = 1×${x1} + 1×${x2} + 0 = ${fx.toFixed(2)}
-‗w‗ = √(1² + 1²) = ${wNorm.toFixed(3)}
+f(x) = âŸ¨w,xâŸ© + b = 1×${x1} + 1×${x2} + 0 = ${fx.toFixed(2)}
+â€—wâ€— = âˆš(1Â² + 1Â²) = ${wNorm.toFixed(3)}
 
-Signed distance = f(x)/‗w‗ = ${dist.toFixed(3)}
+Signed distance = f(x)/â€—wâ€— = ${dist.toFixed(3)}
 
 Interpretation:
-• ${
-					dist > 0
-						? "Positive side (+1 class region)"
-						: dist < 0
-						? "Negative side (-1 class region)"
-						: "On the hyperplane"
-				}
-• |distance| = ${Math.abs(dist).toFixed(3)}`;
+â€¢ ${dist > 0 ? "Positive side (+1 class region)" : dist < 0 ? "Negative side (-1 class region)" : "On the hyperplane"}
+â€¢ |distance| = ${Math.abs(dist).toFixed(3)}`;
 			}
 
 			// Lab 8: Effect of C
@@ -2784,32 +2786,32 @@ Interpretation:
 				const C = parseFloat(document.getElementById("cValue").value);
 
 				document.getElementById("cEffectOutput").innerHTML = `Effect of C = ${C}
-══════════════════
+â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
 ${
 	C <= 0.1
 		? `LOW C (C = ${C}):
-• Large margin (small ‗w‗)
-• Many slack violations allowed
-• Underfitting risk
-• Robust to outliers`
+â€¢ Large margin (small â€—wâ€—)
+â€¢ Many slack violations allowed
+â€¢ Underfitting risk
+â€¢ Robust to outliers`
 		: C >= 10
-		? `HIGH C (C = ${C}):
-• Small margin (large ‗w‗)
-• Few/no slack violations
-• Overfitting risk
-• Sensitive to outliers`
-		: `BALANCED C (C = ${C}):
-• Moderate margin
-• Some slack tolerance
-• Good bias-variance trade-off`
+			? `HIGH C (C = ${C}):
+â€¢ Small margin (large â€—wâ€—)
+â€¢ Few/no slack violations
+â€¢ Overfitting risk
+â€¢ Sensitive to outliers`
+			: `BALANCED C (C = ${C}):
+â€¢ Moderate margin
+â€¢ Some slack tolerance
+â€¢ Good bias-variance trade-off`
 }
 
 Trade-off in objective:
-(1/2)‗w‗² + ${C} × Σξₙ
-  └─margin    └─slack penalty
+(1/2)â€—wâ€—Â² + ${C} × Î£Î¾â‚™
+  â””â”€margin    â””â”€slack penalty
 
 Typical selection: Cross-validation over
-C ∈ {0.001, 0.01, 0.1, 1, 10, 100, 1000}`;
+C âˆˆ {0.001, 0.01, 0.1, 1, 10, 100, 1000}`;
 			}
 
 			// Lab 9: Kernels
@@ -2819,19 +2821,20 @@ C ∈ {0.001, 0.01, 0.1, 1, 10, 100, 1000}`;
 				const kernelInfo = {
 					linear: {
 						name: "Linear Kernel",
-						formula: "k(xᵀ¢, x∂¼) = xᵀ¢ᵀx∂¼ = ⟨xᵀ¢, x∂¼⟩",
+						formula:
+							"k(xáµ€Â¢, xâˆ‚Â¼) = xáµ€Â¢áµ€xâˆ‚Â¼ = âŸ¨xáµ€Â¢, xâˆ‚Â¼âŸ©",
 						desc: "Standard dot product. Linear decision boundary.",
 						params: "None",
 					},
 					rbf: {
 						name: "RBF (Gaussian) Kernel",
-						formula: "k(xᵀ¢, x∂¼) = exp(-γ‗xᵀ¢ - x∂¼‖²)",
+						formula: "k(xáµ€Â¢, xâˆ‚Â¼) = exp(-Î³â€—xáµ€Â¢ - xâˆ‚Â¼â€–Â²)",
 						desc: "Infinite-dimensional feature space. Highly flexible.",
-						params: "γ (gamma) controls width",
+						params: "Î³ (gamma) controls width",
 					},
 					poly: {
 						name: "Polynomial Kernel (degree 2)",
-						formula: "k(xᵀ¢, x∂¼) = (xᵀ¢ᵀx∂¼ + c)²",
+						formula: "k(xáµ€Â¢, xâˆ‚Â¼) = (xáµ€Â¢áµ€xâˆ‚Â¼ + c)Â²",
 						desc: "Polynomial decision boundary. Captures interactions.",
 						params: "degree d, coefficient c",
 					},
@@ -2839,7 +2842,7 @@ C ∈ {0.001, 0.01, 0.1, 1, 10, 100, 1000}`;
 
 				const k = kernelInfo[kernel];
 				document.getElementById("kernelOutput").innerHTML = `${k.name}
-════════════════════════════════
+â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
 Formula: ${k.formula}
 
 Description: ${k.desc}
@@ -2847,11 +2850,11 @@ Description: ${k.desc}
 Parameters: ${k.params}
 
 Feature map interpretation:
-k(xᵀ¢, x∂¼) = ⟨ϕ(xᵀ¢), φ(x∂¼)⟩
+k(xáµ€Â¢, xâˆ‚Â¼) = âŸ¨Ï•(xáµ€Â¢), Ï†(xâˆ‚Â¼)âŸ©
 
 The kernel computes inner products in
 (possibly infinite-dimensional) feature space
-WITHOUT explicitly computing φ(x)!
+WITHOUT explicitly computing Ï†(x)!
 
 This is the "kernel trick".`;
 			}
@@ -2859,25 +2862,25 @@ This is the "kernel trick".`;
 			// Lab 10: XOR
 			function showXOR() {
 				document.getElementById("xorOutput").innerHTML = `XOR Problem
-═══════════
+â•â•â•â•â•â•â•â•â•â•â•
 Classic non-linearly separable dataset:
 
-(0,0) → -1    (0,1) → +1
-(1,0) → +1    (1,1) → -1
+(0,0) ←’ -1    (0,1) ←’ +1
+(1,0) ←’ +1    (1,1) ←’ -1
 
 Why not linearly separable:
-• No single line can separate +1 from -1
-• Linear SVM will fail (or have large slack)
+â€¢ No single line can separate +1 from -1
+â€¢ Linear SVM will fail (or have large slack)
 
 Solution: Use kernel!
 
 With RBF or polynomial kernel:
-• Implicitly maps to higher-D space
-• In higher-D, data becomes separable
-• Decision boundary in input space is curved
+â€¢ Implicitly maps to higher-D space
+â€¢ In higher-D, data becomes separable
+â€¢ Decision boundary in input space is curved
 
-Example with ϕ(x) = [x₁, x₂, x₁x₂]:
-Original space → Feature space
+Example with Ï•(x) = [xâ‚, xâ‚‚, xâ‚xâ‚‚]:
+Original space ←’ Feature space
 Now a LINEAR hyperplane in feature space
 gives a NONLINEAR boundary in input space!`;
 			}
@@ -2885,87 +2888,85 @@ gives a NONLINEAR boundary in input space!`;
 			// Lab 11: Dual
 			function showDual() {
 				document.getElementById("dualOutput").innerHTML = `Primal vs Dual SVM
-══════════════════
+â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
 
-PRIMAL (variables: w, b, ξ):
-min  (1/2)‗w‗² + C Σξₙ
-s.t. yₙ(⟨w,xₙ⟩ + b) ≥ 1 - ξₙ
-     ξₙ ≥ 0
+PRIMAL (variables: w, b, Î¾):
+min  (1/2)â€—wâ€—Â² + C Î£Î¾â‚™
+s.t. yâ‚™(âŸ¨w,xâ‚™âŸ© + b) â‰¥ 1 - Î¾â‚™
+     Î¾â‚™ â‰¥ 0
 
 # variables: D + 1 + N (depends on dimension D)
 
-"ۉ"ۉ"ۉ"ۉ"ۉ"ۉ"ۉ"ۉ"ۉ"ۉ"ۉ"ۉ"ۉ"ۉ"ۉ"ۉ"ۉ"ۉ"ۉ"ۉ"ۉ"ۉ"ۉ"ۉ"ۉ"ۉ"ۉ"ۉ"ۉ"ۉ"ۉ"
+"Û‰"Û‰"Û‰"Û‰"Û‰"Û‰"Û‰"Û‰"Û‰"Û‰"Û‰"Û‰"Û‰"Û‰"Û‰"Û‰"Û‰"Û‰"Û‰"Û‰"Û‰"Û‰"Û‰"Û‰"Û‰"Û‰"Û‰"Û‰"Û‰"Û‰"Û‰"
 
-DUAL (variables: α):
-min  (1/2) Σᵀ¢∂¼ yᵀ¢y∂¼αᵀ¢α∂¼⟨xᵀ¢,x∂¼⟩ - Σᵀ¢ αᵀ¢
-s.t. Σᵀ¢ yᵀ¢αᵀ¢ = 0
-     0 ≤ αᵀ¢ ≤ C
+DUAL (variables: Î±):
+min  (1/2) Î£áµ€Â¢âˆ‚Â¼ yáµ€Â¢yâˆ‚Â¼Î±áµ€Â¢Î±âˆ‚Â¼âŸ¨xáµ€Â¢,xâˆ‚Â¼âŸ© - Î£áµ€Â¢ Î±áµ€Â¢
+s.t. Î£áµ€Â¢ yáµ€Â¢Î±áµ€Â¢ = 0
+     0 â‰¤ Î±áµ€Â¢ â‰¤ C
 
 # variables: N (depends on # samples)
 
 Advantages of dual:
-✓ Enables kernel trick (replace ⟨xᵀ¢,x∂¼⟩ with k(xᵀ¢,x∂¼))
-✓ Better when D >> N
-✓ Solution is sparse (many αᵀ¢ = 0)`;
+âœ“ Enables kernel trick (replace âŸ¨xáµ€Â¢,xâˆ‚Â¼âŸ© with k(xáµ€Â¢,xâˆ‚Â¼))
+âœ“ Better when D >> N
+âœ“ Solution is sparse (many Î±áµ€Â¢ = 0)`;
 			}
 
 			// Lab 12: Alphas
 			function showAlphas() {
-				document.getElementById(
-					"alphaOutput"
-				).innerHTML = `Lagrange Multipliers αₙ
-═══════════════════════
-Each training point has multiplier αₙ ≥ 0
+				document.getElementById("alphaOutput").innerHTML =
+					`Lagrange Multipliers Î±â‚™
+â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
+Each training point has multiplier Î±â‚™ â‰¥ 0
 
 Three cases:
 
-1. αₙ = 0 (most points)
-   • Point is outside margin
-   • Does NOT contribute to w
-   • Not a support vector
+1. Î±â‚™ = 0 (most points)
+   â€¢ Point is outside margin
+   â€¢ Does NOT contribute to w
+   â€¢ Not a support vector
 
-2. 0 < αₙ < C
-   • Point is exactly ON margin
-   • Contributes to w
-   • IS a support vector
-   • No slack (ξₙ = 0)
+2. 0 < Î±â‚™ < C
+   â€¢ Point is exactly ON margin
+   â€¢ Contributes to w
+   â€¢ IS a support vector
+   â€¢ No slack (Î¾â‚™ = 0)
 
-3. αₙ = C
-   • Point violates margin or misclassified
-   • IS a support vector
-   • Has slack ξₙ > 0
+3. Î±â‚™ = C
+   â€¢ Point violates margin or misclassified
+   â€¢ IS a support vector
+   â€¢ Has slack Î¾â‚™ > 0
 
 Recovery of w:
-w = Σₙ αₙyₙxₙ (only sum over αₙ > 0)
+w = Î£â‚™ Î±â‚™yâ‚™xâ‚™ (only sum over Î±â‚™ > 0)
 
 Prediction:
-f(x) = Σₙ αₙyₙ⟨xₙ,x⟩ + b`;
+f(x) = Î£â‚™ Î±â‚™yâ‚™âŸ¨xâ‚™,xâŸ© + b`;
 			}
 
 			// Lab 13: Convex Hull
 			function showConvexHull() {
-				document.getElementById(
-					"hullOutput"
-				).innerHTML = `Convex Hull Interpretation
-══════════════════════════
+				document.getElementById("hullOutput").innerHTML =
+					`Convex Hull Interpretation
+â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
 Convex hull = smallest convex set containing all points
 
 Positive class convex hull:
-conv(X₊) = {Σₙ αₙxₙ : Σαₙ=1, αₙ≥0, yₙ=+1}
+conv(Xâ‚Š) = {Î£â‚™ Î±â‚™xâ‚™ : Î£Î±â‚™=1, Î±â‚™â‰¥0, yâ‚™=+1}
 
 Negative class convex hull:
-conv(X₁‹) = {Σₙ αₙxₙ : Σαₙ=1, αₙ≥0, yₙ=-1}
+conv(Xâ‚â‚) = {Î£â‚™ Î±â‚™xâ‚™ : Î£Î±â‚™=1, Î±â‚™â‰¥0, yâ‚™=-1}
 
 SVM finds:
-• Closest points c ∈ conv(X₊) and d ∈ conv(X₁‹)
-• Hyperplane perpendicular to (c - d)
-• Bisecting the line between c and d
+â€¢ Closest points c âˆˆ conv(Xâ‚Š) and d âˆˆ conv(Xâ‚â‚)
+â€¢ Hyperplane perpendicular to (c - d)
+â€¢ Bisecting the line between c and d
 
 Geometric view:
 w = c - d (difference vector)
-Margin = ‗c - d‗ / 2
+Margin = â€—c - dâ€— / 2
 
-Soft margin: "reduced hull" with αₙ ≤ C
+Soft margin: "reduced hull" with Î±â‚™ â‰¤ C
 (shrinks the convex hull)`;
 			}
 
@@ -2973,65 +2974,63 @@ Soft margin: "reduced hull" with αₙ ≤ C
 			function showGramMatrix() {
 				const kernel = document.getElementById("gramKernel").value;
 
-				document.getElementById(
-					"gramOutput"
-				).innerHTML = `Gram (Kernel) Matrix K
-══════════════════════
-K ∈ ℝᴺˣᴺ where K[i,j] = k(xᵀ¢, x∂¼)
+				document.getElementById("gramOutput").innerHTML =
+					`Gram (Kernel) Matrix K
+â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
+K âˆˆ â„á´ºË£á´º where K[i,j] = k(xáµ€Â¢, xâˆ‚Â¼)
 
 ${
 	kernel === "linear"
-		? `Linear kernel: K[i,j] = xᵀ¢ᵀx∂¼
+		? `Linear kernel: K[i,j] = xáµ€Â¢áµ€xâˆ‚Â¼
 
-Example (3 points in ℝ²):
-x₁ = [1,0], x₂ = [0,1], x₃ = [1,1]
+Example (3 points in â„Ã‚Â²):
+xâ‚ = [1,0], xâ‚‚ = [0,1], xâ‚ƒ = [1,1]
 
-K = ⌈ 1  0  1 ⌉
-    │ 0  1  1 │
-    ⌊ 1  1  2 ⌋`
-		: `RBF kernel: K[i,j] = exp(-γ‗xᵀ¢-x∂¼‖²)
+K = âŒˆ 1  0  1 âŒ‰
+    â”‚ 0  1  1 â”‚
+    âŒŠ 1  1  2 âŒ‹`
+		: `RBF kernel: K[i,j] = exp(-Î³â€—xáµ€Â¢-xâˆ‚Â¼â€–Â²)
 
-Example (γ = 1):
-x₁ = [0,0], x₂ = [1,0], x₃ = [0,1]
+Example (Î³ = 1):
+xâ‚ = [0,0], xâ‚‚ = [1,0], xâ‚ƒ = [0,1]
 
-K ≈ ⌈ 1.00  0.37  0.37 ⌉
-    │ 0.37  1.00  0.14 │
-    ⌊ 0.37  0.14  1.00 ⌋`
+K â‰ˆ âŒˆ 1.00  0.37  0.37 âŒ‰
+    â”‚ 0.37  1.00  0.14 â”‚
+    âŒŠ 0.37  0.14  1.00 âŒ‹`
 }
 
 Properties of valid K:
-• Symmetric: K = Kᵀ
-• Positive semi-definite: zᵀKz ≥ 0 for all z
-• Diagonal entries: K[i,i] = k(xᵀ¢,xᵀ¢)`;
+â€¢ Symmetric: K = Káµ€
+â€¢ Positive semi-definite: záµ€Kz â‰¥ 0 for all z
+â€¢ Diagonal entries: K[i,i] = k(xáµ€Â¢,xáµ€Â¢)`;
 			}
 
 			// Lab 15: Decision Boundary
 			function showDecisionBoundary() {
-				document.getElementById(
-					"boundaryOutput"
-				).innerHTML = `Decision Boundary & Margin Bands
-═════════════════════════════════
+				document.getElementById("boundaryOutput").innerHTML =
+					`Decision Boundary & Margin Bands
+â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
 Three parallel hyperplanes:
 
-1. Decision boundary: ⟨w,x⟩ + b = 0
-   • Points on this surface are uncertain
-   • f(x) = 0
+1. Decision boundary: âŸ¨w,xâŸ© + b = 0
+   â€¢ Points on this surface are uncertain
+   â€¢ f(x) = 0
 
-2. Positive margin: ⟨w,x⟩ + b = +1
-   • Positive support vectors lie here
-   • Closest +1 points
+2. Positive margin: âŸ¨w,xâŸ© + b = +1
+   â€¢ Positive support vectors lie here
+   â€¢ Closest +1 points
 
-3. Negative margin: ⟨w,x⟩ + b = -1
-   • Negative support vectors lie here
-   • Closest -1 points
+3. Negative margin: âŸ¨w,xâŸ© + b = -1
+   â€¢ Negative support vectors lie here
+   â€¢ Closest -1 points
 
 The "margin band" is the region between:
--1 < ⟨w,x⟩ + b < +1
+-1 < âŸ¨w,xâŸ© + b < +1
 
-Width of margin band = 2/‗w‗
+Width of margin band = 2/â€—wâ€—
 
 In soft margin: some points may be
-inside this band (slack ξ > 0)`;
+inside this band (slack Î¾ > 0)`;
 			}
 
 			// Initialize

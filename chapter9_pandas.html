@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 	<head>
 		<meta charset="UTF-8" />
@@ -173,7 +173,7 @@
 				overflow: hidden;
 			}
 			.hero::after {
-				content: "{ }";
+				content: "📝¼";
 				position: absolute;
 				bottom: 20px;
 				right: 40px;
@@ -403,7 +403,7 @@
 				gap: 0.5rem;
 			}
 			.dataframe-box .label::before {
-				content: "📋";
+				content: "📝‹";
 			}
 			.cleaning-box {
 				background: linear-gradient(
@@ -428,7 +428,7 @@
 				gap: 0.5rem;
 			}
 			.cleaning-box .label::before {
-				content: "🧹";
+				content: "📝§¹";
 			}
 			.groupby-box {
 				background: linear-gradient(
@@ -649,7 +649,7 @@
 				gap: 0.5rem;
 			}
 			.summary-item::before {
-				content: "✓";
+				content: "🐍";
 				background: var(--quanskill-orange);
 				width: 20px;
 				height: 20px;
@@ -829,11 +829,11 @@
 		</style>
 	</head>
 	<body>
-		<a href="index.html" class="floating-back-btn">← Main Page</a>
+		<a href="index.html" class="floating-back-btn">← Main Page</a>
 		<header class="header">
 			<div class="header-content">
 				<!-- <a href="index.html" class="header-logo"><img src="Logo_for_Print.jpg" alt="Quanskill" style="height: 40px; border-radius: 8px;"></a> -->
-				<button class="mobile-menu-btn" onclick="toggleSidebar()">☰</button>
+				<button class="mobile-menu-btn" onclick="toggleSidebar()">â˜°</button>
 			</div>
 		</header>
 		<div class="progress-bar">
@@ -847,7 +847,7 @@
 						alt="Quanskill"
 						style="height: 36px; border-radius: 6px"
 				/></a>
-				<div class="chapter-title">Chapter 9 · Pandas</div>
+				<div class="chapter-title">Chapter 9 Â· Pandas</div>
 			</div>
 			<div class="nav-section">
 				<div class="nav-section-title">Overview</div>
@@ -886,12 +886,12 @@
 						<span class="hero-badge">Chapter 9</span>
 						<h1>Pandas Fundamentals</h1>
 						<p class="hero-subtitle">
-							Master Pandas — the essential library for data manipulation and
+							Master Pandas - the essential library for data manipulation and
 							analysis. Learn to work with tabular data like a pro.
 						</p>
 						<div class="hero-quote">
 							"Pandas makes data cleaning and analysis fast and convenient. It's
-							where NumPy meets real-world data."<br /><br />—
+							where NumPy meets real-world data."<br /><br />-
 							<strong>Quanskill Data Science Philosophy</strong>
 						</div>
 					</div>
@@ -905,17 +905,17 @@
 						<p>1D labeled array</p>
 					</div>
 					<div class="concept-card dataframe">
-						<div class="icon">📋</div>
+						<div class="icon">📝‹</div>
 						<h5>DataFrame</h5>
 						<p>2D tabular data</p>
 					</div>
 					<div class="concept-card dataframe">
-						<div class="icon">📁</div>
+						<div class="icon">🐍"</div>
 						<h5>Data I/O</h5>
 						<p>CSV, Excel, JSON</p>
 					</div>
 					<div class="concept-card cleaning">
-						<div class="icon">🧹</div>
+						<div class="icon">📝§¹</div>
 						<h5>Cleaning</h5>
 						<p>Handle missing data</p>
 					</div>
@@ -925,7 +925,7 @@
 						<p>Split-apply-combine</p>
 					</div>
 					<div class="concept-card series">
-						<div class="icon">🔗</div>
+						<div class="icon">🔍—</div>
 						<h5>Merge</h5>
 						<p>Combine datasets</p>
 					</div>
@@ -1068,7 +1068,7 @@ df.iloc[:<span class="code-number">2</span>, :<span class="code-number">2</span>
 <span class="code-comment"># Boolean indexing</span>
 df[df[<span class="code-string">'Age'</span>] > <span class="code-number">25</span>]     <span class="code-comment"># Rows where Age > 25</span></code></pre>
 					<div class="note-box">
-						<span class="label">⚠ loc vs iloc</span>
+						<span class="label">âš  loc vs iloc</span>
 						<p>
 							<strong>loc</strong> uses labels (inclusive on both ends).
 							<strong>iloc</strong> uses integer positions (exclusive on the
@@ -1323,7 +1323,7 @@ df.<span class="code-function">groupby</span>(<span class="code-string">'Departm
 						<h2>Chapter 9 Review</h2>
 					</div>
 					<p>
-						You've learned the fundamentals of Pandas — essential for data
+						You've learned the fundamentals of Pandas - essential for data
 						manipulation and analysis in Python.
 					</p>
 					<div class="summary-box">
@@ -1406,7 +1406,7 @@ df.<span class="code-function">groupby</span>(<span class="code-string">'Departm
 				const options = element.parentElement.querySelectorAll(".quiz-option");
 				const feedbacks =
 					element.parentElement.parentElement.querySelectorAll(
-						".quiz-feedback"
+						".quiz-feedback",
 					);
 				options.forEach((opt) => opt.classList.remove("correct", "incorrect"));
 				feedbacks.forEach((fb) => fb.classList.remove("show"));

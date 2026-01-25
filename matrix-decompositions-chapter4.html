@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 	<head>
 		<meta charset="UTF-8" />
@@ -203,7 +203,7 @@
 			}
 
 			.hero::after {
-				content: "";
+				content: "🔍²";
 				position: absolute;
 				bottom: -30%;
 				left: -10%;
@@ -385,7 +385,7 @@
 			}
 
 			.ml-box .label::before {
-				content: "🤓";
+				content: "📝¤“";
 			}
 
 			/* Quanskill Training Box */
@@ -457,7 +457,7 @@
 			}
 
 			.realworld-box .label::before {
-				content: "🎁";
+				content: "🎯";
 			}
 
 			/* Example Boxes */
@@ -483,7 +483,7 @@
 			}
 
 			.example-box .label::before {
-				content: "▸";
+				content: "â–¸";
 				color: var(--quanskill-orange);
 			}
 
@@ -626,7 +626,7 @@
 			}
 
 			.interactive-demo h4::before {
-				content: "⚡";
+				content: "âš¡";
 			}
 
 			.demo-controls {
@@ -674,7 +674,9 @@
 				font-family: "Space Grotesk", sans-serif;
 				font-weight: 600;
 				cursor: pointer;
-				transition: transform 0.2s, box-shadow 0.2s;
+				transition:
+					transform 0.2s,
+					box-shadow 0.2s;
 			}
 
 			.demo-btn:hover {
@@ -724,7 +726,9 @@
 				border: 1px solid var(--border-color);
 				border-radius: 12px;
 				padding: 1.25rem;
-				transition: transform 0.2s, box-shadow 0.2s;
+				transition:
+					transform 0.2s,
+					box-shadow 0.2s;
 			}
 
 			.concept-card:hover {
@@ -879,7 +883,9 @@
 			.section {
 				opacity: 0;
 				transform: translateY(20px);
-				transition: opacity 0.5s ease, transform 0.5s ease;
+				transition:
+					opacity 0.5s ease,
+					transform 0.5s ease;
 			}
 
 			.section.visible {
@@ -980,7 +986,7 @@
 	</head>
 	<body>
 		<!-- Floating Back to Main Page Button -->
-		<a href="index.html" class="floating-back-btn">← Main Page</a>
+		<a href="index.html" class="floating-back-btn">← Main Page</a>
 
 		<!-- Header -->
 		<header class="header">
@@ -989,7 +995,7 @@
                 <a href="index.html"><img src="Logo_for_Print.jpg" alt="Quanskill" style="height: 50px; border-radius: 8px;"></a>
                 <span>Quanskill</span>
             </div> -->
-				<button class="nav-toggle" onclick="toggleSidebar()">☰</button>
+				<button class="nav-toggle" onclick="toggleSidebar()">â˜°</button>
 			</div>
 		</header>
 
@@ -1027,7 +1033,7 @@
 						<p>
 							Learn to break down complex matrices into simpler, interpretable
 							components. These techniques power everything from image
-							compression to recommendation systems — the core tools every ML
+							compression to recommendation systems - the core tools every ML
 							engineer needs.
 						</p>
 					</div>
@@ -1036,16 +1042,16 @@
 				<!-- Key Concepts Overview -->
 				<div class="key-concepts">
 					<div class="concept-card">
-						<div class="icon">🔍</div>
+						<div class="icon">🐍"</div>
 						<h5>Determinants</h5>
 						<p>
-							Measure how transformations scale space — key for invertibility
+							Measure how transformations scale space - key for invertibility
 						</p>
 					</div>
 					<div class="concept-card">
-						<div class="icon">⚡</div>
+						<div class="icon">âš¡</div>
 						<h5>Eigenvalues</h5>
-						<p>The "DNA" of a matrix — reveal its fundamental behavior</p>
+						<p>The "DNA" of a matrix - reveal its fundamental behavior</p>
 					</div>
 					<div class="concept-card">
 						<div class="icon">📊</div>
@@ -1053,7 +1059,7 @@
 						<p>The Swiss Army knife of matrix decompositions</p>
 					</div>
 					<div class="concept-card">
-						<div class="icon">🗄"</div>
+						<div class="icon">📝—„"</div>
 						<h5>Low-Rank Approximation</h5>
 						<p>Compress data while preserving essential information</p>
 					</div>
@@ -1087,7 +1093,7 @@
 					<div class="ml-box">
 						<div class="label">Why This Matters in ML</div>
 						<p>
-							The determinant tells you if a matrix is invertible — critical
+							The determinant tells you if a matrix is invertible - critical
 							when solving linear systems in regression. It also measures how a
 							transformation scales volume, which appears in probability
 							distributions (the Jacobian determinant in normalizing flows). The
@@ -1189,7 +1195,7 @@
 							</li>
 							<li>
 								\(\det(\mathbf{A}) = 0\): Matrix is
-								<strong>singular</strong> (not invertible) — columns are
+								<strong>singular</strong> (not invertible) - columns are
 								linearly dependent
 							</li>
 						</ul>
@@ -1258,14 +1264,14 @@
 							\text{tr}(\mathbf{B})\)
 						</li>
 						<li>
-							\(\text{tr}(\mathbf{AB}) = \text{tr}(\mathbf{BA})\) — cyclic
+							\(\text{tr}(\mathbf{AB}) = \text{tr}(\mathbf{BA})\) - cyclic
 							property!
 						</li>
 						<li>
-							\(\text{tr}(\mathbf{A}) = \sum_i \lambda_i\) — sum of eigenvalues
+							\(\text{tr}(\mathbf{A}) = \sum_i \lambda_i\) - sum of eigenvalues
 						</li>
 						<li>
-							\(\det(\mathbf{A}) = \prod_i \lambda_i\) — product of eigenvalues
+							\(\det(\mathbf{A}) = \prod_i \lambda_i\) - product of eigenvalues
 						</li>
 					</ul>
 
@@ -1291,7 +1297,7 @@
 					<p>
 						Eigenvalues and eigenvectors reveal the fundamental behavior of a
 						matrix transformation. They tell us which directions are preserved
-						(only scaled) when the transformation is applied — like finding the
+						(only scaled) when the transformation is applied - like finding the
 						"natural axes" of the transformation.
 					</p>
 
@@ -1299,7 +1305,7 @@
 						<div class="label">Why This Matters in ML</div>
 						<p>
 							<strong>PCA</strong> finds the eigenvectors of the covariance
-							matrix — these are the principal components!
+							matrix - these are the principal components!
 							<strong>Google's PageRank</strong> is the eigenvector of the web's
 							link matrix. <strong>Spectral clustering</strong> uses
 							eigenvectors to partition data. Understanding eigenvalues helps
@@ -1321,7 +1327,7 @@
 						<div class="math-display">$$\mathbf{Ax} = \lambda\mathbf{x}$$</div>
 						<p>
 							In other words, \(\mathbf{A}\) only <em>scales</em> the
-							eigenvector — it doesn't change its direction!
+							eigenvector - it doesn't change its direction!
 						</p>
 					</div>
 
@@ -1372,7 +1378,7 @@
 								</div>
 							</div>
 							<button class="demo-btn" onclick="animateEigen()">
-								▶ Animate Transform
+								â–¶ Animate Transform
 							</button>
 						</div>
 						<canvas
@@ -1383,7 +1389,7 @@
 						<div class="demo-result" id="eigenResult">
 							<p>
 								<strong>Eigenvalues:</strong>
-								<span id="eigenvalues">λ₁ = 3, λ₂ = 1</span>
+								<span id="eigenvalues">Î»â‚ = 3, Î»â‚‚ = 1</span>
 							</p>
 							<p
 								style="color: var(--text-secondary); margin-top: 0.5rem"
@@ -1485,7 +1491,7 @@
 							In our <strong>Dimensionality Reduction</strong> course, you'll
 							compute eigenvectors of real datasets to find principal
 							components. You'll see how the largest eigenvalues correspond to
-							directions of maximum variance — and use this to compress images
+							directions of maximum variance - and use this to compress images
 							and visualize high-dimensional data!
 						</p>
 					</div>
@@ -1502,7 +1508,7 @@
 						The Cholesky decomposition is like taking the "square root" of a
 						matrix. Just as \(9 = 3 \times 3\), we can decompose certain
 						matrices into \(\mathbf{A} = \mathbf{LL}^\top\). This only works for
-						symmetric, positive definite matrices — but those are everywhere in
+						symmetric, positive definite matrices - but those are everywhere in
 						ML!
 					</p>
 
@@ -1608,7 +1614,9 @@
 									</p>
 									<p
 										id="choleskyL"
-										style="font-family: 'JetBrains Mono', monospace"></p>
+										style="
+											font-family: &quot;JetBrains Mono&quot;, monospace;
+										"></p>
 								</div>
 								<span style="font-size: 1.5rem">×</span>
 								<div style="text-align: center">
@@ -1617,7 +1625,9 @@
 									</p>
 									<p
 										id="choleskyLT"
-										style="font-family: 'JetBrains Mono', monospace"></p>
+										style="
+											font-family: &quot;JetBrains Mono&quot;, monospace;
+										"></p>
 								</div>
 							</div>
 							<p
@@ -1631,7 +1641,7 @@
 						<li>
 							<strong>Solving linear systems</strong>: Instead of inverting
 							\(\mathbf{A}\), solve \(\mathbf{Ly} = \mathbf{b}\) then
-							\(\mathbf{L}^\top\mathbf{x} = \mathbf{y}\) — both are easy
+							\(\mathbf{L}^\top\mathbf{x} = \mathbf{y}\) - both are easy
 							triangular systems!
 						</li>
 						<li>
@@ -1682,7 +1692,7 @@
 							implement Gaussian Process regression using Cholesky
 							decomposition. You'll see how <code>np.linalg.cholesky()</code> is
 							much faster than <code>np.linalg.inv()</code> and numerically more
-							stable — essential for real-world applications!
+							stable - essential for real-world applications!
 						</p>
 					</div>
 				</section>
@@ -1735,7 +1745,7 @@
 					<div class="interactive-demo">
 						<h4>Interactive: Eigendecomposition as Transformations</h4>
 						<p style="margin-bottom: 1rem; color: var(--text-secondary)">
-							See how A = PDP⁻¹ breaks a transformation into three steps:
+							See how A = PDPâ»Â¹ breaks a transformation into three steps:
 						</p>
 						<div style="text-align: center; margin: 1.5rem 0">
 							<div class="svd-equation">
@@ -1763,7 +1773,7 @@
 								<div
 									class="svd-matrix"
 									style="background: rgba(255, 144, 0, 0.1)">
-									<div class="name">P⁻¹</div>
+									<div class="name">Pâ»Â¹</div>
 									<div class="dims">Change back</div>
 								</div>
 							</div>
@@ -1780,7 +1790,7 @@
 								1. Original
 							</button>
 							<button class="demo-btn secondary" onclick="stepEigendecomp(1)">
-								2. P⁻¹
+								2. Pâ»Â¹
 							</button>
 							<button class="demo-btn" onclick="stepEigendecomp(2)">
 								3. D
@@ -1799,7 +1809,7 @@
 						\end{pmatrix}\mathbf{P}^{-1}$$
 					</div>
 					<p>
-						No need to multiply \(\mathbf{A}\) by itself \(k\) times — just
+						No need to multiply \(\mathbf{A}\) by itself \(k\) times - just
 						raise the eigenvalues to power \(k\)!
 					</p>
 
@@ -1807,7 +1817,7 @@
 					<div class="quiz-box">
 						<div class="label">Quick Check: Diagonalization</div>
 						<p class="quiz-question">
-							Matrix A has repeated eigenvalue λ=2 but only one eigenvector. Is
+							Matrix A has repeated eigenvalue Î»=2 but only one eigenvector. Is
 							A diagonalizable?
 						</p>
 						<div class="quiz-options" id="quiz4">
@@ -1870,7 +1880,7 @@
 					</div>
 
 					<p>
-						The SVD is the "crown jewel" of matrix decompositions — it works for
+						The SVD is the "crown jewel" of matrix decompositions - it works for
 						<em>any</em> matrix (not just square ones!) and provides deep
 						insight into the structure of linear transformations. It's been
 						called the "fundamental theorem of linear algebra."
@@ -1903,16 +1913,16 @@
 						<p>where:</p>
 						<ul>
 							<li>
-								\(\mathbf{U} \in \mathbb{R}^{m \times m}\) — orthogonal matrix
+								\(\mathbf{U} \in \mathbb{R}^{m \times m}\) - orthogonal matrix
 								of <strong>left singular vectors</strong>
 							</li>
 							<li>
-								\(\mathbf{\Sigma} \in \mathbb{R}^{m \times n}\) — diagonal
+								\(\mathbf{\Sigma} \in \mathbb{R}^{m \times n}\) - diagonal
 								matrix of <strong>singular values</strong> \(\sigma_1 \geq
 								\sigma_2 \geq \cdots \geq 0\)
 							</li>
 							<li>
-								\(\mathbf{V} \in \mathbb{R}^{n \times n}\) — orthogonal matrix
+								\(\mathbf{V} \in \mathbb{R}^{n \times n}\) - orthogonal matrix
 								of <strong>right singular vectors</strong>
 							</li>
 						</ul>
@@ -1920,7 +1930,7 @@
 
 					<!-- Interactive: SVD Visualization -->
 					<div class="interactive-demo">
-						<h4>Interactive: SVD = Rotate → Scale → Rotate</h4>
+						<h4>Interactive: SVD = Rotate ←’ Scale ←’ Rotate</h4>
 						<p style="margin-bottom: 1rem; color: var(--text-secondary)">
 							Watch how SVD decomposes any transformation into three intuitive
 							steps:
@@ -1944,7 +1954,7 @@
 								<div
 									class="svd-matrix"
 									style="background: rgba(16, 185, 129, 0.1)">
-									<div class="name">Σ</div>
+									<div class="name">Î£</div>
 									<div class="dims">m × n (scale)</div>
 								</div>
 								<span>×</span>
@@ -1968,7 +1978,7 @@
 							<button class="demo-btn secondary" onclick="stepSVD(1)">
 								2. V<sup>T</sup>
 							</button>
-							<button class="demo-btn" onclick="stepSVD(2)">3. Σ</button>
+							<button class="demo-btn" onclick="stepSVD(2)">3. Î£</button>
 							<button class="demo-btn secondary" onclick="stepSVD(3)">
 								4. U (Final)
 							</button>
@@ -2047,7 +2057,7 @@
 							<strong>Netflix Prize</strong>: The famous $1M competition was won
 							using matrix factorization (SVD-like methods). A user-movie rating
 							matrix is decomposed to discover latent factors like "action
-							movies" or "romantic comedies" — without ever explicitly defining
+							movies" or "romantic comedies" - without ever explicitly defining
 							these categories!
 						</p>
 					</div>
@@ -2084,7 +2094,7 @@
 							<strong>Image compression</strong>: Store only the top-k singular
 							values/vectors instead of millions of pixels.
 							<strong>Noise reduction</strong>: Small singular values often
-							correspond to noise — truncate them!
+							correspond to noise - truncate them!
 							<strong>Dimensionality reduction</strong>: PCA keeps top-k
 							principal components. <strong>Latent factor models</strong>:
 							Approximate high-dimensional data with low-dimensional
@@ -2122,7 +2132,7 @@
 							style="flex-direction: column; align-items: center">
 							<label
 								style="
-									font-family: 'Space Grotesk', sans-serif;
+									font-family: &quot;Space Grotesk&quot;, sans-serif;
 									margin-bottom: 0.5rem;
 								">
 								<strong>Rank k:</strong> <span id="rankValue">5</span>
@@ -2156,7 +2166,7 @@
 									color: var(--text-secondary);
 									font-size: 0.9rem;
 								">
-								Energy = (Σσ²<sub>kept</sub>) / (Σσ²<sub>total</sub>)
+								Energy = (Î£ÏƒÂ²<sub>kept</sub>) / (Î£ÏƒÂ²<sub>total</sub>)
 							</p>
 						</div>
 					</div>
@@ -2241,13 +2251,13 @@
 				<!-- Summary Section -->
 				<section class="section" id="summary">
 					<div class="section-header">
-						<span class="section-number">📝</span>
+						<span class="section-number">🐍"</span>
 						<h2>Chapter Summary</h2>
 					</div>
 
 					<div class="key-concepts">
 						<div class="concept-card">
-							<div class="icon">🔍</div>
+							<div class="icon">🐍"</div>
 							<h5>Determinant</h5>
 							<p>
 								Measures signed volume change. det=0 means singular (not
@@ -2255,15 +2265,15 @@
 							</p>
 						</div>
 						<div class="concept-card">
-							<div class="icon">⚡</div>
+							<div class="icon">âš¡</div>
 							<h5>Eigenvalues</h5>
 							<p>
-								Ax = λx. Reveal scaling along special directions. Sum = trace,
+								Ax = Î»x. Reveal scaling along special directions. Sum = trace,
 								product = det.
 							</p>
 						</div>
 						<div class="concept-card">
-							<div class="icon">📐</div>
+							<div class="icon">🐍"</div>
 							<h5>Cholesky</h5>
 							<p>
 								A = LL<sup>T</sup> for symmetric positive definite. Fast &
@@ -2271,7 +2281,7 @@
 							</p>
 						</div>
 						<div class="concept-card">
-							<div class="icon">🔄</div>
+							<div class="icon">🔍„</div>
 							<h5>Eigendecomposition</h5>
 							<p>
 								A = PDP<sup>-1</sup>. Makes powers easy. Works for
@@ -2279,15 +2289,15 @@
 							</p>
 						</div>
 						<div class="concept-card">
-							<div class="icon">🎸</div>
+							<div class="icon">📝Ž¸</div>
 							<h5>SVD</h5>
 							<p>
-								A = UΣV<sup>T</sup>. Works for ANY matrix. The ultimate
+								A = UÎ£V<sup>T</sup>. Works for ANY matrix. The ultimate
 								decomposition.
 							</p>
 						</div>
 						<div class="concept-card">
-							<div class="icon">🗄"</div>
+							<div class="icon">📝—„"</div>
 							<h5>Low-Rank Approx</h5>
 							<p>
 								Keep top-k singular values. Optimal compression (Eckart-Young).
@@ -2324,17 +2334,17 @@
 					<div class="quanskill-box">
 						<div class="label">Your Next Steps with Quanskill</div>
 						<p>
-							🎯° <strong>Congratulations!</strong> You've mastered the core
+							🎯Â° <strong>Congratulations!</strong> You've mastered the core
 							matrix decomposition techniques. Here's your Quanskill learning
 							path:
 						</p>
 						<ul>
 							<li>
-								<strong>Chapter 5</strong>: Vector Calculus — gradients and
+								<strong>Chapter 5</strong>: Vector Calculus - gradients and
 								optimization for ML
 							</li>
 							<li>
-								<strong>Chapter 6</strong>: Probability — foundations for
+								<strong>Chapter 6</strong>: Probability - foundations for
 								statistical ML
 							</li>
 							<li>
@@ -2358,7 +2368,7 @@
 						color: var(--text-secondary);
 						font-size: 0.9rem;
 					">
-					<p><strong>Quanskill</strong> — Making ML Education Accessible</p>
+					<p><strong>Quanskill</strong> - Making ML Education Accessible</p>
 					<p style="margin-top: 1rem; font-size: 0.8rem">
 						© 2024 Quanskill. All rights reserved.
 					</p>
@@ -2397,7 +2407,7 @@
 							}
 						});
 					},
-					{ threshold: 0.1 }
+					{ threshold: 0.1 },
 				);
 
 				sections.forEach((section) => observer.observe(section));
@@ -2458,7 +2468,7 @@
 
 				if (isCorrect) {
 					element.classList.add("correct");
-					feedback.innerHTML = "✅ Correct! Great understanding!";
+					feedback.innerHTML = "âœ… Correct! Great understanding!";
 					feedback.className = "quiz-feedback show correct";
 				} else {
 					element.classList.add("incorrect");
@@ -2468,7 +2478,7 @@
 						}
 					});
 					feedback.innerHTML =
-						"❌ Not quite. The correct answer is highlighted above.";
+						"âŒ Not quite. The correct answer is highlighted above.";
 					feedback.className = "quiz-feedback show incorrect";
 				}
 			}
@@ -2486,14 +2496,14 @@
 				let interpretation = "";
 				if (Math.abs(det) < 0.001) {
 					interpretation =
-						"š  Singular matrix (not invertible) — columns are linearly dependent";
+						"Ã…Â¡Ã‚Â  Singular matrix (not invertible) - columns are linearly dependent";
 				} else if (det > 0) {
 					interpretation =
-						"✓ Invertible, preserves orientation. Area scaled by " +
+						"âœ“ Invertible, preserves orientation. Area scaled by " +
 						Math.abs(det).toFixed(2);
 				} else {
 					interpretation =
-						"✓ Invertible, reverses orientation (reflection). Area scaled by " +
+						"âœ“ Invertible, reverses orientation (reflection). Area scaled by " +
 						Math.abs(det).toFixed(2);
 				}
 				document.getElementById("detInterpretation").textContent =
@@ -2571,11 +2581,11 @@
 				ctx.moveTo(toX, toY);
 				ctx.lineTo(
 					toX + headLength * Math.cos(angle - Math.PI / 6),
-					toY + headLength * Math.sin(angle - Math.PI / 6)
+					toY + headLength * Math.sin(angle - Math.PI / 6),
 				);
 				ctx.lineTo(
 					toX + headLength * Math.cos(angle + Math.PI / 6),
-					toY + headLength * Math.sin(angle + Math.PI / 6)
+					toY + headLength * Math.sin(angle + Math.PI / 6),
 				);
 				ctx.closePath();
 				ctx.fill();
@@ -2588,7 +2598,7 @@
 				const c = parseFloat(document.getElementById("eig_c").value) || 0;
 				const d = parseFloat(document.getElementById("eig_d").value) || 0;
 
-				// Calculate eigenvalues for 2x2: λ² - (a+d)λ + (ad-bc) = 0
+				// Calculate eigenvalues for 2x2: Î»Â² - (a+d)Î» + (ad-bc) = 0
 				const trace = a + d;
 				const det = a * d - b * c;
 				const discriminant = trace * trace - 4 * det;
@@ -2599,14 +2609,14 @@
 				if (discriminant >= 0) {
 					const lambda1 = (trace + Math.sqrt(discriminant)) / 2;
 					const lambda2 = (trace - Math.sqrt(discriminant)) / 2;
-					eigText = `λ₁ = ${lambda1.toFixed(2)}, λ₂ = ${lambda2.toFixed(2)}`;
+					eigText = `Î»â‚ = ${lambda1.toFixed(2)}, Î»â‚‚ = ${lambda2.toFixed(2)}`;
 					explanation =
-						"Real eigenvalues — matrix stretches/compresses along eigenvector directions";
+						"Real eigenvalues - matrix stretches/compresses along eigenvector directions";
 				} else {
 					const real = trace / 2;
 					const imag = Math.sqrt(-discriminant) / 2;
-					eigText = `λ = ${real.toFixed(2)} ± ${imag.toFixed(2)}i`;
-					explanation = "Complex eigenvalues — matrix involves rotation";
+					eigText = `Î» = ${real.toFixed(2)} Â± ${imag.toFixed(2)}i`;
+					explanation = "Complex eigenvalues - matrix involves rotation";
 				}
 
 				document.getElementById("eigenvalues").textContent = eigText;
@@ -2675,7 +2685,7 @@
 						cx - v1x * scale * 2,
 						cy + v1y * scale * 2,
 						cx + v1x * scale * 2,
-						cy - v1y * scale * 2
+						cy - v1y * scale * 2,
 					);
 
 					// Draw eigenvector 2
@@ -2700,7 +2710,7 @@
 						cx - v2x * scale * 2,
 						cy + v2y * scale * 2,
 						cx + v2x * scale * 2,
-						cy - v2y * scale * 2
+						cy - v2y * scale * 2,
 					);
 				}
 
@@ -2717,7 +2727,7 @@
 						cy - y * scale * 1.5,
 						3,
 						0,
-						Math.PI * 2
+						Math.PI * 2,
 					);
 					ctx.fill();
 				}
@@ -2726,7 +2736,7 @@
 			function animateEigen() {
 				// Simple animation placeholder
 				alert(
-					"Animation coming soon! For now, modify matrix values to see eigenvector directions."
+					"Animation coming soon! For now, modify matrix values to see eigenvector directions.",
 				);
 			}
 
@@ -2746,23 +2756,21 @@
 					document.getElementById("choleskyL").textContent = "[ ? ]";
 					document.getElementById("choleskyLT").textContent = "[ ? ]";
 					document.getElementById("choleskyStatus").innerHTML =
-						'<span style="color: var(--error);">š  Matrix is not positive definite. Try: a > 0 and ad > b²</span>';
+						'<span style="color: var(--error);">Ã…Â¡Ã‚Â  Matrix is not positive definite. Try: a > 0 and ad > bÂ²</span>';
 					return;
 				}
 
-				// Compute Cholesky: L11 = sqrt(a), L21 = b/L11, L22 = sqrt(d - L21²)
+				// Compute Cholesky: L11 = sqrt(a), L21 = b/L11, L22 = sqrt(d - L21Â²)
 				const l11 = Math.sqrt(a);
 				const l21 = b / l11;
 				const l22 = Math.sqrt(d - l21 * l21);
 
-				document.getElementById("choleskyL").innerHTML = `[${l11.toFixed(
-					2
-				)}, 0]<br>[${l21.toFixed(2)}, ${l22.toFixed(2)}]`;
-				document.getElementById("choleskyLT").innerHTML = `[${l11.toFixed(
-					2
-				)}, ${l21.toFixed(2)}]<br>[0, ${l22.toFixed(2)}]`;
+				document.getElementById("choleskyL").innerHTML =
+					`[${l11.toFixed(2)}, 0]<br>[${l21.toFixed(2)}, ${l22.toFixed(2)}]`;
+				document.getElementById("choleskyLT").innerHTML =
+					`[${l11.toFixed(2)}, ${l21.toFixed(2)}]<br>[0, ${l22.toFixed(2)}]`;
 				document.getElementById("choleskyStatus").innerHTML =
-					'<span style="color: var(--success);">✓ Cholesky decomposition successful!</span>';
+					'<span style="color: var(--success);">âœ“ Cholesky decomposition successful!</span>';
 			}
 
 			// Eigendecomposition visualization
@@ -2804,7 +2812,7 @@
 				ctx.fillStyle = "#0b2fa0";
 				const stepLabels = [
 					"Original unit circle",
-					"After P⁻¹: Aligned with axes",
+					"After Pâ»Â¹: Aligned with axes",
 					"After D: Scaled by eigenvalues",
 					"After P: Final transformation",
 				];
@@ -2838,7 +2846,7 @@
 						cy - y * scale * 0.8,
 						4,
 						0,
-						Math.PI * 2
+						Math.PI * 2,
 					);
 					ctx.fill();
 				}
@@ -2898,19 +2906,18 @@
 				const stepLabels = [
 					"Original: Unit circle",
 					"V^T: Rotate input space",
-					"Σ: Scale axes (singular values)",
+					"Î£: Scale axes (singular values)",
 					"U: Rotate output space (Final)",
 				];
 				const stepDescriptions = [
 					"Click through to see SVD decomposition",
 					"V^T aligns input with singular directions",
-					"Σ stretches by σ₁=2.5, σ₂=1",
-					"U rotates to final orientation — this is Ax!",
+					"Î£ stretches by ÏÆ’â‚=2.5, Ïƒâ‚‚=1",
+					"U rotates to final orientation - this is Ax!",
 				];
 
-				document.getElementById(
-					"svdStep"
-				).innerHTML = `<strong>${stepLabels[step]}</strong><br><span style="color: var(--text-secondary);">${stepDescriptions[step]}</span>`;
+				document.getElementById("svdStep").innerHTML =
+					`<strong>${stepLabels[step]}</strong><br><span style="color: var(--text-secondary);">${stepDescriptions[step]}</span>`;
 
 				// Draw transformed points
 				ctx.fillStyle = "#0b2fa0";
@@ -2928,7 +2935,7 @@
 						y = -sin30 * temp + cos30 * y;
 					}
 					if (step >= 2) {
-						// Σ: scale
+						// Î£: scale
 						x *= 2.5;
 						y *= 1;
 					}
@@ -2947,7 +2954,7 @@
 						cy - y * scale * 0.7,
 						4,
 						0,
-						Math.PI * 2
+						Math.PI * 2,
 					);
 					ctx.fill();
 				}
@@ -3020,12 +3027,10 @@
 				const approxStorage = k * (100 + 100 + 1);
 				const compressionRatio = (originalStorage / approxStorage).toFixed(1);
 
-				document.getElementById(
-					"compressionRatio"
-				).textContent = `${compressionRatio}× (keeping ${k}/${n} components)`;
-				document.getElementById(
-					"energyRetained"
-				).textContent = `${energyRatio}%`;
+				document.getElementById("compressionRatio").textContent =
+					`${compressionRatio}× (keeping ${k}/${n} components)`;
+				document.getElementById("energyRetained").textContent =
+					`${energyRatio}%`;
 			}
 
 			// Smooth scrolling for nav links

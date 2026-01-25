@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 	<head>
 		<meta charset="UTF-8" />
@@ -385,7 +385,7 @@
 			}
 
 			.case-study-box .label::before {
-				content: "🏢";
+				content: "🐍Â¢";
 			}
 
 			.agentic-ai-box {
@@ -426,7 +426,7 @@
 			}
 
 			.agentic-ai-box .label::before {
-				content: "🤓";
+				content: "📝¤“";
 			}
 
 			.quiz-container {
@@ -566,7 +566,7 @@
 			}
 
 			.demo-header::before {
-				content: "⚡";
+				content: "âš¡";
 			}
 
 			.demo-number {
@@ -873,7 +873,7 @@
 	</head>
 	<body>
 		<!-- Floating Back to Main Page Button -->
-		<a href="index.html" class="floating-back-btn">← Main Page</a>
+		<a href="index.html" class="floating-back-btn">← Main Page</a>
 
 		<header class="header">
 			<div class="header-content">
@@ -888,7 +888,7 @@
 						><span class="stat-value" id="headerAccuracy">0%</span>
 					</div>
 				</div>
-				<button class="mobile-menu-btn" onclick="toggleSidebar()">☰</button>
+				<button class="mobile-menu-btn" onclick="toggleSidebar()">â˜°</button>
 			</div>
 		</header>
 
@@ -898,13 +898,13 @@
 
 		<nav class="sidebar" id="sidebar">
 			<div class="sidebar-header">
-				<!-- <a href="index.html" class="logo"
+				<a href="index.html" class="logo"
 					><img
 						src="Logo_for_Print.jpg"
 						alt="Quanskill"
 						style="height: 36px; border-radius: 6px"
-				/></a> -->
-				<div class="chapter-title">Chapter 11 · Gaussian Mixture Models</div>
+				/></a>
+				<div class="chapter-title">Chapter 11 Â· Gaussian Mixture Models</div>
 			</div>
 
 			<div class="score-display">
@@ -918,7 +918,7 @@
 			<div class="nav-section">
 				<div class="nav-section-title">Overview</div>
 				<a href="#intro" class="nav-link active">🎯 Practice Hub Home</a>
-				<a href="#interactive" class="nav-link">⚡ Interactive Labs (15)</a>
+				<a href="#interactive" class="nav-link">âš¡ Interactive Labs (15)</a>
 			</div>
 
 			<div class="nav-section">
@@ -1052,10 +1052,9 @@
 							variable perspectives.
 						</p>
 						<div class="hero-equation">
-							<strong>GMM:</strong> p(x|θ) = Σₖ πₖ N(x|μₖ, Σₖ) <br /><strong
-								>EM:</strong
-							>
-							E-step (responsibilities) → M-step (update μ, Σ, π)
+							<strong>GMM:</strong> p(x|Î¸) = Î£â‚– Ï€â‚– N(x|Î¼â‚–, Î£â‚–)
+							<br /><strong>EM:</strong> E-step (responsibilities) ←’ M-step
+							(update Î¼, Î£, Ï€)
 						</div>
 						<div class="topic-tags">
 							<span class="topic-tag">Mixture Models</span>
@@ -1122,12 +1121,12 @@
 					<!-- Lab 2: Mixture Weights -->
 					<div class="demo-container" id="lab2">
 						<div class="demo-header">
-							<h4>Mixture Weights πₖ</h4>
+							<h4>Mixture Weights Ï€â‚–</h4>
 							<span class="demo-number">Lab 2/15</span>
 						</div>
 						<div class="demo-controls">
 							<div class="control-group">
-								<label>π₁</label>
+								<label>Ï€â‚</label>
 								<input
 									type="range"
 									id="pi1"
@@ -1137,7 +1136,7 @@
 									onchange="updateWeights()" />
 							</div>
 							<div class="control-group">
-								<label>π₂</label>
+								<label>Ï€â‚‚</label>
 								<input
 									type="range"
 									id="pi2"
@@ -1147,7 +1146,7 @@
 									onchange="updateWeights()" />
 							</div>
 							<div class="control-group">
-								<label>π₃ (auto)</label>
+								<label>Ï€â‚ƒ (auto)</label>
 								<span id="pi3Display">0.20</span>
 							</div>
 							<button class="btn btn-orange" onclick="visualizeWeights()">
@@ -1163,7 +1162,7 @@
 					<!-- Lab 3: Responsibilities Visualization -->
 					<div class="demo-container" id="lab3">
 						<div class="demo-header">
-							<h4>Responsibilities rₙₗ</h4>
+							<h4>Responsibilities râ‚™â‚—</h4>
 							<span class="demo-number">Lab 3/15</span>
 						</div>
 						<div class="demo-controls">
@@ -1174,7 +1173,7 @@
 							<button
 								class="btn btn-primary"
 								onclick="computeResponsibilities()">
-								Compute rₙₗ
+								Compute râ‚™â‚—
 							</button>
 						</div>
 						<canvas id="respCanvas" class="demo-canvas"></canvas>
@@ -1448,8 +1447,8 @@
 						</div>
 						<div class="quiz-options">
 							<div class="quiz-option" onclick="checkAnswer(1, 0)">
-								A) A convex combination of K base distributions: p(x) = Σₖ
-								πₖpₖ(x)
+								A) A convex combination of K base distributions: p(x) = Î£â‚–
+								Ï€â‚–pâ‚–(x)
 							</div>
 							<div class="quiz-option" onclick="checkAnswer(1, 1)">
 								B) A single Gaussian distribution
@@ -1469,14 +1468,16 @@
 							<span class="quiz-number">Question 2</span>
 							<span class="quiz-difficulty difficulty-easy">Easy</span>
 						</div>
-						<div class="quiz-context">p(x|θ) = Σₖ πₖ N(x|μₖ, Σₖ)</div>
+						<div class="quiz-context">
+							p(x|Î¸) = Î£â‚– Ï€â‚– N(x|Î¼â‚–, Î£â‚–)
+						</div>
 						<div class="quiz-question">
 							In a Gaussian Mixture Model, each component is:
 						</div>
 						<div class="quiz-options">
 							<div class="quiz-option" onclick="checkAnswer(2, 0)">
-								A) A Gaussian distribution N(x|μₖ, Σₖ) with its own mean and
-								covariance
+								A) A Gaussian distribution N(x|Î¼â‚–, Î£â‚–) with its own mean
+								and covariance
 							</div>
 							<div class="quiz-option" onclick="checkAnswer(2, 1)">
 								B) A uniform distribution
@@ -1497,17 +1498,18 @@
 							<span class="quiz-difficulty difficulty-easy">Easy</span>
 						</div>
 						<div class="quiz-question">
-							The mixture weights πₖ must satisfy:
+							The mixture weights Ï€â‚– must satisfy:
 						</div>
 						<div class="quiz-options">
 							<div class="quiz-option" onclick="checkAnswer(3, 0)">
-								A) 0 ≤ πₖ ≤ 1 and Σₖ πₖ = 1 (form a probability distribution)
+								A) 0 â‰¤ Ï€â‚– â‰¤ 1 and Î£â‚– Ï€â‚– = 1 (form a probability
+								distribution)
 							</div>
 							<div class="quiz-option" onclick="checkAnswer(3, 1)">
-								B) All πₖ = 1/K (must be equal)
+								B) All Ï€â‚– = 1/K (must be equal)
 							</div>
 							<div class="quiz-option" onclick="checkAnswer(3, 2)">
-								C) Σₖ πₖ = K
+								C) Î£â‚– Ï€â‚– = K
 							</div>
 							<div class="quiz-option" onclick="checkAnswer(3, 3)">
 								D) No constraints needed
@@ -1522,20 +1524,21 @@
 							<span class="quiz-difficulty difficulty-easy">Easy</span>
 						</div>
 						<div class="quiz-question">
-							The full parameter set θ of a GMM with K components includes:
+							The full parameter set Î¸ of a GMM with K components includes:
 						</div>
 						<div class="quiz-options">
 							<div class="quiz-option" onclick="checkAnswer(4, 0)">
-								A) {μₖ, Σₖ, πₖ : k = 1,...,K} - means, covariances, and weights
+								A) {Î¼â‚–, Î£â‚–, Ï€â‚– : k = 1,...,K} - means, covariances, and
+								weights
 							</div>
 							<div class="quiz-option" onclick="checkAnswer(4, 1)">
-								B) Only the means μₖ
+								B) Only the means Î¼â‚–
 							</div>
 							<div class="quiz-option" onclick="checkAnswer(4, 2)">
-								C) Only the weights πₖ
+								C) Only the weights Ï€â‚–
 							</div>
 							<div class="quiz-option" onclick="checkAnswer(4, 3)">
-								D) A single parameter θ
+								D) A single parameter Î¸
 							</div>
 						</div>
 						<div class="quiz-feedback" id="feedback4"></div>
@@ -1573,7 +1576,8 @@
 							<span class="quiz-difficulty difficulty-easy">Easy</span>
 						</div>
 						<div class="quiz-context">
-							L = Σₙ log p(xₙ|θ) = Σₙ log Σₖ πₖN(xₙ|μₖ, Σₖ)
+							L = Î£â‚™ log p(xâ‚™|Î¸) = Î£â‚™ log Î£â‚– Ï€â‚–N(xâ‚™|Î¼â‚–,
+							Î£â‚–)
 						</div>
 						<div class="quiz-question">
 							The log-likelihood for GMM has a sum inside the log because:
@@ -1630,7 +1634,7 @@
 						<div class="quiz-question">When K = 1, a GMM reduces to:</div>
 						<div class="quiz-options">
 							<div class="quiz-option" onclick="checkAnswer(8, 0)">
-								A) A single Gaussian distribution N(x|μ, Σ)
+								A) A single Gaussian distribution N(x|Î¼, Î£)
 							</div>
 							<div class="quiz-option" onclick="checkAnswer(8, 1)">
 								B) A uniform distribution
@@ -1669,12 +1673,15 @@
 							<span class="quiz-difficulty difficulty-medium">Medium</span>
 						</div>
 						<div class="quiz-context">
-							rₙₗ = πₖN(xₙ|μₖ,Σₖ) / Σ∂¼ π∂¼N(xₙ|μ∂¼,Σ∂¼)
+							râ‚™â‚— = Ï€â‚–N(xâ‚™|Î¼â‚–,Î£â‚–) / Î£âˆ‚Â¼
+							Ï€âˆ‚Â¼N(xâ‚™|Î¼âˆ‚Â¼,Î£âˆ‚Â¼)
 						</div>
-						<div class="quiz-question">The responsibility rₙₗ represents:</div>
+						<div class="quiz-question">
+							The responsibility râ‚™â‚— represents:
+						</div>
 						<div class="quiz-options">
 							<div class="quiz-option" onclick="checkAnswer(9, 0)">
-								A) Probability that component k generated data point xₙ (soft
+								A) Probability that component k generated data point xâ‚™ (soft
 								assignment)
 							</div>
 							<div class="quiz-option" onclick="checkAnswer(9, 1)">
@@ -1695,7 +1702,9 @@
 							<span class="quiz-number">Question 10</span>
 							<span class="quiz-difficulty difficulty-medium">Medium</span>
 						</div>
-						<div class="quiz-context">μₖⁿᵀ‰Ê· = Σₙ rₙₗxₙ / Σₙ rₙₗ</div>
+						<div class="quiz-context">
+							Î¼â‚"â¿áµ€ = Î£â‚™ râ‚™â‚—xâ‚™ / Î£â‚™ râ‚™â‚—
+						</div>
 						<div class="quiz-question">The mean update formula is a:</div>
 						<div class="quiz-options">
 							<div class="quiz-option" onclick="checkAnswer(10, 0)">
@@ -1720,14 +1729,14 @@
 							<span class="quiz-difficulty difficulty-medium">Medium</span>
 						</div>
 						<div class="quiz-context">
-							Σₖⁿᵀ‰Ê· = (1/Nₖ) Σₙ rₙₗ(xₙ - μₖ)(xₙ - μₖ)ᵀ
+							Î£â‚"â¿áµ€ = (1/Nâ‚–) Î£â‚™ râ‚™â‚—(xâ‚™ - Î¼â‚–)(xâ‚™ - Î¼â‚–)áµ€
 						</div>
 						<div class="quiz-question">
-							The covariance update uses the updated means μₖ and computes:
+							The covariance update uses the updated means Î¼â‚– and computes:
 						</div>
 						<div class="quiz-options">
 							<div class="quiz-option" onclick="checkAnswer(11, 0)">
-								A) Responsibility-weighted covariance around μₖ
+								A) Responsibility-weighted covariance around Î¼â‚–
 							</div>
 							<div class="quiz-option" onclick="checkAnswer(11, 1)">
 								B) Global data covariance
@@ -1747,9 +1756,11 @@
 							<span class="quiz-number">Question 12</span>
 							<span class="quiz-difficulty difficulty-medium">Medium</span>
 						</div>
-						<div class="quiz-context">πₖⁿᵀ‰Ê· = Nₖ / N where Nₖ = Σₙ rₙₗ</div>
+						<div class="quiz-context">
+							Ï€â‚"â¿áµ€ = Nâ‚– / N where Nâ‚– = Î£â‚™ râ‚™â‚—
+						</div>
 						<div class="quiz-question">
-							The mixture weight update πₖ = Nₖ/N represents:
+							The mixture weight update Ï€â‚– = Nâ‚–/N represents:
 						</div>
 						<div class="quiz-options">
 							<div class="quiz-option" onclick="checkAnswer(12, 0)">
@@ -1776,16 +1787,16 @@
 						<div class="quiz-question">In the E-step of EM for GMM, we:</div>
 						<div class="quiz-options">
 							<div class="quiz-option" onclick="checkAnswer(13, 0)">
-								A) Compute responsibilities rₙₗ using current parameters
+								A) Compute responsibilities râ‚™â‚— using current parameters
 							</div>
 							<div class="quiz-option" onclick="checkAnswer(13, 1)">
-								B) Update the means μₖ
+								B) Update the means Î¼â‚–
 							</div>
 							<div class="quiz-option" onclick="checkAnswer(13, 2)">
-								C) Update the covariances Σₖ
+								C) Update the covariances Î£â‚–
 							</div>
 							<div class="quiz-option" onclick="checkAnswer(13, 3)">
-								D) Update the weights πₖ
+								D) Update the weights Ï€â‚–
 							</div>
 						</div>
 						<div class="quiz-feedback" id="feedback13"></div>
@@ -1799,7 +1810,7 @@
 						<div class="quiz-question">In the M-step of EM for GMM, we:</div>
 						<div class="quiz-options">
 							<div class="quiz-option" onclick="checkAnswer(14, 0)">
-								A) Update μₖ, Σₖ, πₖ using current responsibilities
+								A) Update Î¼â‚–, Î£â‚–, Ï€â‚– using current responsibilities
 							</div>
 							<div class="quiz-option" onclick="checkAnswer(14, 1)">
 								B) Only compute responsibilities
@@ -1842,9 +1853,9 @@
 							<span class="quiz-number">Question 16</span>
 							<span class="quiz-difficulty difficulty-medium">Medium</span>
 						</div>
-						<div class="quiz-context">Nₖ = Σₙ rₙₗ</div>
+						<div class="quiz-context">Nâ‚– = Î£â‚™ râ‚™â‚—</div>
 						<div class="quiz-question">
-							Nₖ (sum of responsibilities for component k) represents:
+							Nâ‚– (sum of responsibilities for component k) represents:
 						</div>
 						<div class="quiz-options">
 							<div class="quiz-option" onclick="checkAnswer(16, 0)">
@@ -1940,7 +1951,8 @@
 						</div>
 						<div class="quiz-options">
 							<div class="quiz-option" onclick="checkAnswer(18, 0)">
-								A) zₖ ∈ {0,1} indicates which component generated the data point
+								A) zâ‚– âˆˆ {0,1} indicates which component generated the data
+								point
 							</div>
 							<div class="quiz-option" onclick="checkAnswer(18, 1)">
 								B) z is continuous-valued like in PCA
@@ -1949,7 +1961,7 @@
 								C) z is the observed data
 							</div>
 							<div class="quiz-option" onclick="checkAnswer(18, 3)">
-								D) z is the same as the parameters θ
+								D) z is the same as the parameters Î¸
 							</div>
 						</div>
 						<div class="quiz-feedback" id="feedback18"></div>
@@ -1961,7 +1973,7 @@
 							<span class="quiz-difficulty difficulty-hard">Hard</span>
 						</div>
 						<div class="quiz-context">
-							z = [z₁,...,zₖ]ᵀ with exactly one zₖ = 1, others = 0
+							z = [zâ‚,...,zâ‚–]áµ€ with exactly one zâ‚– = 1, others = 0
 						</div>
 						<div class="quiz-question">
 							The latent variable z is a one-hot encoding because:
@@ -1988,9 +2000,9 @@
 							<span class="quiz-number">Question 20</span>
 							<span class="quiz-difficulty difficulty-hard">Hard</span>
 						</div>
-						<div class="quiz-context">p(x|θ) = Σ_z p(x|z,θ)p(z|θ)</div>
+						<div class="quiz-context">p(x|Î¸) = Î£_z p(x|z,Î¸)p(z|Î¸)</div>
 						<div class="quiz-question">
-							The marginal likelihood p(x|θ) is obtained by:
+							The marginal likelihood p(x|Î¸) is obtained by:
 						</div>
 						<div class="quiz-options">
 							<div class="quiz-option" onclick="checkAnswer(20, 0)">
@@ -2015,11 +2027,12 @@
 							<span class="quiz-difficulty difficulty-hard">Hard</span>
 						</div>
 						<div class="quiz-question">
-							The posterior p(zₗ=1|x) equals the responsibility rₙₗ because:
+							The posterior p(zâ‚—=1|x) equals the responsibility râ‚™â‚—
+							because:
 						</div>
 						<div class="quiz-options">
 							<div class="quiz-option" onclick="checkAnswer(21, 0)">
-								A) Both are derived from Bayes' theorem: p(z|x) ∝ p(x|z)p(z)
+								A) Both are derived from Bayes' theorem: p(z|x) âˆ p(x|z)p(z)
 							</div>
 							<div class="quiz-option" onclick="checkAnswer(21, 1)">
 								B) It's a coincidence
@@ -2044,7 +2057,8 @@
 						</div>
 						<div class="quiz-options">
 							<div class="quiz-option" onclick="checkAnswer(22, 0)">
-								A) First sample k from p(z)=π, then sample x from N(x|μₖ,Σₖ)
+								A) First sample k from p(z)=Ï€, then sample x from
+								N(x|Î¼â‚–,Î£â‚–)
 							</div>
 							<div class="quiz-option" onclick="checkAnswer(22, 1)">
 								B) Sample from all K components simultaneously
@@ -2069,7 +2083,7 @@
 						</div>
 						<div class="quiz-options">
 							<div class="quiz-option" onclick="checkAnswer(23, 0)">
-								A) Uses hard assignments (r∈{0,1}) instead of soft
+								A) Uses hard assignments (râˆˆ{0,1}) instead of soft
 								responsibilities
 							</div>
 							<div class="quiz-option" onclick="checkAnswer(23, 1)">
@@ -2223,12 +2237,14 @@
 
 					<div class="formula-box">
 						<strong>Key Formulas to Remember:</strong><br /><br />
-						• GMM: p(x|θ) = Σₖ πₖ N(x|μₖ, Σₖ)<br />
-						• Responsibility: rₙₗ = πₖN(xₙ|μₖ,Σₖ) / Σ∂¼ π∂¼N(xₙ|μ∂¼,Σ∂¼)<br />
-						• Mean update: μₖ = (1/Nₖ) Σₙ rₙₗxₙ<br />
-						• Covariance: Σₖ = (1/Nₖ) Σₙ rₙₗ(xₙ-μₖ)(xₙ-μₖ)ᵀ<br />
-						• Weight: πₖ = Nₖ/N where Nₖ = Σₙ rₙₗ<br />
-						• Posterior: p(zₖ=1|x) = rₙₗ (responsibility = posterior)
+						â€¢ GMM: p(x|Î¸) = Î£â‚– Ï€â‚– N(x|Î¼â‚–, Î£â‚–)<br />
+						â€¢ Responsibility: râ‚™â‚— = Ï€â‚–N(xâ‚™|Î¼â‚–,Î£â‚–) / Î£âˆ‚Â¼
+						Ï€âˆ‚Â¼N(xâ‚™|Î¼âˆ‚Â¼,Î£âˆ‚Â¼)<br />
+						â€¢ Mean update: Î¼â‚– = (1/Nâ‚–) Î£â‚™ râ‚™â‚—xâ‚™<br />
+						â€¢ Covariance: Î£â‚– = (1/Nâ‚–) Î£â‚™
+						râ‚™â‚—(xâ‚™-Î¼â‚–)(xâ‚™-Î¼â‚–)áµ€<br />
+						â€¢ Weight: Ï€â‚– = Nâ‚–/N where Nâ‚– = Î£â‚™ râ‚™â‚—<br />
+						â€¢ Posterior: p(zâ‚–=1|x) = râ‚™â‚— (responsibility = posterior)
 					</div>
 
 					<div class="agentic-ai-box">
@@ -2256,12 +2272,12 @@
 							class="btn btn-primary"
 							onclick="resetQuiz()"
 							style="margin-right: 1rem">
-							🔄 Reset Quiz
+							🔍„ Reset Quiz
 						</button>
 						<button
 							class="btn btn-orange"
-							onclick="window.scrollTo({top: 0, behavior: 'smooth'})">
-							⬆ Back to Top
+							onclick="window.scrollTo({ top: 0, behavior: 'smooth' })">
+							â¬† Back to Top
 						</button>
 					</div>
 				</section>
@@ -2300,28 +2316,28 @@
 			};
 
 			const explanations = {
-				1: "Mixture models express p(x) as a convex combination: p(x) = Σₖ πₖpₖ(x) with πₖ ≥ 0 and Σπₖ = 1.",
-				2: "In GMM, each component pₖ(x) is a Gaussian N(x|μₖ, Σₖ) with its own mean μₖ and covariance Σₖ.",
-				3: "Mixture weights πₖ must be non-negative and sum to 1, forming a valid probability distribution over components.",
-				4: "GMM parameters θ = {μₖ, Σₖ, πₖ : k=1,...,K} include means, covariances, and weights for all K components.",
+				1: "Mixture models express p(x) as a convex combination: p(x) = Î£â‚– Ï€â‚–pâ‚–(x) with Ï€â‚– â‰¥ 0 and Î£Ï€â‚– = 1.",
+				2: "In GMM, each component pâ‚–(x) is a Gaussian N(x|Î¼â‚–, Î£â‚–) with its own mean Î¼â‚– and covariance Î£â‚–.",
+				3: "Mixture weights Ï€â‚– must be non-negative and sum to 1, forming a valid probability distribution over components.",
+				4: "GMM parameters Î¸ = {Î¼â‚–, Î£â‚–, Ï€â‚– : k=1,...,K} include means, covariances, and weights for all K components.",
 				5: "GMMs can model multimodal distributions with multiple peaks/clusters, unlike unimodal single Gaussians.",
-				6: "Each p(xₙ|θ) = Σₖ πₖN(xₙ|μₖ,Σₖ) is a sum over K components, which appears inside the log.",
+				6: "Each p(xâ‚™|Î¸) = Î£â‚– Ï€â‚–N(xâ‚™|Î¼â‚–,Î£â‚–) is a sum over K components, which appears inside the log.",
 				7: "The log-of-sum structure prevents closed-form solutions - we can't move log inside the sum over k.",
-				8: "With K=1, the GMM becomes p(x) = π₁N(x|μ₁,Σ₁) = N(x|μ,Σ), a single Gaussian (π₁=1).",
-				9: "Responsibility rₙₗ = p(zₗ=1|xₙ) is the probability that component k generated point xₙ - a soft assignment.",
-				10: "μₖ update is responsibility-weighted average: μₖ = Σₙ rₙₗxₙ / Σₙ rₙₗ, pulling μₖ toward high-responsibility points.",
-				11: "Σₖ update computes responsibility-weighted covariance around the (updated) mean μₖ.",
-				12: "πₖ = Nₖ/N is the fraction of total responsibility assigned to component k (Nₖ = Σₙ rₙₗ).",
-				13: "E-step (Expectation): Compute responsibilities rₙₗ using current parameter values.",
-				14: "M-step (Maximization): Update all parameters (μₖ, Σₖ, πₖ) using current responsibilities.",
+				8: "With K=1, the GMM becomes p(x) = Ï€â‚N(x|Î¼â‚,Î£â‚) = N(x|Î¼,Î£), a single Gaussian (Ï€â‚=1).",
+				9: "Responsibility râ‚™â‚— = p(zâ‚—=1|xâ‚™) is the probability that component k generated point xâ‚™ - a soft assignment.",
+				10: "Î¼â‚– update is responsibility-weighted average: Î¼â‚– = Î£â‚™ râ‚™â‚—xâ‚™ / Î£â‚™ râ‚™â‚—, pulling Î¼â‚– toward high-responsibility points.",
+				11: "Î£â‚– update computes responsibility-weighted covariance around the (updated) mean Î¼â‚–.",
+				12: "Ï€â‚– = Nâ‚–/N is the fraction of total responsibility assigned to component k (Nâ‚– = Î£â‚™ râ‚™â‚—).",
+				13: "E-step (Expectation): Compute responsibilities râ‚™â‚— using current parameter values.",
+				14: "M-step (Maximization): Update all parameters (Î¼â‚–, Î£â‚–, Ï€â‚–) using current responsibilities.",
 				15: "EM monotonically increases log-likelihood at each iteration (or stays same at convergence).",
-				16: "Nₖ = Σₙ rₙₗ is the effective count of points assigned to component k (soft count).",
-				17: "GMM gives soft clustering: each point has probabilistic membership rₙₗ in all K clusters.",
-				18: "Latent z is discrete with zₖ ∈ {0,1} indicating which of K components generated the data.",
-				19: "One-hot encoding: exactly one zₖ=1 (others 0) because each point comes from exactly one component.",
-				20: "Marginal likelihood sums out z: p(x|θ) = Σₖ p(x|zₖ=1)p(zₖ=1) = Σₖ πₖN(x|μₖ,Σₖ).",
-				21: "Both responsibility and posterior are p(zₖ=1|x) = πₖN(x|μₖ,Σₖ)/Σ∂¼π∂¼ N(x|μ∂¼,Σ∂¼) from Bayes' theorem.",
-				22: "Ancestral sampling: (1) sample component k from π, (2) sample x from N(μₖ, Σₖ).",
+				16: "Nâ‚– = Î£â‚™ râ‚™â‚— is the effective count of points assigned to component k (soft count).",
+				17: "GMM gives soft clustering: each point has probabilistic membership râ‚™â‚— in all K clusters.",
+				18: "Latent z is discrete with zâ‚– âˆˆ {0,1} indicating which of K components generated the data.",
+				19: "One-hot encoding: exactly one zâ‚–=1 (others 0) because each point comes from exactly one component.",
+				20: "Marginal likelihood sums out z: p(x|Î¸) = Î£â‚– p(x|zâ‚–=1)p(zâ‚–=1) = Î£â‚– Ï€â‚–N(x|Î¼â‚–,Î£â‚–).",
+				21: "Both responsibility and posterior are p(zâ‚–=1|x) = Ï€â‚–N(x|Î¼â‚–,Î£â‚–)/Î£âˆ‚Â¼Ï€âˆ‚Â¼ N(x|Î¼âˆ‚Â¼,Î£âˆ‚Â¼) from Bayes' theorem.",
+				22: "Ancestral sampling: (1) sample component k from Ï€, (2) sample x from N(Î¼â‚–, Î£â‚–).",
 				23: "K-means uses hard assignments (point belongs to exactly one cluster), GMM uses soft responsibilities.",
 				24: "Multiple random restarts help avoid bad local optima - keep the run with highest final log-likelihood.",
 				25: "GMM allows uncertain intent classification - user may partially match multiple intent categories.",
@@ -2351,14 +2367,14 @@
 					correctCount++;
 					container.classList.add("answered-correct");
 					feedback.className = "quiz-feedback show correct";
-					feedback.innerHTML = `✅ <strong>Correct!</strong> ${explanations[q]}`;
+					feedback.innerHTML = `âœ… <strong>Correct!</strong> ${explanations[q]}`;
 					if (q <= 8) easyCorrect++;
 					else if (q <= 17) mediumCorrect++;
 					else hardCorrect++;
 				} else {
 					container.classList.add("answered-wrong");
 					feedback.className = "quiz-feedback show incorrect";
-					feedback.innerHTML = `❌ <strong>Incorrect.</strong> ${explanations[q]}`;
+					feedback.innerHTML = `âŒ <strong>Incorrect.</strong> ${explanations[q]}`;
 				}
 				updateStats();
 			}
@@ -2369,25 +2385,21 @@
 						? Math.round((correctCount / attemptedCount) * 100)
 						: 0;
 				const prog = Math.round((attemptedCount / totalQuestions) * 100);
-				document.getElementById(
-					"headerScore"
-				).textContent = `${correctCount}/${totalQuestions}`;
+				document.getElementById("headerScore").textContent =
+					`${correctCount}/${totalQuestions}`;
 				document.getElementById("headerAccuracy").textContent = `${acc}%`;
-				document.getElementById(
-					"sidebarScore"
-				).textContent = `${correctCount}/${totalQuestions}`;
-				document.getElementById("scoreProgress").style.width = `${
-					(correctCount / totalQuestions) * 100
-				}%`;
+				document.getElementById("sidebarScore").textContent =
+					`${correctCount}/${totalQuestions}`;
+				document.getElementById("scoreProgress").style.width =
+					`${(correctCount / totalQuestions) * 100}%`;
 				document.getElementById("progressFill").style.width = `${prog}%`;
 				document.getElementById("totalCorrect").textContent = correctCount;
 				document.getElementById("totalAttempted").textContent = attemptedCount;
 				document.getElementById("accuracyPercent").textContent = `${acc}%`;
 				document.getElementById("progressPercent").textContent = `${prog}%`;
 				document.getElementById("easyScore").textContent = `${easyCorrect}/8`;
-				document.getElementById(
-					"mediumScore"
-				).textContent = `${mediumCorrect}/9`;
+				document.getElementById("mediumScore").textContent =
+					`${mediumCorrect}/9`;
 				document.getElementById("hardScore").textContent = `${hardCorrect}/8`;
 			}
 
@@ -2402,7 +2414,7 @@
 					const c = document.getElementById(`q${i}`);
 					c.classList.remove("answered-correct", "answered-wrong");
 					c.querySelectorAll(".quiz-option").forEach((o) =>
-						o.classList.remove("disabled", "correct", "incorrect")
+						o.classList.remove("disabled", "correct", "incorrect"),
 					);
 					document.getElementById(`feedback${i}`).className = "quiz-feedback";
 				}
@@ -2500,20 +2512,12 @@
 				ctx.lineTo(w, h - 30);
 				ctx.stroke();
 
-				document.getElementById(
-					"mixtureOutput"
-				).innerHTML = `Gaussian Mixture Model with K = ${K} components
-══════════════════════════════════════════════
-${components
-	.map(
-		(c, k) =>
-			`Component ${k + 1}: μ = ${c.mu.toFixed(2)}, σ = ${c.sigma.toFixed(
-				2
-			)}, π = ${c.pi.toFixed(2)}`
-	)
-	.join("\n")}
+				document.getElementById("mixtureOutput").innerHTML =
+					`Gaussian Mixture Model with K = ${K} components
+â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
+${components.map((c, k) => `Component ${k + 1}: Î¼ = ${c.mu.toFixed(2)}, Ïƒ = ${c.sigma.toFixed(2)}, Ï€ = ${c.pi.toFixed(2)}`).join("\n")}
 
-GMM: p(x) = Σₖ πₖ N(x|μₖ, σₖ²)
+GMM: p(x) = Î£â‚– Ï€â‚– N(x|Î¼â‚–, Ïƒâ‚–Â²)
 
 Dashed lines: individual components (weighted)
 Solid line: mixture density (sum)`;
@@ -2525,7 +2529,7 @@ Solid line: mixture density (sum)`;
 				const p2 = parseInt(document.getElementById("pi2").value);
 				const p3 = Math.max(0, 100 - p1 - p2);
 				document.getElementById("pi3Display").textContent = (p3 / 100).toFixed(
-					2
+					2,
 				);
 			}
 
@@ -2536,19 +2540,19 @@ Solid line: mixture density (sum)`;
 				const pi3 = Math.max(0, 1 - pi1 - pi2);
 
 				document.getElementById("weightsOutput").innerHTML = `Mixture Weights
-═══════════════
-π₁ = ${pi1.toFixed(2)}
-π₂ = ${pi2.toFixed(2)}
-π₃ = ${pi3.toFixed(2)}
-"ۉ"ۉ"ۉ"ۉ"ۉ"ۉ"ۉ"ۉ"ۉ"ۉ"ۉ"ۉ"ۉ"ۉ"ۉ"
+â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
+Ï€â‚ = ${pi1.toFixed(2)}
+Ï€â‚‚ = ${pi2.toFixed(2)}
+Ï€â‚ƒ = ${pi3.toFixed(2)}
+"Û‰"Û‰"Û‰"Û‰"Û‰"Û‰"Û‰"Û‰"Û‰"Û‰"Û‰"Û‰"Û‰"Û‰"Û‰"
 Sum = ${(pi1 + pi2 + pi3).toFixed(2)} (must equal 1)
 
 Constraints:
-• 0 ≤ πₖ ≤ 1 for all k
-• Σₖ πₖ = 1
+â€¢ 0 â‰¤ Ï€â‚– â‰¤ 1 for all k
+â€¢ Î£â‚– Ï€â‚– = 1
 
 Interpretation:
-πₖ is the prior probability that a random
+Ï€â‚– is the prior probability that a random
 data point comes from component k`;
 			}
 
@@ -2565,127 +2569,116 @@ data point comes from component k`;
 
 				// Compute responsibilities
 				const likelihoods = components.map(
-					(c) => c.pi * gaussianPDF(x, c.mu, c.sigma)
+					(c) => c.pi * gaussianPDF(x, c.mu, c.sigma),
 				);
 				const sum = likelihoods.reduce((a, b) => a + b, 0);
 				const responsibilities = likelihoods.map((l) => l / sum);
 
-				document.getElementById(
-					"respOutput"
-				).innerHTML = `Responsibilities for x = ${x}
-════════════════════════════
+				document.getElementById("respOutput").innerHTML =
+					`Responsibilities for x = ${x}
+â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
 GMM Components:
-• Component 1: μ₁ = -2, σ₁ = 1, π₁ = 0.4
-• Component 2: μ₂ = 0, σ₂ = 0.5, π₂ = 0.3  
-• Component 3: μ₃ = 3, σ₃ = 1.2, π₃ = 0.3
+â€¢ Component 1: Î¼â‚ = -2, ÏÆ’â‚ = 1, Ï€â‚ = 0.4
+â€¢ Component 2: Î¼â‚‚ = 0, Ïƒâ‚‚ = 0.5, Ï€â‚‚ = 0.3  
+â€¢ Component 3: Î¼â‚ƒ = 3, Ïƒâ‚ƒ = 1.2, Ï€â‚ƒ = 0.3
 
 Weighted Likelihoods:
-• π₁N(x|μ₁,σ₁) = ${likelihoods[0].toFixed(6)}
-• π₂N(x|μ₂,σ₂) = ${likelihoods[1].toFixed(6)}
-• π₃N(x|μ₃,σ₃) = ${likelihoods[2].toFixed(6)}
+â€¢ Ï€â‚N(x|Î¼â‚,ÏÆ’â‚) = ${likelihoods[0].toFixed(6)}
+â€¢ Ï€â‚‚N(x|Î¼â‚‚,Ïƒâ‚‚) = ${likelihoods[1].toFixed(6)}
+â€¢ Ï€â‚ƒN(x|Î¼â‚ƒ,Ïƒâ‚ƒ) = ${likelihoods[2].toFixed(6)}
 
 Responsibilities (normalized):
-• r₁ = ${responsibilities[0].toFixed(4)} (${(responsibilities[0] * 100).toFixed(
-					1
-				)}%)
-• r₂ = ${responsibilities[1].toFixed(4)} (${(responsibilities[1] * 100).toFixed(
-					1
-				)}%)
-• r₃ = ${responsibilities[2].toFixed(4)} (${(responsibilities[2] * 100).toFixed(
-					1
-				)}%)
+â€¢ râ‚ = ${responsibilities[0].toFixed(4)} (${(responsibilities[0] * 100).toFixed(1)}%)
+â€¢ râ‚‚ = ${responsibilities[1].toFixed(4)} (${(responsibilities[1] * 100).toFixed(1)}%)
+â€¢ râ‚ƒ = ${responsibilities[2].toFixed(4)} (${(responsibilities[2] * 100).toFixed(1)}%)
 
 Sum = ${responsibilities.reduce((a, b) => a + b, 0).toFixed(4)} (always 1)`;
 			}
 
 			// Lab 4: E-Step
 			function runEStep() {
-				document.getElementById(
-					"estepOutput"
-				).innerHTML = `E-Step: Compute Responsibilities
-═════════════════════════════════
-For each data point xₙ and component k:
+				document.getElementById("estepOutput").innerHTML =
+					`E-Step: Compute Responsibilities
+â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
+For each data point xâ‚™ and component k:
 
-rₙₗ = πₖN(xₙ|μₖ,Σₖ) / Σ∂¼ π∂¼N(xₙ|μ∂¼,Σ∂¼)
+râ‚™â‚— = Ï€â‚–N(xâ‚™|Î¼â‚–,Î£â‚–) / Î£âˆ‚Â¼ Ï€âˆ‚Â¼N(xâ‚™|Î¼âˆ‚Â¼,Î£âˆ‚Â¼)
 
 This computes the posterior probability
-that component k generated point xₙ.
+that component k generated point xâ‚™.
 
 Properties:
-• rₙₗ ≥ 0 for all n, k
-• Σₖ rₙₗ = 1 for each n (rows sum to 1)
-• Nₖ = Σₙ rₙₗ (effective count for component k)
+â€¢ râ‚™â‚— â‰¥ 0 for all n, k
+â€¢ Î£â‚– râ‚™â‚— = 1 for each n (rows sum to 1)
+â€¢ Nâ‚– = Î£â‚™ râ‚™â‚— (effective count for component k)
 
 The E-step uses CURRENT parameters
-(μₖ, Σₖ, πₖ) to compute responsibilities.`;
+(Î¼â‚–, Î£â‚–, Ï€â‚–) to compute responsibilities.`;
 			}
 
 			// Lab 5: M-Step Means
 			function runMStepMeans() {
-				document.getElementById(
-					"mstepMeanOutput"
-				).innerHTML = `M-Step: Update Means
-════════════════════
+				document.getElementById("mstepMeanOutput").innerHTML =
+					`M-Step: Update Means
+â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
 For each component k:
 
-μₖⁿᵀ‰Ê· = Σₙ rₙₗxₙ / Σₙ rₙₗ = (1/Nₖ) Σₙ rₙₗxₙ
+Î¼â‚"â¿áµ€ = Î£â‚™ râ‚™â‚—xâ‚™ / Î£â‚™ râ‚™â‚— = (1/Nâ‚–) Î£â‚™ râ‚™â‚—xâ‚™
 
 This is a responsibility-weighted average!
 
 Intuition:
-• Mean μₖ is "pulled" toward data points
-• Strength of pull ∝ responsibility rₙₗ
-• High rₙₗ points have more influence
+â€¢ Mean Î¼â‚– is "pulled" toward data points
+â€¢ Strength of pull âˆ responsibility râ‚™â‚—
+â€¢ High râ‚™â‚— points have more influence
 
 Example with 3 points:
-x₁ = -2, r₁ₖ = 0.8
-x₂ = 0,  r₂ₖ = 0.1
-x₃ = 3,  r₃ₖ = 0.1
+xâ‚ = -2, râ‚â‚" = 0.8
+xâ‚‚ = 0,  râ‚‚â‚– = 0.1
+xâ‚ƒ = 3,  râ‚ƒâ‚– = 0.1
 
-μₖ = (0.8×-2 + 0.1×0 + 0.1×3) / (0.8+0.1+0.1)
+Î¼â‚– = (0.8×-2 + 0.1×0 + 0.1×3) / (0.8+0.1+0.1)
    = (-1.6 + 0 + 0.3) / 1.0 = -1.3`;
 			}
 
 			// Lab 6: M-Step Covariance
 			function runMStepCovariance() {
-				document.getElementById(
-					"mstepCovOutput"
-				).innerHTML = `M-Step: Update Covariances
-══════════════════════════
+				document.getElementById("mstepCovOutput").innerHTML =
+					`M-Step: Update Covariances
+â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
 For each component k:
 
-Σₖⁿᵀ‰Ê· = (1/Nₖ) Σₙ rₙₗ(xₙ - μₖ)(xₙ - μₖ)ᵀ
+Î£â‚"â¿áµ€ = (1/Nâ‚–) Î£â‚™ râ‚™â‚—(xâ‚™ - Î¼â‚–)(xâ‚™ - Î¼â‚–)áµ€
 
 This is a responsibility-weighted covariance!
 
 Steps:
-1. Use the UPDATED means μₖ from previous step
+1. Use the UPDATED means Î¼â‚– from previous step
 2. Compute weighted outer products
-3. Normalize by Nₖ = Σₙ rₙₗ
+3. Normalize by Nâ‚– = Î£â‚™ râ‚™â‚—
 
 Note: The M-step updates means FIRST,
 then uses them to update covariances.
 
 For 1D data, this simplifies to:
-σₖ² = (1/Nₖ) Σₙ rₙₗ(xₙ - μₖ)²`;
+Ïƒâ‚–Â² = (1/Nâ‚–) Î£â‚™ râ‚™â‚—(xâ‚™ - Î¼â‚–)Â²`;
 			}
 
 			// Lab 7: Full EM
 			let emIteration = 0;
 			function runFullEM() {
 				const iterations = parseInt(
-					document.getElementById("emIterations").value
+					document.getElementById("emIterations").value,
 				);
 
-				document.getElementById(
-					"emOutput"
-				).innerHTML = `Full EM Algorithm - ${iterations} iterations
-═════════════════════════════════════════════
+				document.getElementById("emOutput").innerHTML =
+					`Full EM Algorithm - ${iterations} iterations
+â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
 Algorithm:
-1. Initialize μₖ, Σₖ, πₖ
+1. Initialize Î¼â‚–, Î£â‚–, Ï€â‚–
 2. Repeat until convergence:
-   E-step: Compute rₙₗ for all n, k
-   M-step: Update μₖ, Σₖ, πₖ
+   E-step: Compute râ‚™â‚— for all n, k
+   M-step: Update Î¼â‚–, Î£â‚–, Ï€â‚–
 3. Check log-likelihood for convergence
 
 Log-likelihood increases (or stays same)
@@ -2701,16 +2694,16 @@ necessarily GLOBAL optimum.`;
 			function stepEM() {
 				emIteration++;
 				document.getElementById("emOutput").innerHTML = `EM Step ${emIteration}
-═══════════════
+â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
 ${
 	emIteration % 2 === 1
-		? `E-Step: Computing responsibilities rₙₗ...
+		? `E-Step: Computing responsibilities râ‚™â‚—...
 Using current parameters to evaluate
-p(zₖ=1|xₙ) for each data point.`
+p(zâ‚–=1|xâ‚™) for each data point.`
 		: `M-Step: Updating parameters...
-μₖ ← responsibility-weighted mean
-Σₖ ← responsibility-weighted covariance
-πₖ ← Nₖ / N`
+Î¼â‚– ← responsibility-weighted mean
+Î£â‚– ← responsibility-weighted covariance
+Ï€â‚– ← Nâ‚– / N`
 }
 
 Click again for next step!`;
@@ -2718,17 +2711,16 @@ Click again for next step!`;
 
 			// Lab 8: Log-Likelihood
 			function plotLogLikelihood() {
-				document.getElementById(
-					"llOutput"
-				).innerHTML = `Log-Likelihood Evolution
-════════════════════════
-L = Σₙ log p(xₙ|θ)
-  = Σₙ log Σₖ πₖN(xₙ|μₖ,Σₖ)
+				document.getElementById("llOutput").innerHTML =
+					`Log-Likelihood Evolution
+â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
+L = Î£â‚™ log p(xâ‚™|Î¸)
+  = Î£â‚™ log Î£â‚– Ï€â‚–N(xâ‚™|Î¼â‚–,Î£â‚–)
 
 Properties:
-• L increases (or stays same) at each EM iteration
-• Convergence when Σ"L < threshold
-• Higher L = better fit to data
+â€¢ L increases (or stays same) at each EM iteration
+â€¢ Convergence when Î£"L < threshold
+â€¢ Higher L = better fit to data
 
 Typical pattern:
 Iter 0:  L = -28.3 (initialization)
@@ -2746,124 +2738,119 @@ Later iterations: diminishing returns`;
 			function show2DGMM() {
 				const K = parseInt(document.getElementById("k2d").value);
 
-				document.getElementById(
-					"gmm2dOutput"
-				).innerHTML = `2D Gaussian Mixture Model with K = ${K}
-═══════════════════════════════════════
+				document.getElementById("gmm2dOutput").innerHTML =
+					`2D Gaussian Mixture Model with K = ${K}
+â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
 In 2D, each component has:
-• Mean μₖ ∈ ℝ² (center of ellipse)
-• Covariance Σₖ ∈ ℝ²² (shape of ellipse)
-• Weight πₖ (height/importance)
+â€¢ Mean Î¼â‚– âˆˆ â„Ã‚Â² (center of ellipse)
+â€¢ Covariance Î£â‚– âˆˆ â„Ã‚Â²Ã‚Â² (shape of ellipse)
+â€¢ Weight Ï€â‚– (height/importance)
 
 Covariance determines:
-• Axis lengths (eigenvalues of Σₖ)
-• Orientation (eigenvectors of Σₖ)
-• Correlation between x₁ and x₂
+â€¢ Axis lengths (eigenvalues of Î£â‚–)
+â€¢ Orientation (eigenvectors of Î£â‚–)
+â€¢ Correlation between xâ‚ and xâ‚‚
 
 Visualization:
-• Ellipses show 1-σ contours of each Gaussian
-• Larger πₖ → more "prominent" component
-• Overlapping ellipses → soft clustering`;
+â€¢ Ellipses show 1-Ïƒ contours of each Gaussian
+â€¢ Larger Ï€â‚– ←’ more "prominent" component
+â€¢ Overlapping ellipses ←’ soft clustering`;
 			}
 
 			// Lab 10: Sampling
 			function sampleFromGMM() {
 				const N = parseInt(document.getElementById("nSamples").value);
 
-				document.getElementById(
-					"sampleOutput"
-				).innerHTML = `Ancestral Sampling from GMM
-═══════════════════════════
+				document.getElementById("sampleOutput").innerHTML =
+					`Ancestral Sampling from GMM
+â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
 Generated ${N} samples using:
 
 For each sample:
-1. Sample k ~ Categorical(π₁, ..., πₖ)
+1. Sample k ~ Categorical(Ï€â‚, ..., Ï€â‚–)
    (Choose which component)
-2. Sample x ~ N(μₖ, Σₖ)
+2. Sample x ~ N(Î¼â‚–, Î£â‚–)
    (Sample from that Gaussian)
 
 This is called "ancestral sampling"
 because we sample following the
 generative model's DAG structure:
 
-π → z → x
-    ↑
-  (μₖ, Σₖ)
+Ï€ ←’ z ←’ x
+    ←‘
+  (Î¼â‚–, Î£â‚–)
 
 The samples x follow the GMM distribution!`;
 			}
 
 			// Lab 11: Latent Variable
 			function showLatentVariable() {
-				document.getElementById(
-					"latentOutput"
-				).innerHTML = `Latent Variable z (One-Hot Encoding)
-════════════════════════════════════
-z = [z₁, z₂, ..., zₖ]ᵀ
+				document.getElementById("latentOutput").innerHTML =
+					`Latent Variable z (One-Hot Encoding)
+â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
+z = [zâ‚, zâ‚‚, ..., zâ‚–]áµ€
 
 Constraints:
-• zₖ ∈ {0, 1} for all k
-• Σₖ zₖ = 1 (exactly one is 1)
+â€¢ zâ‚– âˆˆ {0, 1} for all k
+â€¢ Î£â‚– zâ‚– = 1 (exactly one is 1)
 
 Example (K=3):
-z = [1,0,0]ᵀ → Component 1 generated x
-z = [0,1,0]ᵀ → Component 2 generated x
-z = [0,0,1]ᵀ → Component 3 generated x
+z = [1,0,0]áµ€ ←’ Component 1 generated x
+z = [0,1,0]áµ€ ←’ Component 2 generated x
+z = [0,0,1]áµ€ ←’ Component 3 generated x
 
-Prior: p(zₖ = 1) = πₖ
-Likelihood: p(x|zₖ = 1) = N(x|μₖ, Σₖ)
-Joint: p(x, zₖ = 1) = πₖN(x|μₖ, Σₖ)
+Prior: p(zâ‚– = 1) = Ï€â‚–
+Likelihood: p(x|zâ‚– = 1) = N(x|Î¼â‚–, Î£â‚–)
+Joint: p(x, zâ‚– = 1) = Ï€â‚–N(x|Î¼â‚–, Î£â‚–)
 
 Marginalizing out z:
-p(x) = Σₖ p(x, zₖ=1) = Σₖ πₖN(x|μₖ, Σₖ)
+p(x) = Î£â‚– p(x, zâ‚–=1) = Î£â‚– Ï€â‚–N(x|Î¼â‚–, Î£â‚–)
      = GMM density!`;
 			}
 
 			// Lab 12: GMM vs K-means
 			function compareGMMKmeans() {
-				document.getElementById(
-					"compareOutput"
-				).innerHTML = `GMM vs K-means Comparison
-═════════════════════════
+				document.getElementById("compareOutput").innerHTML =
+					`GMM vs K-means Comparison
+â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
                   GMM           K-means
-"ۉ"ۉ"ۉ"ۉ"ۉ"ۉ"ۉ"ۉ"ۉ"ۉ"ۉ"ۉ"ۉ"ۉ"ۉ"ۉ"ۉ"ۉ"ۉ"ۉ"ۉ"ۉ"ۉ"ۉ"ۉ"ۉ"ۉ"ۉ"ۉ"ۉ"ۉ"ۉ"ۉ"ۉ"ۉ"ۉ"ۉ"ۉ"ۉ"
-Assignment:    Soft (rₙₗ)    Hard (0 or 1)
+"Û‰"Û‰"Û‰"Û‰"Û‰"Û‰"Û‰"Û‰"Û‰"Û‰"Û‰"Û‰"Û‰"Û‰"Û‰"Û‰"Û‰"Û‰"Û‰"Û‰"Û‰"Û‰"Û‰"Û‰"Û‰"Û‰"Û‰"Û‰"Û‰"Û‰"Û‰"Û‰"Û‰"Û‰"Û‰"Û‰"Û‰"Û‰"Û‰"
+Assignment:    Soft (râ‚™â‚—)    Hard (0 or 1)
 Clusters:      Elliptical    Spherical
 Covariances:   Per-cluster   Implicit (I)
 Output:        Probabilities  Labels
 Objective:     Max likelihood Min distance
 
 K-means is a special case of GMM:
-• All Σₖ = σ²I (spherical, same variance)
-• Responsibilities → hard: r ∈ {0,1}
-• σ² → 0 (hard assignment limit)
+â€¢ All Î£â‚– = ÏƒÂ²I (spherical, same variance)
+â€¢ Responsibilities ←’ hard: r âˆˆ {0,1}
+â€¢ ÏƒÂ² ←’ 0 (hard assignment limit)
 
 GMM advantages:
-✓ Probabilistic assignments
-✓ Uncertainty quantification
-✓ Flexible cluster shapes
-✓ Can generate new data
+âœ“ Probabilistic assignments
+âœ“ Uncertainty quantification
+âœ“ Flexible cluster shapes
+âœ“ Can generate new data
 
 K-means advantages:
-✓ Faster (simpler updates)
-✓ More robust to initialization
-✓ Easier to interpret`;
+âœ“ Faster (simpler updates)
+âœ“ More robust to initialization
+âœ“ Easier to interpret`;
 			}
 
 			// Lab 13: Initialization
 			function showInitializationEffect() {
 				const finalLL = -10 - Math.random() * 20;
-				document.getElementById(
-					"initOutput"
-				).innerHTML = `Initialization & Local Optima
-═════════════════════════════
+				document.getElementById("initOutput").innerHTML =
+					`Initialization & Local Optima
+â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
 Random restart result:
 Final Log-Likelihood: ${finalLL.toFixed(2)}
 
 EM Problem:
-• Only guarantees convergence to LOCAL optimum
-• Different initializations → different solutions
-• Some local optima are much worse than global
+â€¢ Only guarantees convergence to LOCAL optimum
+â€¢ Different initializations ←’ different solutions
+â€¢ Some local optima are much worse than global
 
 Solutions:
 1. Multiple random restarts
@@ -2876,68 +2863,66 @@ Solutions:
 
 3. Careful initialization
    - Random data points as initial means
-   - Data covariance as initial Σₖ
-   - Equal weights π = 1/K
+   - Data covariance as initial Î£â‚–
+   - Equal weights Ï€ = 1/K
 
 Click again to see another random restart!`;
 			}
 
 			// Lab 14: Model Selection
 			function modelSelection() {
-				document.getElementById(
-					"modelSelOutput"
-				).innerHTML = `Choosing Number of Components K
-═══════════════════════════════
+				document.getElementById("modelSelOutput").innerHTML =
+					`Choosing Number of Components K
+â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
 Methods:
 
 1. Log-Likelihood (problematic alone):
-   • Always increases with K
-   • K = N gives perfect fit (overfitting!)
+   â€¢ Always increases with K
+   â€¢ K = N gives perfect fit (overfitting!)
 
 2. BIC (Bayesian Information Criterion):
-   BIC = log p(X|θ) - (d/2)log N
-   • d = number of parameters
-   • Penalizes complexity
-   • Lower BIC = better model
+   BIC = log p(X|Î¸) - (d/2)log N
+   â€¢ d = number of parameters
+   â€¢ Penalizes complexity
+   â€¢ Lower BIC = better model
 
 3. AIC (Akaike Information Criterion):
-   AIC = 2d - 2 log p(X|θ)
-   • Similar penalty approach
+   AIC = 2d - 2 log p(X|Î¸)
+   â€¢ Similar penalty approach
 
 4. Cross-Validation:
-   • Split data into train/validation
-   • Choose K with best validation likelihood
+   â€¢ Split data into train/validation
+   â€¢ Choose K with best validation likelihood
 
 5. Bayesian approach:
-   • Place prior on K
-   • Compute marginal likelihood p(X)
-   • Use for model comparison`;
+   â€¢ Place prior on K
+   â€¢ Compute marginal likelihood p(X)
+   â€¢ Use for model comparison`;
 			}
 
 			// Lab 15: Responsibility Matrix
 			function showResponsibilityMatrix() {
-				document.getElementById(
-					"respMatOutput"
-				).innerHTML = `Responsibility Matrix R ∈ ℝᴺˣᴷ
-═══════════════════════════════
+				document.getElementById("respMatOutput").innerHTML =
+					`Responsibility Matrix R âˆˆ â„á´ºË£á´·
+â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
       Component 1  Component 2  Component 3
-x₁    [  0.95         0.03         0.02  ]
-x₂    [  0.87         0.10         0.03  ]
-x₃    [  0.12         0.85         0.03  ]
-x₁"    [  0.05         0.90         0.05  ]
-x₁…    [  0.01         0.04         0.95  ]
-x₆    [  0.02         0.08         0.90  ]
-x₇    [  0.03         0.07         0.90  ]
+xâ‚    [  0.95         0.03         0.02  ]
+xâ‚‚    [  0.87         0.10         0.03  ]
+xâ‚ƒ    [  0.12         0.85         0.03  ]
+xâ‚"    [  0.05         0.90         0.05  ]
+xâ‚â€¦    [  0.01         0.04         0.95  ]
+xâ‚†    [  0.02         0.08         0.90  ]
+xâ‚‡    [  0.03         0.07         0.90  ]
 
 Properties:
-• Each row sums to 1 (soft assignment)
-• R[n,k] = rₙₗ = p(zₖ=1|xₙ)
-• Column sums give Nₖ = Σₙ rₙₗ
+â€¢ Each row sums to 1 (soft assignment)
+â€¢ R[n,k] = râ‚™â‚— = p(zâ‚–=1|xâ‚™)
+â€¢ Column sums give Nâ‚– = Î£â‚™ râ‚™â‚—
 
 Example interpretation:
-• x₁ almost certainly from Component 1
-• x₃ mostly from Component 2, some uncertainty
-• Points can have mixed membership`;
+â€¢ xâ‚ almost certainly from Component 1
+â€¢ xâ‚ƒ mostly from Component 2, some uncertainty
+â€¢ Points can have mixed membership`;
 			}
 
 			// Initialize

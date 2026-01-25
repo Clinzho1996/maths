@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 	<head>
 		<meta charset="UTF-8" />
@@ -203,7 +203,7 @@
 			}
 
 			.hero::after {
-				content: "";
+				content: "📈";
 				position: absolute;
 				bottom: -30%;
 				left: -10%;
@@ -385,7 +385,7 @@
 			}
 
 			.ml-box .label::before {
-				content: "🤓";
+				content: "📝¤“";
 			}
 
 			/* Quanskill Training Box */
@@ -457,7 +457,7 @@
 			}
 
 			.realworld-box .label::before {
-				content: "🎁";
+				content: "🎯";
 			}
 
 			/* Example Boxes */
@@ -483,7 +483,7 @@
 			}
 
 			.example-box .label::before {
-				content: "▸";
+				content: "â–¸";
 				color: var(--quanskill-orange);
 			}
 
@@ -626,7 +626,7 @@
 			}
 
 			.interactive-demo h4::before {
-				content: "⚡";
+				content: "âš¡";
 			}
 
 			.demo-controls {
@@ -674,7 +674,9 @@
 				font-family: "Space Grotesk", sans-serif;
 				font-weight: 600;
 				cursor: pointer;
-				transition: transform 0.2s, box-shadow 0.2s;
+				transition:
+					transform 0.2s,
+					box-shadow 0.2s;
 			}
 
 			.demo-btn:hover {
@@ -724,7 +726,9 @@
 				border: 1px solid var(--border-color);
 				border-radius: 12px;
 				padding: 1.25rem;
-				transition: transform 0.2s, box-shadow 0.2s;
+				transition:
+					transform 0.2s,
+					box-shadow 0.2s;
 			}
 
 			.concept-card:hover {
@@ -822,7 +826,9 @@
 			.section {
 				opacity: 0;
 				transform: translateY(20px);
-				transition: opacity 0.5s ease, transform 0.5s ease;
+				transition:
+					opacity 0.5s ease,
+					transform 0.5s ease;
 			}
 
 			.section.visible {
@@ -930,7 +936,7 @@
 	</head>
 	<body>
 		<!-- Floating Back to Main Page Button -->
-		<a href="index.html" class="floating-back-btn">← Main Page</a>
+		<a href="index.html" class="floating-back-btn">← Main Page</a>
 
 		<!-- Header -->
 		<header class="header">
@@ -939,7 +945,7 @@
                 <a href="index.html"><img src="Logo_for_Print.jpg" alt="Quanskill" style="height: 50px; border-radius: 8px;"></a>
                 <span>Quanskill</span>
             </div> -->
-				<button class="nav-toggle" onclick="toggleSidebar()">☰</button>
+				<button class="nav-toggle" onclick="toggleSidebar()">â˜°</button>
 			</div>
 		</header>
 
@@ -988,7 +994,7 @@
 						<h1>Continuous Optimization</h1>
 						<p>
 							The engine that powers machine learning. Every ML model learns by
-							finding the best parameters through optimization — minimizing
+							finding the best parameters through optimization - minimizing
 							loss, maximizing likelihood, or finding the perfect balance
 							between fit and complexity.
 						</p>
@@ -998,22 +1004,22 @@
 				<!-- Key Concepts Overview -->
 				<div class="key-concepts">
 					<div class="concept-card">
-						<div class="icon">⬇</div>
+						<div class="icon">â¬‡</div>
 						<h5>Gradient Descent</h5>
 						<p>Follow the negative gradient to find minimum</p>
 					</div>
 					<div class="concept-card">
-						<div class="icon">🏃</div>
+						<div class="icon">🐍Æ’</div>
 						<h5>Momentum</h5>
 						<p>Accelerate convergence with velocity</p>
 					</div>
 					<div class="concept-card">
-						<div class="icon">🏠</div>
+						<div class="icon">🐍Â </div>
 						<h5>Stochastic GD</h5>
 						<p>Scale to massive datasets with mini-batches</p>
 					</div>
 					<div class="concept-card">
-						<div class="icon">📐</div>
+						<div class="icon">🐍"</div>
 						<h5>Convex Optimization</h5>
 						<p>Guaranteed global optimum</p>
 					</div>
@@ -1038,10 +1044,10 @@
 					</div>
 
 					<p>
-						We want to find the minimum of a function f(x) where f: ℝ<sup
+						We want to find the minimum of a function f(x) where f: â„<sup
 							>d</sup
 						>
-						→ ℝ. Gradient descent is a
+						←’ â„. Gradient descent is a
 						<strong>first-order optimization algorithm</strong> that takes steps
 						proportional to the negative gradient of the function at the current
 						point.
@@ -1052,7 +1058,7 @@
 						<p>
 							Every time you train a neural network, you're running gradient
 							descent! The "learning" in machine learning is really just
-							optimization — finding the weights that minimize the loss
+							optimization - finding the weights that minimize the loss
 							function. Understanding gradient descent deeply is essential for
 							debugging training, choosing hyperparameters, and designing new
 							algorithms.
@@ -1068,9 +1074,9 @@
 							f(\mathbf{x}_i))^\top$$
 						</div>
 						<p>
-							where γ<sub>i</sub> ≥ 0 is the
+							where Î³<sub>i</sub> â‰¥ 0 is the
 							<strong>step-size</strong> (learning rate). The sequence
-							f(x<sub>0</sub>) ≥ f(x<sub>1</sub>) ≥ ... converges to a local
+							f(x<sub>0</sub>) â‰¥ f(x<sub>1</sub>) â‰¥ ... converges to a local
 							minimum.
 						</p>
 					</div>
@@ -1089,11 +1095,11 @@
 					<div class="interactive-demo">
 						<h4>Interactive: Gradient Descent on 2D Surface</h4>
 						<p style="margin-bottom: 1rem; color: var(--text-secondary)">
-							Watch gradient descent find the minimum of f(x,y) = x² + 5y²:
+							Watch gradient descent find the minimum of f(x,y) = xÂ² + 5yÂ²:
 						</p>
 						<div class="demo-controls">
 							<div class="demo-input">
-								<label>Learning Rate γ:</label>
+								<label>Learning Rate Î³:</label>
 								<input
 									type="range"
 									id="gdLR"
@@ -1137,7 +1143,7 @@
 							height="350"></canvas>
 						<div class="demo-result">
 							<p>
-								<strong>Learning Rate:</strong> γ =
+								<strong>Learning Rate:</strong> Î³ =
 								<span id="gdLRDisplay">0.10</span>
 							</p>
 							<p>
@@ -1191,7 +1197,7 @@
 					</div>
 
 					<p>
-						Choosing the right step-size γ is crucial for gradient descent. Too
+						Choosing the right step-size Î³ is crucial for gradient descent. Too
 						small and convergence is painfully slow. Too large and the algorithm
 						may overshoot, oscillate, or even diverge!
 					</p>
@@ -1210,16 +1216,16 @@
 					<div class="interactive-demo">
 						<h4>Interactive: Effect of Learning Rate</h4>
 						<p style="margin-bottom: 1rem; color: var(--text-secondary)">
-							See what happens with different learning rates on f(x) = x²:
+							See what happens with different learning rates on f(x) = xÂ²:
 						</p>
 						<div class="demo-controls">
 							<div class="demo-input">
 								<label>Learning Rate:</label>
 								<select id="lrSelect" onchange="runLRDemo()">
-									<option value="0.05">γ = 0.05 (Too Small)</option>
-									<option value="0.3" selected>γ = 0.3 (Good)</option>
-									<option value="0.9">γ = 0.9 (Too Large)</option>
-									<option value="1.1">γ = 1.1 (Diverging!)</option>
+									<option value="0.05">Î³ = 0.05 (Too Small)</option>
+									<option value="0.3" selected>Î³ = 0.3 (Good)</option>
+									<option value="0.9">Î³ = 0.9 (Too Large)</option>
+									<option value="1.1">Î³ = 1.1 (Diverging!)</option>
 								</select>
 							</div>
 							<button class="demo-btn" onclick="runLRDemo()">Run</button>
@@ -1239,11 +1245,11 @@
 						<ul>
 							<li>
 								<strong>If f(x) increases after a step:</strong> Step-size was
-								too large → undo step, decrease γ
+								too large ←’ undo step, decrease Î³
 							</li>
 							<li>
 								<strong>If f(x) decreases:</strong> Step could have been larger
-								→ try increasing γ
+								←’ try increasing Î³
 							</li>
 						</ul>
 						<p style="margin-top: 0.5rem">
@@ -1255,7 +1261,7 @@
 					<div class="quiz-box">
 						<div class="label">Quick Check: Learning Rate</div>
 						<p class="quiz-question">
-							For f(x) = x², what happens when learning rate γ > 1?
+							For f(x) = xÂ², what happens when learning rate Î³ > 1?
 						</p>
 						<div class="quiz-options" id="quiz2">
 							<div
@@ -1308,8 +1314,8 @@
 							f(\mathbf{x}_{i-1}))^\top$$
 						</div>
 						<p>
-							where α ∈ [0, 1] is the <strong>momentum coefficient</strong>.
-							Common values: α = 0.9 or 0.99.
+							where Î± âˆˆ [0, 1] is the <strong>momentum coefficient</strong>.
+							Common values: Î± = 0.9 or 0.99.
 						</p>
 					</div>
 
@@ -1329,7 +1335,7 @@
 						<p>
 							Imagine a heavy ball rolling down a surface. Due to its mass, it
 							resists sudden direction changes and builds up speed in consistent
-							directions. This is exactly what momentum does — it accumulates
+							directions. This is exactly what momentum does - it accumulates
 							velocity in directions of persistent gradient.
 						</p>
 					</div>
@@ -1343,13 +1349,13 @@
 						</tr>
 						<tr>
 							<td>Vanilla GD</td>
-							<td>x ← x - γ∇f</td>
+							<td>x ← x - Î³âˆ‡f</td>
 							<td>Simple, predictable</td>
 							<td>Slow in narrow valleys</td>
 						</tr>
 						<tr>
 							<td>Momentum</td>
-							<td>x ← x - γ∇f + αΣ"x</td>
+							<td>x ← x - Î³âˆ‡f + Î±Î£"x</td>
 							<td>Faster, smoother</td>
 							<td>Extra hyperparameter</td>
 						</tr>
@@ -1406,7 +1412,7 @@
 							L_n(\boldsymbol{\theta})$$
 						</div>
 						<p>
-							Full gradient: ∇L = Σ<sub>n</sub> ∇L<sub>n</sub> requires
+							Full gradient: âˆ‡L = Î£<sub>n</sub> âˆ‡L<sub>n</sub> requires
 							computing N gradients!
 						</p>
 					</div>
@@ -1429,12 +1435,12 @@
 							<span class="comment"># Compute gradient on mini-batch</span>
 						</div>
 						<div class="line">
-							<span class="var">grad</span> = compute_gradient(mini_batch, θ)
+							<span class="var">grad</span> = compute_gradient(mini_batch, Î¸)
 						</div>
 						<div class="line">
 							<span class="comment"># Update parameters</span>
 						</div>
-						<div class="line">θ = θ - γ * <span class="var">grad</span></div>
+						<div class="line">Î¸ = Î¸ - Î³ * <span class="var">grad</span></div>
 					</div>
 
 					<h3>Mini-batch Size Trade-offs</h3>
@@ -1561,8 +1567,8 @@
 						<div class="label">Definition</div>
 						<div class="title">Lagrangian</div>
 						<p>
-							Associate a <strong>Lagrange multiplier</strong> λ<sub>i</sub> ≥ 0
-							with each constraint:
+							Associate a <strong>Lagrange multiplier</strong> Î»<sub>i</sub>
+							â‰¥ 0 with each constraint:
 						</p>
 						<div class="math-display">
 							$$\mathcal{L}(\mathbf{x}, \boldsymbol{\lambda}) = f(\mathbf{x}) +
@@ -1577,7 +1583,7 @@
 					<h3>Duality</h3>
 					<p>
 						The <strong>primal problem</strong> minimizes over x with
-						constraints. The <strong>dual problem</strong> maximizes over λ:
+						constraints. The <strong>dual problem</strong> maximizes over Î»:
 					</p>
 
 					<div class="theorem-box">
@@ -1589,7 +1595,7 @@
 							\mathcal{L}(\mathbf{x}, \boldsymbol{\lambda})$$
 						</div>
 						<p>
-							The primal optimal value is always ≥ the dual optimal value. For
+							The primal optimal value is always â‰¥ the dual optimal value. For
 							convex problems, we get <strong>strong duality</strong>: they're
 							equal!
 						</p>
@@ -1598,9 +1604,9 @@
 					<div class="example-box">
 						<div class="label">Example: Box Constraints</div>
 						<p>
-							Minimize f(x<sub>1</sub>, x<sub>2</sub>) = (x<sub>1</sub>-2)² +
-							(x<sub>2</sub>-2)² subject to -1 ≤ x<sub>1</sub>, x<sub>2</sub> ≤
-							1.
+							Minimize f(x<sub>1</sub>, x<sub>2</sub>) = (x<sub>1</sub>-2)Â² +
+							(x<sub>2</sub>-2)Â² subject to -1 â‰¤ x<sub>1</sub>, x<sub>2</sub>
+							â‰¤ 1.
 						</p>
 						<p>
 							Unconstrained minimum is at (2, 2), but constraints force the
@@ -1612,8 +1618,8 @@
 					<div class="quiz-box">
 						<div class="label">Quick Check: Lagrange Multipliers</div>
 						<p class="quiz-question">
-							What must be true about Lagrange multipliers λ<sub>i</sub> for
-							inequality constraints g<sub>i</sub>(x) ≤ 0?
+							What must be true about Lagrange multipliers Î»<sub>i</sub> for
+							inequality constraints g<sub>i</sub>(x) â‰¤ 0?
 						</p>
 						<div class="quiz-options" id="quiz4">
 							<div
@@ -1622,12 +1628,12 @@
 								A) They can be any real number
 							</div>
 							<div class="quiz-option" onclick="checkQuiz('quiz4', this, true)">
-								B) They must be non-negative (λ<sub>i</sub> ≥ 0)
+								B) They must be non-negative (Î»<sub>i</sub> â‰¥ 0)
 							</div>
 							<div
 								class="quiz-option"
 								onclick="checkQuiz('quiz4', this, false)">
-								C) They must be positive (λ<sub>i</sub> > 0)
+								C) They must be positive (Î»<sub>i</sub> > 0)
 							</div>
 							<div
 								class="quiz-option"
@@ -1668,8 +1674,8 @@
 						<div class="label">Definition</div>
 						<div class="title">Convex Set</div>
 						<p>
-							A set C is <strong>convex</strong> if for any x, y ∈ C and any θ ∈
-							[0, 1]:
+							A set C is <strong>convex</strong> if for any x, y âˆˆ C and any
+							Î¸ âˆˆ [0, 1]:
 						</p>
 						<div class="math-display">
 							$$\theta \mathbf{x} + (1-\theta)\mathbf{y} \in C$$
@@ -1684,8 +1690,8 @@
 						<div class="label">Definition</div>
 						<div class="title">Convex Function</div>
 						<p>
-							A function f is <strong>convex</strong> if for any x, y and any θ
-							∈ [0, 1]:
+							A function f is <strong>convex</strong> if for any x, y and any Î¸
+							âˆˆ [0, 1]:
 						</p>
 						<div class="math-display">
 							$$f(\theta \mathbf{x} + (1-\theta)\mathbf{y}) \leq \theta
@@ -1707,9 +1713,9 @@
 							<div class="demo-input">
 								<label>Function:</label>
 								<select id="convexSelect" onchange="updateConvexDemo()">
-									<option value="convex">f(x) = x² (Convex)</option>
+									<option value="convex">f(x) = xÂ² (Convex)</option>
 									<option value="nonconvex">
-										f(x) = x⁴ - 2x² (Non-Convex)
+										f(x) = xâ´ - 2xÂ² (Non-Convex)
 									</option>
 									<option value="abs">f(x) = |x| (Convex, non-smooth)</option>
 								</select>
@@ -1737,12 +1743,13 @@
 						<tr>
 							<td>First-order condition</td>
 							<td>
-								f(y) ≥ f(x) + ∇f(x)ᵀ(y - x) — function lies above its tangent
+								f(y) â‰¥ f(x) + âˆ‡f(x)áµ€(y - x) - function lies above its
+								tangent
 							</td>
 						</tr>
 						<tr>
 							<td>Second-order condition</td>
-							<td>∇²f(x) ⪰ 0 — Hessian is positive semidefinite</td>
+							<td>âˆ‡Â²f(x) âª° 0 - Hessian is positive semidefinite</td>
 						</tr>
 						<tr>
 							<td>Local = Global</td>
@@ -1750,7 +1757,7 @@
 						</tr>
 						<tr>
 							<td>Preserved under sum</td>
-							<td>αf + βg is convex if f, g convex and α, β ≥ 0</td>
+							<td>Î±f + Î²g is convex if f, g convex and Î±, Î² â‰¥ 0</td>
 						</tr>
 					</table>
 
@@ -1762,7 +1769,7 @@
 							<div
 								class="quiz-option"
 								onclick="checkQuiz('quiz5', this, false)">
-								A) f(x) = x²
+								A) f(x) = xÂ²
 							</div>
 							<div
 								class="quiz-option"
@@ -1775,7 +1782,7 @@
 							<div
 								class="quiz-option"
 								onclick="checkQuiz('quiz5', this, false)">
-								D) f(x) = eˣ
+								D) f(x) = eË£
 							</div>
 						</div>
 						<div class="quiz-feedback" id="quiz5-feedback"></div>
@@ -1803,8 +1810,8 @@
 							\quad \text{subject to} \quad A\mathbf{x} \leq \mathbf{b}$$
 						</div>
 						<p>
-							where A ∈ ℝ<sup>m×d</sup> and b ∈ ℝ<sup>m</sup>. The feasible
-							region is a polyhedron.
+							where A âˆˆ â„<sup>m×d</sup> and b âˆˆ â„<sup>m</sup>. The
+							feasible region is a polyhedron.
 						</p>
 					</div>
 
@@ -1813,7 +1820,7 @@
 						<p>
 							The optimal solution of a linear program always occurs at a
 							<strong>vertex</strong> (corner) of the feasible polyhedron. This
-							makes LP's computationally tractable — we only need to check a
+							makes LP's computationally tractable - we only need to check a
 							finite number of vertices!
 						</p>
 					</div>
@@ -1864,8 +1871,8 @@
 							\quad A\mathbf{x} \leq \mathbf{b}$$
 						</div>
 						<p>
-							where Q ∈ ℝ<sup>d×d</sup> is symmetric positive definite (ensures
-							convexity).
+							where Q âˆˆ â„<sup>d×d</sup> is symmetric positive definite
+							(ensures convexity).
 						</p>
 					</div>
 
@@ -1888,7 +1895,7 @@
 							1$$
 						</div>
 						<p>
-							This is a quadratic objective (½||w||²) with linear constraints!
+							This is a quadratic objective (Â½||w||Â²) with linear constraints!
 						</p>
 					</div>
 
@@ -1935,33 +1942,33 @@
 				<!-- Summary Section -->
 				<section class="section" id="summary">
 					<div class="section-header">
-						<span class="section-number">📝</span>
+						<span class="section-number">🐍"</span>
 						<h2>Chapter Summary</h2>
 					</div>
 
 					<div class="key-concepts">
 						<div class="concept-card">
-							<div class="icon">⬇</div>
+							<div class="icon">â¬‡</div>
 							<h5>Gradient Descent</h5>
-							<p>x ← x - γ∇f(x)</p>
+							<p>x ← x - Î³âˆ‡f(x)</p>
 						</div>
 						<div class="concept-card">
-							<div class="icon">🏃</div>
+							<div class="icon">🐍Æ’</div>
 							<h5>Momentum</h5>
-							<p>Add velocity term αΣ"x</p>
+							<p>Add velocity term Î±Î£"x</p>
 						</div>
 						<div class="concept-card">
-							<div class="icon">🏠</div>
+							<div class="icon">🐍Â </div>
 							<h5>SGD</h5>
 							<p>Mini-batch gradient estimates</p>
 						</div>
 						<div class="concept-card">
-							<div class="icon">⚗</div>
+							<div class="icon">âš—</div>
 							<h5>Lagrangian</h5>
-							<p>L = f(x) + λᵀg(x)</p>
+							<p>L = f(x) + Î»áµ€g(x)</p>
 						</div>
 						<div class="concept-card">
-							<div class="icon">📐</div>
+							<div class="icon">🐍"</div>
 							<h5>Convex</h5>
 							<p>Local min = Global min</p>
 						</div>
@@ -1992,7 +1999,7 @@
 								SVM) have guaranteed solutions
 							</li>
 							<li>
-								<strong>Deep learning</strong> is non-convex — we find good but
+								<strong>Deep learning</strong> is non-convex - we find good but
 								not globally optimal solutions
 							</li>
 							<li>
@@ -2005,13 +2012,13 @@
 					<div class="quanskill-box">
 						<div class="label">Your Next Steps with Quanskill</div>
 						<p>
-							🎯° <strong>Congratulations!</strong> You now understand the
+							🎯Â° <strong>Congratulations!</strong> You now understand the
 							optimization foundations of machine learning. Here's your
 							Quanskill path:
 						</p>
 						<ul>
 							<li>
-								<strong>Chapter 8</strong>: When Models Meet Data — put
+								<strong>Chapter 8</strong>: When Models Meet Data - put
 								everything together!
 							</li>
 							<li>
@@ -2039,7 +2046,7 @@
 						color: var(--text-secondary);
 						font-size: 0.9rem;
 					">
-					<p><strong>Quanskill</strong> — Making ML Education Accessible</p>
+					<p><strong>Quanskill</strong> - Making ML Education Accessible</p>
 					<p style="margin-top: 1rem; font-size: 0.8rem">
 						© 2024 Quanskill. All rights reserved.
 					</p>
@@ -2075,7 +2082,7 @@
 							}
 						});
 					},
-					{ threshold: 0.1 }
+					{ threshold: 0.1 },
 				);
 
 				sections.forEach((section) => observer.observe(section));
@@ -2136,7 +2143,7 @@
 
 				if (isCorrect) {
 					element.classList.add("correct");
-					feedback.innerHTML = "✅ Correct! Great understanding!";
+					feedback.innerHTML = "âœ… Correct! Great understanding!";
 					feedback.className = "quiz-feedback show correct";
 				} else {
 					element.classList.add("incorrect");
@@ -2146,7 +2153,7 @@
 						}
 					});
 					feedback.innerHTML =
-						"❌ Not quite. The correct answer is highlighted above.";
+						"âŒ Not quite. The correct answer is highlighted above.";
 					feedback.className = "quiz-feedback show incorrect";
 				}
 			}
@@ -2167,7 +2174,7 @@
 
 				ctx.clearRect(0, 0, width, height);
 
-				// Draw contours of f(x,y) = x² + 5y²
+				// Draw contours of f(x,y) = xÂ² + 5yÂ²
 				const cx = width / 2;
 				const cy = height / 2;
 				const scale = 30;
@@ -2180,7 +2187,7 @@
 					ctx.lineWidth = 1;
 
 					for (let theta = 0; theta <= 2 * Math.PI + 0.1; theta += 0.05) {
-						// x² + 5y² = level => parametric: x = sqrt(level)*cos, y = sqrt(level/5)*sin
+						// xÂ² + 5yÂ² = level => parametric: x = sqrt(level)*cos, y = sqrt(level/5)*sin
 						const x = Math.sqrt(level) * Math.cos(theta);
 						const y = Math.sqrt(level / 5) * Math.sin(theta);
 						const px = cx + x * scale;
@@ -2229,7 +2236,7 @@
 							py,
 							i === gdState.path.length - 1 ? 6 : 3,
 							0,
-							Math.PI * 2
+							Math.PI * 2,
 						);
 						ctx.fill();
 					});
@@ -2260,7 +2267,7 @@
 
 			function updateGDDemo() {
 				document.getElementById("gdLRDisplay").textContent = parseFloat(
-					document.getElementById("gdLR").value
+					document.getElementById("gdLR").value,
 				).toFixed(2);
 			}
 
@@ -2277,8 +2284,8 @@
 				const maxIter = 50;
 
 				function step() {
-					// f(x,y) = x² + 5y²
-					// ∇f = [2x, 10y]
+					// f(x,y) = xÂ² + 5yÂ²
+					// âˆ‡f = [2x, 10y]
 					const gradX = 2 * gdState.x;
 					const gradY = 10 * gdState.y;
 
@@ -2355,7 +2362,7 @@
 				ctx.lineTo(margin, margin);
 				ctx.stroke();
 
-				// Draw f(x) = x²
+				// Draw f(x) = xÂ²
 				ctx.strokeStyle = "#0b2fa0";
 				ctx.lineWidth = 2;
 				ctx.beginPath();
@@ -2406,7 +2413,7 @@
 							Math.max(margin, py),
 							i === path.length - 1 ? 6 : 4,
 							0,
-							Math.PI * 2
+							Math.PI * 2,
 						);
 						ctx.fill();
 					}
@@ -2416,21 +2423,13 @@
 				let resultText = "";
 				const finalX = path[path.length - 1];
 				if (lr < 0.1) {
-					resultText = `<strong>Too Small (γ = ${lr}):</strong> Convergence is very slow. After ${
-						path.length - 1
-					} steps, x = ${finalX.toFixed(3)}`;
+					resultText = `<strong>Too Small (Î³ = ${lr}):</strong> Convergence is very slow. After ${path.length - 1} steps, x = ${finalX.toFixed(3)}`;
 				} else if (lr <= 0.5) {
-					resultText = `<strong>Good (γ = ${lr}):</strong> Steady convergence to minimum. After ${
-						path.length - 1
-					} steps, x = ${finalX.toFixed(3)}`;
+					resultText = `<strong>Good (Î³ = ${lr}):</strong> Steady convergence to minimum. After ${path.length - 1} steps, x = ${finalX.toFixed(3)}`;
 				} else if (lr < 1) {
-					resultText = `<strong>Large (γ = ${lr}):</strong> Oscillating but still converging. After ${
-						path.length - 1
-					} steps, x = ${finalX.toFixed(3)}`;
+					resultText = `<strong>Large (Î³ = ${lr}):</strong> Oscillating but still converging. After ${path.length - 1} steps, x = ${finalX.toFixed(3)}`;
 				} else {
-					resultText = `<strong>Diverging! (γ = ${lr}):</strong> |x| is growing! The gradient update overshoots. x = ${finalX.toFixed(
-						1
-					)}`;
+					resultText = `<strong>Diverging! (Î³ = ${lr}):</strong> |x| is growing! The gradient update overshoots. x = ${finalX.toFixed(1)}`;
 				}
 				document.getElementById("lrResult").innerHTML = `<p>${resultText}</p>`;
 			}
@@ -2467,7 +2466,7 @@
 					func = (x) => x * x;
 					minPoints = [[0, 0]];
 					resultText =
-						"<strong>Convex:</strong> f(x) = x² has a single global minimum at x = 0. The chord between any two points lies above the curve.";
+						"<strong>Convex:</strong> f(x) = xÂ² has a single global minimum at x = 0. The chord between any two points lies above the curve.";
 				} else if (type === "nonconvex") {
 					func = (x) => x * x * x * x - 2 * x * x;
 					minPoints = [
@@ -2475,7 +2474,7 @@
 						[1, -1],
 					];
 					resultText =
-						"<strong>Non-Convex:</strong> f(x) = x⁴ - 2x² has TWO local minima at x = ±1 and a local maximum at x = 0. Gradient descent may get stuck!";
+						"<strong>Non-Convex:</strong> f(x) = xâ´ - 2xÂ² has TWO local minima at x = Â±1 and a local maximum at x = 0. Gradient descent may get stuck!";
 				} else {
 					func = (x) => Math.abs(x);
 					minPoints = [[0, 0]];
@@ -2549,9 +2548,8 @@
 					ctx.fill();
 				});
 
-				document.getElementById(
-					"convexResult"
-				).innerHTML = `<p>${resultText}</p>`;
+				document.getElementById("convexResult").innerHTML =
+					`<p>${resultText}</p>`;
 			}
 
 			// Smooth scrolling for nav links

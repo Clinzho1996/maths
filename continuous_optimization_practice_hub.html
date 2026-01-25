@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 	<head>
 		<meta charset="UTF-8" />
@@ -382,7 +382,7 @@
 			}
 
 			.case-study-box .label::before {
-				content: "🏢";
+				content: "🐍Â¢";
 			}
 
 			.agentic-ai-box {
@@ -423,7 +423,7 @@
 			}
 
 			.agentic-ai-box .label::before {
-				content: "🤓";
+				content: "📝¤“";
 			}
 
 			.quiz-container {
@@ -562,7 +562,7 @@
 			}
 
 			.demo-header::before {
-				content: "⚡";
+				content: "âš¡";
 			}
 
 			.demo-number {
@@ -856,16 +856,11 @@
 	</head>
 	<body>
 		<!-- Floating Back to Main Page Button -->
-		<a href="index.html" class="floating-back-btn">← Main Page</a>
+		<a href="index.html" class="floating-back-btn">← Main Page</a>
 
 		<header class="header">
 			<div class="header-content">
-				<a href="index.html" class="header-logo"
-					><img
-						src="Logo_for_Print.jpg"
-						alt="Quanskill"
-						style="height: 40px; border-radius: 8px"
-				/></a>
+				<!-- <a href="index.html" class="header-logo"><img src="Logo_for_Print.jpg" alt="Quanskill" style="height: 40px; border-radius: 8px;"></a> -->
 				<div class="header-stats">
 					<div class="stat-item">
 						<span>Score:</span
@@ -876,7 +871,7 @@
 						><span class="stat-value" id="headerAccuracy">0%</span>
 					</div>
 				</div>
-				<button class="mobile-menu-btn" onclick="toggleSidebar()">☰</button>
+				<button class="mobile-menu-btn" onclick="toggleSidebar()">â˜°</button>
 			</div>
 		</header>
 
@@ -886,8 +881,13 @@
 
 		<nav class="sidebar" id="sidebar">
 			<div class="sidebar-header">
-				<!-- <a href="index.html" class="logo"><img src="Logo_for_Print.jpg" alt="Quanskill" style="height: 36px; border-radius: 6px;"></a> -->
-				<div class="chapter-title">Chapter 7 · Continuous Optimization</div>
+				<a href="index.html" class="logo"
+					><img
+						src="Logo_for_Print.jpg"
+						alt="Quanskill"
+						style="height: 36px; border-radius: 6px"
+				/></a>
+				<div class="chapter-title">Chapter 7 Â· Continuous Optimization</div>
 			</div>
 
 			<div class="score-display">
@@ -901,7 +901,7 @@
 			<div class="nav-section">
 				<div class="nav-section-title">Overview</div>
 				<a href="#intro" class="nav-link active">🎯 Practice Hub Home</a>
-				<a href="#interactive" class="nav-link">⚡ Interactive Labs (15)</a>
+				<a href="#interactive" class="nav-link">âš¡ Interactive Labs (15)</a>
 			</div>
 
 			<div class="nav-section">
@@ -1035,9 +1035,9 @@
 							optimization, convexity, and Lagrange multipliers.
 						</p>
 						<div class="hero-quote">
-							"Optimization is how machines learn — gradient descent is the
+							"Optimization is how machines learn - gradient descent is the
 							heartbeat of deep learning."
-							<br /><small>— Quanskill Learning Path</small>
+							<br /><small>- Quanskill Learning Path</small>
 						</div>
 						<div class="topic-tags">
 							<span class="topic-tag">Gradient Descent</span>
@@ -1083,18 +1083,18 @@
 							<div class="control-group">
 								<label>Function</label>
 								<select id="gd1Func">
-									<option value="quadratic">f(x) = x²</option>
-									<option value="quartic">f(x) = x⁴ - 2x²</option>
+									<option value="quadratic">f(x) = xÂ²</option>
+									<option value="quartic">f(x) = xâ´ - 2xÂ²</option>
 									<option value="abs">f(x) = |x|</option>
-									<option value="rosenbrock">f(x) = (1-x)² + 10</option>
+									<option value="rosenbrock">f(x) = (1-x)Â² + 10</option>
 								</select>
 							</div>
 							<div class="control-group">
-								<label>Start x₁</label>
+								<label>Start xâ‚</label>
 								<input type="number" id="gd1Start" value="3" step="0.5" />
 							</div>
 							<div class="control-group">
-								<label>Learning Rate γ</label>
+								<label>Learning Rate Î³</label>
 								<input
 									type="number"
 									id="gd1Lr"
@@ -1133,14 +1133,14 @@
 							<div class="control-group">
 								<label>Function</label>
 								<select id="gd2Func">
-									<option value="quadratic">f(x,y) = x² + y²</option>
-									<option value="ellipse">f(x,y) = x² + 10y²</option>
-									<option value="saddle">f(x,y) = x² - y²</option>
+									<option value="quadratic">f(x,y) = xÂ² + yÂ²</option>
+									<option value="ellipse">f(x,y) = xÂ² + 10yÂ²</option>
+									<option value="saddle">f(x,y) = xÂ² - yÂ²</option>
 									<option value="rosenbrock">Rosenbrock</option>
 								</select>
 							</div>
 							<div class="control-group">
-								<label>Start (x₁, y₁)</label>
+								<label>Start (xâ‚, yâ‚)</label>
 								<input
 									type="text"
 									id="gd2Start"
@@ -1172,7 +1172,7 @@
 						</div>
 						<div class="demo-controls">
 							<div class="control-group">
-								<label>γ₁ (small)</label>
+								<label>Î³â‚ (small)</label>
 								<input
 									type="number"
 									id="lr1"
@@ -1181,11 +1181,11 @@
 									min="0.001" />
 							</div>
 							<div class="control-group">
-								<label>γ₂ (medium)</label>
+								<label>Î³â‚‚ (medium)</label>
 								<input type="number" id="lr2" value="0.1" step="0.05" />
 							</div>
 							<div class="control-group">
-								<label>γ₃ (large)</label>
+								<label>Î³â‚ƒ (large)</label>
 								<input type="number" id="lr3" value="0.5" step="0.1" />
 							</div>
 							<button class="btn btn-primary" onclick="compareLR()">
@@ -1206,7 +1206,7 @@
 						</div>
 						<div class="demo-controls">
 							<div class="control-group">
-								<label>Momentum α</label>
+								<label>Momentum Î±</label>
 								<input
 									type="number"
 									id="momAlpha"
@@ -1269,12 +1269,12 @@
 							<div class="control-group">
 								<label>Function</label>
 								<select id="convFunc">
-									<option value="x2">f(x) = x² (Convex)</option>
-									<option value="exp">f(x) = eˣ (Convex)</option>
+									<option value="x2">f(x) = xÂ² (Convex)</option>
+									<option value="exp">f(x) = eË£ (Convex)</option>
 									<option value="neglog">f(x) = -log(x) (Convex)</option>
-									<option value="x3">f(x) = x³ (Non-convex)</option>
+									<option value="x3">f(x) = xÂ³ (Non-convex)</option>
 									<option value="sin">f(x) = sin(x) (Non-convex)</option>
-									<option value="x4-x2">f(x) = x⁴-2x² (Non-convex)</option>
+									<option value="x4-x2">f(x) = xâ´-2xÂ² (Non-convex)</option>
 								</select>
 							</div>
 							<button class="btn btn-orange" onclick="checkConvex()">
@@ -1297,7 +1297,7 @@
 							<div class="control-group">
 								<label>Objective</label>
 								<select id="lagObj">
-									<option value="x2y2">min x² + y²</option>
+									<option value="x2y2">min xÂ² + yÂ²</option>
 									<option value="xy">min -xy</option>
 								</select>
 							</div>
@@ -1305,7 +1305,7 @@
 								<label>Constraint</label>
 								<select id="lagCon">
 									<option value="xpy1">x + y = 1</option>
-									<option value="x2y21">x² + y² = 1</option>
+									<option value="x2y21">xÂ² + yÂ² = 1</option>
 								</select>
 							</div>
 							<button class="btn btn-primary" onclick="solveLagrange()">
@@ -1379,12 +1379,12 @@
 						</div>
 						<div class="demo-controls">
 							<div class="control-group">
-								<label>Condition κ</label>
+								<label>Condition Îº</label>
 								<select id="condK">
-									<option value="1">κ = 1 (Well-conditioned)</option>
-									<option value="5">κ = 5</option>
-									<option value="10" selected>κ = 10</option>
-									<option value="50">κ = 50 (Ill-conditioned)</option>
+									<option value="1">Îº = 1 (Well-conditioned)</option>
+									<option value="5">Îº = 5</option>
+									<option value="10" selected>Îº = 10</option>
+									<option value="50">Îº = 50 (Ill-conditioned)</option>
 								</select>
 							</div>
 							<button class="btn btn-orange" onclick="showCondition()">
@@ -1407,8 +1407,8 @@
 							<div class="control-group">
 								<label>Function</label>
 								<select id="statFunc">
-									<option value="poly3">x³ - 3x</option>
-									<option value="poly4">x⁴ - 4x² + 1</option>
+									<option value="poly3">xÂ³ - 3x</option>
+									<option value="poly4">xâ´ - 4xÂ² + 1</option>
 									<option value="sinx">x + sin(x)</option>
 								</select>
 							</div>
@@ -1430,7 +1430,7 @@
 						</div>
 						<div class="demo-controls">
 							<div class="control-group">
-								<label>Noise Level σ</label>
+								<label>Noise Level Ïƒ</label>
 								<input
 									type="number"
 									id="noiseLevel"
@@ -1464,8 +1464,8 @@
 								<label>Constraint Type</label>
 								<select id="conType">
 									<option value="equality">Equality: x + y = 1</option>
-									<option value="inequality">Inequality: x + y ≤ 1</option>
-									<option value="box">Box: -1 ≤ x,y ≤ 1</option>
+									<option value="inequality">Inequality: x + y â‰¤ 1</option>
+									<option value="box">Box: -1 â‰¤ x,y â‰¤ 1</option>
 								</select>
 							</div>
 							<button class="btn btn-primary" onclick="showConstrained()">
@@ -1557,7 +1557,7 @@
 							<span class="quiz-difficulty difficulty-easy">Easy</span>
 						</div>
 						<div class="quiz-question">
-							The gradient ∇f(x) points in the direction of:
+							The gradient âˆ‡f(x) points in the direction of:
 						</div>
 						<div class="quiz-options">
 							<div class="quiz-option" onclick="checkAnswer(1, 0)">
@@ -1586,16 +1586,16 @@
 						</div>
 						<div class="quiz-options">
 							<div class="quiz-option" onclick="checkAnswer(2, 0)">
-								A) x_{i+1} = x_i - γ∇f(x_i)
+								A) x_{i+1} = x_i - Î³âˆ‡f(x_i)
 							</div>
 							<div class="quiz-option" onclick="checkAnswer(2, 1)">
-								B) x_{i+1} = x_i + γ∇f(x_i)
+								B) x_{i+1} = x_i + Î³âˆ‡f(x_i)
 							</div>
 							<div class="quiz-option" onclick="checkAnswer(2, 2)">
-								C) x_{i+1} = γ∇f(x_i)
+								C) x_{i+1} = Î³âˆ‡f(x_i)
 							</div>
 							<div class="quiz-option" onclick="checkAnswer(2, 3)">
-								D) x_{i+1} = x_i / ∇f(x_i)
+								D) x_{i+1} = x_i / âˆ‡f(x_i)
 							</div>
 						</div>
 						<div class="quiz-feedback" id="feedback2"></div>
@@ -1607,7 +1607,7 @@
 							<span class="quiz-difficulty difficulty-easy">Easy</span>
 						</div>
 						<div class="quiz-question">
-							If the step size (learning rate) γ is too large:
+							If the step size (learning rate) Î³ is too large:
 						</div>
 						<div class="quiz-options">
 							<div class="quiz-option" onclick="checkAnswer(3, 0)">
@@ -1634,10 +1634,10 @@
 						<div class="quiz-question">A point x* is a local minimum if:</div>
 						<div class="quiz-options">
 							<div class="quiz-option" onclick="checkAnswer(4, 0)">
-								A) f(x*) ≤ f(x) for all x in a neighborhood of x*
+								A) f(x*) â‰¤ f(x) for all x in a neighborhood of x*
 							</div>
 							<div class="quiz-option" onclick="checkAnswer(4, 1)">
-								B) ∇f(x*) is maximum
+								B) âˆ‡f(x*) is maximum
 							</div>
 							<div class="quiz-option" onclick="checkAnswer(4, 2)">
 								C) f(x*) > f(x) for all x
@@ -1655,20 +1655,20 @@
 							<span class="quiz-difficulty difficulty-easy">Easy</span>
 						</div>
 						<div class="quiz-question">
-							A function f is convex if for all x, y and θ ∈ [0,1]:
+							A function f is convex if for all x, y and Î¸ âˆˆ [0,1]:
 						</div>
 						<div class="quiz-options">
 							<div class="quiz-option" onclick="checkAnswer(5, 0)">
-								A) f(θx + (1-θ)y) ≤ θf(x) + (1-θ)f(y)
+								A) f(Î¸x + (1-Î¸)y) â‰¤ Î¸f(x) + (1-Î¸)f(y)
 							</div>
 							<div class="quiz-option" onclick="checkAnswer(5, 1)">
-								B) f(θx + (1-θ)y) ≥ θf(x) + (1-θ)f(y)
+								B) f(Î¸x + (1-Î¸)y) â‰¥ Î¸f(x) + (1-Î¸)f(y)
 							</div>
 							<div class="quiz-option" onclick="checkAnswer(5, 2)">
 								C) f(x + y) = f(x) + f(y)
 							</div>
 							<div class="quiz-option" onclick="checkAnswer(5, 3)">
-								D) f(x) · f(y) = f(xy)
+								D) f(x) Â· f(y) = f(xy)
 							</div>
 						</div>
 						<div class="quiz-feedback" id="feedback5"></div>
@@ -1682,7 +1682,7 @@
 						<div class="quiz-question">A set C is convex if:</div>
 						<div class="quiz-options">
 							<div class="quiz-option" onclick="checkAnswer(6, 0)">
-								A) For any x, y ∈ C, the line segment between them is in C
+								A) For any x, y âˆˆ C, the line segment between them is in C
 							</div>
 							<div class="quiz-option" onclick="checkAnswer(6, 1)">
 								B) C contains only positive numbers
@@ -1773,21 +1773,22 @@
 							<span class="quiz-difficulty difficulty-medium">Medium</span>
 						</div>
 						<div class="quiz-context">
-							<strong>Constrained problem:</strong> min f(x) subject to g(x) ≤ 0
+							<strong>Constrained problem:</strong> min f(x) subject to g(x) â‰¤
+							0
 						</div>
-						<div class="quiz-question">The Lagrangian L(x, λ) is:</div>
+						<div class="quiz-question">The Lagrangian L(x, Î») is:</div>
 						<div class="quiz-options">
 							<div class="quiz-option" onclick="checkAnswer(9, 0)">
-								A) L(x, λ) = f(x) + λg(x), where λ ≥ 0
+								A) L(x, Î») = f(x) + Î»g(x), where Î» â‰¥ 0
 							</div>
 							<div class="quiz-option" onclick="checkAnswer(9, 1)">
-								B) L(x, λ) = f(x) - g(x)
+								B) L(x, Î») = f(x) - g(x)
 							</div>
 							<div class="quiz-option" onclick="checkAnswer(9, 2)">
-								C) L(x, λ) = f(x) · g(x)
+								C) L(x, Î») = f(x) Â· g(x)
 							</div>
 							<div class="quiz-option" onclick="checkAnswer(9, 3)">
-								D) L(x, λ) = f(x) / λ
+								D) L(x, Î») = f(x) / Î»
 							</div>
 						</div>
 						<div class="quiz-feedback" id="feedback9"></div>
@@ -1803,16 +1804,16 @@
 						</div>
 						<div class="quiz-options">
 							<div class="quiz-option" onclick="checkAnswer(10, 0)">
-								A) λᵀ¢gᵀ¢(x*) = 0 for all i
+								A) Î»áµ€Â¢gáµ€Â¢(x*) = 0 for all i
 							</div>
 							<div class="quiz-option" onclick="checkAnswer(10, 1)">
-								B) λᵀ¢ + gᵀ¢(x*) = 0
+								B) Î»áµ€Â¢ + gáµ€Â¢(x*) = 0
 							</div>
 							<div class="quiz-option" onclick="checkAnswer(10, 2)">
-								C) λᵀ¢ = gᵀ¢(x*)
+								C) Î»áµ€Â¢ = gáµ€Â¢(x*)
 							</div>
 							<div class="quiz-option" onclick="checkAnswer(10, 3)">
-								D) λᵀ¢ / gᵀ¢(x*) = 1
+								D) Î»áµ€Â¢ / gáµ€Â¢(x*) = 1
 							</div>
 						</div>
 						<div class="quiz-feedback" id="feedback10"></div>
@@ -1828,7 +1829,7 @@
 						</div>
 						<div class="quiz-options">
 							<div class="quiz-option" onclick="checkAnswer(11, 0)">
-								A) The Hessian ∇²f(x) is positive semidefinite for all x
+								A) The Hessian âˆ‡Â²f(x) is positive semidefinite for all x
 							</div>
 							<div class="quiz-option" onclick="checkAnswer(11, 1)">
 								B) The gradient is zero
@@ -1851,16 +1852,16 @@
 						<div class="quiz-question">A linear program has the form:</div>
 						<div class="quiz-options">
 							<div class="quiz-option" onclick="checkAnswer(12, 0)">
-								A) min cᵀx subject to Ax ≤ b
+								A) min cáµ€x subject to Ax â‰¤ b
 							</div>
 							<div class="quiz-option" onclick="checkAnswer(12, 1)">
-								B) min xᵀQx subject to Ax = b
+								B) min xáµ€Qx subject to Ax = b
 							</div>
 							<div class="quiz-option" onclick="checkAnswer(12, 2)">
-								C) min ||x||² subject to x ≥ 0
+								C) min ||x||Â² subject to x â‰¥ 0
 							</div>
 							<div class="quiz-option" onclick="checkAnswer(12, 3)">
-								D) min eˣ subject to x ∈ ℝ
+								D) min eË£ subject to x âˆˆ â„
 							</div>
 						</div>
 						<div class="quiz-feedback" id="feedback12"></div>
@@ -1872,7 +1873,8 @@
 							<span class="quiz-difficulty difficulty-medium">Medium</span>
 						</div>
 						<div class="quiz-question">
-							In a quadratic program min ½xᵀQx + cᵀx, for convexity Q must be:
+							In a quadratic program min Â½xáµ€Qx + cáµ€x, for convexity Q must
+							be:
 						</div>
 						<div class="quiz-options">
 							<div class="quiz-option" onclick="checkAnswer(13, 0)">
@@ -1897,20 +1899,20 @@
 							<span class="quiz-difficulty difficulty-medium">Medium</span>
 						</div>
 						<div class="quiz-question">
-							The condition number κ = σ_max/σ_min affects GD by:
+							The condition number Îº = Ïƒ_max/Ïƒ_min affects GD by:
 						</div>
 						<div class="quiz-options">
 							<div class="quiz-option" onclick="checkAnswer(14, 0)">
-								A) Large κ causes slow, zigzagging convergence
+								A) Large Îº causes slow, zigzagging convergence
 							</div>
 							<div class="quiz-option" onclick="checkAnswer(14, 1)">
-								B) Large κ speeds up convergence
+								B) Large Îº speeds up convergence
 							</div>
 							<div class="quiz-option" onclick="checkAnswer(14, 2)">
-								C) κ has no effect on GD
+								C) Îº has no effect on GD
 							</div>
 							<div class="quiz-option" onclick="checkAnswer(14, 3)">
-								D) κ determines the learning rate
+								D) Îº determines the learning rate
 							</div>
 						</div>
 						<div class="quiz-feedback" id="feedback14"></div>
@@ -1952,16 +1954,16 @@
 						</div>
 						<div class="quiz-options">
 							<div class="quiz-option" onclick="checkAnswer(16, 0)">
-								A) f(E[X]) ≤ E[f(X)]
+								A) f(E[X]) â‰¤ E[f(X)]
 							</div>
 							<div class="quiz-option" onclick="checkAnswer(16, 1)">
-								B) f(E[X]) ≥ E[f(X)]
+								B) f(E[X]) â‰¥ E[f(X)]
 							</div>
 							<div class="quiz-option" onclick="checkAnswer(16, 2)">
 								C) f(E[X]) = E[f(X)]
 							</div>
 							<div class="quiz-option" onclick="checkAnswer(16, 3)">
-								D) E[X] = f⁻¹(E[f(X)])
+								D) E[X] = fâ»Â¹(E[f(X)])
 							</div>
 						</div>
 						<div class="quiz-feedback" id="feedback16"></div>
@@ -1975,13 +1977,13 @@
 						<div class="quiz-question">Weak duality guarantees that:</div>
 						<div class="quiz-options">
 							<div class="quiz-option" onclick="checkAnswer(17, 0)">
-								A) Dual optimal ≤ Primal optimal
+								A) Dual optimal â‰¤ Primal optimal
 							</div>
 							<div class="quiz-option" onclick="checkAnswer(17, 1)">
 								B) Dual optimal = Primal optimal always
 							</div>
 							<div class="quiz-option" onclick="checkAnswer(17, 2)">
-								C) Dual optimal ≥ Primal optimal
+								C) Dual optimal â‰¥ Primal optimal
 							</div>
 							<div class="quiz-option" onclick="checkAnswer(17, 3)">
 								D) No relationship between dual and primal
@@ -2066,13 +2068,13 @@
 						</div>
 						<div class="quiz-options">
 							<div class="quiz-option" onclick="checkAnswer(19, 0)">
-								A) f*(s) = sup_x {sᵀx - f(x)}
+								A) f*(s) = sup_x {sáµ€x - f(x)}
 							</div>
 							<div class="quiz-option" onclick="checkAnswer(19, 1)">
-								B) f*(s) = inf_x {f(x) - sᵀx}
+								B) f*(s) = inf_x {f(x) - sáµ€x}
 							</div>
 							<div class="quiz-option" onclick="checkAnswer(19, 2)">
-								C) f*(s) = f(s⁻¹)
+								C) f*(s) = f(sâ»Â¹)
 							</div>
 							<div class="quiz-option" onclick="checkAnswer(19, 3)">
 								D) f*(s) = -f(-s)
@@ -2092,7 +2094,7 @@
 						<div class="quiz-question">The dual problem involves:</div>
 						<div class="quiz-options">
 							<div class="quiz-option" onclick="checkAnswer(20, 0)">
-								A) Conjugate functions f* and g* with -Aᵀλ
+								A) Conjugate functions f* and g* with -Aáµ€Î»
 							</div>
 							<div class="quiz-option" onclick="checkAnswer(20, 1)">
 								B) Just the original functions f and g
@@ -2113,8 +2115,8 @@
 							<span class="quiz-difficulty difficulty-hard">Hard</span>
 						</div>
 						<div class="quiz-question">
-							Newton's method update is x_{i+1} = x_i - [∇²f(x_i)]⁻¹∇f(x_i). It
-							differs from GD by:
+							Newton's method update is x_{i+1} = x_i -
+							[âˆ‡Â²f(x_i)]â»Â¹âˆâ€¡f(x_i). It differs from GD by:
 						</div>
 						<div class="quiz-options">
 							<div class="quiz-option" onclick="checkAnswer(21, 0)">
@@ -2147,7 +2149,7 @@
 								A) O(1/k) sublinear convergence
 							</div>
 							<div class="quiz-option" onclick="checkAnswer(22, 1)">
-								B) O(2⁻ᵀ) exponential convergence
+								B) O(2â»áµ€) exponential convergence
 							</div>
 							<div class="quiz-option" onclick="checkAnswer(22, 2)">
 								C) O(k) linear growth
@@ -2165,7 +2167,8 @@
 							<span class="quiz-difficulty difficulty-hard">Hard</span>
 						</div>
 						<div class="quiz-context">
-							<strong>SVM:</strong> min ½||w||² subject to yᵀ¢(wᵀxᵀ¢ + b) ≥ 1
+							<strong>SVM:</strong> min Â½||w||Â² subject to yáµ€Â¢(wáµ€xáµ€Â¢ +
+							b) â‰¥ 1
 						</div>
 						<div class="quiz-question">
 							This is which type of optimization problem?
@@ -2216,13 +2219,13 @@
 							<span class="quiz-difficulty difficulty-hard">Hard</span>
 						</div>
 						<div class="quiz-context">
-							<strong>Agentic AI:</strong> Policy gradient in RL: θ ← θ + α∇_θ
-							J(θ)
+							<strong>Agentic AI:</strong> Policy gradient in RL: Î¸ ← Î¸ +
+							Î±âˆ‡_Î¸ J(Î¸)
 						</div>
 						<div class="quiz-question">This is gradient ASCENT because:</div>
 						<div class="quiz-options">
 							<div class="quiz-option" onclick="checkAnswer(25, 0)">
-								A) We maximize expected reward J(θ), so we add the gradient
+								A) We maximize expected reward J(Î¸), so we add the gradient
 							</div>
 							<div class="quiz-option" onclick="checkAnswer(25, 1)">
 								B) RL always uses ascent regardless of objective
@@ -2343,12 +2346,12 @@
 							class="btn btn-primary"
 							onclick="resetQuiz()"
 							style="margin-right: 1rem">
-							🔄 Reset Quiz
+							🔍„ Reset Quiz
 						</button>
 						<button
 							class="btn btn-orange"
-							onclick="window.scrollTo({top: 0, behavior: 'smooth'})">
-							⬆ Back to Top
+							onclick="window.scrollTo({ top: 0, behavior: 'smooth' })">
+							â¬† Back to Top
 						</button>
 					</div>
 				</section>
@@ -2387,31 +2390,31 @@
 			};
 
 			const explanations = {
-				1: "The gradient ∇f(x) points in the direction of steepest ascent (fastest increase)",
-				2: "GD subtracts the gradient (scaled by γ) to move toward minimum: x_{i+1} = x_i - γ∇f(x_i)",
-				3: "Too large γ causes overshooting past the minimum, potentially causing divergence",
-				4: "Local minimum: f(x*) ≤ f(x) for all x in some neighborhood around x*",
+				1: "The gradient âˆ‡f(x) points in the direction of steepest ascent (fastest increase)",
+				2: "GD subtracts the gradient (scaled by Î³) to move toward minimum: x_{i+1} = x_i - Î³âˆ‡f(x_i)",
+				3: "Too large Î³ causes overshooting past the minimum, potentially causing divergence",
+				4: "Local minimum: f(x*) â‰¤ f(x) for all x in some neighborhood around x*",
 				5: "Convexity: line segment between any two points lies above the function graph",
 				6: "Convex set: for any two points in the set, the entire line segment is also in the set",
 				7: "SGD estimates gradient using a random subset (mini-batch) instead of all data",
 				8: "Momentum accumulates velocity from past gradients, helping escape flat regions and accelerate",
-				9: "Lagrangian: L(x,λ) = f(x) + λg(x) with λ ≥ 0 for inequality constraints",
-				10: "Complementary slackness: either λᵀ¢ = 0 or gᵀ¢(x*) = 0 (constraint active)",
+				9: "Lagrangian: L(x,Î») = f(x) + Î»g(x) with Î» â‰¥ 0 for inequality constraints",
+				10: "Complementary slackness: either Î»áµ€Â¢ = 0 or gáµ€Â¢(x*) = 0 (constraint active)",
 				11: "Twice-differentiable function is convex iff Hessian is positive semidefinite everywhere",
-				12: "Linear program: linear objective min cᵀx with linear inequality constraints Ax ≤ b",
-				13: "For QP to be convex, Q must be positive semidefinite (all eigenvalues ≥ 0)",
-				14: "Large condition number κ means elongated contours, causing zigzag slow convergence",
+				12: "Linear program: linear objective min cáµ€x with linear inequality constraints Ax â‰¤ b",
+				13: "For QP to be convex, Q must be positive semidefinite (all eigenvalues â‰¥ 0)",
+				14: "Large condition number Îº means elongated contours, causing zigzag slow convergence",
 				15: "Mini-batch gradient is unbiased estimate with variance O(1/B) where B is batch size",
-				16: "Jensen's inequality: f(E[X]) ≤ E[f(X)] for convex f (function of mean ≤ mean of function)",
-				17: "Weak duality: dual optimal value is always ≤ primal optimal (lower bound)",
+				16: "Jensen's inequality: f(E[X]) â‰¤ E[f(X)] for convex f (function of mean â‰¤ mean of function)",
+				17: "Weak duality: dual optimal value is always â‰¤ primal optimal (lower bound)",
 				18: "Strong duality requires convexity + constraint qualification (e.g., Slater's condition)",
-				19: "Convex conjugate: f*(s) = sup_x {sᵀx - f(x)}, transforms function to dual representation",
-				20: "Dual problem uses conjugate functions f* and g* with the adjoint operator -Aᵀ",
+				19: "Convex conjugate: f*(s) = sup_x {sáµ€x - f(x)}, transforms function to dual representation",
+				20: "Dual problem uses conjugate functions f* and g* with the adjoint operator -Aáµ€",
 				21: "Newton uses Hessian inverse for faster (quadratic) convergence near optimum",
-				22: "GD on smooth convex: O(1/k) sublinear. With strong convexity: linear O(ρᵀ)",
-				23: "SVM is a convex QP: quadratic objective ||w||² with linear constraints",
+				22: "GD on smooth convex: O(1/k) sublinear. With strong convexity: linear O(Ïáµ€)",
+				23: "SVM is a convex QP: quadratic objective ||w||Â² with linear constraints",
 				24: "Adam = Momentum (exponential moving average of gradients) + RMSprop (adaptive learning rate)",
-				25: "Policy gradient maximizes J(θ), so we use gradient ascent (+) instead of descent (-)",
+				25: "Policy gradient maximizes J(Î¸), so we use gradient ascent (+) instead of descent (-)",
 			};
 
 			let userAnswers = {},
@@ -2438,14 +2441,14 @@
 					correctCount++;
 					container.classList.add("answered-correct");
 					feedback.className = "quiz-feedback show correct";
-					feedback.innerHTML = `✅ <strong>Correct!</strong> ${explanations[q]}`;
+					feedback.innerHTML = `âœ… <strong>Correct!</strong> ${explanations[q]}`;
 					if (q <= 8) easyCorrect++;
 					else if (q <= 17) mediumCorrect++;
 					else hardCorrect++;
 				} else {
 					container.classList.add("answered-wrong");
 					feedback.className = "quiz-feedback show incorrect";
-					feedback.innerHTML = `❌ <strong>Incorrect.</strong> ${explanations[q]}`;
+					feedback.innerHTML = `âŒ <strong>Incorrect.</strong> ${explanations[q]}`;
 				}
 				updateStats();
 			}
@@ -2456,25 +2459,21 @@
 						? Math.round((correctCount / attemptedCount) * 100)
 						: 0;
 				const prog = Math.round((attemptedCount / totalQuestions) * 100);
-				document.getElementById(
-					"headerScore"
-				).textContent = `${correctCount}/${totalQuestions}`;
+				document.getElementById("headerScore").textContent =
+					`${correctCount}/${totalQuestions}`;
 				document.getElementById("headerAccuracy").textContent = `${acc}%`;
-				document.getElementById(
-					"sidebarScore"
-				).textContent = `${correctCount}/${totalQuestions}`;
-				document.getElementById("scoreProgress").style.width = `${
-					(correctCount / totalQuestions) * 100
-				}%`;
+				document.getElementById("sidebarScore").textContent =
+					`${correctCount}/${totalQuestions}`;
+				document.getElementById("scoreProgress").style.width =
+					`${(correctCount / totalQuestions) * 100}%`;
 				document.getElementById("progressFill").style.width = `${prog}%`;
 				document.getElementById("totalCorrect").textContent = correctCount;
 				document.getElementById("totalAttempted").textContent = attemptedCount;
 				document.getElementById("accuracyPercent").textContent = `${acc}%`;
 				document.getElementById("progressPercent").textContent = `${prog}%`;
 				document.getElementById("easyScore").textContent = `${easyCorrect}/8`;
-				document.getElementById(
-					"mediumScore"
-				).textContent = `${mediumCorrect}/9`;
+				document.getElementById("mediumScore").textContent =
+					`${mediumCorrect}/9`;
 				document.getElementById("hardScore").textContent = `${hardCorrect}/8`;
 			}
 
@@ -2489,7 +2488,7 @@
 					const c = document.getElementById(`q${i}`);
 					c.classList.remove("answered-correct", "answered-wrong");
 					c.querySelectorAll(".quiz-option").forEach((o) =>
-						o.classList.remove("disabled", "correct", "incorrect")
+						o.classList.remove("disabled", "correct", "incorrect"),
 					);
 					document.getElementById(`feedback${i}`).className = "quiz-feedback";
 				}
@@ -2597,22 +2596,21 @@
 						s.py,
 						i === 0 || i === path.length - 1 ? 6 : 4,
 						0,
-						Math.PI * 2
+						Math.PI * 2,
 					);
 					gd1Ctx.fill();
 				});
 
 				const finalPt = path[path.length - 1];
-				document.getElementById(
-					"gd1Output"
-				).innerHTML = `1D Gradient Descent: x_{i+1} = x_i - γ·f'(x_i)
+				document.getElementById("gd1Output").innerHTML =
+					`1D Gradient Descent: x_{i+1} = x_i - Î³Â·f'(x_i)
 
-Starting point: x₁ = ${x0}
-Learning rate: γ = ${lr}
+Starting point: xâ‚ = ${x0}
+Learning rate: Î³ = ${lr}
 Iterations: ${maxIter}
 
-Final position: x* ≈ ${finalPt.x.toFixed(4)}
-Final value: f(x*) ≈ ${finalPt.y.toFixed(4)}
+Final position: x* â‰ˆ ${finalPt.x.toFixed(4)}
+Final value: f(x*) â‰ˆ ${finalPt.y.toFixed(4)}
 
 Green dot: start | Red dot: end | Orange: path`;
 			}
@@ -2722,22 +2720,21 @@ Green dot: start | Red dot: end | Orange: path`;
 						sy,
 						i === 0 || i === path.length - 1 ? 6 : 3,
 						0,
-						Math.PI * 2
+						Math.PI * 2,
 					);
 					gd2Ctx.fill();
 				});
 
 				const finalPt = path[path.length - 1];
-				document.getElementById(
-					"gd2Output"
-				).innerHTML = `2D Gradient Descent on ${funcType} surface
+				document.getElementById("gd2Output").innerHTML =
+					`2D Gradient Descent on ${funcType} surface
 
 Start: (${x0}, ${y0})
-Learning rate: γ = ${lr}
+Learning rate: Î³ = ${lr}
 Iterations: ${path.length - 1}
 
 Final: (${finalPt.x.toFixed(4)}, ${finalPt.y.toFixed(4)})
-f(x*,y*) ≈ ${f(finalPt.x, finalPt.y).toFixed(6)}`;
+f(x*,y*) â‰ˆ ${f(finalPt.x, finalPt.y).toFixed(6)}`;
 			}
 
 			// Lab 3: Learning Rate Effects
@@ -2812,26 +2809,19 @@ f(x*,y*) ≈ ${f(finalPt.x, finalPt.y).toFixed(6)}`;
 				colors.forEach((c, i) => {
 					lrCtx.fillStyle = c;
 					lrCtx.fillRect(w - 100, 20 + i * 20, 15, 15);
-					lrCtx.fillText(`γ = ${lrs[i]}`, w - 80, 32 + i * 20);
+					lrCtx.fillText(`Î³ = ${lrs[i]}`, w - 80, 32 + i * 20);
 				});
 
-				document.getElementById(
-					"lrOutput"
-				).innerHTML = `Learning Rate Comparison on f(x) = x²
+				document.getElementById("lrOutput").innerHTML =
+					`Learning Rate Comparison on f(x) = xÂ²
 
-γ₁ = ${lr1} (green): ${path1.length} steps, final x = ${path1[
-					path1.length - 1
-				].x.toFixed(4)}
-γ₂ = ${lr2} (orange): ${path2.length} steps, final x = ${path2[
-					path2.length - 1
-				].x.toFixed(4)}
-γ₃ = ${lr3} (red): ${path3.length} steps, final x = ${path3[
-					path3.length - 1
-				].x.toFixed(4)}
+Î³â‚ = ${lr1} (green): ${path1.length} steps, final x = ${path1[path1.length - 1].x.toFixed(4)}
+Î³â‚‚ = ${lr2} (orange): ${path2.length} steps, final x = ${path2[path2.length - 1].x.toFixed(4)}
+Î³â‚ƒ = ${lr3} (red): ${path3.length} steps, final x = ${path3[path3.length - 1].x.toFixed(4)}
 
-• Too small γ: slow convergence
-• Just right γ: fast, stable convergence
-• Too large γ: overshooting, possible divergence`;
+â€¢ Too small Î³: slow convergence
+â€¢ Just right Î³: fast, stable convergence
+â€¢ Too large Î³: overshooting, possible divergence`;
 			}
 
 			// Lab 4: Momentum
@@ -2936,17 +2926,16 @@ f(x*,y*) ≈ ${f(finalPt.x, finalPt.y).toFixed(6)}`;
 				momCtx.fillRect(w - 120, 40, 15, 15);
 				momCtx.fillText("Momentum", w - 100, 52);
 
-				document.getElementById(
-					"momOutput"
-				).innerHTML = `Momentum vs Vanilla GD on f(x,y) = x² + 20y² (ill-conditioned)
+				document.getElementById("momOutput").innerHTML =
+					`Momentum vs Vanilla GD on f(x,y) = xÂ² + 20yÂ² (ill-conditioned)
 
-Momentum α = ${alpha}, Learning rate γ = ${lr}
+Momentum Î± = ${alpha}, Learning rate Î³ = ${lr}
 
 Vanilla GD (blue): zigzags due to elongated contours
 Momentum (orange): smoother path, faster convergence
 
 Update rule with momentum:
-  v_{i+1} = αv_i - γ∇f(x_i)
+  v_{i+1} = Î±v_i - Î³âˆ‡f(x_i)
   x_{i+1} = x_i + v_{i+1}`;
 			}
 
@@ -3036,9 +3025,8 @@ Update rule with momentum:
 				const finalW = history[history.length - 1].w;
 				const finalLoss = history[history.length - 1].loss;
 
-				document.getElementById(
-					"sgdOutput"
-				).innerHTML = `SGD Simulation: Linear Regression y = wx
+				document.getElementById("sgdOutput").innerHTML =
+					`SGD Simulation: Linear Regression y = wx
 
 Data points: ${N}
 Batch size: ${batchSize === "full" ? "Full (Batch GD)" : B}
@@ -3047,9 +3035,9 @@ True w: ${trueW}
 Final w: ${finalW.toFixed(4)}
 Final loss: ${finalLoss.toFixed(6)}
 
-• Batch GD: uses all N points, smooth convergence
-• Mini-batch: uses B points, faster but noisier
-• Pure SGD (B=1): fastest but most noisy`;
+â€¢ Batch GD: uses all N points, smooth convergence
+â€¢ Mini-batch: uses B points, faster but noisier
+â€¢ Pure SGD (B=1): fastest but most noisy`;
 			}
 
 			// Lab 6: Convexity Checker
@@ -3062,11 +3050,11 @@ Final loss: ${finalLoss.toFixed(6)}
 				let f, name, isConvex;
 				if (funcType === "x2") {
 					f = (x) => x * x;
-					name = "f(x) = x²";
+					name = "f(x) = xÂ²";
 					isConvex = true;
 				} else if (funcType === "exp") {
 					f = (x) => Math.exp(x);
-					name = "f(x) = eˣ";
+					name = "f(x) = eË£";
 					isConvex = true;
 				} else if (funcType === "neglog") {
 					f = (x) => (x > 0 ? -Math.log(x) : 10);
@@ -3074,7 +3062,7 @@ Final loss: ${finalLoss.toFixed(6)}
 					isConvex = true;
 				} else if (funcType === "x3") {
 					f = (x) => x * x * x;
-					name = "f(x) = x³";
+					name = "f(x) = xÂ³";
 					isConvex = false;
 				} else if (funcType === "sin") {
 					f = (x) => Math.sin(x);
@@ -3082,7 +3070,7 @@ Final loss: ${finalLoss.toFixed(6)}
 					isConvex = false;
 				} else {
 					f = (x) => x ** 4 - 2 * x * x;
-					name = "f(x) = x⁴-2x²";
+					name = "f(x) = xâ´-2xÂ²";
 					isConvex = false;
 				}
 
@@ -3162,21 +3150,16 @@ Final loss: ${finalLoss.toFixed(6)}
 				convCtx.arc(pMid.px, pMid.py, 5, 0, Math.PI * 2);
 				convCtx.fill();
 
-				document.getElementById(
-					"convOutput"
-				).innerHTML = `Convexity Test: ${name}
+				document.getElementById("convOutput").innerHTML =
+					`Convexity Test: ${name}
 
-Chord test points: x₁ = ${x1}, x₂ = ${x2}
+Chord test points: xâ‚ = ${x1}, xâ‚‚ = ${x2}
 Midpoint: x_mid = ${midX}
 
 f(x_mid) = ${midFunc.toFixed(4)}
-Chord at mid = (f(x₁)+f(x₂))/2 = ${midChord.toFixed(4)}
+Chord at mid = (f(xâ‚)+f(xâ‚‚))/2 = ${midChord.toFixed(4)}
 
-${
-	isConvex
-		? "✓ CONVEX: f(mid) ≤ chord (function below chord)"
-		: "✗ NON-CONVEX: f(mid) > chord at some points"
-}
+${isConvex ? "âœ“ CONVEX: f(mid) â‰¤ chord (function below chord)" : "âœ— NON-CONVEX: f(mid) > chord at some points"}
 
 Orange dashed line: chord between two points
 ${isConvex ? "Green" : "Red"} dot: function value at midpoint`;
@@ -3184,114 +3167,108 @@ ${isConvex ? "Green" : "Red"} dot: function value at midpoint`;
 
 			// Simplified implementations for remaining labs
 			function solveLagrange() {
-				document.getElementById(
-					"lagOutput"
-				).innerHTML = `Lagrangian Method Example
+				document.getElementById("lagOutput").innerHTML =
+					`Lagrangian Method Example
 
-Problem: min x² + y²  subject to  x + y = 1
+Problem: min xÂ² + yÂ²  subject to  x + y = 1
 
-Lagrangian: L(x,y,λ) = x² + y² + λ(x + y - 1)
+Lagrangian: L(x,y,Î») = xÂ² + yÂ² + Î»(x + y - 1)
 
 KKT conditions:
-  ∂L/∂x = 2x + λ = 0  →  x = -λ/2
-  ∂L/∂y = 2y + λ = 0  →  y = -λ/2
-  ∂L/∂λ = x + y - 1 = 0
+  âˆ‚L/âˆ‚x = 2x + Î» = 0  ←’  x = -Î»/2
+  âˆ‚L/âˆ‚y = 2y + Î» = 0  ←’  y = -Î»/2
+  âˆ‚L/âˆ‚Î» = x + y - 1 = 0
 
-From x = y = -λ/2 and x + y = 1:
-  -λ = 1  →  λ = -1
+From x = y = -Î»/2 and x + y = 1:
+  -Î» = 1  ←’  Î» = -1
   x* = y* = 0.5
 
 Optimal value: f(0.5, 0.5) = 0.5`;
 			}
 
 			function solveLP() {
-				document.getElementById(
-					"lpOutput"
-				).innerHTML = `Linear Programming Example
+				document.getElementById("lpOutput").innerHTML =
+					`Linear Programming Example
 
-Problem: max 3x₁ + 2x₂
+Problem: max 3xâ‚ + 2xâ‚‚
 subject to:
-  2x₁ + x₂ ≤ 18
-  2x₁ + 3x₂ ≤ 42
-  3x₁ + x₂ ≤ 24
-  x₁, x₂ ≥ 0
+  2xâ‚ + xâ‚‚ â‰¤ 18
+  2xâ‚ + 3xâ‚‚ â‰¤ 42
+  3xâ‚ + xâ‚‚ â‰¤ 24
+  xâ‚, xâ‚‚ â‰¥ 0
 
 Solution occurs at vertex of feasible region.
-Optimal: x₁* = 3, x₂* = 12
+Optimal: xâ‚* = 3, xâ‚‚* = 12
 Maximum value: 3(3) + 2(12) = 33`;
 			}
 
 			function solveQP() {
-				document.getElementById(
-					"qpOutput"
-				).innerHTML = `Quadratic Programming Example
+				document.getElementById("qpOutput").innerHTML =
+					`Quadratic Programming Example
 
-Problem: min ½xᵀQx + cᵀx  with box constraints
+Problem: min Â½xáµ€Qx + cáµ€x  with box constraints
 
 Q = [2 0; 0 4], c = [5; 3]
-Constraints: -1 ≤ x₁, x₂ ≤ 1
+Constraints: -1 â‰¤ xâ‚, xâ‚‚ â‰¤ 1
 
-Unconstrained optimum: x* = -Q⁻¹c = [-2.5; -0.75]
+Unconstrained optimum: x* = -Qâ»Â¹c = [-2.5; -0.75]
 
 With constraints: projected to feasible region
 x* = [-1, -0.75]
-f(x*) = ½(1·2 + 0.5625·4) + (-5 - 2.25) = -5.125`;
+f(x*) = Â½(1Â·2 + 0.5625Â·4) + (-5 - 2.25) = -5.125`;
 			}
 
 			function showCondition() {
 				const k = parseInt(document.getElementById("condK").value);
-				document.getElementById(
-					"condOutput"
-				).innerHTML = `Condition Number Effect: κ = ${k}
+				document.getElementById("condOutput").innerHTML =
+					`Condition Number Effect: Îº = ${k}
 
-f(x,y) = x² + ${k}y² (ratio of eigenvalues = ${k})
+f(x,y) = xÂ² + ${k}yÂ² (ratio of eigenvalues = ${k})
 
-Condition number κ = λ_max / λ_min = ${k}
+Condition number Îº = Î»_max / Î»_min = ${k}
 
-• κ ≈ 1: Circular contours, fast convergence
-• κ >> 1: Elongated contours, zigzag path
+â€¢ Îº â‰ˆ 1: Circular contours, fast convergence
+â€¢ Îº >> 1: Elongated contours, zigzag path
   
-GD convergence rate depends on κ:
-  Error after k steps ≤ ((κ-1)/(κ+1))^k × initial error
+GD convergence rate depends on Îº:
+  Error after k steps â‰¤ ((Îº-1)/(Îº+1))^k × initial error
 
-κ = ${k} → convergence factor = ${((k - 1) / (k + 1)).toFixed(4)}`;
+Îº = ${k} ←’ convergence factor = ${((k - 1) / (k + 1)).toFixed(4)}`;
 			}
 
 			function findStationary() {
-				document.getElementById(
-					"statOutput"
-				).innerHTML = `Stationary Points of f(x) = x³ - 3x
+				document.getElementById("statOutput").innerHTML =
+					`Stationary Points of f(x) = xÂ³ - 3x
 
-f'(x) = 3x² - 3 = 0
-→ x² = 1
-→ x = ±1
+f'(x) = 3xÂ² - 3 = 0
+←’ xÂ² = 1
+←’ x = Â±1
 
 f''(x) = 6x
 
-At x = -1: f''(-1) = -6 < 0 → LOCAL MAXIMUM
+At x = -1: f''(-1) = -6 < 0 ←’ LOCAL MAXIMUM
   f(-1) = -1 + 3 = 2
 
-At x = 1: f''(1) = 6 > 0 → LOCAL MINIMUM
+At x = 1: f''(1) = 6 > 0 ←’ LOCAL MINIMUM
   f(1) = 1 - 3 = -2
 
 Second derivative test:
-• f''(x*) > 0 → minimum
-• f''(x*) < 0 → maximum
-• f''(x*) = 0 → inconclusive`;
+â€¢ f''(x*) > 0 ←’ minimum
+â€¢ f''(x*) < 0 ←’ maximum
+â€¢ f''(x*) = 0 ←’ inconclusive`;
 			}
 
 			function runNoisyGD() {
-				document.getElementById(
-					"noiseOutput"
-				).innerHTML = `Noisy Gradient Descent (SGD approximation)
+				document.getElementById("noiseOutput").innerHTML =
+					`Noisy Gradient Descent (SGD approximation)
 
-True gradient: ∇f(x)
-Estimated gradient: g(x) = ∇f(x) + ε, where ε ~ N(0, σ²)
+True gradient: âˆ‡f(x)
+Estimated gradient: g(x) = âˆ‡f(x) + Îµ, where Îµ ~ N(0, ÏƒÂ²)
 
-With noise σ = 0.5:
-• Path is less smooth
-• May escape shallow local minima
-• Requires smaller learning rate for convergence
+With noise Ïƒ = 0.5:
+â€¢ Path is less smooth
+â€¢ May escape shallow local minima
+â€¢ Requires smaller learning rate for convergence
 
 Benefits of noise:
 1. Regularization effect
@@ -3300,19 +3277,18 @@ Benefits of noise:
 			}
 
 			function showConstrained() {
-				document.getElementById(
-					"conOutput"
-				).innerHTML = `Constrained Optimization Types
+				document.getElementById("conOutput").innerHTML =
+					`Constrained Optimization Types
 
 1. Equality constraint: h(x) = 0
    - Solution lies ON the constraint surface
-   - Use Lagrange multipliers (λ unconstrained)
+   - Use Lagrange multipliers (Î» unconstrained)
 
-2. Inequality constraint: g(x) ≤ 0
+2. Inequality constraint: g(x) â‰¤ 0
    - Solution lies ON or INSIDE constraint region
-   - Use KKT conditions (λ ≥ 0, complementary slackness)
+   - Use KKT conditions (Î» â‰¥ 0, complementary slackness)
 
-3. Box constraints: l ≤ x ≤ u
+3. Box constraints: l â‰¤ x â‰¤ u
    - Simple bounds on variables
    - Projected gradient methods work well
 
@@ -3321,9 +3297,8 @@ is parallel to gradient of active constraints.`;
 			}
 
 			function showLandscape() {
-				document.getElementById(
-					"lossOutput"
-				).innerHTML = `Loss Landscape Types in Deep Learning
+				document.getElementById("lossOutput").innerHTML =
+					`Loss Landscape Types in Deep Learning
 
 1. Convex Bowl: Easy to optimize, unique minimum
    Example: Linear regression
@@ -3344,15 +3319,15 @@ is parallel to gradient of active constraints.`;
 				document.getElementById("optOutput").innerHTML = `Optimizer Comparison
 
 1. Gradient Descent (GD)
-   x ← x - γ∇f(x)
+   x ← x - Î³âˆ‡f(x)
    Simple but slow on ill-conditioned problems
 
 2. Momentum
-   v ← αv - γ∇f(x), x ← x + v
+   v ← Î±v - Î³âˆ‡f(x), x ← x + v
    Accelerates through flat regions
 
 3. Nesterov Accelerated
-   v ← αv - γ∇f(x + αv), x ← x + v
+   v ← Î±v - Î³âˆ‡f(x + Î±v), x ← x + v
    Look-ahead gradient, faster convergence
 
 4. AdaGrad

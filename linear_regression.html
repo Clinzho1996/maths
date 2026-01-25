@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 	<head>
 		<meta charset="UTF-8" />
@@ -220,7 +220,7 @@
 			}
 
 			.hero::after {
-				content: "";
+				content: "📝‰";
 				position: absolute;
 				bottom: -30%;
 				left: -10%;
@@ -285,7 +285,9 @@
 				border: 1px solid var(--border-color);
 				padding: 1.25rem;
 				border-radius: 12px;
-				transition: transform 0.2s, box-shadow 0.2s;
+				transition:
+					transform 0.2s,
+					box-shadow 0.2s;
 			}
 
 			.concept-card:hover {
@@ -428,7 +430,7 @@
 			}
 
 			.ml-box .label::before {
-				content: "🤓";
+				content: "📝¤“";
 			}
 
 			.quanskill-box {
@@ -494,7 +496,7 @@
 			}
 
 			.example-box .label::before {
-				content: "▸";
+				content: "â–¸";
 				color: var(--quanskill-orange);
 			}
 
@@ -547,7 +549,7 @@
 			}
 
 			.realworld-box .label::before {
-				content: "🎁";
+				content: "🎯";
 			}
 
 			/* Code Blocks */
@@ -730,7 +732,7 @@
 			}
 
 			.demo-header::before {
-				content: "⚡";
+				content: "âš¡";
 			}
 
 			.demo-controls {
@@ -966,18 +968,13 @@
 	</head>
 	<body>
 		<!-- Floating Back to Main Page Button -->
-		<a href="index.html" class="floating-back-btn">← Main Page</a>
+		<a href="index.html" class="floating-back-btn">← Main Page</a>
 
 		<!-- Header -->
 		<header class="header">
 			<div class="header-content">
-				<!-- <a href="index.html" class="header-logo"
-					><img
-						src="Logo_for_Print.jpg"
-						alt="Quanskill"
-						style="height: 40px; border-radius: 8px"
-				/></a> -->
-				<button class="mobile-menu-btn" onclick="toggleSidebar()">☰</button>
+				<!-- <a href="index.html" class="header-logo"><img src="Logo_for_Print.jpg" alt="Quanskill" style="height: 40px; border-radius: 8px;"></a> -->
+				<button class="mobile-menu-btn" onclick="toggleSidebar()">â˜°</button>
 			</div>
 		</header>
 
@@ -988,8 +985,13 @@
 		<!-- Sidebar Navigation -->
 		<nav class="sidebar" id="sidebar">
 			<div class="sidebar-header">
-				<!-- <a href="index.html" class="logo"><img src="Logo_for_Print.jpg" alt="Quanskill" style="height: 36px; border-radius: 6px;"></a> -->
-				<div class="chapter-title">Chapter 9 · Linear Regression</div>
+				<a href="index.html" class="logo"
+					><img
+						src="Logo_for_Print.jpg"
+						alt="Quanskill"
+						style="height: 36px; border-radius: 6px"
+				/></a>
+				<div class="chapter-title">Chapter 9 Â· Linear Regression</div>
 			</div>
 
 			<div class="nav-section">
@@ -1025,7 +1027,7 @@
 							the foundational techniques of supervised learning.
 						</p>
 						<div class="hero-quote">
-							"Linear regression is where theory meets practice — the starting
+							"Linear regression is where theory meets practice - the starting
 							point for understanding how machines learn from data."
 						</div>
 					</div>
@@ -1046,7 +1048,7 @@
 						<p>Estimate parameters by maximizing data probability</p>
 					</div>
 					<div class="concept-card">
-						<div class="icon">🖊¡</div>
+						<div class="icon">📝–ŠÂ¡</div>
 						<h5>Regularization</h5>
 						<p>Prevent overfitting with parameter priors</p>
 					</div>
@@ -1056,12 +1058,12 @@
 						<p>Quantify uncertainty in predictions</p>
 					</div>
 					<div class="concept-card">
-						<div class="icon">🔮</div>
+						<div class="icon">🔍®</div>
 						<h5>Feature Engineering</h5>
 						<p>Transform inputs for nonlinear modeling</p>
 					</div>
 					<div class="concept-card">
-						<div class="icon">📐</div>
+						<div class="icon">🐍"</div>
 						<h5>Orthogonal Projection</h5>
 						<p>Geometric view of least squares</p>
 					</div>
@@ -1099,7 +1101,7 @@
 					<p>
 						The term "linear regression" refers to models that are
 						<strong>linear in the parameters</strong> $\boldsymbol{\theta}$. The
-						inputs $\mathbf{x}$ can undergo any nonlinear transformation — we
+						inputs $\mathbf{x}$ can undergo any nonlinear transformation - we
 						can fit polynomials, radial basis functions, and more.
 					</p>
 
@@ -1300,10 +1302,10 @@
 						</p>
 						<ul>
 							<li>
-								<strong>Gaussian prior</strong> → L2 regularization (Ridge)
+								<strong>Gaussian prior</strong> ←’ L2 regularization (Ridge)
 							</li>
 							<li>
-								<strong>Laplace prior</strong> → L1 regularization (LASSO)
+								<strong>Laplace prior</strong> ←’ L1 regularization (LASSO)
 							</li>
 						</ul>
 					</div>
@@ -1457,16 +1459,16 @@
 						<canvas id="bayesCanvas" class="demo-canvas"></canvas>
 						<div class="demo-results">
 							<div class="result-item">
-								<div class="value" id="mlePred">—</div>
+								<div class="value" id="mlePred">-</div>
 								<div class="label">MLE Prediction</div>
 							</div>
 							<div class="result-item">
-								<div class="value" id="mapPred">—</div>
+								<div class="value" id="mapPred">-</div>
 								<div class="label">MAP/Bayesian Mean</div>
 							</div>
 							<div class="result-item">
-								<div class="value" id="uncertainty">—</div>
-								<div class="label">Uncertainty (±2σ)</div>
+								<div class="value" id="uncertainty">-</div>
+								<div class="label">Uncertainty (Â±2Ïƒ)</div>
 							</div>
 						</div>
 					</div>
@@ -1509,7 +1511,7 @@
 						\mathbf{X}\mathbf{S}_0\mathbf{X}^\top + \sigma^2\mathbf{I})$$
 					</div>
 					<p>
-						This is the expected likelihood under the prior — models that are
+						This is the expected likelihood under the prior - models that are
 						too simple or too complex will have lower marginal likelihood
 						(Occam's razor).
 					</p>
@@ -1616,14 +1618,14 @@
 						<ul>
 							<li>
 								<strong>House price prediction:</strong> Features like size,
-								location, bedrooms → price
+								location, bedrooms ←’ price
 							</li>
 							<li>
-								<strong>Stock market analysis:</strong> Historical data → future
-								returns
+								<strong>Stock market analysis:</strong> Historical data ←’
+								future returns
 							</li>
 							<li>
-								<strong>Scientific modeling:</strong> Physical measurements →
+								<strong>Scientific modeling:</strong> Physical measurements ←’
 								derived quantities
 							</li>
 							<li>
@@ -1735,22 +1737,22 @@
 					<h3>Core Concepts Recap</h3>
 					<div class="key-concepts">
 						<div class="concept-card">
-							<div class="icon">1⃣</div>
+							<div class="icon">1âƒ£</div>
 							<h5>MLE</h5>
 							<p>Maximize likelihood; can overfit with limited data</p>
 						</div>
 						<div class="concept-card">
-							<div class="icon">2⃣</div>
+							<div class="icon">2âƒ£</div>
 							<h5>MAP</h5>
 							<p>Add prior for regularization; equivalent to Ridge/LASSO</p>
 						</div>
 						<div class="concept-card">
-							<div class="icon">3⃣</div>
+							<div class="icon">3âƒ£</div>
 							<h5>Bayesian</h5>
 							<p>Full posterior; uncertainty quantification</p>
 						</div>
 						<div class="concept-card">
-							<div class="icon">4⃣</div>
+							<div class="icon">4âƒ£</div>
 							<h5>Geometry</h5>
 							<p>MLE = orthogonal projection onto feature subspace</p>
 						</div>
@@ -1765,8 +1767,8 @@
 								PCA
 							</li>
 							<li>
-								🔮 <strong>Chapter 11:</strong> Density Estimation with Gaussian
-								Mixture Models
+								🔍® <strong>Chapter 11:</strong> Density Estimation with
+								Gaussian Mixture Models
 							</li>
 							<li>🎯 <strong>Chapter 12:</strong> Classification with SVMs</li>
 						</ul>
@@ -1992,7 +1994,7 @@
 				const noise =
 					parseInt(document.getElementById("noiseSlider").value) / 100;
 				const dataPoints = parseInt(
-					document.getElementById("dataSlider").value
+					document.getElementById("dataSlider").value,
 				);
 
 				document.getElementById("degreeVal").textContent = degree;
@@ -2115,12 +2117,12 @@
 				ctx2.clearRect(0, 0, width, height);
 
 				const degree = parseInt(
-					document.getElementById("bayesDegreeSlider").value
+					document.getElementById("bayesDegreeSlider").value,
 				);
 				const priorVar =
 					parseInt(document.getElementById("priorVarSlider").value) / 100;
 				const dataPoints = parseInt(
-					document.getElementById("bayesDataSlider").value
+					document.getElementById("bayesDataSlider").value,
 				);
 
 				document.getElementById("bayesDegreeVal").textContent = degree;
@@ -2161,7 +2163,7 @@
 					const y = mleFit(x);
 					// Uncertainty grows at edges
 					const distFromData = Math.min(
-						...bayesTrainX.map((tx) => Math.abs(x - tx))
+						...bayesTrainX.map((tx) => Math.abs(x - tx)),
 					);
 					const localUncertainty =
 						uncertaintyScale * (0.3 + distFromData * 0.2);
@@ -2173,7 +2175,7 @@
 					const x = -3 + (i / plotWidth) * 6;
 					const y = mleFit(x);
 					const distFromData = Math.min(
-						...bayesTrainX.map((tx) => Math.abs(x - tx))
+						...bayesTrainX.map((tx) => Math.abs(x - tx)),
 					);
 					const localUncertainty =
 						uncertaintyScale * (0.3 + distFromData * 0.2);
@@ -2221,14 +2223,14 @@
 				const testX = 2.5;
 				const pred = mleFit(testX);
 				const distFromData = Math.min(
-					...bayesTrainX.map((tx) => Math.abs(testX - tx))
+					...bayesTrainX.map((tx) => Math.abs(testX - tx)),
 				);
 				const unc = uncertaintyScale * (0.3 + distFromData * 0.2);
 
 				document.getElementById("mlePred").textContent = pred.toFixed(2);
 				document.getElementById("mapPred").textContent = pred.toFixed(2);
 				document.getElementById("uncertainty").textContent = (unc * 2).toFixed(
-					2
+					2,
 				);
 
 				// Legend

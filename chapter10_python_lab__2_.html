@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 	<head>
 		<meta charset="UTF-8" />
@@ -239,7 +239,7 @@
 			}
 
 			.nav-link.completed::after {
-				content: "✔";
+				content: 'Ã¢Å“"';
 				color: var(--success);
 				font-weight: 700;
 			}
@@ -298,7 +298,7 @@
 			}
 
 			.hero::after {
-				content: "🐼";
+				content: "Ã°Å¸ÂÂ¼";
 				position: absolute;
 				bottom: 20px;
 				right: 40px;
@@ -548,9 +548,7 @@
 				gap: 0.5rem;
 			}
 
-			.hint-box .hint-label::before {
-				content: "💡";
-			}
+			/* .hint-box .hint-label::before { content: 'Ã°Å¸'Â¡'; } */
 
 			.task-box {
 				background: rgba(11, 47, 160, 0.05);
@@ -572,7 +570,7 @@
 			}
 
 			.task-box .task-label::before {
-				content: "🎯";
+				content: "Ã°Å¸Å½Â¯";
 			}
 
 			.feedback-box {
@@ -690,7 +688,7 @@
 			}
 
 			.concept-box h4::before {
-				content: "🐼";
+				content: "Ã°Å¸ÂÂ¼";
 			}
 
 			.mcq-options {
@@ -807,18 +805,20 @@
 		<header class="header">
 			<div class="header-content">
 				<!-- <a href="index.html" class="header-logo"><img src="Logo_for_Print.jpg" alt="Quanskill" style="height: 40px; border-radius: 8px;"></a> -->
-				<button class="mobile-menu-btn" onclick="toggleSidebar()">☰</button>
+				<button class="mobile-menu-btn" onclick="toggleSidebar()">
+					Ã¢ËœÂ°
+				</button>
 				<div class="header-stats">
 					<div class="stat-item">
-						<span>🔥 Streak:</span>
+						<span>Ã°Å¸"Â¥ Streak:</span>
 						<span class="stat-value" id="streakCount">0</span>
 					</div>
 					<div class="stat-item">
-						<span>⭐ XP:</span>
+						<span>Ã¢Â­Â XP:</span>
 						<span class="stat-value" id="totalXP">0</span>
 					</div>
 					<div class="stat-item">
-						<span>✅ Completed:</span>
+						<span>Ã¢Å“â€¦ Completed:</span>
 						<span class="stat-value"><span id="completedLabs">0</span>/10</span>
 					</div>
 				</div>
@@ -833,7 +833,7 @@
 						alt="Quanskill"
 						style="height: 36px; border-radius: 6px"
 				/></a>
-				<div class="chapter-title">Chapter 10 · GroupBy Lab</div>
+				<div class="chapter-title">Chapter 10 Ã‚Â· GroupBy Lab</div>
 			</div>
 
 			<div class="score-display">
@@ -907,14 +907,16 @@
 			</div>
 		</nav>
 
-		<a href="javascript:history.back()" class="back-btn" title="Go Back">←</a>
+		<a href="javascript:history.back()" class="back-btn" title="Go Back"
+			>Ã¢â€ Â</a
+		>
 
 		<main class="main-content">
 			<div class="content-wrapper">
 				<!-- Hero Section -->
 				<section class="hero">
 					<div class="hero-content">
-						<span class="hero-badge">🧪 Interactive Lab</span>
+						<span class="hero-badge">Ã°Å¸Â§Âª Interactive Lab</span>
 						<h1>Data Aggregation & GroupBy Lab</h1>
 						<p class="hero-subtitle">
 							Master the split-apply-combine pattern! Learn to group, aggregate,
@@ -1001,9 +1003,9 @@ print(grouped.groups)"></textarea>
 					</div>
 
 					<div class="btn-group">
-						<button class="btn-run" onclick="runCode(1)">▶ Run Code</button>
+						<button class="btn-run" onclick="runCode(1)">Ã¢"Â¶ Run Code</button>
 						<button class="btn-check" onclick="checkLab(1)">
-							✓ Check Answer
+							Ã¢Å“" Check Answer
 						</button>
 					</div>
 
@@ -1073,9 +1075,9 @@ print(mean_salary)"></textarea>
 					</div>
 
 					<div class="btn-group">
-						<button class="btn-run" onclick="runCode(2)">▶ Run Code</button>
+						<button class="btn-run" onclick="runCode(2)">Ã¢"Â¶ Run Code</button>
 						<button class="btn-check" onclick="checkLab(2)">
-							✓ Check Answer
+							Ã¢Å“" Check Answer
 						</button>
 					</div>
 
@@ -1148,9 +1150,9 @@ print(result)"></textarea>
 					</div>
 
 					<div class="btn-group">
-						<button class="btn-run" onclick="runCode(3)">▶ Run Code</button>
+						<button class="btn-run" onclick="runCode(3)">Ã¢"Â¶ Run Code</button>
 						<button class="btn-check" onclick="checkLab(3)">
-							✓ Check Answer
+							Ã¢Å“" Check Answer
 						</button>
 					</div>
 
@@ -1210,9 +1212,9 @@ print(result)"></textarea>
 					</div>
 
 					<div class="btn-group">
-						<button class="btn-run" onclick="runCode(4)">▶ Run Code</button>
+						<button class="btn-run" onclick="runCode(4)">Ã¢"Â¶ Run Code</button>
 						<button class="btn-check" onclick="checkLab(4)">
-							✓ Check Answer
+							Ã¢Å“" Check Answer
 						</button>
 					</div>
 
@@ -1283,9 +1285,9 @@ print(result)"></textarea>
 					</div>
 
 					<div class="btn-group">
-						<button class="btn-run" onclick="runCode(5)">▶ Run Code</button>
+						<button class="btn-run" onclick="runCode(5)">Ã¢"Â¶ Run Code</button>
 						<button class="btn-check" onclick="checkLab(5)">
-							✓ Check Answer
+							Ã¢Å“" Check Answer
 						</button>
 					</div>
 
@@ -1309,7 +1311,7 @@ print(result)"></textarea>
 
 					<p class="lab-description">
 						The <code>transform()</code> method returns data with the same shape
-						as input—great for normalization!
+						as inputÃ¢â‚¬"great for normalization!
 					</p>
 
 					<div class="task-box">
@@ -1352,9 +1354,9 @@ print(df)"></textarea>
 					</div>
 
 					<div class="btn-group">
-						<button class="btn-run" onclick="runCode(6)">▶ Run Code</button>
+						<button class="btn-run" onclick="runCode(6)">Ã¢"Â¶ Run Code</button>
 						<button class="btn-check" onclick="checkLab(6)">
-							✓ Check Answer
+							Ã¢Å“" Check Answer
 						</button>
 					</div>
 
@@ -1424,9 +1426,9 @@ print(pivot)"></textarea>
 					</div>
 
 					<div class="btn-group">
-						<button class="btn-run" onclick="runCode(7)">▶ Run Code</button>
+						<button class="btn-run" onclick="runCode(7)">Ã¢"Â¶ Run Code</button>
 						<button class="btn-check" onclick="checkLab(7)">
-							✓ Check Answer
+							Ã¢Å“" Check Answer
 						</button>
 					</div>
 
@@ -1500,9 +1502,9 @@ print(ct_margins)"></textarea>
 					</div>
 
 					<div class="btn-group">
-						<button class="btn-run" onclick="runCode(8)">▶ Run Code</button>
+						<button class="btn-run" onclick="runCode(8)">Ã¢"Â¶ Run Code</button>
 						<button class="btn-check" onclick="checkLab(8)">
-							✓ Check Answer
+							Ã¢Å“" Check Answer
 						</button>
 					</div>
 
@@ -1582,9 +1584,9 @@ print(f'\nTop Region: {best_region}')"></textarea>
 					</div>
 
 					<div class="btn-group">
-						<button class="btn-run" onclick="runCode(9)">▶ Run Code</button>
+						<button class="btn-run" onclick="runCode(9)">Ã¢"Â¶ Run Code</button>
 						<button class="btn-check" onclick="checkLab(9)">
-							✓ Check Answer
+							Ã¢Å“" Check Answer
 						</button>
 					</div>
 
@@ -1774,7 +1776,7 @@ print(f'\nTop Region: {best_region}')"></textarea>
 
 					<div class="btn-group">
 						<button class="btn-check" onclick="checkQuiz()">
-							✓ Submit Quiz
+							Ã¢Å“" Submit Quiz
 						</button>
 					</div>
 
@@ -1846,8 +1848,11 @@ print(f'\nTop Region: {best_region}')"></textarea>
 				const feedback = document.getElementById("feedback" + labNum);
 				feedback.className = "feedback-box show " + type;
 				feedback.innerHTML =
-					(type === "success" ? "🎉 " : type === "error" ? "❌ " : "⚠ ") +
-					message;
+					(type === "success"
+						? "🎉 "
+						: type === "error"
+							? "Ã¢ÂÅ’ "
+							: "Ã¢Å¡Â  ") + message;
 			}
 
 			function awardXP(labNum) {
@@ -2005,24 +2010,126 @@ print(f'\nTop Region: {best_region}')"></textarea>
 				return outputs.join("\n");
 			}
 
-			function runCode(labNum) {
-				const code = document.getElementById("code" + labNum).value;
-				const outputEl = document.getElementById("output" + labNum);
-
+			// Python code execution using Piston API (for syntax checking)
+			async function executePython(code) {
 				try {
-					const result = simulatePandas(code);
-					outputEl.className = "code-output";
-					outputEl.textContent = result || "(No output)";
+					const response = await fetch(
+						"https://emkc.org/api/v2/piston/execute",
+						{
+							method: "POST",
+							headers: {
+								"Content-Type": "application/json",
+							},
+							body: JSON.stringify({
+								language: "python",
+								version: "3.10.0",
+								files: [
+									{
+										content: code,
+									},
+								],
+							}),
+						},
+					);
+
+					const result = await response.json();
+
+					if (result.run) {
+						if (result.run.stderr && result.run.stderr.trim()) {
+							return {
+								success: false,
+								output: result.run.stderr,
+								hasError: true,
+							};
+						}
+						return {
+							success: true,
+							output: result.run.output || "",
+							hasError: false,
+						};
+					} else {
+						return {
+							success: false,
+							output: "Error: Could not execute code",
+							hasError: true,
+						};
+					}
 				} catch (e) {
-					outputEl.className = "code-output error";
-					outputEl.textContent = "Error: " + e.message;
+					// Network error - fall back to simulation only
+					return {
+						success: true,
+						output: "",
+						hasError: false,
+						networkError: true,
+					};
 				}
 			}
 
-			function checkLab(labNum) {
-				const code = document
-					.getElementById("code" + labNum)
-					.value.toLowerCase();
+			async function runCode(labNum) {
+				const code = document.getElementById("code" + labNum).value;
+				const outputEl = document.getElementById("output" + labNum);
+
+				if (!code.trim()) {
+					outputEl.className = "code-output error";
+					outputEl.textContent = "Please write some code first!";
+					return;
+				}
+
+				outputEl.className = "code-output";
+				outputEl.textContent = "â³ Running code...";
+
+				// First check with Piston for real Python errors
+				const pistonResult = await executePython(code);
+
+				if (pistonResult.hasError) {
+					outputEl.className = "code-output error";
+					outputEl.textContent = pistonResult.output;
+					return;
+				}
+
+				// Use simulation for specialized output
+				const simResult = simulatePandas(code);
+
+				if (simResult.success) {
+					outputEl.className = "code-output";
+					const pistonOut = (pistonResult.output || "").trim();
+					outputEl.textContent = pistonOut || simResult.output || "(No output)";
+				} else {
+					outputEl.className = "code-output error";
+					outputEl.textContent = simResult.output;
+				}
+			}
+
+			async function checkLab(labNum) {
+				const code = document.getElementById("code" + labNum).value;
+				const codeLower = code.toLowerCase();
+				const outputEl = document.getElementById("output" + labNum);
+
+				outputEl.className = "code-output";
+				outputEl.textContent = "â³ Checking...";
+
+				// First check with Piston for real Python errors
+				const pistonResult = await executePython(code);
+
+				if (pistonResult.hasError) {
+					outputEl.className = "code-output error";
+					outputEl.textContent = pistonResult.output;
+					showFeedback(
+						labNum,
+						"error",
+						"Your code has errors. Please fix them and try again!",
+					);
+					streak = 0;
+					updateStats();
+					return;
+				}
+
+				// Use simulation for display
+				const simResult = simulatePandas(code);
+				const pistonOut = (pistonResult.output || "").trim();
+				outputEl.className = "code-output";
+				outputEl.textContent = pistonOut || simResult.output || "(No output)";
+
 				let passed = false;
 
 				switch (labNum) {
@@ -2076,24 +2183,23 @@ print(f'\nTop Region: {best_region}')"></textarea>
 					showFeedback(
 						labNum,
 						"success",
-						"Excellent work! You completed this lab successfully!"
+						"Excellent work! You completed this lab successfully!",
 					);
 					awardXP(labNum);
 				} else {
 					showFeedback(
 						labNum,
 						"error",
-						"Not quite right. Check your code and try again!"
+						"Not quite right. Check your code and try again!",
 					);
 					streak = 0;
 					updateStats();
 				}
 			}
-
 			function selectMCQ(question, answer) {
 				quizAnswers[question] = answer;
 				const options = document.querySelectorAll(
-					`#q${question}-options .mcq-option`
+					`#q${question}-options .mcq-option`,
 				);
 				options.forEach((opt, idx) => {
 					opt.classList.remove("selected");
@@ -2106,7 +2212,7 @@ print(f'\nTop Region: {best_region}')"></textarea>
 
 				for (let q = 1; q <= 10; q++) {
 					const options = document.querySelectorAll(
-						`#q${q}-options .mcq-option`
+						`#q${q}-options .mcq-option`,
 					);
 					options.forEach((opt, idx) => {
 						opt.classList.remove("correct", "incorrect");
@@ -2128,20 +2234,20 @@ print(f'\nTop Region: {best_region}')"></textarea>
 					showFeedback(
 						10,
 						"success",
-						`Excellent! You got ${correct}/10 correct (${percentage}%)! 🐼`
+						`Excellent! You got ${correct}/10 correct (${percentage}%)! Ã°Å¸ÂÂ¼`,
 					);
 					awardXP(10);
 				} else if (correct >= 5) {
 					showFeedback(
 						10,
 						"partial",
-						`Good effort! You got ${correct}/10 correct (${percentage}%). Need 80% to pass. Review and try again!`
+						`Good effort! You got ${correct}/10 correct (${percentage}%). Need 80% to pass. Review and try again!`,
 					);
 				} else {
 					showFeedback(
 						10,
 						"error",
-						`You got ${correct}/10 correct (${percentage}%). Review the material and try again!`
+						`You got ${correct}/10 correct (${percentage}%). Review the material and try again!`,
 					);
 				}
 			}

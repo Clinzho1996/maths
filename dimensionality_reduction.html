@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 	<head>
 		<meta charset="UTF-8" />
@@ -216,7 +216,7 @@
 			}
 
 			.hero::after {
-				content: "";
+				content: "📝‰";
 				position: absolute;
 				bottom: -30%;
 				left: -10%;
@@ -280,7 +280,9 @@
 				border: 1px solid var(--border-color);
 				padding: 1.25rem;
 				border-radius: 12px;
-				transition: transform 0.2s, box-shadow 0.2s;
+				transition:
+					transform 0.2s,
+					box-shadow 0.2s;
 			}
 
 			.concept-card:hover {
@@ -421,7 +423,7 @@
 			}
 
 			.ml-box .label::before {
-				content: "🤓";
+				content: "📝¤“";
 			}
 
 			.quanskill-box {
@@ -487,7 +489,7 @@
 			}
 
 			.example-box .label::before {
-				content: "▸";
+				content: "â–¸";
 				color: var(--quanskill-orange);
 			}
 
@@ -540,7 +542,7 @@
 			}
 
 			.realworld-box .label::before {
-				content: "🎁";
+				content: "🎯";
 			}
 
 			code {
@@ -697,7 +699,7 @@
 			}
 
 			.demo-header::before {
-				content: "⚡";
+				content: "âš¡";
 			}
 
 			.demo-controls {
@@ -914,12 +916,12 @@
 	</head>
 	<body>
 		<!-- Floating Back to Main Page Button -->
-		<a href="index.html" class="floating-back-btn">← Main Page</a>
+		<a href="index.html" class="floating-back-btn">← Main Page</a>
 
 		<header class="header">
 			<div class="header-content">
 				<!-- <a href="index.html" class="header-logo"><img src="Logo_for_Print.jpg" alt="Quanskill" style="height: 40px; border-radius: 8px;"></a> -->
-				<button class="mobile-menu-btn" onclick="toggleSidebar()">☰</button>
+				<button class="mobile-menu-btn" onclick="toggleSidebar()">â˜°</button>
 			</div>
 		</header>
 
@@ -929,13 +931,13 @@
 
 		<nav class="sidebar" id="sidebar">
 			<div class="sidebar-header">
-				<!-- <a href="index.html" class="logo"
+				<a href="index.html" class="logo"
 					><img
 						src="Logo_for_Print.jpg"
 						alt="Quanskill"
 						style="height: 36px; border-radius: 6px"
-				/></a> -->
-				<div class="chapter-title">Chapter 10 · Dimensionality Reduction</div>
+				/></a>
+				<div class="chapter-title">Chapter 10 Â· Dimensionality Reduction</div>
 			</div>
 
 			<div class="nav-section">
@@ -973,7 +975,7 @@
 						</p>
 						<div class="hero-quote">
 							"PCA is like finding the most informative angle to photograph a
-							sculpture — capture the essence while discarding redundant views."
+							sculpture - capture the essence while discarding redundant views."
 						</div>
 					</div>
 				</section>
@@ -981,7 +983,7 @@
 				<!-- Key Concepts -->
 				<div class="key-concepts">
 					<div class="concept-card">
-						<div class="icon">📉</div>
+						<div class="icon">📝‰</div>
 						<h5>Data Compression</h5>
 						<p>Reduce dimensions while keeping important information</p>
 					</div>
@@ -996,12 +998,12 @@
 						<p>Project data onto lower-dimensional subspaces</p>
 					</div>
 					<div class="concept-card">
-						<div class="icon">🔢</div>
+						<div class="icon">🔍¢</div>
 						<h5>Eigendecomposition</h5>
 						<p>Use eigenvalues to find principal components</p>
 					</div>
 					<div class="concept-card">
-						<div class="icon">🔄</div>
+						<div class="icon">🔍„</div>
 						<h5>Encoder-Decoder</h5>
 						<p>Compress and reconstruct data linearly</p>
 					</div>
@@ -1020,8 +1022,8 @@
 					</div>
 
 					<p>
-						High-dimensional data — like images, genomic sequences, or sensor
-						readings — is often <strong>overcomplete</strong>: many dimensions
+						High-dimensional data - like images, genomic sequences, or sensor
+						readings - is often <strong>overcomplete</strong>: many dimensions
 						are redundant and can be explained by combinations of others.
 						Dimensionality reduction exploits this structure to find a compact
 						representation.
@@ -1057,7 +1059,7 @@
 						<span class="label">Example: Image Compression</span>
 						<p>
 							A 28×28 grayscale image (like MNIST digits) is a vector in
-							$\mathbb{R}^{784}$. But digits don't occupy this entire space —
+							$\mathbb{R}^{784}$. But digits don't occupy this entire space -
 							they lie on a much lower-dimensional manifold. PCA finds this
 							structure.
 						</p>
@@ -1072,11 +1074,11 @@
 					<ul>
 						<li>
 							<strong>Encoder:</strong> $\mathbf{z} = \mathbf{B}^\top
-							\mathbf{x}$ — compress $D$ dimensions to $M$
+							\mathbf{x}$ - compress $D$ dimensions to $M$
 						</li>
 						<li>
 							<strong>Decoder:</strong> $\tilde{\mathbf{x}} =
-							\mathbf{B}\mathbf{z}$ — reconstruct back to $D$ dimensions
+							\mathbf{B}\mathbf{z}$ - reconstruct back to $D$ dimensions
 						</li>
 					</ul>
 					<p>The bottleneck $\mathbf{z}$ controls information flow.</p>
@@ -1167,7 +1169,7 @@
 									value="50" />
 							</div>
 							<div class="control-group">
-								<label>Rotation: <span id="rotationVal">30°</span></label>
+								<label>Rotation: <span id="rotationVal">30Â°</span></label>
 								<input
 									type="range"
 									id="rotationSlider"
@@ -1179,15 +1181,15 @@
 						<canvas id="pcaCanvas" class="demo-canvas"></canvas>
 						<div class="demo-results">
 							<div class="result-item">
-								<div class="value" id="var1">—</div>
-								<div class="label">λ₁ (PC1 Variance)</div>
+								<div class="value" id="var1">-</div>
+								<div class="label">Î»â‚ (PC1 Variance)</div>
 							</div>
 							<div class="result-item">
-								<div class="value" id="var2">—</div>
-								<div class="label">λ₂ (PC2 Variance)</div>
+								<div class="value" id="var2">-</div>
+								<div class="label">Î»â‚‚ (PC2 Variance)</div>
 							</div>
 							<div class="result-item">
-								<div class="value" id="varExplained">—</div>
+								<div class="value" id="varExplained">-</div>
 								<div class="label">Variance Explained by PC1</div>
 							</div>
 						</div>
@@ -1317,11 +1319,11 @@
 						<canvas id="reconstructCanvas" class="demo-canvas"></canvas>
 						<div class="demo-results">
 							<div class="result-item">
-								<div class="value" id="reconError">—</div>
+								<div class="value" id="reconError">-</div>
 								<div class="label">Reconstruction Error</div>
 							</div>
 							<div class="result-item">
-								<div class="value" id="compRatio">—</div>
+								<div class="value" id="compRatio">-</div>
 								<div class="label">Compression Ratio</div>
 							</div>
 						</div>
@@ -1341,7 +1343,7 @@
 						<span class="label">Real-World Applications</span>
 						<ul>
 							<li>
-								<strong>Face recognition:</strong> "Eigenfaces" — represent
+								<strong>Face recognition:</strong> "Eigenfaces" - represent
 								faces with ~100 components instead of thousands of pixels
 							</li>
 							<li>
@@ -1529,22 +1531,22 @@
 					<h3>Core Concepts Recap</h3>
 					<div class="key-concepts">
 						<div class="concept-card">
-							<div class="icon">1⃣</div>
+							<div class="icon">1âƒ£</div>
 							<h5>Variance = Information</h5>
 							<p>Maximize variance in low-D representation</p>
 						</div>
 						<div class="concept-card">
-							<div class="icon">2⃣</div>
+							<div class="icon">2âƒ£</div>
 							<h5>Eigenvectors</h5>
 							<p>Principal components are eigenvectors of covariance matrix</p>
 						</div>
 						<div class="concept-card">
-							<div class="icon">3⃣</div>
+							<div class="icon">3âƒ£</div>
 							<h5>Eigenvalues</h5>
 							<p>Eigenvalue = variance explained by that component</p>
 						</div>
 						<div class="concept-card">
-							<div class="icon">4⃣</div>
+							<div class="icon">4âƒ£</div>
 							<h5>Orthogonal Projection</h5>
 							<p>PCA finds optimal linear projection</p>
 						</div>
@@ -1735,12 +1737,12 @@
 				const spreadY =
 					parseInt(document.getElementById("spreadYSlider").value) / 100;
 				const rotation = parseInt(
-					document.getElementById("rotationSlider").value
+					document.getElementById("rotationSlider").value,
 				);
 
 				document.getElementById("spreadXVal").textContent = spreadX.toFixed(1);
 				document.getElementById("spreadYVal").textContent = spreadY.toFixed(1);
-				document.getElementById("rotationVal").textContent = rotation + "°";
+				document.getElementById("rotationVal").textContent = rotation + "Â°";
 
 				generatePCAData(spreadX, spreadY, rotation);
 				const pca = computePCA(dataPoints);
@@ -1768,7 +1770,7 @@
 						centerY - p[1] * scale,
 						4,
 						0,
-						Math.PI * 2
+						Math.PI * 2,
 					);
 					pcaCtx.fill();
 				});
@@ -1792,12 +1794,12 @@
 					pcaCtx.moveTo(endX, endY);
 					pcaCtx.lineTo(
 						endX - arrowSize * Math.cos(angle - 0.3),
-						endY + arrowSize * Math.sin(angle - 0.3)
+						endY + arrowSize * Math.sin(angle - 0.3),
 					);
 					pcaCtx.moveTo(endX, endY);
 					pcaCtx.lineTo(
 						endX - arrowSize * Math.cos(angle + 0.3),
-						endY + arrowSize * Math.sin(angle + 0.3)
+						endY + arrowSize * Math.sin(angle + 0.3),
 					);
 					pcaCtx.stroke();
 
@@ -1832,7 +1834,7 @@
 				reconstructCtx.clearRect(0, 0, width, height);
 
 				const numComponents = parseInt(
-					document.getElementById("componentsSlider").value
+					document.getElementById("componentsSlider").value,
 				);
 				const showLines = document.getElementById("showLinesCheck").checked;
 
@@ -1888,7 +1890,7 @@
 						reconstructCtx.beginPath();
 						reconstructCtx.moveTo(
 							centerX + p[0] * scale,
-							centerY - p[1] * scale
+							centerY - p[1] * scale,
 						);
 						reconstructCtx.lineTo(centerX + rx * scale, centerY - ry * scale);
 						reconstructCtx.stroke();
@@ -1902,7 +1904,7 @@
 						centerY - p[1] * scale,
 						4,
 						0,
-						Math.PI * 2
+						Math.PI * 2,
 					);
 					reconstructCtx.fill();
 
@@ -1914,7 +1916,7 @@
 						centerY - ry * scale,
 						5,
 						0,
-						Math.PI * 2
+						Math.PI * 2,
 					);
 					reconstructCtx.fill();
 

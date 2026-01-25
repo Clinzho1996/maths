@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 	<head>
 		<meta charset="UTF-8" />
@@ -385,7 +385,7 @@
 			}
 
 			.case-study-box .label::before {
-				content: "🏢";
+				content: "🐍Â¢";
 			}
 
 			.agentic-ai-box {
@@ -426,7 +426,7 @@
 			}
 
 			.agentic-ai-box .label::before {
-				content: "🤓";
+				content: "📝¤“";
 			}
 
 			.quiz-container {
@@ -566,7 +566,7 @@
 			}
 
 			.demo-header::before {
-				content: "⚡";
+				content: "âš¡";
 			}
 
 			.demo-number {
@@ -873,11 +873,16 @@
 	</head>
 	<body>
 		<!-- Floating Back to Main Page Button -->
-		<a href="index.html" class="floating-back-btn">← Main Page</a>
+		<a href="index.html" class="floating-back-btn">← Main Page</a>
 
 		<header class="header">
 			<div class="header-content">
-				<!-- <a href="index.html" class="header-logo"><img src="Logo_for_Print.jpg" alt="Quanskill" style="height: 40px; border-radius: 8px;"></a> -->
+				<!-- <a href="index.html" class="header-logo"
+					><img
+						src="Logo_for_Print.jpg"
+						alt="Quanskill"
+						style="height: 40px; border-radius: 8px"
+				/></a> -->
 				<div class="header-stats">
 					<div class="stat-item">
 						<span>Score:</span
@@ -888,7 +893,7 @@
 						><span class="stat-value" id="headerAccuracy">0%</span>
 					</div>
 				</div>
-				<button class="mobile-menu-btn" onclick="toggleSidebar()">☰</button>
+				<button class="mobile-menu-btn" onclick="toggleSidebar()">â˜°</button>
 			</div>
 		</header>
 
@@ -905,7 +910,7 @@
 						style="height: 36px; border-radius: 6px"
 				/></a>
 				<div class="chapter-title">
-					Chapter 10 · PCA & Dimensionality Reduction
+					Chapter 10 Â· PCA & Dimensionality Reduction
 				</div>
 			</div>
 
@@ -920,7 +925,7 @@
 			<div class="nav-section">
 				<div class="nav-section-title">Overview</div>
 				<a href="#intro" class="nav-link active">🎯 Practice Hub Home</a>
-				<a href="#interactive" class="nav-link">⚡ Interactive Labs (15)</a>
+				<a href="#interactive" class="nav-link">âš¡ Interactive Labs (15)</a>
 			</div>
 
 			<div class="nav-section">
@@ -1054,9 +1059,9 @@
 							perspectives, SVD connections, and probabilistic PCA.
 						</p>
 						<div class="hero-equation">
-							<strong>Core Idea:</strong> z = Bᵀx (encode), x̃ = Bz (decode)
+							<strong>Core Idea:</strong> z = Báµ€x (encode), xÌƒ = Bz (decode)
 							<br /><strong>Key Result:</strong> Principal components =
-							eigenvectors of S with largest λ
+							eigenvectors of S with largest Î»
 						</div>
 						<div class="topic-tags">
 							<span class="topic-tag">Covariance Matrix</span>
@@ -1138,7 +1143,7 @@
 						</div>
 						<div class="demo-controls">
 							<div class="control-group">
-								<label>Variance x₁</label>
+								<label>Variance xâ‚</label>
 								<input
 									type="number"
 									id="var1"
@@ -1148,7 +1153,7 @@
 									step="0.5" />
 							</div>
 							<div class="control-group">
-								<label>Variance x₂</label>
+								<label>Variance xâ‚‚</label>
 								<input
 									type="number"
 									id="var2"
@@ -1158,7 +1163,7 @@
 									step="0.5" />
 							</div>
 							<div class="control-group">
-								<label>Correlation ρ</label>
+								<label>Correlation Ï</label>
 								<input
 									type="number"
 									id="rho"
@@ -1204,7 +1209,7 @@
 						</div>
 						<div class="demo-controls">
 							<div class="control-group">
-								<label>Projection Direction θ</label>
+								<label>Projection Direction Î¸</label>
 								<input
 									type="range"
 									id="projAngle"
@@ -1278,8 +1283,8 @@
 								<label>Processing Step</label>
 								<select id="preprocessStep">
 									<option value="original">Original Data</option>
-									<option value="centered">Centered (subtract μ)</option>
-									<option value="standardized">Standardized (÷σ)</option>
+									<option value="centered">Centered (subtract Î¼)</option>
+									<option value="standardized">Standardized (Ã·Ïƒ)</option>
 								</select>
 							</div>
 							<button class="btn btn-primary" onclick="showPreprocessing()">
@@ -1309,7 +1314,7 @@
 									max="3" />
 							</div>
 							<button class="btn btn-orange" onclick="showAutoencoder()">
-								Encode → Decode
+								Encode ←’ Decode
 							</button>
 						</div>
 						<canvas id="aeCanvas" class="demo-canvas"></canvas>
@@ -1326,7 +1331,7 @@
 						</div>
 						<div class="demo-controls">
 							<button class="btn btn-primary" onclick="showSVDConnection()">
-								Show X = UΣVᵀ
+								Show X = UÎ£Váµ€
 							</button>
 						</div>
 						<canvas id="svdCanvas" class="demo-canvas"></canvas>
@@ -1398,7 +1403,7 @@
 						</div>
 						<div class="demo-controls">
 							<div class="control-group">
-								<label>Noise σ²</label>
+								<label>Noise ÏƒÂ²</label>
 								<input
 									type="number"
 									id="ppcaNoise"
@@ -1420,12 +1425,12 @@
 					<!-- Lab 13: Projection Matrix Visualization -->
 					<div class="demo-container" id="lab13">
 						<div class="demo-header">
-							<h4>Projection Matrix BBᵀ</h4>
+							<h4>Projection Matrix BBáµ€</h4>
 							<span class="demo-number">Lab 13/15</span>
 						</div>
 						<div class="demo-controls">
 							<button class="btn btn-primary" onclick="visualizeProjMatrix()">
-								Show BBᵀ
+								Show BBáµ€
 							</button>
 						</div>
 						<canvas id="projMatCanvas" class="demo-canvas"></canvas>
@@ -1534,7 +1539,7 @@
 							<span class="quiz-number">Question 2</span>
 							<span class="quiz-difficulty difficulty-easy">Easy</span>
 						</div>
-						<div class="quiz-context">S = (1/N) Σₙ xₙxₙᵀ</div>
+						<div class="quiz-context">S = (1/N) Î£â‚™ xâ‚™xâ‚™áµ€</div>
 						<div class="quiz-question">
 							The data covariance matrix S is computed from:
 						</div>
@@ -1584,15 +1589,15 @@
 							<span class="quiz-difficulty difficulty-easy">Easy</span>
 						</div>
 						<div class="quiz-question">
-							The eigenvalue λₘ associated with principal component bₘ
+							The eigenvalue Î»â‚˜ associated with principal component bâ‚˜
 							represents:
 						</div>
 						<div class="quiz-options">
 							<div class="quiz-option" onclick="checkAnswer(4, 0)">
-								A) The variance of data projected onto bₘ
+								A) The variance of data projected onto bâ‚˜
 							</div>
 							<div class="quiz-option" onclick="checkAnswer(4, 1)">
-								B) The length of bₘ
+								B) The length of bâ‚˜
 							</div>
 							<div class="quiz-option" onclick="checkAnswer(4, 2)">
 								C) The number of data points
@@ -1610,11 +1615,12 @@
 							<span class="quiz-difficulty difficulty-easy">Easy</span>
 						</div>
 						<div class="quiz-question">
-							The principal components b₁, b₂, ..., bₘ form:
+							The principal components bâ‚, bâ‚‚, ..., bâ‚˜ form:
 						</div>
 						<div class="quiz-options">
 							<div class="quiz-option" onclick="checkAnswer(5, 0)">
-								A) An orthonormal basis (bᵀ¢ᵀb∂¼ = 0 if i≠j, bᵀ¢ᵀbᵀ¢ = 1)
+								A) An orthonormal basis (báµ€Â¢áµ€bâˆ‚Â¼ = 0 if iâ‰ j,
+								báµ€Â¢áµ€báµ€Â¢ = 1)
 							</div>
 							<div class="quiz-option" onclick="checkAnswer(5, 1)">
 								B) A set of parallel vectors
@@ -1660,7 +1666,7 @@
 							<span class="quiz-number">Question 7</span>
 							<span class="quiz-difficulty difficulty-easy">Easy</span>
 						</div>
-						<div class="quiz-context">z = Bᵀx ∈ ℝᴹ</div>
+						<div class="quiz-context">z = Báµ€x âˆˆ â„á´¹</div>
 						<div class="quiz-question">
 							The low-dimensional code z represents:
 						</div>
@@ -1687,15 +1693,15 @@
 							<span class="quiz-number">Question 8</span>
 							<span class="quiz-difficulty difficulty-easy">Easy</span>
 						</div>
-						<div class="quiz-context">x̃ = Bz = BBᵀx</div>
-						<div class="quiz-question">The reconstruction x̃ lives in:</div>
+						<div class="quiz-context">xÌƒ = Bz = BBáµ€x</div>
+						<div class="quiz-question">The reconstruction xÌƒ lives in:</div>
 						<div class="quiz-options">
 							<div class="quiz-option" onclick="checkAnswer(8, 0)">
-								A) ℝᴰ (original data space), but on M-dimensional principal
+								A) â„á´° (original data space), but on M-dimensional principal
 								subspace
 							</div>
 							<div class="quiz-option" onclick="checkAnswer(8, 1)">
-								B) ℝᴹ (low-dimensional space)
+								B) â„á´¹ (low-dimensional space)
 							</div>
 							<div class="quiz-option" onclick="checkAnswer(8, 2)">
 								C) A completely different space
@@ -1735,13 +1741,13 @@
 						</div>
 						<div class="quiz-options">
 							<div class="quiz-option" onclick="checkAnswer(9, 0)">
-								A) V = bᵀSb subject to ||b||² = 1
+								A) V = báµ€Sb subject to ||b||Â² = 1
 							</div>
 							<div class="quiz-option" onclick="checkAnswer(9, 1)">
-								B) V = bᵀb subject to ||b||² = 1
+								B) V = báµ€b subject to ||b||Â² = 1
 							</div>
 							<div class="quiz-option" onclick="checkAnswer(9, 2)">
-								C) V = ||x - x̃||²
+								C) V = ||x - xÌƒ||Â²
 							</div>
 							<div class="quiz-option" onclick="checkAnswer(9, 3)">
 								D) V = trace(S)
@@ -1756,17 +1762,18 @@
 							<span class="quiz-difficulty difficulty-medium">Medium</span>
 						</div>
 						<div class="quiz-question">
-							Setting ∂L/∂b = 0 for the Lagrangian L = bᵀSb + λ(1 - bᵀb) gives:
+							Setting âˆ‚L/âˆ‚b = 0 for the Lagrangian L = báµ€Sb + Î»(1 -
+							báµ€b) gives:
 						</div>
 						<div class="quiz-options">
 							<div class="quiz-option" onclick="checkAnswer(10, 0)">
-								A) Sb = λb (eigenvalue equation)
+								A) Sb = Î»b (eigenvalue equation)
 							</div>
 							<div class="quiz-option" onclick="checkAnswer(10, 1)">
-								B) b = λS
+								B) b = Î»S
 							</div>
 							<div class="quiz-option" onclick="checkAnswer(10, 2)">
-								C) S = λI
+								C) S = Î»I
 							</div>
 							<div class="quiz-option" onclick="checkAnswer(10, 3)">
 								D) b = 0
@@ -1785,13 +1792,13 @@
 						</div>
 						<div class="quiz-options">
 							<div class="quiz-option" onclick="checkAnswer(11, 0)">
-								A) Σₘ λₘ (sum of M largest eigenvalues)
+								A) Î£â‚˜ Î»â‚˜ (sum of M largest eigenvalues)
 							</div>
 							<div class="quiz-option" onclick="checkAnswer(11, 1)">
-								B) λ₁ only (just the largest)
+								B) Î»â‚ only (just the largest)
 							</div>
 							<div class="quiz-option" onclick="checkAnswer(11, 2)">
-								C) M × λ₁
+								C) M × Î»â‚
 							</div>
 							<div class="quiz-option" onclick="checkAnswer(11, 3)">
 								D) trace(B)
@@ -1805,19 +1812,22 @@
 							<span class="quiz-number">Question 12</span>
 							<span class="quiz-difficulty difficulty-medium">Medium</span>
 						</div>
-						<div class="quiz-context">Jₘ = (1/N) Σₙ ||xₙ - x̃ₙ||²</div>
+						<div class="quiz-context">
+							Jâ‚˜ = (1/N) Î£â‚™ ||xâ‚™ - xÌƒâ‚™||Â²
+						</div>
 						<div class="quiz-question">
-							The average reconstruction error Jₘ equals:
+							The average reconstruction error Jâ‚˜ equals:
 						</div>
 						<div class="quiz-options">
 							<div class="quiz-option" onclick="checkAnswer(12, 0)">
-								A) Σ∂¼ⱼ₁˜₁Š₁á´° λ∂¼ (sum of discarded eigenvalues)
+								A) Î£âˆ‚áµ¢â±¼â‚Ã‹Å“â‚Ã…Â â‚á´° Î»âˆ‚Â¼ (sum of discarded
+								eigenvalues)
 							</div>
 							<div class="quiz-option" onclick="checkAnswer(12, 1)">
-								B) Σₘ λₘ (sum of kept eigenvalues)
+								B) Î£â‚˜ Î»â‚˜ (sum of kept eigenvalues)
 							</div>
 							<div class="quiz-option" onclick="checkAnswer(12, 2)">
-								C) λ₁ - λₘ
+								C) Î»â‚ - Î»â‚˜
 							</div>
 							<div class="quiz-option" onclick="checkAnswer(12, 3)">
 								D) N × D
@@ -1832,17 +1842,17 @@
 							<span class="quiz-difficulty difficulty-medium">Medium</span>
 						</div>
 						<div class="quiz-question">
-							The projection matrix P = BBᵀ has the property that:
+							The projection matrix P = BBáµ€ has the property that:
 						</div>
 						<div class="quiz-options">
 							<div class="quiz-option" onclick="checkAnswer(13, 0)">
-								A) P² = P and Pᵀ = P (idempotent and symmetric)
+								A) PÂ² = P and Páµ€ = P (idempotent and symmetric)
 							</div>
 							<div class="quiz-option" onclick="checkAnswer(13, 1)">
 								B) P = I (identity)
 							</div>
 							<div class="quiz-option" onclick="checkAnswer(13, 2)">
-								C) P⁻¹ = P
+								C) Pâ»Â¹ = P
 							</div>
 							<div class="quiz-option" onclick="checkAnswer(13, 3)">
 								D) det(P) = 1
@@ -1856,20 +1866,21 @@
 							<span class="quiz-number">Question 14</span>
 							<span class="quiz-difficulty difficulty-medium">Medium</span>
 						</div>
-						<div class="quiz-context">X = UΣVᵀ (SVD)</div>
+						<div class="quiz-context">X = UÎ£Váµ€ (SVD)</div>
 						<div class="quiz-question">
-							The eigenvalues of the covariance S = (1/N)XXᵀ relate to singular
-							values by:
+							The eigenvalues of the covariance S = (1/N)XXáµ€ relate to
+							singular values by:
 						</div>
 						<div class="quiz-options">
 							<div class="quiz-option" onclick="checkAnswer(14, 0)">
-								A) λₐ = σₐ²/N (eigenvalues are squared singular values scaled)
+								A) Î»â‚ = ÏÆ’â‚Ã‚Â²/N (eigenvalues are squared singular values
+								scaled)
 							</div>
 							<div class="quiz-option" onclick="checkAnswer(14, 1)">
-								B) λₐ = σₐ (eigenvalues equal singular values)
+								B) Î»â‚ = ÏÆ’â‚ (eigenvalues equal singular values)
 							</div>
 							<div class="quiz-option" onclick="checkAnswer(14, 2)">
-								C) λₐ = 1/σₐ
+								C) Î»â‚ = 1/ÏÆ’â‚
 							</div>
 							<div class="quiz-option" onclick="checkAnswer(14, 3)">
 								D) No relationship exists
@@ -1884,8 +1895,8 @@
 							<span class="quiz-difficulty difficulty-medium">Medium</span>
 						</div>
 						<div class="quiz-question">
-							Standardization (dividing by σ per dimension) before PCA is useful
-							when:
+							Standardization (dividing by Ïƒ per dimension) before PCA is
+							useful when:
 						</div>
 						<div class="quiz-options">
 							<div class="quiz-option" onclick="checkAnswer(15, 0)">
@@ -1915,13 +1926,13 @@
 						</div>
 						<div class="quiz-options">
 							<div class="quiz-option" onclick="checkAnswer(16, 0)">
-								A) (Σₘ λₘ) / (Σá´° λᵀ¢) = Vₘ/Vá´°
+								A) (Î£â‚˜ Î»â‚˜) / (Î£á´° Î»áµ€Â¢) = Vâ‚˜/Vá´°
 							</div>
 							<div class="quiz-option" onclick="checkAnswer(16, 1)">
 								B) M / D
 							</div>
 							<div class="quiz-option" onclick="checkAnswer(16, 2)">
-								C) λ₁ / λá´°
+								C) Î»â‚ / Î»á´°
 							</div>
 							<div class="quiz-option" onclick="checkAnswer(16, 3)">
 								D) N / D
@@ -1941,7 +1952,7 @@
 						</div>
 						<div class="quiz-options">
 							<div class="quiz-option" onclick="checkAnswer(17, 0)">
-								A) The truncated SVD: X̃ₘ = UₘΣₘVₘᵀ
+								A) The truncated SVD: XÌƒâ‚˜ = Uâ‚˜Î£â‚˜Vâ‚˜áµ€
 							</div>
 							<div class="quiz-option" onclick="checkAnswer(17, 1)">
 								B) Any random M columns of X
@@ -1982,7 +1993,7 @@
 								observations into compact states
 							</li>
 							<li>
-								<strong>Efficient Learning:</strong> Lower dimensions → faster
+								<strong>Efficient Learning:</strong> Lower dimensions ←’ faster
 								training, less data needed
 							</li>
 							<li>
@@ -2007,8 +2018,8 @@
 						</div>
 						<div class="quiz-options">
 							<div class="quiz-option" onclick="checkAnswer(18, 0)">
-								A) Compute eigendecomposition of (1/N)XᵀX ∈ ℝᴺˣᴺ instead of S ∈
-								ℝᴰˣᴰ
+								A) Compute eigendecomposition of (1/N)Xáµ€X âˆˆ â„á´ºË£á´º
+								instead of S âˆˆ â„á´°Ã‹Â£á´°
 							</div>
 							<div class="quiz-option" onclick="checkAnswer(18, 1)">
 								B) Always compute the D×D covariance matrix
@@ -2029,7 +2040,7 @@
 							<span class="quiz-difficulty difficulty-hard">Hard</span>
 						</div>
 						<div class="quiz-context">
-							PPCA: x = Bz + μ + ε, z ~ N(0,I), ε ~ N(0,σ²I)
+							PPCA: x = Bz + Î¼ + Îµ, z ~ N(0,I), Îµ ~ N(0,ÏƒÂ²I)
 						</div>
 						<div class="quiz-question">
 							In Probabilistic PCA, the generative model assumes:
@@ -2062,10 +2073,10 @@
 						</div>
 						<div class="quiz-options">
 							<div class="quiz-option" onclick="checkAnswer(20, 0)">
-								A) N(x | μ, BBᵀ + σ²I) - Gaussian with expanded covariance
+								A) N(x | Î¼, BBáµ€ + ÏƒÂ²I) - Gaussian with expanded covariance
 							</div>
 							<div class="quiz-option" onclick="checkAnswer(20, 1)">
-								B) N(x | μ, σ²I) - just the noise
+								B) N(x | Î¼, ÏƒÂ²I) - just the noise
 							</div>
 							<div class="quiz-option" onclick="checkAnswer(20, 2)">
 								C) N(z | 0, I) - the prior
@@ -2110,7 +2121,7 @@
 						</div>
 						<div class="quiz-options">
 							<div class="quiz-option" onclick="checkAnswer(22, 0)">
-								A) Encoder = Bᵀ, Decoder = B, minimizing ||x - BBᵀx||²
+								A) Encoder = Báµ€, Decoder = B, minimizing ||x - BBáµ€x||Â²
 							</div>
 							<div class="quiz-option" onclick="checkAnswer(22, 1)">
 								B) Encoder and decoder are both nonlinear
@@ -2130,7 +2141,7 @@
 							<span class="quiz-number">Question 23</span>
 							<span class="quiz-difficulty difficulty-hard">Hard</span>
 						</div>
-						<div class="quiz-context">xₖ₊₁ = Sxₖ / ||Sxₖ||</div>
+						<div class="quiz-context">xâ‚"â‚Å â‚ = Sxâ‚– / ||Sxâ‚–||</div>
 						<div class="quiz-question">Power iteration converges to:</div>
 						<div class="quiz-options">
 							<div class="quiz-option" onclick="checkAnswer(23, 0)">
@@ -2159,7 +2170,7 @@
 						</div>
 						<div class="quiz-options">
 							<div class="quiz-option" onclick="checkAnswer(24, 0)">
-								A) The identity matrix I (minimizing ||x - BBᵀx||)
+								A) The identity matrix I (minimizing ||x - BBáµ€x||)
 							</div>
 							<div class="quiz-option" onclick="checkAnswer(24, 1)">
 								B) The covariance matrix S
@@ -2168,7 +2179,7 @@
 								C) The data matrix X
 							</div>
 							<div class="quiz-option" onclick="checkAnswer(24, 3)">
-								D) The mean vector μ
+								D) The mean vector Î¼
 							</div>
 						</div>
 						<div class="quiz-feedback" id="feedback24"></div>
@@ -2284,12 +2295,13 @@
 
 					<div class="formula-box">
 						<strong>Key Formulas to Remember:</strong><br /><br />
-						• Covariance: S = (1/N) Σₙ xₙxₙᵀ<br />
-						• Encoding: z = Bᵀx (project to low-D)<br />
-						• Decoding: x̃ = Bz = BBᵀx (reconstruct)<br />
-						• Variance captured: Vₘ = Σₘ λₘ<br />
-						• Reconstruction error: Jₘ = Σ∂¼ⱼ₁˜₁Š₁á´° λ∂¼<br />
-						• SVD relation: λₐ = σₐ²/N
+						â€¢ Covariance: S = (1/N) Î£â‚™ xâ‚™xâ‚™áµ€<br />
+						â€¢ Encoding: z = Báµ€x (project to low-D)<br />
+						â€¢ Decoding: xÌƒ = Bz = BBáµ€x (reconstruct)<br />
+						â€¢ Variance captured: Vâ‚˜ = Î£â‚˜ Î»â‚˜<br />
+						â€¢ Reconstruction error: Jâ‚˜ = Î£âˆ‚áµ¢â±¼â‚Ã‹Å“â‚Ã…Â â‚á´°
+						Î»âˆ‚Â¼<br />
+						â€¢ SVD relation: Î»â‚ = ÏÆ’â‚Ã‚Â²/N
 					</div>
 
 					<div class="agentic-ai-box">
@@ -2318,12 +2330,12 @@
 							class="btn btn-primary"
 							onclick="resetQuiz()"
 							style="margin-right: 1rem">
-							🔄 Reset Quiz
+							🔍„ Reset Quiz
 						</button>
 						<button
 							class="btn btn-orange"
-							onclick="window.scrollTo({top: 0, behavior: 'smooth'})">
-							⬆ Back to Top
+							onclick="window.scrollTo({ top: 0, behavior: 'smooth' })">
+							â¬† Back to Top
 						</button>
 					</div>
 				</section>
@@ -2363,29 +2375,29 @@
 
 			const explanations = {
 				1: "PCA's main goal is dimensionality reduction while retaining maximum information (variance).",
-				2: "S = (1/N)Σxₙxₙᵀ requires centered data (mean subtracted) for correct covariance computation.",
+				2: "S = (1/N)Î£xâ‚™xâ‚™áµ€ requires centered data (mean subtracted) for correct covariance computation.",
 				3: "The first PC is the eigenvector of S with the largest eigenvalue - direction of maximum variance.",
-				4: "Eigenvalue λₘ equals the variance of data projected onto corresponding eigenvector bₘ: V = bᵀSb = λ.",
+				4: "Eigenvalue Î»â‚˜ equals the variance of data projected onto corresponding eigenvector bâ‚˜: V = báµ€Sb = Î».",
 				5: "Principal components are eigenvectors of symmetric S, forming an orthonormal basis by spectral theorem.",
 				6: "Centering ensures the covariance matrix captures variance around the origin, not the mean.",
-				7: "Code z = Bᵀx gives coordinates of x in the principal component basis (compressed representation).",
-				8: "Reconstruction x̃ = Bz ∈ ℝᴰ lives in original space but constrained to M-dimensional principal subspace.",
-				9: "Maximum variance perspective: maximize V = bᵀSb subject to ||b||² = 1 (unit vector constraint).",
-				10: "Lagrangian optimization yields Sb = λb - the eigenvalue equation. PCs are eigenvectors of S.",
-				11: "Total variance with M PCs = Σₘ λₘ, sum of M largest eigenvalues of covariance matrix.",
-				12: "Reconstruction error Jₘ = Σ∂¼ⱼ₁˜₁Š₁á´° λ∂¼ - sum of discarded eigenvalues (lost variance).",
-				13: "Projection matrix P = BBᵀ is idempotent (P² = P) and symmetric (Pᵀ = P).",
-				14: "For X = UΣVᵀ, eigenvalues of S = (1/N)XXᵀ are λₐ = σₐ²/N (squared singular values scaled).",
+				7: "Code z = Báµ€x gives coordinates of x in the principal component basis (compressed representation).",
+				8: "Reconstruction xÌƒ = Bz âˆˆ â„á´° lives in original space but constrained to M-dimensional principal subspace.",
+				9: "Maximum variance perspective: maximize V = báµ€Sb subject to ||b||Â² = 1 (unit vector constraint).",
+				10: "Lagrangian optimization yields Sb = Î»b - the eigenvalue equation. PCs are eigenvectors of S.",
+				11: "Total variance with M PCs = Î£â‚˜ Î»â‚˜, sum of M largest eigenvalues of covariance matrix.",
+				12: "Reconstruction error Jâ‚˜ = Î£âˆ‚áµ¢â±¼â‚Ã‹Å“â‚Ã…Â â‚á´° Î»âˆ‚Â¼ - sum of discarded eigenvalues (lost variance).",
+				13: "Projection matrix P = BBáµ€ is idempotent (PÂ² = P) and symmetric (Páµ€ = P).",
+				14: "For X = UÎ£Váµ€, eigenvalues of S = (1/N)XXáµ€ are Î»â‚ = ÏÆ’â‚Ã‚Â²/N (squared singular values scaled).",
 				15: "Standardization equalizes feature scales - prevents large-scale features from dominating PCA.",
-				16: "Relative variance = (Σₘ λₘ)/(Σá´° λᵀ¢) = Vₘ/Vá´° - fraction of total variance captured.",
-				17: "Eckart-Young theorem: best rank-M approximation is truncated SVD X̃ₘ = UₘΣₘVₘᵀ.",
-				18: "When N << D, compute N×N matrix (1/N)XᵀX instead of D×D covariance - same nonzero eigenvalues.",
-				19: "PPCA: z ~ N(0,I) latent, x = Bz + μ + ε with Gaussian noise ε ~ N(0,σ²I).",
-				20: "Marginal p(x) = ∫p(x|z)p(z)dz = N(x|μ, BBᵀ + σ²I) - Gaussian with combined covariance.",
+				16: "Relative variance = (Î£â‚˜ Î»â‚˜)/(Î£á´° Î»áµ€Â¢) = Vâ‚˜/Vá´° - fraction of total variance captured.",
+				17: "Eckart-Young theorem: best rank-M approximation is truncated SVD XÌƒâ‚˜ = Uâ‚˜Î£â‚˜Vâ‚˜áµ€.",
+				18: "When N << D, compute N×N matrix (1/N)Xáµ€X instead of D×D covariance - same nonzero eigenvalues.",
+				19: "PPCA: z ~ N(0,I) latent, x = Bz + Î¼ + Îµ with Gaussian noise Îµ ~ N(0,ÏƒÂ²I).",
+				20: "Marginal p(x) = âˆ«p(x|z)p(z)dz = N(x|Î¼, BBáµ€ + ÏƒÂ²I) - Gaussian with combined covariance.",
 				21: "Posterior p(z|x) is Gaussian with mean depending on x but covariance C independent of x.",
-				22: "PCA = linear auto-encoder: Encoder Bᵀ maps to low-D code, Decoder B reconstructs.",
-				23: "Power iteration xₖ₊₁ = Sxₖ/||Sxₖ|| converges to eigenvector with largest eigenvalue.",
-				24: "PCA finds best rank-M approximation BBᵀ of I, minimizing ||x - BBᵀx||² reconstruction error.",
+				22: "PCA = linear auto-encoder: Encoder Báµ€ maps to low-D code, Decoder B reconstructs.",
+				23: "Power iteration xâ‚â‚Å â‚ = Sxâ Sxâ‚ – || converges to eigenvector with largest eigenvalue.",
+				24: "PCA finds best rank-M approximation BBáµ€ of I, minimizing ||x - BBáµ€x||Â² reconstruction error.",
 				25: "PCA reduces 1M-D images to compact state vectors, enabling efficient navigation learning.",
 			};
 
@@ -2413,14 +2425,14 @@
 					correctCount++;
 					container.classList.add("answered-correct");
 					feedback.className = "quiz-feedback show correct";
-					feedback.innerHTML = `✅ <strong>Correct!</strong> ${explanations[q]}`;
+					feedback.innerHTML = `âœ… <strong>Correct!</strong> ${explanations[q]}`;
 					if (q <= 8) easyCorrect++;
 					else if (q <= 17) mediumCorrect++;
 					else hardCorrect++;
 				} else {
 					container.classList.add("answered-wrong");
 					feedback.className = "quiz-feedback show incorrect";
-					feedback.innerHTML = `❌ <strong>Incorrect.</strong> ${explanations[q]}`;
+					feedback.innerHTML = `âŒ <strong>Incorrect.</strong> ${explanations[q]}`;
 				}
 				updateStats();
 			}
@@ -2431,25 +2443,21 @@
 						? Math.round((correctCount / attemptedCount) * 100)
 						: 0;
 				const prog = Math.round((attemptedCount / totalQuestions) * 100);
-				document.getElementById(
-					"headerScore"
-				).textContent = `${correctCount}/${totalQuestions}`;
+				document.getElementById("headerScore").textContent =
+					`${correctCount}/${totalQuestions}`;
 				document.getElementById("headerAccuracy").textContent = `${acc}%`;
-				document.getElementById(
-					"sidebarScore"
-				).textContent = `${correctCount}/${totalQuestions}`;
-				document.getElementById("scoreProgress").style.width = `${
-					(correctCount / totalQuestions) * 100
-				}%`;
+				document.getElementById("sidebarScore").textContent =
+					`${correctCount}/${totalQuestions}`;
+				document.getElementById("scoreProgress").style.width =
+					`${(correctCount / totalQuestions) * 100}%`;
 				document.getElementById("progressFill").style.width = `${prog}%`;
 				document.getElementById("totalCorrect").textContent = correctCount;
 				document.getElementById("totalAttempted").textContent = attemptedCount;
 				document.getElementById("accuracyPercent").textContent = `${acc}%`;
 				document.getElementById("progressPercent").textContent = `${prog}%`;
 				document.getElementById("easyScore").textContent = `${easyCorrect}/8`;
-				document.getElementById(
-					"mediumScore"
-				).textContent = `${mediumCorrect}/9`;
+				document.getElementById("mediumScore").textContent =
+					`${mediumCorrect}/9`;
 				document.getElementById("hardScore").textContent = `${hardCorrect}/8`;
 			}
 
@@ -2464,7 +2472,7 @@
 					const c = document.getElementById(`q${i}`);
 					c.classList.remove("answered-correct", "answered-wrong");
 					c.querySelectorAll(".quiz-option").forEach((o) =>
-						o.classList.remove("disabled", "correct", "incorrect")
+						o.classList.remove("disabled", "correct", "incorrect"),
 					);
 					document.getElementById(`feedback${i}`).className = "quiz-feedback";
 				}
@@ -2580,12 +2588,12 @@
 				// Legend
 				ctx.font = "12px Space Grotesk";
 				ctx.fillStyle = "#0b2fa0";
-				ctx.fillText(`PC1 (λ₁=${lambda1.toFixed(2)})`, 20, 20);
+				ctx.fillText(`PC1 (Î»â‚=${lambda1.toFixed(2)})`, 20, 20);
 				ctx.fillStyle = "#10b981";
-				ctx.fillText(`PC2 (λ₂=${lambda2.toFixed(2)})`, 20, 40);
+				ctx.fillText(`PC2 (Î»â‚‚=${lambda2.toFixed(2)})`, 20, 40);
 
 				document.getElementById("pca2DOutput").innerHTML = `2D PCA Analysis
-═══════════════
+â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
 Correlation: ${corr}
 N = ${N} points
 
@@ -2594,12 +2602,10 @@ Covariance Matrix S:
 [${sxy.toFixed(3)}, ${syy.toFixed(3)}]
 
 Eigenvalues:
-λ₁ = ${lambda1.toFixed(4)} (variance along PC1)
-λ₂ = ${lambda2.toFixed(4)} (variance along PC2)
+Î»â‚ = ${lambda1.toFixed(4)} (variance along PC1)
+Î»â‚‚ = ${lambda2.toFixed(4)} (variance along PC2)
 
-Variance captured by PC1: ${((lambda1 / (lambda1 + lambda2)) * 100).toFixed(
-					1
-				)}%`;
+Variance captured by PC1: ${((lambda1 / (lambda1 + lambda2)) * 100).toFixed(1)}%`;
 			}
 
 			// Lab 2: Covariance Matrix
@@ -2609,16 +2615,15 @@ Variance captured by PC1: ${((lambda1 / (lambda1 + lambda2)) * 100).toFixed(
 				const rho = parseFloat(document.getElementById("rho").value);
 				const cov = rho * Math.sqrt(var1 * var2);
 
-				document.getElementById(
-					"covOutput"
-				).innerHTML = `Data Covariance Matrix S
-════════════════════════
+				document.getElementById("covOutput").innerHTML =
+					`Data Covariance Matrix S
+â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
 Given:
-  Var(x₁) = ${var1}
-  Var(x₂) = ${var2}
-  Correlation ρ = ${rho}
+  Var(xâ‚) = ${var1}
+  Var(xâ‚‚) = ${var2}
+  Correlation Ï = ${rho}
 
-Covariance: Cov(x₁,x₂) = ρ√(Var₁·Var₂) = ${cov.toFixed(3)}
+Covariance: Cov(xâ‚,xâ‚‚) = ÏâˆÅ¡(Varâ‚Ã‚Â·Varâ‚‚) = ${cov.toFixed(3)}
 
 S = [${var1.toFixed(2)}, ${cov.toFixed(2)}]
     [${cov.toFixed(2)}, ${var2.toFixed(2)}]
@@ -2630,23 +2635,22 @@ det(S) = ${(var1 * var2 - cov * cov).toFixed(3)}`;
 
 			// Lab 3: Eigendecomposition
 			function showEigendecomposition() {
-				document.getElementById(
-					"eigenOutput"
-				).innerHTML = `Eigendecomposition of S
-═══════════════════════
-S = PΛPᵀ where:
-• P = [b₁, b₂, ..., bá´°] - eigenvector matrix
-• Λ = diag(λ₁, λ₂, ..., λá´°) - eigenvalue matrix
+				document.getElementById("eigenOutput").innerHTML =
+					`Eigendecomposition of S
+â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
+S = PÎ›Páµ€ where:
+â€¢ P = [bâ‚, bâ‚‚, ..., bá´°] - eigenvector matrix
+â€¢ Î› = diag(Î»â‚, Î»â‚‚, ..., Î»á´°) - eigenvalue matrix
 
 Properties:
-• S is symmetric → eigenvectors are orthonormal
-• Eigenvalues λᵀ¢ ≥ 0 (S is PSD)
-• Eigenvectors bᵀ¢ are principal components
-• λᵀ¢ = variance along bᵀ¢
+â€¢ S is symmetric ←’ eigenvectors are orthonormal
+â€¢ Eigenvalues Î»áµ€Â¢ â‰¥ 0 (S is PSD)
+â€¢ Eigenvectors báµ€Â¢ are principal components
+â€¢ Î»áµ€Â¢ = variance along báµ€Â¢
 
 Spectral Theorem guarantees:
-• D distinct eigenvectors (orthonormal basis)
-• S can be reconstructed from eigendecomposition`;
+â€¢ D distinct eigenvectors (orthonormal basis)
+â€¢ S can be reconstructed from eigendecomposition`;
 			}
 
 			// Lab 4: Projection
@@ -2658,40 +2662,38 @@ Spectral Theorem guarantees:
 				const bx = Math.cos(rad),
 					by = Math.sin(rad);
 
-				document.getElementById(
-					"projOutput"
-				).innerHTML = `Projection onto direction θ = ${angle}°
-════════════════════════════════════
-Direction vector b = [${bx.toFixed(3)}, ${by.toFixed(3)}]ᵀ
+				document.getElementById("projOutput").innerHTML =
+					`Projection onto direction Î¸ = ${angle}Â°
+â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
+Direction vector b = [${bx.toFixed(3)}, ${by.toFixed(3)}]áµ€
 
 For each point x:
-  z = bᵀx (scalar coordinate)
-  x̃ = zb = bbᵀx (projection in ℝ²)
+  z = báµ€x (scalar coordinate)
+  xÌƒ = zb = bbáµ€x (projection in â„Ã‚Â²)
 
-Projected variance V = bᵀSb
+Projected variance V = báµ€Sb
 (depends on angle - maximal along PC1)
 
 To maximize variance:
-→ Choose b as eigenvector with largest λ`;
+←’ Choose b as eigenvector with largest Î»`;
 			}
 
 			function findOptimalProjection() {
-				document.getElementById(
-					"projOutput"
-				).innerHTML = `Optimal Projection Found!
-════════════════════════
-The optimal direction maximizes V = bᵀSb
+				document.getElementById("projOutput").innerHTML =
+					`Optimal Projection Found!
+â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
+The optimal direction maximizes V = báµ€Sb
 
 Solution: b = eigenvector of S with max eigenvalue
 
 This gives:
-• Maximum variance in projected data
-• Minimum reconstruction error
-• First Principal Component
+â€¢ Maximum variance in projected data
+â€¢ Minimum reconstruction error
+â€¢ First Principal Component
 
 Constrained optimization:
-max bᵀSb subject to ||b||² = 1
-→ Lagrangian → Sb = λb (eigenvalue equation)`;
+max báµ€Sb subject to ||b||Â² = 1
+←’ Lagrangian ←’ Sb = Î»b (eigenvalue equation)`;
 			}
 
 			// Lab 5: Variance Captured
@@ -2724,10 +2726,9 @@ max bᵀSb subject to ||b||² = 1
 					}
 				}
 
-				document.getElementById(
-					"varOutput"
-				).innerHTML = `Cumulative Variance Explained
-═════════════════════════════
+				document.getElementById("varOutput").innerHTML =
+					`Cumulative Variance Explained
+â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
 D = ${D} original dimensions
 
 M=1: ${cumulative[0].toFixed(1)}%
@@ -2738,32 +2739,31 @@ M=10: ${cumulative[Math.min(9, D - 1)].toFixed(1)}%
 
 To capture 95% variance: M = ${m95} components
 
-Formula: Relative variance = (Σₘ λₘ) / (Σá´° λᵀ¢)`;
+Formula: Relative variance = (Î£â‚˜ Î»â‚˜) / (Î£á´° Î»áµ€Â¢)`;
 			}
 
 			// Lab 6: Reconstruction
 			function showReconstruction() {
 				const M = parseInt(document.getElementById("numPCs").value);
 
-				document.getElementById(
-					"reconOutput"
-				).innerHTML = `Reconstruction with M = ${M} PC(s)
-══════════════════════════════════
+				document.getElementById("reconOutput").innerHTML =
+					`Reconstruction with M = ${M} PC(s)
+â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
 Process:
-1. Encode: z = Bᵀx ∈ ℝᴹ
-2. Decode: x̃ = Bz = BBᵀx ∈ ℝᴰ
+1. Encode: z = Báµ€x âˆˆ â„á´¹
+2. Decode: xÌƒ = Bz = BBáµ€x âˆˆ â„á´°
 
 Reconstruction error:
-Jₘ = (1/N) Σₙ ||xₙ - x̃ₙ||²
-   = Σ∂¼ⱼ₁˜₁Š₁á´° λ∂¼ (sum of discarded eigenvalues)
+Jâ‚˜ = (1/N) Î£â‚™ ||xâ‚™ - xÌƒâ‚™||Â²
+   = Î£âˆ‚áµ¢â±¼â‚Ã‹Å“â‚Ã…Â â‚á´° Î»âˆ‚Â¼ (sum of discarded eigenvalues)
 
-Information retained: Σₘ λₘ
-Information lost: Σ∂¼ⱼ₁˜₁Š₁á´° λ∂¼
+Information retained: Î£â‚˜ Î»â‚˜
+Information lost: Î£âˆ‚áµ¢â±¼â‚Ã‹Å“â‚Ã…Â â‚á´° Î»âˆ‚Â¼
 
 As M increases:
-• Reconstruction improves
-• Code dimension increases
-• Compression ratio decreases`;
+â€¢ Reconstruction improves
+â€¢ Code dimension increases
+â€¢ Compression ratio decreases`;
 			}
 
 			// Lab 7: Preprocessing
@@ -2772,28 +2772,28 @@ As M increases:
 
 				const descriptions = {
 					original: `Original Data
-══════════════
-• Raw data as collected
-• May have nonzero mean
-• Different scales per dimension
-• Not suitable for direct PCA`,
+â•â•â•â•â•â•â•â•â•â•â•â•â•â•
+â€¢ Raw data as collected
+â€¢ May have nonzero mean
+â€¢ Different scales per dimension
+â€¢ Not suitable for direct PCA`,
 					centered: `Centered Data (Step 1)
-══════════════════════
-x̂ₙ = xₙ - μ where μ = (1/N)Σxₙ
+â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
+xÌ‚â‚™ = xâ‚™ - Î¼ where Î¼ = (1/N)Î£xâ‚™
 
 After centering:
-• Mean is zero: E[xÌ'] = 0
-• Covariance captures spread from origin
-• Essential for correct PCA`,
+â€¢ Mean is zero: E[xÃŒ'] = 0
+â€¢ Covariance captures spread from origin
+â€¢ Essential for correct PCA`,
 					standardized: `Standardized Data (Step 2)
-═══════════════════════════
-x̂ₙ⁽ᵀˆ¾ = (xₙ⁽ᵀˆ¾ - μᵀˆ) / σᵀˆ
+â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
+xÃŒâ€šâ‚â„¢(áµ€) = (xâ‚â„¢(áµ€) - Î¼áµ€Ë†) / Ïƒáµ€Ë†
 
 After standardization:
-• Mean = 0, Variance = 1 per dimension
-• All features on same scale
-• Prevents large-scale features from dominating
-• Use when features have different units`,
+â€¢ Mean = 0, Variance = 1 per dimension
+â€¢ All features on same scale
+â€¢ Prevents large-scale features from dominating
+â€¢ Use when features have different units`,
 				};
 
 				document.getElementById("preprocOutput").innerHTML = descriptions[step];
@@ -2803,27 +2803,26 @@ After standardization:
 			function showAutoencoder() {
 				const M = parseInt(document.getElementById("bottleneck").value);
 
-				document.getElementById(
-					"aeOutput"
-				).innerHTML = `Linear Auto-encoder View of PCA
-═══════════════════════════════
-      x ∈ ℝᴰ
-         │
-    "Ή"ۉ"ۉ"ۉ"ۉ—¼"ۉ"ۉ"ۉ"ۉ"
-    │ Encoder │  Bᵀ (D×M)
-    │  z=Bᵀx  │
-    ℓ"ۉ"ۉ"ۉ"ۉ"‰"ۉ"ۉ"ۉ"ۉ"Ëœ
-         │
-      z ∈ ℝᴹ   ← Bottleneck (M=${M})
-         │
-    "Ή"ۉ"ۉ"ۉ"ۉ—¼"ۉ"ۉ"ۉ"ۉ"
-    │ Decoder │  B (M×D)
-    │  x̃=Bz  │
-    ℓ"ۉ"ۉ"ۉ"ۉ"‰"ۉ"ۉ"ۉ"ۉ"Ëœ
-         │
-      x̃ ∈ ℝᴰ
+				document.getElementById("aeOutput").innerHTML =
+					`Linear Auto-encoder View of PCA
+â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
+      x âˆˆ â„á´°
+         â”‚
+    "Î‰"Û‰"Û‰"Û‰"Û‰-Â¼"Û‰"Û‰"Û‰"Û‰"Ã‚
+    â”‚ Encoder â”‚  Báµ€ (D×M)
+    â”‚  z=Báµ€x  â”‚
+    â„“"Û‰"Û‰"Û‰"Û‰"â€°"Û‰"Û‰"Û‰"Û‰"Ã‹Å“
+         â”‚
+      z âˆˆ â„á´¹   ← Bottleneck (M=${M})
+         â”‚
+    "Î‰"Û‰"Û‰"Û‰"Û‰-Â¼"Û‰"Û‰"Û‰"Û‰"Ã‚
+    â”‚ Decoder â”‚  B (M×D)
+    â”‚  xÌƒ=Bz  â”‚
+    â„“"Û‰"Û‰"Û‰"Û‰"â€°"Û‰"Û‰"Û‰"Û‰"Ã‹Å“
+         â”‚
+      xÌƒ âˆˆ â„á´°
 
-Loss: ||x - x̃||² = ||x - BBᵀx||²
+Loss: ||x - xÌƒ||Â² = ||x - BBáµ€x||Â²
 
 PCA finds B that minimizes this loss!
 Deep auto-encoders: replace linear B with neural networks`;
@@ -2832,20 +2831,20 @@ Deep auto-encoders: replace linear B with neural networks`;
 			// Lab 9: SVD Connection
 			function showSVDConnection() {
 				document.getElementById("svdOutput").innerHTML = `SVD and PCA Connection
-══════════════════════
-Data matrix: X = [x₁,...,xₙ] ∈ ℝᴰˣᴺ
+â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
+Data matrix: X = [xâ‚,...,xâ‚™] âˆˆ â„á´°Ã‹Â£á´º
 
-SVD: X = UΣVᵀ
-• U ∈ ℝᴰˣᴰ - left singular vectors
-• Σ ∈ ℝᴰˣᴺ - singular values on diagonal
-• V ∈ ℝᴺˣᴺ - right singular vectors
+SVD: X = UÎ£Váµ€
+â€¢ U âˆˆ â„á´°Ã‹Â£á´° - left singular vectors
+â€¢ Î£ âˆˆ â„á´°Ã‹Â£á´º - singular values on diagonal
+â€¢ V âˆˆ â„á´ºË£á´º - right singular vectors
 
-Covariance: S = (1/N)XXᵀ = (1/N)UΣΣᵀUᵀ
+Covariance: S = (1/N)XXáµ€ = (1/N)UÎ£Î£áµ€Uáµ€
 
 Key relationships:
-• Columns of U are eigenvectors of S
-• λₐ = σₐ²/N (eigenvalue = squared singular value / N)
-• Principal components = left singular vectors
+â€¢ Columns of U are eigenvectors of S
+â€¢ Î»â‚ = ÏÆ’â‚Ã‚Â²/N (eigenvalue = squared singular value / N)
+â€¢ Principal components = left singular vectors
 
 Computational advantage:
 SVD is numerically more stable than eigendecomposition`;
@@ -2857,23 +2856,22 @@ SVD is numerically more stable than eigendecomposition`;
 				const rates = { fast: 0.5, medium: 0.3, slow: 0.15 };
 				const rate = rates[decay];
 
-				document.getElementById(
-					"screeOutput"
-				).innerHTML = `Scree Plot (Eigenvalue Spectrum)
-════════════════════════════════
+				document.getElementById("screeOutput").innerHTML =
+					`Scree Plot (Eigenvalue Spectrum)
+â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
 Decay rate: ${decay}
 
 Eigenvalues (first 10):
 ${Array.from(
 	{ length: 10 },
-	(_, i) => `λ${i + 1} = ${Math.exp(-rate * i).toFixed(4)}`
+	(_, i) => `Î»${i + 1} = ${Math.exp(-rate * i).toFixed(4)}`,
 ).join("\n")}
 
 Scree plot shows:
-• Eigenvalues sorted descending
-• "Elbow" suggests natural cutoff for M
-• Fast decay → few PCs needed
-• Slow decay → many PCs needed
+â€¢ Eigenvalues sorted descending
+â€¢ "Elbow" suggests natural cutoff for M
+â€¢ Fast decay ←’ few PCs needed
+â€¢ Slow decay ←’ many PCs needed
 
 Rule of thumb: Choose M at the "elbow" where
 eigenvalues stop decreasing rapidly`;
@@ -2884,26 +2882,25 @@ eigenvalues stop decreasing rapidly`;
 				const D = parseInt(document.getElementById("highD").value);
 				const N = parseInt(document.getElementById("lowN").value);
 
-				document.getElementById(
-					"highDOutput"
-				).innerHTML = `High-Dimensional PCA Trick
-═══════════════════════════
+				document.getElementById("highDOutput").innerHTML =
+					`High-Dimensional PCA Trick
+â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
 D = ${D} dimensions
 N = ${N} samples
 
 Standard approach:
-• Compute S = (1/N)XXᵀ ∈ ℝ${D}×${D}
-• Eigendecompose ${D}×${D} matrix
-• Complexity: O(D³) - EXPENSIVE!
+â€¢ Compute S = (1/N)XXáµ€ âˆˆ â„${D}×${D}
+â€¢ Eigendecompose ${D}×${D} matrix
+â€¢ Complexity: O(DÂ³) - EXPENSIVE!
 
 Dual PCA (when N << D):
-• Compute (1/N)XᵀX ∈ ℝ${N}×${N}
-• Eigendecompose ${N}×${N} matrix
-• Complexity: O(N³) - MUCH CHEAPER!
-• Same nonzero eigenvalues!
+â€¢ Compute (1/N)Xáµ€X âˆˆ â„${N}×${N}
+â€¢ Eigendecompose ${N}×${N} matrix
+â€¢ Complexity: O(NÂ³) - MUCH CHEAPER!
+â€¢ Same nonzero eigenvalues!
 
-Recovery: If XᵀXc = λc, then
-eigenvector of XXᵀ is b = Xc/√(Nλ)
+Recovery: If Xáµ€Xc = Î»c, then
+eigenvector of XXáµ€ is b = Xc/âˆš(NÎ»)
 
 Speedup: ${((D * D * D) / (N * N * N)).toFixed(0)}× faster!`;
 			}
@@ -2912,49 +2909,47 @@ Speedup: ${((D * D * D) / (N * N * N)).toFixed(0)}× faster!`;
 			function samplePPCA() {
 				const sigma2 = parseFloat(document.getElementById("ppcaNoise").value);
 
-				document.getElementById(
-					"ppcaOutput"
-				).innerHTML = `Probabilistic PCA (PPCA)
-════════════════════════
+				document.getElementById("ppcaOutput").innerHTML =
+					`Probabilistic PCA (PPCA)
+â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
 Generative Model:
 1. z ~ N(0, I)         [sample latent]
-2. x = Bz + μ + ε      [generate observation]
-   where ε ~ N(0, σ²I)
+2. x = Bz + Î¼ + Îµ      [generate observation]
+   where Îµ ~ N(0, ÏƒÂ²I)
 
-Noise variance σ² = ${sigma2}
+Noise variance ÏƒÂ² = ${sigma2}
 
 Marginal likelihood:
-p(x) = ∫p(x|z)p(z)dz = N(x | μ, BBᵀ + σ²I)
+p(x) = âˆ«p(x|z)p(z)dz = N(x | Î¼, BBáµ€ + ÏƒÂ²I)
 
 Key insight:
-• Data covariance = BBᵀ + σ²I
-• BBᵀ: variance from latent structure
-• σ²I: isotropic noise variance
+â€¢ Data covariance = BBáµ€ + ÏƒÂ²I
+â€¢ BBáµ€: variance from latent structure
+â€¢ ÏƒÂ²I: isotropic noise variance
 
 MLE solutions:
-• μ_ML = sample mean
-• B_ML related to PCA eigenvectors
-• σ²_ML = average discarded eigenvalues`;
+â€¢ Î¼_ML = sample mean
+â€¢ B_ML related to PCA eigenvectors
+â€¢ ÏƒÂ²_ML = average discarded eigenvalues`;
 			}
 
 			// Lab 13: Projection Matrix
 			function visualizeProjMatrix() {
-				document.getElementById(
-					"projMatOutput"
-				).innerHTML = `Projection Matrix P = BBᵀ
-═════════════════════════
-B = [b₁, ..., bₘ] ∈ ℝᴰˣᴹ (orthonormal columns)
+				document.getElementById("projMatOutput").innerHTML =
+					`Projection Matrix P = BBáµ€
+â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
+B = [bâ‚, ..., bâ‚˜] âˆˆ â„á´°Ã‹Â£á´¹ (orthonormal columns)
 
-Properties of P = BBᵀ:
-• P ∈ ℝᴰˣᴰ
-• Pᵀ = P (symmetric)
-• P² = P (idempotent)
-• rank(P) = M
-• Eigenvalues: M ones, (D-M) zeros
+Properties of P = BBáµ€:
+â€¢ P âˆˆ â„á´°Ã‹Â£á´°
+â€¢ Páµ€ = P (symmetric)
+â€¢ PÂ² = P (idempotent)
+â€¢ rank(P) = M
+â€¢ Eigenvalues: M ones, (D-M) zeros
 
 Action on x:
-• Px = BBᵀx = x̃ (projection onto span(B))
-• (I-P)x = x - x̃ (component in orthogonal complement)
+â€¢ Px = BBáµ€x = xÌƒ (projection onto span(B))
+â€¢ (I-P)x = x - xÌƒ (component in orthogonal complement)
 
 P projects onto M-dimensional principal subspace
 (I-P) projects onto (D-M)-dimensional complement`;
@@ -2968,10 +2963,9 @@ P projects onto M-dimensional principal subspace
 				const compressedSize = numPCs;
 				const ratio = (originalSize / compressedSize).toFixed(1);
 
-				document.getElementById(
-					"imgOutput"
-				).innerHTML = `Image Compression with PCA
-═══════════════════════════
+				document.getElementById("imgOutput").innerHTML =
+					`Image Compression with PCA
+â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
 Original: 28×28 = 784 pixels
 Principal Components: ${numPCs}
 
@@ -2979,11 +2973,11 @@ Compression ratio: ${ratio}:1
 Storage: ${compressedSize} values instead of ${originalSize}
 
 Quality vs Compression:
-• 1 PC:   Very blurry, basic shape only
-• 5 PCs:  Rough outline visible
-• 20 PCs: Main features clear
-• 50 PCs: Good quality
-• 100 PCs: Near-perfect reconstruction
+â€¢ 1 PC:   Very blurry, basic shape only
+â€¢ 5 PCs:  Rough outline visible
+â€¢ 20 PCs: Main features clear
+â€¢ 50 PCs: Good quality
+â€¢ 100 PCs: Near-perfect reconstruction
 
 Each PC captures a "eigenface/eigendigit" pattern
 Low PCs: global structure
@@ -2993,7 +2987,7 @@ High PCs: fine details`;
 			// Lab 15: Choosing M
 			function chooseM() {
 				const threshold = parseFloat(
-					document.getElementById("varThreshold").value
+					document.getElementById("varThreshold").value,
 				);
 
 				// Simulate eigenvalues
@@ -3016,10 +3010,9 @@ High PCs: fine details`;
 					}
 				}
 
-				document.getElementById(
-					"chooseMOutput"
-				).innerHTML = `Choosing Number of Components M
-═══════════════════════════════
+				document.getElementById("chooseMOutput").innerHTML =
+					`Choosing Number of Components M
+â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
 Target: Capture ${threshold}% of variance
 
 Result: M = ${M} components needed
@@ -3031,8 +3024,8 @@ Methods for choosing M:
 4. Bayesian model selection (PPCA)
 
 Trade-off:
-• Larger M → Better reconstruction, more storage
-• Smaller M → More compression, some info lost
+â€¢ Larger M ←’ Better reconstruction, more storage
+â€¢ Smaller M ←’ More compression, some info lost
 
 For ${threshold}% variance: Use M = ${M}`;
 			}

@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 	<head>
 		<meta charset="UTF-8" />
@@ -383,7 +383,7 @@
 			}
 
 			.case-study-box .label::before {
-				content: "🏢";
+				content: "🐍Â¢";
 			}
 
 			.agentic-ai-box {
@@ -424,7 +424,7 @@
 			}
 
 			.agentic-ai-box .label::before {
-				content: "🤓";
+				content: "📝¤“";
 			}
 
 			.quiz-container {
@@ -564,7 +564,7 @@
 			}
 
 			.demo-header::before {
-				content: "⚡";
+				content: "âš¡";
 			}
 
 			.demo-number {
@@ -871,7 +871,7 @@
 	</head>
 	<body>
 		<!-- Floating Back to Main Page Button -->
-		<a href="index.html" class="floating-back-btn">← Main Page</a>
+		<a href="index.html" class="floating-back-btn">← Main Page</a>
 
 		<header class="header">
 			<div class="header-content">
@@ -886,7 +886,7 @@
 						><span class="stat-value" id="headerAccuracy">0%</span>
 					</div>
 				</div>
-				<button class="mobile-menu-btn" onclick="toggleSidebar()">☰</button>
+				<button class="mobile-menu-btn" onclick="toggleSidebar()">â˜°</button>
 			</div>
 		</header>
 
@@ -902,7 +902,7 @@
 						alt="Quanskill"
 						style="height: 36px; border-radius: 6px"
 				/></a>
-				<div class="chapter-title">Chapter 9 · Linear Regression</div>
+				<div class="chapter-title">Chapter 9 Â· Linear Regression</div>
 			</div>
 
 			<div class="score-display">
@@ -916,7 +916,7 @@
 			<div class="nav-section">
 				<div class="nav-section-title">Overview</div>
 				<a href="#intro" class="nav-link active">🎯 Practice Hub Home</a>
-				<a href="#interactive" class="nav-link">⚡ Interactive Labs (15)</a>
+				<a href="#interactive" class="nav-link">âš¡ Interactive Labs (15)</a>
 			</div>
 
 			<div class="nav-section">
@@ -1051,8 +1051,9 @@
 							projection.
 						</p>
 						<div class="hero-equation">
-							<strong>Core Model:</strong> y = φᵀ(x)θ + ε, where ε ~ N(0, σ²)
-							<br /><strong>MLE Solution:</strong> θ_ML = (ΦᵀΦ)⁻¹Φᵀy
+							<strong>Core Model:</strong> y = Ï†áµ€(x)Î¸ + Îµ, where Îµ ~ N(0,
+							ÏƒÂ²) <br /><strong>MLE Solution:</strong> Î¸_ML =
+							(Î¦áµ€Î¦)â»Â¹Î¦áµ€y
 						</div>
 						<div class="topic-tags">
 							<span class="topic-tag">MLE</span>
@@ -1099,11 +1100,11 @@
 						</div>
 						<div class="demo-controls">
 							<div class="control-group">
-								<label>True Slope (θ)</label>
+								<label>True Slope (Î¸)</label>
 								<input type="number" id="trueSlope" value="2" step="0.5" />
 							</div>
 							<div class="control-group">
-								<label>Noise σ</label>
+								<label>Noise Ïƒ</label>
 								<input
 									type="number"
 									id="noiseStd"
@@ -1175,7 +1176,7 @@
 								<label>Feature Type</label>
 								<select id="featureType">
 									<option value="polynomial">
-										Polynomial φ(x)=[1,x,x²,...]
+										Polynomial Ï†(x)=[1,x,xÂ²,...]
 									</option>
 									<option value="gaussian">Gaussian RBF</option>
 									<option value="sinusoidal">Sinusoidal</option>
@@ -1191,7 +1192,7 @@
 									max="10" />
 							</div>
 							<button class="btn btn-primary" onclick="buildDesignMatrix()">
-								Build Φ
+								Build Î¦
 							</button>
 						</div>
 						<canvas id="designCanvas" class="demo-canvas"></canvas>
@@ -1217,11 +1218,11 @@
 									max="200" />
 							</div>
 							<div class="control-group">
-								<label>True θ</label>
+								<label>True Î¸</label>
 								<input type="number" id="mleTheta" value="2.5" step="0.5" />
 							</div>
 							<button class="btn btn-orange" onclick="runMLEAccuracy()">
-								Estimate θ_ML
+								Estimate Î¸_ML
 							</button>
 						</div>
 						<canvas id="mleCanvas" class="demo-canvas"></canvas>
@@ -1238,12 +1239,12 @@
 						</div>
 						<div class="demo-controls">
 							<div class="control-group">
-								<label>Prior Variance b²</label>
+								<label>Prior Variance bÂ²</label>
 								<select id="priorVariance">
-									<option value="0.1">Strong Prior (b²=0.1)</option>
-									<option value="1" selected>Medium (b²=1)</option>
-									<option value="10">Weak (b²=10)</option>
-									<option value="100">Very Weak (b²=100)</option>
+									<option value="0.1">Strong Prior (bÂ²=0.1)</option>
+									<option value="1" selected>Medium (bÂ²=1)</option>
+									<option value="10">Weak (bÂ²=10)</option>
+									<option value="100">Very Weak (bÂ²=100)</option>
 								</select>
 							</div>
 							<div class="control-group">
@@ -1268,7 +1269,7 @@
 						</div>
 						<div class="demo-controls">
 							<div class="control-group">
-								<label>λ (Regularization)</label>
+								<label>Î» (Regularization)</label>
 								<input
 									type="number"
 									id="regLambda"
@@ -1287,7 +1288,7 @@
 									max="15" />
 							</div>
 							<button class="btn btn-orange" onclick="runRegularization()">
-								Apply λ
+								Apply Î»
 							</button>
 						</div>
 						<canvas id="regCanvas" class="demo-canvas"></canvas>
@@ -1422,7 +1423,7 @@
 								<input type="number" id="normalN" value="5" min="3" max="10" />
 							</div>
 							<button class="btn btn-orange" onclick="solveNormalEquations()">
-								Solve θ = (ΦᵀΦ)⁻¹Φᵀy
+								Solve Î¸ = (Î¦áµ€Î¦)â»Â¹Î¦áµ€y
 							</button>
 						</div>
 						<canvas id="normalCanvas" class="demo-canvas"></canvas>
@@ -1445,19 +1446,19 @@
 						<canvas id="projCanvas" class="demo-canvas"></canvas>
 						<div class="demo-output" id="projOutput">
 							Click to see MLE as orthogonal projection onto column space of
-							Φ...
+							Î¦...
 						</div>
 					</div>
 
 					<!-- Lab 13: Noise Variance Estimation -->
 					<div class="demo-container" id="lab13">
 						<div class="demo-header">
-							<h4>Noise Variance Estimation (σ²_ML)</h4>
+							<h4>Noise Variance Estimation (ÏƒÂ²_ML)</h4>
 							<span class="demo-number">Lab 13/15</span>
 						</div>
 						<div class="demo-controls">
 							<div class="control-group">
-								<label>True σ²</label>
+								<label>True ÏƒÂ²</label>
 								<input
 									type="number"
 									id="trueSigma2"
@@ -1476,7 +1477,7 @@
 									max="100" />
 							</div>
 							<button class="btn btn-orange" onclick="estimateNoiseVariance()">
-								Estimate σ²
+								Estimate ÏƒÂ²
 							</button>
 						</div>
 						<canvas id="sigmaCanvas" class="demo-canvas"></canvas>
@@ -1558,7 +1559,7 @@
 						</div>
 						<div class="quiz-options">
 							<div class="quiz-option" onclick="checkAnswer(1, 0)">
-								A) The parameters θ (not necessarily the inputs)
+								A) The parameters Î¸ (not necessarily the inputs)
 							</div>
 							<div class="quiz-option" onclick="checkAnswer(1, 1)">
 								B) The inputs x only
@@ -1578,13 +1579,13 @@
 							<span class="quiz-number">Question 2</span>
 							<span class="quiz-difficulty difficulty-easy">Easy</span>
 						</div>
-						<div class="quiz-context">p(y|x,θ) = N(y | φᵀ(x)θ, σ²)</div>
+						<div class="quiz-context">p(y|x,Î¸) = N(y | Ï†áµ€(x)Î¸, ÏƒÂ²)</div>
 						<div class="quiz-question">
 							In linear regression, the likelihood function is:
 						</div>
 						<div class="quiz-options">
 							<div class="quiz-option" onclick="checkAnswer(2, 0)">
-								A) Gaussian, centered at the predicted value φᵀ(x)θ
+								A) Gaussian, centered at the predicted value Ï†áµ€(x)Î¸
 							</div>
 							<div class="quiz-option" onclick="checkAnswer(2, 1)">
 								B) Uniform over all possible y values
@@ -1605,11 +1606,11 @@
 							<span class="quiz-difficulty difficulty-easy">Easy</span>
 						</div>
 						<div class="quiz-question">
-							In the model y = φᵀ(x)θ + ε, the noise ε is assumed to be:
+							In the model y = Ï†áµ€(x)Î¸ + Îµ, the noise Îµ is assumed to be:
 						</div>
 						<div class="quiz-options">
 							<div class="quiz-option" onclick="checkAnswer(3, 0)">
-								A) i.i.d. Gaussian with mean 0 and variance σ²
+								A) i.i.d. Gaussian with mean 0 and variance ÏƒÂ²
 							</div>
 							<div class="quiz-option" onclick="checkAnswer(3, 1)">
 								B) Correlated across data points
@@ -1630,7 +1631,7 @@
 							<span class="quiz-difficulty difficulty-easy">Easy</span>
 						</div>
 						<div class="quiz-question">
-							The design matrix (feature matrix) Φ has dimensions:
+							The design matrix (feature matrix) Î¦ has dimensions:
 						</div>
 						<div class="quiz-options">
 							<div class="quiz-option" onclick="checkAnswer(4, 0)">
@@ -1655,21 +1656,21 @@
 							<span class="quiz-difficulty difficulty-easy">Easy</span>
 						</div>
 						<div class="quiz-question">
-							For polynomial regression of degree M, the feature vector φ(x) for
-							scalar x is:
+							For polynomial regression of degree M, the feature vector Ï†(x)
+							for scalar x is:
 						</div>
 						<div class="quiz-options">
 							<div class="quiz-option" onclick="checkAnswer(5, 0)">
-								A) [1, x, x², ..., xá´¹]ᵀ
+								A) [1, x, xÂ², ..., xá´¹]áµ€
 							</div>
 							<div class="quiz-option" onclick="checkAnswer(5, 1)">
-								B) [x, x², ..., xá´¹]ᵀ (no constant term)
+								B) [x, xÂ², ..., xá´¹]áµ€ (no constant term)
 							</div>
 							<div class="quiz-option" onclick="checkAnswer(5, 2)">
-								C) [sin(x), cos(x), ..., sin(Mx)]ᵀ
+								C) [sin(x), cos(x), ..., sin(Mx)]áµ€
 							</div>
 							<div class="quiz-option" onclick="checkAnswer(5, 3)">
-								D) [exp(x), exp(2x), ..., exp(Mx)]ᵀ
+								D) [exp(x), exp(2x), ..., exp(Mx)]áµ€
 							</div>
 						</div>
 						<div class="quiz-feedback" id="feedback5"></div>
@@ -1685,16 +1686,16 @@
 						</div>
 						<div class="quiz-options">
 							<div class="quiz-option" onclick="checkAnswer(6, 0)">
-								A) √[(1/N)∑(yₙ - Å·ₙ)²]
+								A) âˆš[(1/N)âˆ‘(yâ‚™ - Ã…Â·â‚™)Â²]
 							</div>
 							<div class="quiz-option" onclick="checkAnswer(6, 1)">
-								B) (1/N)∑|yₙ - ŷₙ|
+								B) (1/N)âˆ‘|yâ‚™ - Å·â‚™|
 							</div>
 							<div class="quiz-option" onclick="checkAnswer(6, 2)">
-								C) max|yₙ - Å·ₙ|
+								C) max|yâ‚™ - Ã…Â·â‚™|
 							</div>
 							<div class="quiz-option" onclick="checkAnswer(6, 3)">
-								D) ∑(yₙ - Å·ₙ)²
+								D) âˆ‘(yâ‚™ - Ã…Â·â‚™)Â²
 							</div>
 						</div>
 						<div class="quiz-feedback" id="feedback6"></div>
@@ -1716,7 +1717,7 @@
 								B) The polynomial degree M is too low
 							</div>
 							<div class="quiz-option" onclick="checkAnswer(7, 2)">
-								C) The noise variance σ² is too small
+								C) The noise variance ÏƒÂ² is too small
 							</div>
 							<div class="quiz-option" onclick="checkAnswer(7, 3)">
 								D) There is too much training data
@@ -1773,22 +1774,22 @@
 							<span class="quiz-number">Question 9</span>
 							<span class="quiz-difficulty difficulty-medium">Medium</span>
 						</div>
-						<div class="quiz-context">θ_ML = (ΦᵀΦ)⁻¹Φᵀy</div>
+						<div class="quiz-context">Î¸_ML = (Î¦áµ€Î¦)â»Â¹Î¦áµ€y</div>
 						<div class="quiz-question">
 							The MLE solution for linear regression parameters is:
 						</div>
 						<div class="quiz-options">
 							<div class="quiz-option" onclick="checkAnswer(9, 0)">
-								A) θ_ML = (ΦᵀΦ)⁻¹Φᵀy (normal equations)
+								A) Î¸_ML = (Î¦áµ€Î¦)â»Â¹Î¦áµ€y (normal equations)
 							</div>
 							<div class="quiz-option" onclick="checkAnswer(9, 1)">
-								B) θ_ML = Φᵀ(ΦΦᵀ)⁻¹y
+								B) Î¸_ML = Î¦áµ€(Î¦Î¦áµ€)â»Â¹y
 							</div>
 							<div class="quiz-option" onclick="checkAnswer(9, 2)">
-								C) θ_ML = (ΦΦᵀ)⁻¹Φy
+								C) Î¸_ML = (Î¦Î¦áµ€)â»Â¹Î¦y
 							</div>
 							<div class="quiz-option" onclick="checkAnswer(9, 3)">
-								D) θ_ML = Φy
+								D) Î¸_ML = Î¦y
 							</div>
 						</div>
 						<div class="quiz-feedback" id="feedback9"></div>
@@ -1805,14 +1806,16 @@
 						</div>
 						<div class="quiz-options">
 							<div class="quiz-option" onclick="checkAnswer(10, 0)">
-								A) (1/σ²)(θᵀΦᵀ₁¬Φ - yᵀΦ)
+								A) (1/ÏƒÂ²)(Î¸áµ€Î¦áµ€â‚Ã‚Â¬Î¦ - yáµ€Î¦)
 							</div>
 							<div class="quiz-option" onclick="checkAnswer(10, 1)">
-								B) (θᵀ - y)
+								B) (Î¸áµ€ - y)
 							</div>
-							<div class="quiz-option" onclick="checkAnswer(10, 2)">C) Φᵀy</div>
+							<div class="quiz-option" onclick="checkAnswer(10, 2)">
+								C) Î¦áµ€y
+							</div>
 							<div class="quiz-option" onclick="checkAnswer(10, 3)">
-								D) ΦᵀΦθ
+								D) Î¦áµ€Î¦Î¸
 							</div>
 						</div>
 						<div class="quiz-feedback" id="feedback10"></div>
@@ -1824,20 +1827,20 @@
 							<span class="quiz-difficulty difficulty-medium">Medium</span>
 						</div>
 						<div class="quiz-question">
-							MAP estimation with Gaussian prior p(θ) = N(0, b²I) gives:
+							MAP estimation with Gaussian prior p(Î¸) = N(0, bÂ²I) gives:
 						</div>
 						<div class="quiz-options">
 							<div class="quiz-option" onclick="checkAnswer(11, 0)">
-								A) θ_MAP = (Φᵀ₁¬Φ + (σ²/b²)I)⁻¹Φᵀy
+								A) Î¸_MAP = (Î¦áµ€â‚Ã‚Â¬Î¦ + (ÏƒÂ²/bÂ²)I)â»Â¹Î¦áµ€y
 							</div>
 							<div class="quiz-option" onclick="checkAnswer(11, 1)">
-								B) θ_MAP = (ΦᵀΦ)⁻¹Φᵀy (same as MLE)
+								B) Î¸_MAP = (Î¦áµ€Î¦)â»Â¹Î¦áµ€y (same as MLE)
 							</div>
 							<div class="quiz-option" onclick="checkAnswer(11, 2)">
-								C) θ_MAP = b²Φᵀy
+								C) Î¸_MAP = bÂ²Î¦áµ€y
 							</div>
 							<div class="quiz-option" onclick="checkAnswer(11, 3)">
-								D) θ_MAP = σ²(ΦᵀΦ)⁻¹y
+								D) Î¸_MAP = ÏƒÂ²(Î¦áµ€Î¦)â»Â¹y
 							</div>
 						</div>
 						<div class="quiz-feedback" id="feedback11"></div>
@@ -1848,19 +1851,19 @@
 							<span class="quiz-number">Question 12</span>
 							<span class="quiz-difficulty difficulty-medium">Medium</span>
 						</div>
-						<div class="quiz-context">Loss: ||y - Φθ||² + λ||θ||²</div>
+						<div class="quiz-context">Loss: ||y - Î¦Î¸||Â² + Î»||Î¸||Â²</div>
 						<div class="quiz-question">
 							L2 regularization (Ridge) is equivalent to MAP with:
 						</div>
 						<div class="quiz-options">
 							<div class="quiz-option" onclick="checkAnswer(12, 0)">
-								A) Gaussian prior p(θ) = N(0, b²I) where λ = σ²/b²
+								A) Gaussian prior p(Î¸) = N(0, bÂ²I) where Î» = ÏƒÂ²/bÂ²
 							</div>
 							<div class="quiz-option" onclick="checkAnswer(12, 1)">
-								B) Uniform prior on θ
+								B) Uniform prior on Î¸
 							</div>
 							<div class="quiz-option" onclick="checkAnswer(12, 2)">
-								C) Laplace prior on θ
+								C) Laplace prior on Î¸
 							</div>
 							<div class="quiz-option" onclick="checkAnswer(12, 3)">
 								D) No prior at all
@@ -1875,20 +1878,21 @@
 							<span class="quiz-difficulty difficulty-medium">Medium</span>
 						</div>
 						<div class="quiz-question">
-							As the prior variance b² → ∞ (very weak prior), MAP estimation:
+							As the prior variance bÂ² ←’ âˆž (very weak prior), MAP
+							estimation:
 						</div>
 						<div class="quiz-options">
 							<div class="quiz-option" onclick="checkAnswer(13, 0)">
 								A) Approaches MLE (prior has negligible effect)
 							</div>
 							<div class="quiz-option" onclick="checkAnswer(13, 1)">
-								B) Gives θ = 0
+								B) Gives Î¸ = 0
 							</div>
 							<div class="quiz-option" onclick="checkAnswer(13, 2)">
 								C) Becomes undefined
 							</div>
 							<div class="quiz-option" onclick="checkAnswer(13, 3)">
-								D) Forces θ to be very large
+								D) Forces Î¸ to be very large
 							</div>
 						</div>
 						<div class="quiz-feedback" id="feedback13"></div>
@@ -1925,20 +1929,21 @@
 							<span class="quiz-difficulty difficulty-medium">Medium</span>
 						</div>
 						<div class="quiz-question">
-							The MLE estimate of noise variance σ² is:
+							The MLE estimate of noise variance ÏƒÂ² is:
 						</div>
 						<div class="quiz-options">
 							<div class="quiz-option" onclick="checkAnswer(15, 0)">
-								A) σ²_ML = (1/N)∑(yₙ - φᵀ(xₙ)θ)² (mean squared residuals)
+								A) ÏƒÂ²_ML = (1/N)âˆ‘(yâ‚™ - Ï†áµ€(xâ‚™)Î¸)Â² (mean squared
+								residuals)
 							</div>
 							<div class="quiz-option" onclick="checkAnswer(15, 1)">
-								B) σ²_ML = variance of y
+								B) ÏƒÂ²_ML = variance of y
 							</div>
 							<div class="quiz-option" onclick="checkAnswer(15, 2)">
-								C) σ²_ML = ||θ||²
+								C) ÏƒÂ²_ML = ||Î¸||Â²
 							</div>
 							<div class="quiz-option" onclick="checkAnswer(15, 3)">
-								D) σ²_ML = 1 (always unit variance)
+								D) ÏƒÂ²_ML = 1 (always unit variance)
 							</div>
 						</div>
 						<div class="quiz-feedback" id="feedback15"></div>
@@ -1950,17 +1955,18 @@
 							<span class="quiz-difficulty difficulty-medium">Medium</span>
 						</div>
 						<div class="quiz-question">
-							For polynomial features, the feature matrix Φ entry Φᵀ¢∂¼ equals:
+							For polynomial features, the feature matrix Î¦ entry Î¦áµ€Â¢âˆ‚Â¼
+							equals:
 						</div>
 						<div class="quiz-options">
 							<div class="quiz-option" onclick="checkAnswer(16, 0)">
-								A) φ∂¼(xᵀ¢) = xᵀ¢Ê² (jth power of ith input)
+								A) Ï†âˆ‚Â¼(xáµ€Â¢) = xáµ€Â¢ÃŠÂ² (jth power of ith input)
 							</div>
 							<div class="quiz-option" onclick="checkAnswer(16, 1)">
-								B) xᵀ¢ · x∂¼ (product of inputs)
+								B) xáµ€Â¢ Â· xâˆ‚Â¼ (product of inputs)
 							</div>
 							<div class="quiz-option" onclick="checkAnswer(16, 2)">
-								C) yᵀ¢ · θ∂¼
+								C) yáµ€Â¢ Â· Î¸âˆ‚Â¼
 							</div>
 							<div class="quiz-option" onclick="checkAnswer(16, 3)">
 								D) (i + j)
@@ -1974,19 +1980,21 @@
 							<span class="quiz-number">Question 17</span>
 							<span class="quiz-difficulty difficulty-medium">Medium</span>
 						</div>
-						<div class="quiz-question">For (ΦᵀΦ)⁻¹ to exist, we need:</div>
+						<div class="quiz-question">
+							For (Î¦áµ€Î¦)â»Â¹ to exist, we need:
+						</div>
 						<div class="quiz-options">
 							<div class="quiz-option" onclick="checkAnswer(17, 0)">
-								A) rank(Φ) = K (columns of Φ are linearly independent)
+								A) rank(Î¦) = K (columns of Î¦ are linearly independent)
 							</div>
 							<div class="quiz-option" onclick="checkAnswer(17, 1)">
 								B) N = K (square design matrix)
 							</div>
 							<div class="quiz-option" onclick="checkAnswer(17, 2)">
-								C) All entries of Φ are positive
+								C) All entries of Î¦ are positive
 							</div>
 							<div class="quiz-option" onclick="checkAnswer(17, 3)">
-								D) σ² = 0
+								D) ÏƒÂ² = 0
 							</div>
 						</div>
 						<div class="quiz-feedback" id="feedback17"></div>
@@ -2014,12 +2022,12 @@
 						<span class="label">Agentic AI Connection</span>
 						<ul>
 							<li>
-								<strong>World Models:</strong> Agents learn dynamics f(s,a) → s'
-								using regression
+								<strong>World Models:</strong> Agents learn dynamics f(s,a) ←’
+								s' using regression
 							</li>
 							<li>
-								<strong>Value Function Approximation:</strong> V(s) ≈ θᵀφ(s) is
-								linear regression
+								<strong>Value Function Approximation:</strong> V(s) â‰ˆ
+								Î¸áµ€Ï†(s) is linear regression
 							</li>
 							<li>
 								<strong>Uncertainty for Exploration:</strong> Bayesian
@@ -2038,7 +2046,7 @@
 							<span class="quiz-difficulty difficulty-hard">Hard</span>
 						</div>
 						<div class="quiz-question">
-							In Bayesian linear regression, the posterior p(θ|X,Y) is:
+							In Bayesian linear regression, the posterior p(Î¸|X,Y) is:
 						</div>
 						<div class="quiz-options">
 							<div class="quiz-option" onclick="checkAnswer(18, 0)">
@@ -2062,19 +2070,21 @@
 							<span class="quiz-number">Question 19</span>
 							<span class="quiz-difficulty difficulty-hard">Hard</span>
 						</div>
-						<div class="quiz-context">p(y*|X,Y,x*) = ∫p(y*|x*,θ)p(θ|X,Y)dθ</div>
+						<div class="quiz-context">
+							p(y*|X,Y,x*) = âˆ«p(y*|x*,Î¸)p(Î¸|X,Y)dÎ¸
+						</div>
 						<div class="quiz-question">
 							The posterior predictive distribution at x* has variance:
 						</div>
 						<div class="quiz-options">
 							<div class="quiz-option" onclick="checkAnswer(19, 0)">
-								A) φᵀ(x*)S_N φ(x*) + σ² (parameter uncertainty + noise)
+								A) Ï†áµ€(x*)S_N Ï†(x*) + ÏƒÂ² (parameter uncertainty + noise)
 							</div>
 							<div class="quiz-option" onclick="checkAnswer(19, 1)">
-								B) σ² only (just noise)
+								B) ÏƒÂ² only (just noise)
 							</div>
 							<div class="quiz-option" onclick="checkAnswer(19, 2)">
-								C) φᵀ(x*)S_N φ(x*) only (no noise)
+								C) Ï†áµ€(x*)S_N Ï†(x*) only (no noise)
 							</div>
 							<div class="quiz-option" onclick="checkAnswer(19, 3)">
 								D) 0 (deterministic prediction)
@@ -2089,7 +2099,7 @@
 							<span class="quiz-difficulty difficulty-hard">Hard</span>
 						</div>
 						<div class="quiz-question">
-							The marginal likelihood p(Y|X) = ∫p(Y|X,θ)p(θ)dθ is used for:
+							The marginal likelihood p(Y|X) = âˆ«p(Y|X,Î¸)p(Î¸)dÎ¸ is used for:
 						</div>
 						<div class="quiz-options">
 							<div class="quiz-option" onclick="checkAnswer(20, 0)">
@@ -2119,10 +2129,10 @@
 						</div>
 						<div class="quiz-options">
 							<div class="quiz-option" onclick="checkAnswer(21, 0)">
-								A) θ_MAP (the MAP estimate)
+								A) Î¸_MAP (the MAP estimate)
 							</div>
 							<div class="quiz-option" onclick="checkAnswer(21, 1)">
-								B) θ_ML (the MLE)
+								B) Î¸_ML (the MLE)
 							</div>
 							<div class="quiz-option" onclick="checkAnswer(21, 2)">
 								C) The prior mean m_0
@@ -2145,13 +2155,13 @@
 						</div>
 						<div class="quiz-options">
 							<div class="quiz-option" onclick="checkAnswer(22, 0)">
-								A) The column space of Φ (subspace spanned by feature columns)
+								A) The column space of Î¦ (subspace spanned by feature columns)
 							</div>
 							<div class="quiz-option" onclick="checkAnswer(22, 1)">
-								B) The row space of Φ
+								B) The row space of Î¦
 							</div>
 							<div class="quiz-option" onclick="checkAnswer(22, 2)">
-								C) The null space of Φ
+								C) The null space of Î¦
 							</div>
 							<div class="quiz-option" onclick="checkAnswer(22, 3)">
 								D) The identity matrix
@@ -2191,12 +2201,13 @@
 							<span class="quiz-difficulty difficulty-hard">Hard</span>
 						</div>
 						<div class="quiz-question">
-							The prior distribution p(θ) induces a distribution over functions
+							The prior distribution p(Î¸) induces a distribution over functions
 							because:
 						</div>
 						<div class="quiz-options">
 							<div class="quiz-option" onclick="checkAnswer(24, 0)">
-								A) Each sampled θ gives a different function f(·) = φᵀ(·)θ
+								A) Each sampled Î¸ gives a different function f(Â·) =
+								Ï†áµ€(Â·)Î¸
 							</div>
 							<div class="quiz-option" onclick="checkAnswer(24, 1)">
 								B) Functions are sampled directly
@@ -2323,10 +2334,13 @@
 
 					<div class="formula-box">
 						<strong>Key Formulas to Remember:</strong><br /><br />
-						• MLE: θ_ML = (ΦᵀΦ)⁻¹Φᵀy<br />
-						• MAP: θ_MAP = (Φᵀ₁¬Φ + λI)⁻¹Φᵀy where λ = σ²/b²<br />
-						• Posterior: S_N = (S₀⁻¹ + σ⁻²ΦᵀΦ)⁻¹, m_N = S_N(S₀⁻¹m₁ + σ⁻²Φᵀy)<br />
-						• Predictive: p(y*|x*,X,Y) = N(φᵀ(x*)m_N, φᵀ(x*)S_Nφ(x*) + σ²)
+						â€¢ MLE: Î¸_ML = (Î¦áµ€Î¦)â»Â¹Î¦áµ€y<br />
+						â€¢ MAP: Î¸_MAP = (Î¦áµ€â‚Ã‚Â¬Î¦ + Î»I)â»Â¹Î¦áµ€y where Î» =
+						ÏƒÂ²/bÂ²<br />
+						â€¢ Posterior: S_N = (Sâ‚â‚¬â»Â¹ + ÏÆ’â»Â²Î¦áµ€Î¦)Â»Ã‚Â¹, m_N =
+						S_N(Sâ‚â‚¬â»Â¹mâ‚ + ÏÆ’â»Â²Î¦áµ€y)<br />
+						â€¢ Predictive: p(y*|x*,X,Y) = N(Ï†áµ€(x*)m_N, Ï†áµ€(x*)S_NÏ†(x*) +
+						ÏƒÂ²)
 					</div>
 
 					<div class="agentic-ai-box">
@@ -2355,12 +2369,12 @@
 							class="btn btn-primary"
 							onclick="resetQuiz()"
 							style="margin-right: 1rem">
-							🔄 Reset Quiz
+							🔍„ Reset Quiz
 						</button>
 						<button
 							class="btn btn-orange"
-							onclick="window.scrollTo({top: 0, behavior: 'smooth'})">
-							⬆ Back to Top
+							onclick="window.scrollTo({ top: 0, behavior: 'smooth' })">
+							â¬† Back to Top
 						</button>
 					</div>
 				</section>
@@ -2399,30 +2413,30 @@
 			};
 
 			const explanations = {
-				1: "'Linear regression' means linear in parameters θ. We can use nonlinear features φ(x) while keeping the model linear in θ.",
-				2: "The likelihood is Gaussian: p(y|x,θ) = N(y|φᵀ(x)θ, σ²), reflecting Gaussian noise assumption.",
-				3: "Noise ε is assumed i.i.d. Gaussian with mean 0 and variance σ²: ε ~ N(0, σ²).",
-				4: "Design matrix Φ is N×K: N rows (data points), K columns (features). Entry Φᵀ¢∂¼ = φ∂¼(xᵀ¢).",
-				5: "Polynomial features: φ(x) = [1, x, x², ..., xá´¹]ᵀ includes constant term and powers up to M.",
-				6: "RMSE = √[(1/N)∑(yₙ-Å·ₙ)²] - root of mean squared error, same units as y.",
+				1: "'Linear regression' means linear in parameters Î¸. We can use nonlinear features Ï†(x) while keeping the model linear in Î¸.",
+				2: "The likelihood is Gaussian: p(y|x,Î¸) = N(y|Ï†áµ€(x)Î¸, ÏƒÂ²), reflecting Gaussian noise assumption.",
+				3: "Noise Îµ is assumed i.i.d. Gaussian with mean 0 and variance ÏƒÂ²: Îµ ~ N(0, ÏƒÂ²).",
+				4: "Design matrix Î¦ is N×K: N rows (data points), K columns (features). Entry Î¦áµ€Â¢âˆ‚Â¼ = Ï†âˆ‚Â¼(xáµ€Â¢).",
+				5: "Polynomial features: Ï†(x) = [1, x, xÂ², ..., xá´¹]áµ€ includes constant term and powers up to M.",
+				6: "RMSE = âˆš[(1/N)âˆ‘(yâ‚™-Ã…Â·â‚™)Â²] - root of mean squared error, same units as y.",
 				7: "Overfitting occurs when polynomial degree M is too high - model fits noise, not signal.",
 				8: "Training error monotonically decreases (or stays same) as model complexity increases.",
-				9: "MLE solution: θ_ML = (ΦᵀΦ)⁻¹Φᵀy - the famous normal equations.",
-				10: "Gradient of negative log-likelihood: (1/σ²)(θᵀΦᵀ₁¬Φ - yᵀΦ). Setting to zero gives normal equations.",
-				11: "MAP with Gaussian prior gives θ_MAP = (Φᵀ₁¬Φ + σ²/b²·I)⁻¹Φᵀy - ridge regression solution.",
-				12: "L2 regularization ≡ Gaussian prior. Loss ||y-Φθ||² + λ||θ||² with λ = σ²/b².",
-				13: "As prior variance b²→∞, regularization λ→0, and MAP→MLE.",
+				9: "MLE solution: Î¸_ML = (Î¦áµ€Î¦)â»Â¹Î¦áµ€y - the famous normal equations.",
+				10: "Gradient of negative log-likelihood: (1/ÏƒÂ²)(Î¸áµ€Î¦áµ€â‚Ã‚Â¬Î¦ - yáµ€Î¦). Setting to zero gives normal equations.",
+				11: "MAP with Gaussian prior gives Î¸_MAP = (Î¦áµ€â‚Ã‚Â¬Î¦ + ÏƒÂ²/bÂ²Â·I)â»Â¹Î¦áµ€y - ridge regression solution.",
+				12: "L2 regularization â‰¡ Gaussian prior. Loss ||y-Î¦Î¸||Â² + Î»||Î¸||Â² with Î» = ÏƒÂ²/bÂ².",
+				13: "As prior variance bÂ²←’âˆž, regularization Î»←’0, and MAP←’MLE.",
 				14: "Degree M=N-1 polynomial passes through all N points exactly (zero training error, likely overfits).",
-				15: "σ²_ML = (1/N)∑(yₙ - φᵀ(xₙ)θ)² - mean of squared residuals.",
-				16: "For polynomial features, Φᵀ¢∂¼ = φ∂¼(xᵀ¢) = xᵀ¢Ê² (jth power of ith input).",
-				17: "Need rank(Φ) = K for (ΦᵀΦ)⁻¹ to exist - columns must be linearly independent.",
-				18: "With Gaussian prior and likelihood, posterior is Gaussian: p(θ|X,Y) = N(m_N, S_N).",
-				19: "Predictive variance = φᵀ(x*)S_Nφ(x*) + σ² (parameter uncertainty + observation noise).",
+				15: "ÏƒÂ²_ML = (1/N)âˆ‘(yâ‚™ - Ï†áµ€(xâ‚™)Î¸)Â² - mean of squared residuals.",
+				16: "For polynomial features, Î¦áµ€Â¢âˆ‚Â¼ = Ï†âˆ‚Â¼(xáµ€Â¢) = xáµ€Â¢ÃŠÂ² (jth power of ith input).",
+				17: "Need rank(Î¦) = K for (Î¦áµ€Î¦)â»Â¹ to exist - columns must be linearly independent.",
+				18: "With Gaussian prior and likelihood, posterior is Gaussian: p(Î¸|X,Y) = N(m_N, S_N).",
+				19: "Predictive variance = Ï†áµ€(x*)S_NÏ†(x*) + ÏƒÂ² (parameter uncertainty + observation noise).",
 				20: "Marginal likelihood p(Y|X) is used for Bayesian model selection - automatic Occam's razor.",
-				21: "Posterior mean m_N = θ_MAP (they coincide for Gaussian prior and likelihood).",
-				22: "MLE projects y orthogonally onto column space of Φ: Å· = Φ(ΦᵀΦ)⁻¹Φᵀy.",
+				21: "Posterior mean m_N = Î¸_MAP (they coincide for Gaussian prior and likelihood).",
+				22: "MLE projects y orthogonally onto column space of Î¦: Ã…Â· = Î¦(Î¦áµ€Î¦)â»Â¹Î¦áµ€y.",
 				23: "Completing squares identifies posterior mean m_N and covariance S_N from quadratic log-posterior.",
-				24: "Prior p(θ) → sample θ → get function f(·) = φᵀ(·)θ. Each θ sample gives different function.",
+				24: "Prior p(Î¸) ←’ sample Î¸ ←’ get function f(Â·) = Ï†áµ€(Â·)Î¸. Each Î¸ sample gives different function.",
 				25: "Bayesian regression provides uncertainty estimates - agents explore where uncertainty is high.",
 			};
 
@@ -2450,14 +2464,14 @@
 					correctCount++;
 					container.classList.add("answered-correct");
 					feedback.className = "quiz-feedback show correct";
-					feedback.innerHTML = `✅ <strong>Correct!</strong> ${explanations[q]}`;
+					feedback.innerHTML = `âœ… <strong>Correct!</strong> ${explanations[q]}`;
 					if (q <= 8) easyCorrect++;
 					else if (q <= 17) mediumCorrect++;
 					else hardCorrect++;
 				} else {
 					container.classList.add("answered-wrong");
 					feedback.className = "quiz-feedback show incorrect";
-					feedback.innerHTML = `❌ <strong>Incorrect.</strong> ${explanations[q]}`;
+					feedback.innerHTML = `âŒ <strong>Incorrect.</strong> ${explanations[q]}`;
 				}
 				updateStats();
 			}
@@ -2468,25 +2482,21 @@
 						? Math.round((correctCount / attemptedCount) * 100)
 						: 0;
 				const prog = Math.round((attemptedCount / totalQuestions) * 100);
-				document.getElementById(
-					"headerScore"
-				).textContent = `${correctCount}/${totalQuestions}`;
+				document.getElementById("headerScore").textContent =
+					`${correctCount}/${totalQuestions}`;
 				document.getElementById("headerAccuracy").textContent = `${acc}%`;
-				document.getElementById(
-					"sidebarScore"
-				).textContent = `${correctCount}/${totalQuestions}`;
-				document.getElementById("scoreProgress").style.width = `${
-					(correctCount / totalQuestions) * 100
-				}%`;
+				document.getElementById("sidebarScore").textContent =
+					`${correctCount}/${totalQuestions}`;
+				document.getElementById("scoreProgress").style.width =
+					`${(correctCount / totalQuestions) * 100}%`;
 				document.getElementById("progressFill").style.width = `${prog}%`;
 				document.getElementById("totalCorrect").textContent = correctCount;
 				document.getElementById("totalAttempted").textContent = attemptedCount;
 				document.getElementById("accuracyPercent").textContent = `${acc}%`;
 				document.getElementById("progressPercent").textContent = `${prog}%`;
 				document.getElementById("easyScore").textContent = `${easyCorrect}/8`;
-				document.getElementById(
-					"mediumScore"
-				).textContent = `${mediumCorrect}/9`;
+				document.getElementById("mediumScore").textContent =
+					`${mediumCorrect}/9`;
 				document.getElementById("hardScore").textContent = `${hardCorrect}/8`;
 			}
 
@@ -2501,7 +2511,7 @@
 					const c = document.getElementById(`q${i}`);
 					c.classList.remove("answered-correct", "answered-wrong");
 					c.querySelectorAll(".quiz-option").forEach((o) =>
-						o.classList.remove("disabled", "correct", "incorrect")
+						o.classList.remove("disabled", "correct", "incorrect"),
 					);
 					document.getElementById(`feedback${i}`).className = "quiz-feedback";
 				}
@@ -2524,7 +2534,7 @@
 			// Lab 1: Simple Linear Regression
 			function runSimpleRegression() {
 				const trueSlope = parseFloat(
-					document.getElementById("trueSlope").value
+					document.getElementById("trueSlope").value,
 				);
 				const noiseStd = parseFloat(document.getElementById("noiseStd").value);
 				const N = parseInt(document.getElementById("numPoints").value);
@@ -2537,7 +2547,7 @@
 					data.push({ x, y });
 				}
 
-				// Compute MLE (simple case: y = θx)
+				// Compute MLE (simple case: y = Î¸x)
 				let sumXY = 0,
 					sumXX = 0;
 				data.forEach((d) => {
@@ -2607,22 +2617,21 @@
 				// Legend
 				ctx.font = "11px Space Grotesk";
 				ctx.fillStyle = "#10b981";
-				ctx.fillText(`True: θ=${trueSlope}`, w - 110, 25);
+				ctx.fillText(`True: Î¸=${trueSlope}`, w - 110, 25);
 				ctx.fillStyle = "#0b2fa0";
-				ctx.fillText(`MLE: θ=${thetaML.toFixed(3)}`, w - 110, 40);
+				ctx.fillText(`MLE: Î¸=${thetaML.toFixed(3)}`, w - 110, 40);
 
-				document.getElementById(
-					"simpleRegOutput"
-				).innerHTML = `Simple Linear Regression: y = θx + ε
+				document.getElementById("simpleRegOutput").innerHTML =
+					`Simple Linear Regression: y = Î¸x + Îµ
 
-True θ = ${trueSlope}
-Estimated θ_ML = ${thetaML.toFixed(4)}
+True Î¸ = ${trueSlope}
+Estimated Î¸_ML = ${thetaML.toFixed(4)}
 Estimation error = ${Math.abs(thetaML - trueSlope).toFixed(4)}
 
 N = ${N} data points
-Noise σ = ${noiseStd}
+Noise Ïƒ = ${noiseStd}
 
-Formula: θ_ML = (XᵀX)⁻¹Xᵀy = Σxᵀ¢yᵀ¢ / Σxᵀ¢²`;
+Formula: Î¸_ML = (Xáµ€X)â»Â¹Xáµ€y = Î£xáµ€Â¢yáµ€Â¢ / Î£xáµ€Â¢Â²`;
 			}
 
 			// Lab 2: Polynomial Regression
@@ -2699,28 +2708,15 @@ Formula: θ_ML = (XᵀX)⁻¹Xᵀy = Σxᵀ¢yᵀ¢ / Σxᵀ¢²`;
 				});
 
 				const status = M <= 2 ? "UNDERFIT" : M <= 6 ? "GOOD FIT" : "OVERFIT";
-				document.getElementById(
-					"polyRegOutput"
-				).innerHTML = `Polynomial Regression: f(x) = Σθₖxᵀ
+				document.getElementById("polyRegOutput").innerHTML =
+					`Polynomial Regression: f(x) = Î£Î¸â‚–xáµ€
 
-Degree M = ${M} → ${status}
+Degree M = ${M} ←’ ${status}
 Data points N = ${N}
 
-${
-	M <= 2
-		? "š  UNDERFITTING:\n• Model too simple\n• High bias, cannot capture sinusoidal pattern"
-		: ""
-}
-${
-	M > 2 && M <= 6
-		? "✓ GOOD FIT:\n• Model captures true function well\n• Balanced bias-variance"
-		: ""
-}
-${
-	M > 6
-		? "š  OVERFITTING:\n• Model too complex (M > N would be extreme)\n• Fits noise, poor generalization"
-		: ""
-}`;
+${M <= 2 ? "Ã…Â¡Ã‚Â  UNDERFITTING:\nâ€¢ Model too simple\nâ€¢ High bias, cannot capture sinusoidal pattern" : ""}
+${M > 2 && M <= 6 ? "âœ“ GOOD FIT:\nâ€¢ Model captures true function well\nâ€¢ Balanced bias-variance" : ""}
+${M > 6 ? "Ã…Â¡Ã‚Â  OVERFITTING:\nâ€¢ Model too complex (M > N would be extreme)\nâ€¢ Fits noise, poor generalization" : ""}`;
 			}
 
 			// Lab 3: Design Matrix
@@ -2728,9 +2724,8 @@ ${
 				const featureType = document.getElementById("featureType").value;
 				const K = parseInt(document.getElementById("numFeatures").value);
 
-				document.getElementById(
-					"designOutput"
-				).innerHTML = `Design Matrix Φ ∈ ℝ^(N×K)
+				document.getElementById("designOutput").innerHTML =
+					`Design Matrix Î¦ âˆˆ â„^(N×K)
 
 Feature type: ${featureType}
 K = ${K} features
@@ -2738,30 +2733,30 @@ K = ${K} features
 ${
 	featureType === "polynomial"
 		? `Polynomial Features:
-φ(x) = [1, x, x², ..., x^(K-1)]ᵀ
+Ï†(x) = [1, x, xÂ², ..., x^(K-1)]áµ€
 
 Design Matrix:
-    Φᵀ¢∂¼ = xᵀ¢^(j-1)
+    Î¦áµ€Â¢âˆ‚Â¼ = xáµ€Â¢^(j-1)
 
 Example for x = [1, 2, 3]:
     | 1  1  1   1  |
-Φ = | 1  2  4   8  |
+Î¦ = | 1  2  4   8  |
     | 1  3  9  27  |`
 		: ""
 }
 ${
 	featureType === "gaussian"
 		? `Gaussian RBF Features:
-φₖ(x) = exp(-||x - μₖ||² / 2σ²)
+Ï†â‚–(x) = exp(-||x - Î¼â‚–||Â² / 2ÏƒÂ²)
 
-Centers μₖ spread across input range
-Width σ controls feature overlap`
+Centers Î¼â‚– spread across input range
+Width Ïƒ controls feature overlap`
 		: ""
 }
 ${
 	featureType === "sinusoidal"
 		? `Sinusoidal Features:
-φ(x) = [1, sin(x), cos(x), sin(2x), cos(2x), ...]ᵀ
+Ï†(x) = [1, sin(x), cos(x), sin(2x), cos(2x), ...]áµ€
 
 Useful for periodic data`
 		: ""
@@ -2785,28 +2780,27 @@ Useful for periodic data`
 				const thetaML = sumXY / sumXX;
 				const error = Math.abs(thetaML - trueTheta);
 
-				document.getElementById(
-					"mleOutput"
-				).innerHTML = `MLE Estimation Accuracy
+				document.getElementById("mleOutput").innerHTML =
+					`MLE Estimation Accuracy
 
-True θ = ${trueTheta}
+True Î¸ = ${trueTheta}
 Sample size N = ${N}
-θ_ML = ${thetaML.toFixed(4)}
+Î¸_ML = ${thetaML.toFixed(4)}
 
 Absolute error = ${error.toFixed(4)}
 
-As N → ∞:
-• θ_ML → θ_true (consistency)
-• Error ~ O(1/√N)
-• MLE is asymptotically normal
+As N ←’ âˆž:
+â€¢ Î¸_ML ←’ Î¸_true (consistency)
+â€¢ Error ~ O(1/âˆšN)
+â€¢ MLE is asymptotically normal
 
-With N = ${N}: Expected error ≈ ${(1 / Math.sqrt(N)).toFixed(3)}`;
+With N = ${N}: Expected error â‰ˆ ${(1 / Math.sqrt(N)).toFixed(3)}`;
 			}
 
 			// Lab 5: MAP vs MLE
 			function runMAPvsMLE() {
 				const priorVar = parseFloat(
-					document.getElementById("priorVariance").value
+					document.getElementById("priorVariance").value,
 				);
 				const N = parseInt(document.getElementById("mapN").value);
 				const trueTheta = 3;
@@ -2828,21 +2822,21 @@ With N = ${N}: Expected error ≈ ${(1 / Math.sqrt(N)).toFixed(3)}`;
 
 				document.getElementById("mapOutput").innerHTML = `MAP vs MLE Comparison
 
-True θ = ${trueTheta}
-Prior: p(θ) = N(0, ${priorVar})
-λ = σ²/b² = ${lambda.toFixed(3)}
+True Î¸ = ${trueTheta}
+Prior: p(Î¸) = N(0, ${priorVar})
+Î» = ÏƒÂ²/bÂ² = ${lambda.toFixed(3)}
 
-θ_ML = ${thetaML.toFixed(4)}
-θ_MAP = ${thetaMAP.toFixed(4)}
+Î¸_ML = ${thetaML.toFixed(4)}
+Î¸_MAP = ${thetaMAP.toFixed(4)}
 
-MAP formula: θ_MAP = (Φᵀ₁¬Φ + λI)⁻¹Φᵀy
+MAP formula: Î¸_MAP = (Î¦áµ€â‚Ã‚Â¬Î¦ + Î»I)â»Â¹Î¦áµ€y
 
-${priorVar < 1 ? "š  Strong prior pulls θ_MAP toward 0" : ""}
-${priorVar >= 10 ? "✓ Weak prior: θ_MAP ≈ θ_ML" : ""}
+${priorVar < 1 ? "Ã…Â¡Ã‚Â  Strong prior pulls Î¸_MAP toward 0" : ""}
+${priorVar >= 10 ? "âœ“ Weak prior: Î¸_MAP â‰ˆ Î¸_ML" : ""}
 
 Effect of prior:
-• Strong prior (small b²) → θ_MAP closer to 0
-• Weak prior (large b²) → θ_MAP ≈ θ_ML`;
+â€¢ Strong prior (small bÂ²) ←’ Î¸_MAP closer to 0
+â€¢ Weak prior (large bÂ²) ←’ Î¸_MAP â‰ˆ Î¸_ML`;
 			}
 
 			// Lab 6: Regularization
@@ -2850,83 +2844,80 @@ Effect of prior:
 				const lambda = parseFloat(document.getElementById("regLambda").value);
 				const M = parseInt(document.getElementById("regDegree").value);
 
-				document.getElementById(
-					"regOutput"
-				).innerHTML = `Ridge Regression (L2 Regularization)
+				document.getElementById("regOutput").innerHTML =
+					`Ridge Regression (L2 Regularization)
 
-Loss: L(θ) = ||y - Φθ||² + λ||θ||²
+Loss: L(Î¸) = ||y - Î¦Î¸||Â² + Î»||Î¸||Â²
 
 Polynomial degree M = ${M}
-λ = ${lambda}
+Î» = ${lambda}
 
-Solution: θ_RLS = (Φᵀ₁¬Φ + λI)⁻¹Φᵀy
+Solution: Î¸_RLS = (Î¦áµ€â‚Ã‚Â¬Î¦ + Î»I)â»Â¹Î¦áµ€y
 
-Effect of λ:
-${lambda === 0 ? "• λ = 0: No regularization (pure MLE, may overfit)" : ""}
-${lambda > 0 && lambda < 1 ? "• Small λ: Light regularization" : ""}
-${lambda >= 1 && lambda < 5 ? "• Medium λ: Balanced regularization" : ""}
-${lambda >= 5 ? "• Large λ: Strong regularization (may underfit)" : ""}
+Effect of Î»:
+${lambda === 0 ? "â€¢ Î» = 0: No regularization (pure MLE, may overfit)" : ""}
+${lambda > 0 && lambda < 1 ? "â€¢ Small Î»: Light regularization" : ""}
+${lambda >= 1 && lambda < 5 ? "â€¢ Medium Î»: Balanced regularization" : ""}
+${lambda >= 5 ? "â€¢ Large Î»: Strong regularization (may underfit)" : ""}
 
 Equivalence to MAP:
-• Ridge with λ = σ²/b² is equivalent to
-• MAP with Gaussian prior p(θ) = N(0, b²I)`;
+â€¢ Ridge with Î» = ÏƒÂ²/bÂ² is equivalent to
+â€¢ MAP with Gaussian prior p(Î¸) = N(0, bÂ²I)`;
 			}
 
 			// Lab 7: Error Curves
 			function runErrorCurves() {
 				const maxDeg = parseInt(document.getElementById("maxDegree").value);
 
-				document.getElementById(
-					"errorOutput"
-				).innerHTML = `Training vs Test Error Curves
+				document.getElementById("errorOutput").innerHTML =
+					`Training vs Test Error Curves
 
 Max polynomial degree: ${maxDeg}
 
 Key observations:
-• Training error monotonically decreases with M
-• Test error first decreases, then increases
-• Optimal M balances bias-variance tradeoff
+â€¢ Training error monotonically decreases with M
+â€¢ Test error first decreases, then increases
+â€¢ Optimal M balances bias-variance tradeoff
 
                     Error
-                      │
-                      │  ╲
-         Train Error  │   ╲___________
-                      │    
-                      │         /
-         Test Error   │    ╲___/
-                      │
-                      ℓ"ۉ"ۉ"ۉ"ۉ"ۉ"ۉ"ۉ"ۉ"ۉ"ۉ"ۉ"ۉ"ۉ"ۉ"ۉ"ۉ"ۉ"ۉ—º
+                      â”‚
+                      â”‚  â•²
+         Train Error  â”‚   â•²___________
+                      â”‚    
+                      â”‚         /
+         Test Error   â”‚    â•²___/
+                      â”‚
+                      â„“"Û‰"Û‰"Û‰"Û‰"Û‰"Û‰"Û‰"Û‰"Û‰"Û‰"Û‰"Û‰"Û‰"Û‰"Û‰"Û‰"Û‰"Û‰-Âº
                           Polynomial Degree M
 
-• Left of minimum: Underfitting (high bias)
-• Right of minimum: Overfitting (high variance)
-• At minimum: Best generalization`;
+â€¢ Left of minimum: Underfitting (high bias)
+â€¢ Right of minimum: Overfitting (high variance)
+â€¢ At minimum: Best generalization`;
 			}
 
 			// Lab 8: Prior Functions
 			function samplePriorFunctions() {
 				const priorStd = parseFloat(document.getElementById("priorStd").value);
 				const numSamples = parseInt(
-					document.getElementById("priorSamples").value
+					document.getElementById("priorSamples").value,
 				);
 
-				document.getElementById(
-					"priorOutput"
-				).innerHTML = `Prior Distribution over Functions
+				document.getElementById("priorOutput").innerHTML =
+					`Prior Distribution over Functions
 
-Prior: p(θ) = N(0, ${(priorStd ** 2).toFixed(2)}I)
+Prior: p(Î¸) = N(0, ${(priorStd ** 2).toFixed(2)}I)
 Sampled ${numSamples} functions
 
-Each function f(x) = φᵀ(x)θ where θ ~ p(θ)
+Each function f(x) = Ï†áµ€(x)Î¸ where Î¸ ~ p(Î¸)
 
 Prior interpretation:
-• Prior p(θ) encodes beliefs BEFORE seeing data
-• Larger prior variance → more diverse functions
-• Smaller prior variance → functions closer to zero
+â€¢ Prior p(Î¸) encodes beliefs BEFORE seeing data
+â€¢ Larger prior variance ←’ more diverse functions
+â€¢ Smaller prior variance ←’ functions closer to zero
 
 Standard deviation = ${priorStd}
-• ~68% of samples within ±${priorStd.toFixed(2)} of mean
-• ~95% within ±${(2 * priorStd).toFixed(2)}
+â€¢ ~68% of samples within Â±${priorStd.toFixed(2)} of mean
+â€¢ ~95% within Â±${(2 * priorStd).toFixed(2)}
 
 The prior induces a distribution over functions!`;
 			}
@@ -2938,23 +2929,22 @@ The prior induces a distribution over functions!`;
 				const y = parseFloat(document.getElementById("newPointY").value);
 				bayesianData.push({ x, y });
 
-				document.getElementById(
-					"posteriorOutput"
-				).innerHTML = `Bayesian Posterior Update
+				document.getElementById("posteriorOutput").innerHTML =
+					`Bayesian Posterior Update
 
 Data points: ${bayesianData.length}
 Latest: (${x}, ${y})
 
-Posterior: p(θ|X,Y) = N(m_N, S_N)
+Posterior: p(Î¸|X,Y) = N(m_N, S_N)
 
 Update formulas:
-S_N = (S₀⁻¹ + σ⁻²ΦᵀΦ)⁻¹
-m_N = S_N(S₀⁻¹m₁ + σ⁻²Φᵀy)
+S_N = (Sâ‚â‚¬â»Â¹ + ÏÆ’â»Â²Î¦áµ€Î¦)Â»Ã‚Â¹
+m_N = S_N(Sâ‚â‚¬â»Â¹mâ‚ + ÏÆ’â»Â²Î¦áµ€y)
 
 As more data is added:
-• Posterior concentrates (S_N shrinks)
-• Posterior mean m_N approaches MLE
-• Uncertainty decreases
+â€¢ Posterior concentrates (S_N shrinks)
+â€¢ Posterior mean m_N approaches MLE
+â€¢ Uncertainty decreases
 
 Current data: [${bayesianData.map((d) => `(${d.x},${d.y})`).join(", ")}]`;
 			}
@@ -2969,83 +2959,80 @@ Current data: [${bayesianData.map((d) => `(${d.x},${d.y})`).join(", ")}]`;
 			function showPredictiveUncertainty() {
 				const xStar = parseFloat(document.getElementById("testPointX").value);
 
-				document.getElementById(
-					"predUncOutput"
-				).innerHTML = `Predictive Distribution at x* = ${xStar}
+				document.getElementById("predUncOutput").innerHTML =
+					`Predictive Distribution at x* = ${xStar}
 
-p(y*|x*,X,Y) = N(μ*, σ*²)
+p(y*|x*,X,Y) = N(Î¼*, Ïƒ*Â²)
 
 where:
-μ* = φᵀ(x*)m_N  (posterior mean prediction)
-σ*² = φᵀ(x*)S_Nφ(x*) + σ²  (predictive variance)
+Î¼* = Ï†áµ€(x*)m_N  (posterior mean prediction)
+Ïƒ*Â² = Ï†áµ€(x*)S_NÏ†(x*) + ÏƒÂ²  (predictive variance)
 
 Variance decomposition:
-• φᵀ(x*)S_Nφ(x*): Parameter uncertainty
-• σ²: Observation noise
+â€¢ Ï†áµ€(x*)S_NÏ†(x*): Parameter uncertainty
+â€¢ ÏƒÂ²: Observation noise
 
 Key insight:
-• Far from data → high parameter uncertainty
-• Near training data → lower uncertainty
-• Noise σ² is always present`;
+â€¢ Far from data ←’ high parameter uncertainty
+â€¢ Near training data ←’ lower uncertainty
+â€¢ Noise ÏƒÂ² is always present`;
 			}
 
 			// Lab 11: Normal Equations
 			function solveNormalEquations() {
 				const N = parseInt(document.getElementById("normalN").value);
 
-				document.getElementById(
-					"normalOutput"
-				).innerHTML = `Normal Equations Step-by-Step (N=${N})
+				document.getElementById("normalOutput").innerHTML =
+					`Normal Equations Step-by-Step (N=${N})
 
 1. Setup:
-   Minimize ||y - Φθ||²
+   Minimize ||y - Î¦Î¸||Â²
 
 2. Expand:
-   L(θ) = (y-Φθ)ᵀ(y-Φθ) = yᵀy - 2yᵀΦθ + θᵀΦᵀΦθ
+   L(Î¸) = (y-Î¦Î¸)áµ€(y-Î¦Î¸) = yáµ€y - 2yáµ€Î¦Î¸ + Î¸áµ€Î¦áµ€Î¦Î¸
 
 3. Gradient:
-   ∂L/∂θ = -2Φᵀy + 2ΦᵀΦθ
+   âˆ‚L/âˆ‚Î¸ = -2Î¦áµ€y + 2Î¦áµ€Î¦Î¸
 
 4. Set to zero:
-   ΦᵀΦθ = Φᵀy
+   Î¦áµ€Î¦Î¸ = Î¦áµ€y
 
 5. Solve:
-   θ_ML = (ΦᵀΦ)⁻¹Φᵀy  ✓
+   Î¸_ML = (Î¦áµ€Î¦)â»Â¹Î¦áµ€y  âœ“
 
-Note: (ΦᵀΦ)⁻¹Φᵀ is the Moore-Penrose pseudoinverse
-when Φ has full column rank.`;
+Note: (Î¦áµ€Î¦)â»Â¹Î¦áµ€ is the Moore-Penrose pseudoinverse
+when Î¦ has full column rank.`;
 			}
 
 			// Lab 12: Orthogonal Projection
 			function showProjection() {
-				document.getElementById(
-					"projOutput"
-				).innerHTML = `Geometric Interpretation: MLE as Orthogonal Projection
+				document.getElementById("projOutput").innerHTML =
+					`Geometric Interpretation: MLE as Orthogonal Projection
 
-y ∈ ℝᴺ (observations)
-Φ ∈ ℝᴺˣᴷ (design matrix)
+y âˆˆ â„á´º (observations)
+Î¦ âˆˆ â„á´ºË£á´· (design matrix)
 
-Column space of Φ: span{φ₁, ..., φₖ} ⊂ ℝᴺ
+Column space of Î¦: span{Ïâ€ â‚, ..., Ï†â‚–} âŠ‚ â„á´º
 
-MLE finds Å· = Φθ_ML that is closest to y:
-Å· = Φ(ΦᵀΦ)⁻¹Φᵀy
+MLE finds Ã…Â· = Î¦Î¸_ML that is closest to y:
+Ã…Â· = Î¦(Î¦áµ€Î¦)â»Â¹Î¦áµ€y
 
-This is orthogonal projection of y onto Col(Φ)!
+This is orthogonal projection of y onto Col(Î¦)!
 
-Projection matrix: P = Φ(ΦᵀΦ)⁻¹Φᵀ
+Projection matrix: P = Î¦(Î¦áµ€Î¦)â»Â¹Î¦áµ€
 
 Properties of P:
-• P² = P (idempotent)
-• Pᵀ = P (symmetric)
-• y - Py ⟂ Col(Φ) (residual orthogonal to column space)
+â€¢ PÂ² = P (idempotent)
+â€¢ Páµ€ = P (symmetric)
+â€¢ y - Py âŸ‚ Col(Î¦) (residual orthogonal to column space)
 
-The residual (y - Å·) is perpendicular to all columns of Φ.`;
+The residual (y - Ã…Â·) is perpendicular to all columns of Î¦.`;
 			}
 
 			// Lab 13: Noise Variance
 			function estimateNoiseVariance() {
 				const trueSigma2 = parseFloat(
-					document.getElementById("trueSigma2").value
+					document.getElementById("trueSigma2").value,
 				);
 				const N = parseInt(document.getElementById("sigmaEstN").value);
 
@@ -3060,44 +3047,42 @@ The residual (y - Å·) is perpendicular to all columns of Φ.`;
 				}
 				const sigma2ML = ssr / N;
 
-				document.getElementById(
-					"sigmaOutput"
-				).innerHTML = `Noise Variance Estimation
+				document.getElementById("sigmaOutput").innerHTML =
+					`Noise Variance Estimation
 
-True σ² = ${trueSigma2}
+True ÏƒÂ² = ${trueSigma2}
 N = ${N} data points
 
-σ²_ML = (1/N)∑(yₙ - φᵀ(xₙ)θ)² = ${sigma2ML.toFixed(4)}
+ÏƒÂ²_ML = (1/N)âˆ‘(yâ‚™ - Ï†áµ€(xâ‚™)Î¸)Â² = ${sigma2ML.toFixed(4)}
 
 This is MLE of noise variance:
-• Mean of squared residuals
-• Uses fitted values φᵀ(xₙ)θ_ML
+â€¢ Mean of squared residuals
+â€¢ Uses fitted values Ï†áµ€(xâ‚™)Î¸_ML
 
-Note: σ²_ML is biased (slightly underestimates)
+Note: ÏƒÂ²_ML is biased (slightly underestimates)
 Unbiased estimate uses (N-K) instead of N:
-σ²_unbiased = (1/(N-K))∑(yₙ - Å·ₙ)²`;
+ÏƒÂ²_unbiased = (1/(N-K))âˆ‘(yâ‚™ - Ã…Â·â‚™)Â²`;
 			}
 
 			// Lab 14: Marginal Likelihood
 			function computeMarginalLikelihood() {
-				document.getElementById(
-					"marginalOutput"
-				).innerHTML = `Marginal Likelihood for Model Selection
+				document.getElementById("marginalOutput").innerHTML =
+					`Marginal Likelihood for Model Selection
 
-p(Y|X) = ∫p(Y|X,θ)p(θ)dθ
+p(Y|X) = âˆ«p(Y|X,Î¸)p(Î¸)dÎ¸
 
 For Bayesian linear regression with Gaussian prior:
-p(Y|X) = N(y | Φm₁, ΦS₁Φᵀ + σ²I)
+p(Y|X) = N(y | Î¦mâ‚, Î¦Sâ‚Î¦áµ€ + ÏƒÂ²I)
 
 Model comparison:
-• Compute p(Y|X, M₁) and p(Y|X, M₂)
-• Choose model with higher marginal likelihood
-• Automatic Occam's razor!
+â€¢ Compute p(Y|X, Mâ‚) and p(Y|X, Mâ‚‚)
+â€¢ Choose model with higher marginal likelihood
+â€¢ Automatic Occam's razor!
 
 Why it works:
-• Complex models spread probability over more functions
-• Simple models concentrate on fewer functions
-• If simple model explains data well, it wins
+â€¢ Complex models spread probability over more functions
+â€¢ Simple models concentrate on fewer functions
+â€¢ If simple model explains data well, it wins
 
 This is Bayesian model selection - no need for
 cross-validation!`;
@@ -3121,19 +3106,19 @@ cross-validation!`;
 
 Model: Polynomial degree ${degree}
 
-RMSE = √[(1/N)∑(yₙ - Å·ₙ)²] = ${rmse.toFixed(4)}
+RMSE = âˆš[(1/N)âˆ‘(yâ‚™ - Ã…Â·â‚™)Â²] = ${rmse.toFixed(4)}
 
 Properties:
-• Same units as y (interpretable)
-• Always non-negative
-• RMSE = 0 means perfect fit
+â€¢ Same units as y (interpretable)
+â€¢ Always non-negative
+â€¢ RMSE = 0 means perfect fit
 
 For degree ${degree}:
-${degree < 3 ? "• High RMSE → Underfit (model too simple)" : ""}
-${degree >= 3 && degree < 7 ? "• Good RMSE → Reasonable fit" : ""}
-${degree >= 7 ? "• Low training RMSE but likely overfitting!" : ""}
+${degree < 3 ? "â€¢ High RMSE ←’ Underfit (model too simple)" : ""}
+${degree >= 3 && degree < 7 ? "â€¢ Good RMSE ←’ Reasonable fit" : ""}
+${degree >= 7 ? "â€¢ Low training RMSE but likely overfitting!" : ""}
 
-Remember: Low training RMSE ≠ good model
+Remember: Low training RMSE â‰  good model
 Always check test RMSE!`;
 			}
 

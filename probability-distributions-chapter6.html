@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 	<head>
 		<meta charset="UTF-8" />
@@ -204,7 +204,7 @@
 			}
 
 			.hero::after {
-				content: "";
+				content: "📝Ž²";
 				position: absolute;
 				bottom: -30%;
 				left: -10%;
@@ -386,7 +386,7 @@
 			}
 
 			.ml-box .label::before {
-				content: "🤓";
+				content: "📝¤“";
 			}
 
 			/* Quanskill Training Box */
@@ -458,7 +458,7 @@
 			}
 
 			.realworld-box .label::before {
-				content: "🎁";
+				content: "🎯";
 			}
 
 			/* Example Boxes */
@@ -484,7 +484,7 @@
 			}
 
 			.example-box .label::before {
-				content: "▸";
+				content: "â–¸";
 				color: var(--quanskill-orange);
 			}
 
@@ -627,7 +627,7 @@
 			}
 
 			.interactive-demo h4::before {
-				content: "⚡";
+				content: "âš¡";
 			}
 
 			.demo-controls {
@@ -675,7 +675,9 @@
 				font-family: "Space Grotesk", sans-serif;
 				font-weight: 600;
 				cursor: pointer;
-				transition: transform 0.2s, box-shadow 0.2s;
+				transition:
+					transform 0.2s,
+					box-shadow 0.2s;
 			}
 
 			.demo-btn:hover {
@@ -725,7 +727,9 @@
 				border: 1px solid var(--border-color);
 				border-radius: 12px;
 				padding: 1.25rem;
-				transition: transform 0.2s, box-shadow 0.2s;
+				transition:
+					transform 0.2s,
+					box-shadow 0.2s;
 			}
 
 			.concept-card:hover {
@@ -823,7 +827,9 @@
 			.section {
 				opacity: 0;
 				transform: translateY(20px);
-				transition: opacity 0.5s ease, transform 0.5s ease;
+				transition:
+					opacity 0.5s ease,
+					transform 0.5s ease;
 			}
 
 			.section.visible {
@@ -931,7 +937,7 @@
 	</head>
 	<body>
 		<!-- Floating Back to Main Page Button -->
-		<a href="index.html" class="floating-back-btn">← Main Page</a>
+		<a href="index.html" class="floating-back-btn">← Main Page</a>
 
 		<!-- Header -->
 		<header class="header">
@@ -940,7 +946,7 @@
                 <a href="index.html"><img src="Logo_for_Print.jpg" alt="Quanskill" style="height: 50px; border-radius: 8px;"></a>
                 <span>Quanskill</span>
             </div> -->
-				<button class="nav-toggle" onclick="toggleSidebar()">☰</button>
+				<button class="nav-toggle" onclick="toggleSidebar()">â˜°</button>
 			</div>
 		</header>
 
@@ -985,7 +991,7 @@
 						<p>
 							Master the language of uncertainty. Probability theory provides
 							the mathematical framework for reasoning about data, making
-							predictions, and quantifying confidence — the foundation of all
+							predictions, and quantifying confidence - the foundation of all
 							modern machine learning.
 						</p>
 					</div>
@@ -994,7 +1000,7 @@
 				<!-- Key Concepts Overview -->
 				<div class="key-concepts">
 					<div class="concept-card">
-						<div class="icon">🏠</div>
+						<div class="icon">🐍Â </div>
 						<h5>Random Variables</h5>
 						<p>Functions mapping outcomes to quantities we care about</p>
 					</div>
@@ -1004,7 +1010,7 @@
 						<p>Describe how probability is spread across outcomes</p>
 					</div>
 					<div class="concept-card">
-						<div class="icon">🔄</div>
+						<div class="icon">🔍„</div>
 						<h5>Bayes' Theorem</h5>
 						<p>Update beliefs when new evidence arrives</p>
 					</div>
@@ -1057,37 +1063,38 @@
 						<div class="title">Probability Space Components</div>
 						<ul>
 							<li>
-								<strong>Sample Space Ω:</strong> The set of all possible
+								<strong>Sample Space Î©:</strong> The set of all possible
 								outcomes of an experiment
 							</li>
 							<li>
-								<strong>Event Space A:</strong> Collection of subsets of Ω that
+								<strong>Event Space A:</strong> Collection of subsets of Î© that
 								we can assign probabilities to
 							</li>
 							<li>
-								<strong>Probability P:</strong> A function P(A) ∈ [0,1] for each
-								event A ∈ A, with P(Ω) = 1
+								<strong>Probability P:</strong> A function P(A) âˆˆ [0,1] for
+								each event A âˆˆ A, with P(Î©) = 1
 							</li>
 						</ul>
 					</div>
 
 					<h3>Random Variables</h3>
 					<p>
-						A <strong>random variable</strong> is a function X: Ω → T that maps
-						outcomes to a target space T of quantities we care about. Despite
-						the name, it's neither random nor a variable — it's a deterministic
-						function!
+						A <strong>random variable</strong> is a function X: Î© ←’ T that
+						maps outcomes to a target space T of quantities we care about.
+						Despite the name, it's neither random nor a variable - it's a
+						deterministic function!
 					</p>
 
 					<div class="example-box">
 						<div class="label">Example: Coin Toss</div>
 						<p>
-							Two coin tosses have sample space Ω = {HH, HT, TH, TT}. If we care
-							about the number of heads, we define random variable X mapping:
+							Two coin tosses have sample space Î© = {HH, HT, TH, TT}. If we
+							care about the number of heads, we define random variable X
+							mapping:
 						</p>
 						<p
 							style="
-								font-family: 'JetBrains Mono', monospace;
+								font-family: &quot;JetBrains Mono&quot;, monospace;
 								margin-left: 1rem;
 							">
 							X(HH) = 2, X(HT) = 1, X(TH) = 1, X(TT) = 0
@@ -1108,7 +1115,7 @@
 							</li>
 						</ul>
 						<p style="margin-top: 0.5rem">
-							In ML, we often take the Bayesian view — probabilities represent
+							In ML, we often take the Bayesian view - probabilities represent
 							our uncertainty, which we update as we see more data.
 						</p>
 					</div>
@@ -1173,7 +1180,7 @@
 						<p>
 							Classification problems have discrete outputs (class labels),
 							while regression problems have continuous outputs (real numbers).
-							Understanding both types of distributions is essential — you'll
+							Understanding both types of distributions is essential - you'll
 							use PMFs for categorical predictions and PDFs for continuous ones!
 						</p>
 					</div>
@@ -1261,13 +1268,13 @@
 						</tr>
 						<tr>
 							<td>Discrete</td>
-							<td>P(X = x) — PMF</td>
+							<td>P(X = x) - PMF</td>
 							<td>Sum of PMF values</td>
 						</tr>
 						<tr>
 							<td>Continuous</td>
-							<td>p(x) — PDF (density, can be > 1!)</td>
-							<td>P(X ≤ x) — CDF</td>
+							<td>p(x) - PDF (density, can be > 1!)</td>
+							<td>P(X â‰¤ x) - CDF</td>
 						</tr>
 					</table>
 
@@ -1320,7 +1327,7 @@
 					</div>
 
 					<p>
-						There are only two fundamental rules in probability — the sum rule
+						There are only two fundamental rules in probability - the sum rule
 						and product rule. From these, we derive the powerful Bayes' theorem
 						that underlies all Bayesian machine learning.
 					</p>
@@ -1330,7 +1337,7 @@
 						<p>
 							The sum rule lets us marginalize out variables we don't care
 							about. The product rule lets us factor joint distributions. Bayes'
-							theorem lets us update beliefs with data — the core of Bayesian
+							theorem lets us update beliefs with data - the core of Bayesian
 							learning, posterior inference, and probabilistic graphical models!
 						</p>
 					</div>
@@ -1376,14 +1383,14 @@
 						</div>
 						<ul style="margin-top: 1rem">
 							<li>
-								<strong>Prior p(θ):</strong> What we believe before seeing data
+								<strong>Prior p(Î¸):</strong> What we believe before seeing data
 							</li>
 							<li>
-								<strong>Likelihood p(D|θ):</strong> How likely is the data given
-								parameters
+								<strong>Likelihood p(D|Î¸):</strong> How likely is the data
+								given parameters
 							</li>
 							<li>
-								<strong>Posterior p(θ|D):</strong> Updated belief after seeing
+								<strong>Posterior p(Î¸|D):</strong> Updated belief after seeing
 								data
 							</li>
 							<li>
@@ -1424,7 +1431,7 @@
 									onchange="updateBayes()" />
 							</div>
 							<div class="demo-input">
-								<label>False Positive P(+|¬D):</label>
+								<label>False Positive P(+|Â¬D):</label>
 								<input
 									type="number"
 									id="falsepos"
@@ -1454,7 +1461,7 @@
 					<div class="quiz-box">
 						<div class="label">Quick Check: Bayes' Theorem</div>
 						<p class="quiz-question">
-							In Bayes' theorem, what does the likelihood p(D|θ) represent?
+							In Bayes' theorem, what does the likelihood p(D|Î¸) represent?
 						</p>
 						<div class="quiz-options" id="quiz3">
 							<div
@@ -1507,7 +1514,7 @@
 					<div class="ml-box">
 						<div class="label">Why This Matters in ML</div>
 						<p>
-							The expected value (mean) is what we optimize in ML — minimizing
+							The expected value (mean) is what we optimize in ML - minimizing
 							expected loss! Variance measures uncertainty in predictions.
 							Understanding covariance and independence is crucial for feature
 							selection, PCA, and understanding model behavior.
@@ -1555,7 +1562,7 @@
 						</tr>
 						<tr>
 							<td>Variance scaling</td>
-							<td>Var[aX] = a²Var[X]</td>
+							<td>Var[aX] = aÂ²Var[X]</td>
 						</tr>
 						<tr>
 							<td>Variance of sum</td>
@@ -1563,7 +1570,7 @@
 						</tr>
 						<tr>
 							<td>Linear transform</td>
-							<td>E[Ax + b] = AE[x] + b, Var[Ax] = AΣA<sup>T</sup></td>
+							<td>E[Ax + b] = AE[x] + b, Var[Ax] = AÎ£A<sup>T</sup></td>
 						</tr>
 					</table>
 
@@ -1571,7 +1578,7 @@
 					<div class="definition-box">
 						<div class="label">Definition</div>
 						<div class="title">Statistical Independence</div>
-						<p>X and Y are independent (X ⊥ Y) if and only if:</p>
+						<p>X and Y are independent (X âŠ¥ Y) if and only if:</p>
 						<div class="math-display">$$p(x, y) = p(x)p(y)$$</div>
 						<p>
 							Equivalently: p(x|y) = p(x), knowing Y tells us nothing about X.
@@ -1590,7 +1597,7 @@
 						</p>
 						<div class="demo-controls">
 							<div class="demo-input">
-								<label>Correlation ρ:</label>
+								<label>Correlation Ï:</label>
 								<input
 									type="range"
 									id="corrSlider"
@@ -1608,7 +1615,7 @@
 							height="300"></canvas>
 						<div class="demo-result">
 							<p>
-								<strong>Correlation:</strong> ρ =
+								<strong>Correlation:</strong> Ï =
 								<span id="corrValue">0.70</span>
 							</p>
 							<p
@@ -1649,7 +1656,7 @@
 						<p>
 							<strong>Portfolio Theory:</strong> In finance, portfolio risk
 							depends on covariance between assets. If two stocks are negatively
-							correlated, combining them reduces total variance — the
+							correlated, combining them reduces total variance - the
 							mathematical foundation of diversification!
 						</p>
 					</div>
@@ -1704,7 +1711,7 @@
 						</p>
 						<div class="demo-controls">
 							<div class="demo-input">
-								<label>Mean μ:</label>
+								<label>Mean Î¼:</label>
 								<input
 									type="range"
 									id="gaussMean"
@@ -1715,7 +1722,7 @@
 									oninput="updateGaussDemo()" />
 							</div>
 							<div class="demo-input">
-								<label>Std dev σ:</label>
+								<label>Std dev Ïƒ:</label>
 								<input
 									type="range"
 									id="gaussStd"
@@ -1733,8 +1740,8 @@
 							height="250"></canvas>
 						<div class="demo-result">
 							<p>
-								<strong>Parameters:</strong> μ =
-								<span id="gaussMuDisplay">0</span>, σ =
+								<strong>Parameters:</strong> Î¼ =
+								<span id="gaussMuDisplay">0</span>, Ïƒ =
 								<span id="gaussSigmaDisplay">1</span>
 							</p>
 							<p>
@@ -1764,7 +1771,7 @@
 							</li>
 							<li>
 								<strong>Linear transforms preserve Gaussianity:</strong> If X ~
-								N(μ, Σ), then AX + b ~ N(Aμ+b, AΣA<sup>T</sup>)
+								N(Î¼, Î£), then AX + b ~ N(AÎ¼+b, AÎ£A<sup>T</sup>)
 							</li>
 							<li>
 								<strong>Sums of Gaussians are Gaussian:</strong> If X, Y
@@ -1842,7 +1849,7 @@
 					<div class="ml-box">
 						<div class="label">Why This Matters in ML</div>
 						<p>
-							Conjugate priors give closed-form posteriors — no complex
+							Conjugate priors give closed-form posteriors - no complex
 							integration needed! The exponential family unifies many
 							distributions and has deep connections to sufficient statistics,
 							maximum entropy, and variational inference. Understanding these
@@ -1859,7 +1866,7 @@
 						<div class="math-display">
 							$$p(x | \mu) = \mu^x(1-\mu)^{1-x}, \quad x \in \{0, 1\}$$
 						</div>
-						<p>Mean: μ, Variance: μ(1-μ)</p>
+						<p>Mean: Î¼, Variance: Î¼(1-Î¼)</p>
 					</div>
 
 					<div class="definition-box">
@@ -1869,13 +1876,13 @@
 						<div class="math-display">
 							$$p(m | N, \mu) = \binom{N}{m}\mu^m(1-\mu)^{N-m}$$
 						</div>
-						<p>Mean: Nμ, Variance: Nμ(1-μ)</p>
+						<p>Mean: NÎ¼, Variance: NÎ¼(1-Î¼)</p>
 					</div>
 
 					<div class="definition-box">
 						<div class="label">Distribution</div>
 						<div class="title">Beta Distribution</div>
-						<p>Distribution over probabilities μ ∈ [0,1]:</p>
+						<p>Distribution over probabilities Î¼ âˆˆ [0,1]:</p>
 						<div class="math-display">
 							$$p(\mu | \alpha, \beta) =
 							\frac{\Gamma(\alpha+\beta)}{\Gamma(\alpha)\Gamma(\beta)}\mu^{\alpha-1}(1-\mu)^{\beta-1}$$
@@ -1894,7 +1901,7 @@
 						</p>
 						<div class="demo-controls">
 							<div class="demo-input">
-								<label>Prior α:</label>
+								<label>Prior Î±:</label>
 								<input
 									type="number"
 									id="betaAlpha"
@@ -1905,7 +1912,7 @@
 									onchange="updateBetaDemo()" />
 							</div>
 							<div class="demo-input">
-								<label>Prior β:</label>
+								<label>Prior Î²:</label>
 								<input
 									type="number"
 									id="betaBeta"
@@ -1946,13 +1953,13 @@
 						<div class="demo-result">
 							<p>
 								<strong>Prior:</strong> Beta(<span id="priorAlphaDisp">2</span>,
-								<span id="priorBetaDisp">2</span>) → Mean =
+								<span id="priorBetaDisp">2</span>) ←’ Mean =
 								<span id="priorMean">0.50</span>
 							</p>
 							<p>
 								<strong>Posterior:</strong> Beta(<span id="postAlphaDisp"
 									>9</span
-								>, <span id="postBetaDisp">5</span>) → Mean =
+								>, <span id="postBetaDisp">5</span>) ←’ Mean =
 								<span id="postMean">0.64</span>
 							</p>
 							<p style="color: var(--text-secondary)">
@@ -2056,7 +2063,7 @@
 						<p>
 							Change of variables is fundamental to normalizing flows, the
 							reparameterization trick in VAEs, and probability integral
-							transform. It connects vector calculus to probability theory —
+							transform. It connects vector calculus to probability theory -
 							when you transform variables, the Jacobian measures how
 							probability "stretches" or "compresses"!
 						</p>
@@ -2087,7 +2094,7 @@
 					<div class="example-box">
 						<div class="label">Example: Log-Normal Distribution</div>
 						<p>
-							If X ~ N(μ, σ²), what is the distribution of Y = e<sup>X</sup>?
+							If X ~ N(Î¼, ÏƒÂ²), what is the distribution of Y = e<sup>X</sup>?
 						</p>
 						<p>
 							Using change of variables with g(x) = e<sup>x</sup> and
@@ -2098,7 +2105,7 @@
 							\mu)^2}{2\sigma^2}\right), \quad y > 0$$
 						</div>
 						<p>
-							This is the <strong>log-normal distribution</strong> — common for
+							This is the <strong>log-normal distribution</strong> - common for
 							modeling positive quantities like prices and sizes!
 						</p>
 					</div>
@@ -2106,14 +2113,14 @@
 					<div class="theorem-box">
 						<div class="label">Key Application</div>
 						<div class="title">Reparameterization Trick</div>
-						<p>To sample z ~ N(μ, σ²), we can instead:</p>
+						<p>To sample z ~ N(Î¼, ÏƒÂ²), we can instead:</p>
 						<ol>
-							<li>Sample ε ~ N(0, 1)</li>
-							<li>Compute z = μ + σε</li>
+							<li>Sample Îµ ~ N(0, 1)</li>
+							<li>Compute z = Î¼ + ÏƒÎµ</li>
 						</ol>
 						<p>
-							This makes z differentiable with respect to μ and σ — crucial for
-							training VAEs with gradient descent!
+							This makes z differentiable with respect to Î¼ and Ïƒ - crucial
+							for training VAEs with gradient descent!
 						</p>
 					</div>
 
@@ -2153,7 +2160,7 @@
 							In <strong>Deep Generative Models</strong>, you'll implement
 							normalizing flows that use change of variables to transform simple
 							distributions into complex ones. You'll also implement VAEs with
-							the reparameterization trick — seeing how these probability
+							the reparameterization trick - seeing how these probability
 							concepts enable powerful generative AI!
 						</p>
 					</div>
@@ -2162,13 +2169,13 @@
 				<!-- Summary Section -->
 				<section class="section" id="summary">
 					<div class="section-header">
-						<span class="section-number">📝</span>
+						<span class="section-number">🐍"</span>
 						<h2>Chapter Summary</h2>
 					</div>
 
 					<div class="key-concepts">
 						<div class="concept-card">
-							<div class="icon">🏠</div>
+							<div class="icon">🐍Â </div>
 							<h5>Random Variable</h5>
 							<p>Function mapping outcomes to quantities of interest</p>
 						</div>
@@ -2178,9 +2185,9 @@
 							<p>Discrete probabilities vs continuous densities</p>
 						</div>
 						<div class="concept-card">
-							<div class="icon">🔄</div>
+							<div class="icon">🔍„</div>
 							<h5>Bayes' Theorem</h5>
-							<p>Posterior ∝ Likelihood × Prior</p>
+							<p>Posterior âˆ Likelihood × Prior</p>
 						</div>
 						<div class="concept-card">
 							<div class="icon">📈</div>
@@ -2188,12 +2195,12 @@
 							<p>Center and spread of a distribution</p>
 						</div>
 						<div class="concept-card">
-							<div class="icon">🔔</div>
+							<div class="icon">🐍""Ã‚</div>
 							<h5>Gaussian</h5>
-							<p>Fully characterized by μ and Σ</p>
+							<p>Fully characterized by Î¼ and Î£</p>
 						</div>
 						<div class="concept-card">
-							<div class="icon">🔔</div>
+							<div class="icon">🔍”</div>
 							<h5>Conjugacy</h5>
 							<p>Prior and posterior same family</p>
 						</div>
@@ -2226,13 +2233,13 @@
 					<div class="quanskill-box">
 						<div class="label">Your Next Steps with Quanskill</div>
 						<p>
-							🎯° <strong>Congratulations!</strong> You now have the probability
-							foundation for modern machine learning. Here's your Quanskill
-							path:
+							🎯Â° <strong>Congratulations!</strong> You now have the
+							probability foundation for modern machine learning. Here's your
+							Quanskill path:
 						</p>
 						<ul>
 							<li>
-								<strong>Chapter 7</strong>: Optimization — put probability and
+								<strong>Chapter 7</strong>: Optimization - put probability and
 								calculus together!
 							</li>
 							<li><strong>Chapter 8</strong>: Machine Learning foundations</li>
@@ -2258,7 +2265,7 @@
 						color: var(--text-secondary);
 						font-size: 0.9rem;
 					">
-					<p><strong>Quanskill</strong> — Making ML Education Accessible</p>
+					<p><strong>Quanskill</strong> - Making ML Education Accessible</p>
 					<p style="margin-top: 1rem; font-size: 0.8rem">
 						© 2024 Quanskill. All rights reserved.
 					</p>
@@ -2296,7 +2303,7 @@
 							}
 						});
 					},
-					{ threshold: 0.1 }
+					{ threshold: 0.1 },
 				);
 
 				sections.forEach((section) => observer.observe(section));
@@ -2357,7 +2364,7 @@
 
 				if (isCorrect) {
 					element.classList.add("correct");
-					feedback.innerHTML = "✅ Correct! Great understanding!";
+					feedback.innerHTML = "âœ… Correct! Great understanding!";
 					feedback.className = "quiz-feedback show correct";
 				} else {
 					element.classList.add("incorrect");
@@ -2367,7 +2374,7 @@
 						}
 					});
 					feedback.innerHTML =
-						"❌ Not quite. The correct answer is highlighted above.";
+						"âŒ Not quite. The correct answer is highlighted above.";
 					feedback.className = "quiz-feedback show incorrect";
 				}
 			}
@@ -2414,11 +2421,7 @@
 
 					document.getElementById("distInfo").innerHTML =
 						`<strong>Binomial(n=10, p=${p.toFixed(1)})</strong><br>` +
-						`Mean = ${(n * p).toFixed(1)}, Variance = ${(
-							n *
-							p *
-							(1 - p)
-						).toFixed(2)}`;
+						`Mean = ${(n * p).toFixed(1)}, Variance = ${(n * p * (1 - p)).toFixed(2)}`;
 				} else {
 					// Gaussian
 					const mu = 0;
@@ -2455,11 +2458,8 @@
 					ctx.fill();
 
 					document.getElementById("distInfo").innerHTML =
-						`<strong>Gaussian(μ=0, σ=${sigma.toFixed(2)})</strong><br>` +
-						`Note: PDF can exceed 1 (currently max ≈ ${(
-							1 /
-							(sigma * Math.sqrt(2 * Math.PI))
-						).toFixed(2)})`;
+						`<strong>Gaussian(Î¼=0, Ïƒ=${sigma.toFixed(2)})</strong><br>` +
+						`Note: PDF can exceed 1 (currently max â‰ˆ ${(1 / (sigma * Math.sqrt(2 * Math.PI))).toFixed(2)})`;
 				}
 			}
 
@@ -2488,11 +2488,11 @@
 			function updateBayes() {
 				const prior = parseFloat(document.getElementById("prior").value);
 				const sensitivity = parseFloat(
-					document.getElementById("sensitivity").value
+					document.getElementById("sensitivity").value,
 				);
 				const falsePos = parseFloat(document.getElementById("falsepos").value);
 
-				// P(D|+) = P(+|D)P(D) / [P(+|D)P(D) + P(+|¬D)P(¬D)]
+				// P(D|+) = P(+|D)P(D) / [P(+|D)P(D) + P(+|Â¬D)P(Â¬D)]
 				const numerator = sensitivity * prior;
 				const denominator = numerator + falsePos * (1 - prior);
 				const posterior = numerator / denominator;
@@ -2504,9 +2504,7 @@
 
 				const ratio = posterior / prior;
 				document.getElementById("bayesExplanation").textContent =
-					`The positive test increased disease probability by ${ratio.toFixed(
-						1
-					)}x. ` +
+					`The positive test increased disease probability by ${ratio.toFixed(1)}x. ` +
 					`Even with a good test, rare diseases often have low posterior probability!`;
 			}
 
@@ -2577,13 +2575,10 @@
 				document.getElementById("gaussMuDisplay").textContent = mu.toFixed(1);
 				document.getElementById("gaussSigmaDisplay").textContent =
 					sigma.toFixed(1);
-				document.getElementById("gauss68").textContent = `${(
-					mu - sigma
-				).toFixed(2)}, ${(mu + sigma).toFixed(2)}`;
-				document.getElementById("gauss95").textContent = `${(
-					mu -
-					1.96 * sigma
-				).toFixed(2)}, ${(mu + 1.96 * sigma).toFixed(2)}`;
+				document.getElementById("gauss68").textContent =
+					`${(mu - sigma).toFixed(2)}, ${(mu + sigma).toFixed(2)}`;
+				document.getElementById("gauss95").textContent =
+					`${(mu - 1.96 * sigma).toFixed(2)}, ${(mu + 1.96 * sigma).toFixed(2)}`;
 
 				const canvas = document.getElementById("gaussCanvas");
 				const ctx = canvas.getContext("2d");
@@ -2616,7 +2611,7 @@
 				ctx.beginPath();
 				ctx.moveTo(
 					margin + ((mu - 1.96 * sigma - xMin) / (xMax - xMin)) * plotWidth,
-					height - margin
+					height - margin,
 				);
 				for (let i = 0; i <= plotWidth; i++) {
 					const x = xMin + (i / plotWidth) * (xMax - xMin);
@@ -2629,7 +2624,7 @@
 				}
 				ctx.lineTo(
 					margin + ((mu + 1.96 * sigma - xMin) / (xMax - xMin)) * plotWidth,
-					height - margin
+					height - margin,
 				);
 				ctx.closePath();
 				ctx.fill();
@@ -2639,7 +2634,7 @@
 				ctx.beginPath();
 				ctx.moveTo(
 					margin + ((mu - sigma - xMin) / (xMax - xMin)) * plotWidth,
-					height - margin
+					height - margin,
 				);
 				for (let i = 0; i <= plotWidth; i++) {
 					const x = xMin + (i / plotWidth) * (xMax - xMin);
@@ -2652,7 +2647,7 @@
 				}
 				ctx.lineTo(
 					margin + ((mu + sigma - xMin) / (xMax - xMin)) * plotWidth,
-					height - margin
+					height - margin,
 				);
 				ctx.closePath();
 				ctx.fill();
@@ -2736,7 +2731,7 @@
 					maxVal = Math.max(
 						maxVal,
 						betaPDF(x, alpha, beta),
-						betaPDF(x, postAlpha, postBeta)
+						betaPDF(x, postAlpha, postBeta),
 					);
 				}
 
@@ -2798,7 +2793,7 @@
 				// Use log to avoid overflow
 				const logB = logGamma(a) + logGamma(b) - logGamma(a + b);
 				return Math.exp(
-					(a - 1) * Math.log(x) + (b - 1) * Math.log(1 - x) - logB
+					(a - 1) * Math.log(x) + (b - 1) * Math.log(1 - x) - logB,
 				);
 			}
 

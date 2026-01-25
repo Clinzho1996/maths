@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 	<head>
 		<meta charset="UTF-8" />
@@ -268,7 +268,9 @@
 				border: 1px solid var(--border-color);
 				padding: 1.25rem;
 				border-radius: 12px;
-				transition: transform 0.2s, box-shadow 0.2s;
+				transition:
+					transform 0.2s,
+					box-shadow 0.2s;
 			}
 
 			.concept-card:hover {
@@ -409,7 +411,7 @@
 			}
 
 			.ml-box .label::before {
-				content: "🤓";
+				content: "📝¤“";
 			}
 
 			.quanskill-box {
@@ -475,7 +477,7 @@
 			}
 
 			.example-box .label::before {
-				content: "▸";
+				content: "â–¸";
 				color: var(--quanskill-orange);
 			}
 
@@ -528,7 +530,7 @@
 			}
 
 			.realworld-box .label::before {
-				content: "🎁";
+				content: "🎯";
 			}
 
 			code {
@@ -684,7 +686,7 @@
 			}
 
 			.demo-header::before {
-				content: "⚡";
+				content: "âš¡";
 			}
 
 			.demo-controls {
@@ -916,12 +918,12 @@
 	</head>
 	<body>
 		<!-- Floating Back to Main Page Button -->
-		<a href="index.html" class="floating-back-btn">← Main Page</a>
+		<a href="index.html" class="floating-back-btn">← Main Page</a>
 
 		<header class="header">
 			<div class="header-content">
 				<!-- <a href="index.html" class="header-logo"><img src="Logo_for_Print.jpg" alt="Quanskill" style="height: 40px; border-radius: 8px;"></a> -->
-				<button class="mobile-menu-btn" onclick="toggleSidebar()">☰</button>
+				<button class="mobile-menu-btn" onclick="toggleSidebar()">â˜°</button>
 			</div>
 		</header>
 
@@ -937,7 +939,7 @@
 						alt="Quanskill"
 						style="height: 36px; border-radius: 6px"
 				/></a>
-				<div class="chapter-title">Chapter 12 · Classification</div>
+				<div class="chapter-title">Chapter 12 Â· Classification</div>
 			</div>
 
 			<div class="nav-section">
@@ -971,7 +973,7 @@
 							hyperplane that maximizes the margin between classes using SVMs.
 						</p>
 						<div class="hero-quote">
-							"The SVM doesn't just find any boundary — it finds the one with
+							"The SVM doesn't just find any boundary - it finds the one with
 							the widest safety margin, making it robust to new data."
 						</div>
 					</div>
@@ -980,32 +982,32 @@
 				<!-- Key Concepts -->
 				<div class="key-concepts">
 					<div class="concept-card">
-						<div class="icon">📐</div>
+						<div class="icon">🐍"</div>
 						<h5>Hyperplanes</h5>
 						<p>Linear decision boundaries in feature space</p>
 					</div>
 					<div class="concept-card">
-						<div class="icon">↔</div>
+						<div class="icon">←”</div>
 						<h5>Maximum Margin</h5>
 						<p>Widest gap between classes</p>
 					</div>
 					<div class="concept-card">
-						<div class="icon">📌</div>
+						<div class="icon">🐍"Å’Ã‚</div>
 						<h5>Support Vectors</h5>
 						<p>Critical points that define the boundary</p>
 					</div>
 					<div class="concept-card">
-						<div class="icon">🔧</div>
+						<div class="icon">🔍§</div>
 						<h5>Soft Margin</h5>
 						<p>Allow some misclassifications</p>
 					</div>
 					<div class="concept-card">
-						<div class="icon">🔮</div>
+						<div class="icon">🔍®</div>
 						<h5>Kernel Trick</h5>
 						<p>Nonlinear boundaries via feature maps</p>
 					</div>
 					<div class="concept-card">
-						<div class="icon">⚗</div>
+						<div class="icon">âš—</div>
 						<h5>Dual Problem</h5>
 						<p>Optimization via Lagrange multipliers</p>
 					</div>
@@ -1045,7 +1047,7 @@
 
 					<p>
 						The hyperplane $\{\mathbf{x} : f(\mathbf{x}) = 0\}$ separates the
-						feature space into two half-spaces — one for each class.
+						feature space into two half-spaces - one for each class.
 					</p>
 
 					<!-- Interactive SVM Demo -->
@@ -1079,15 +1081,15 @@
 						<canvas id="svmCanvas" class="demo-canvas"></canvas>
 						<div class="demo-results">
 							<div class="result-item">
-								<div class="value" id="margin">—</div>
+								<div class="value" id="margin">-</div>
 								<div class="label">Margin</div>
 							</div>
 							<div class="result-item">
-								<div class="value" id="svCount">—</div>
+								<div class="value" id="svCount">-</div>
 								<div class="label">Support Vectors</div>
 							</div>
 							<div class="result-item">
-								<div class="value" id="accuracy">—</div>
+								<div class="value" id="accuracy">-</div>
 								<div class="label">Accuracy</div>
 							</div>
 						</div>
@@ -1105,12 +1107,12 @@
 					<p>This elegant form works because:</p>
 					<ul>
 						<li>
-							If $y_n = +1$ and $f(\mathbf{x}_n) > 0$ → product is positive ✓
+							If $y_n = +1$ and $f(\mathbf{x}_n) > 0$ ←’ product is positive âœ“
 						</li>
 						<li>
-							If $y_n = -1$ and $f(\mathbf{x}_n) < 0$ → product is positive ✓
+							If $y_n = -1$ and $f(\mathbf{x}_n) < 0$ ←’ product is positive âœ“
 						</li>
-						<li>Misclassification → product is negative ✗</li>
+						<li>Misclassification ←’ product is negative âœ—</li>
 					</ul>
 				</section>
 
@@ -1125,7 +1127,7 @@
 						For linearly separable data,
 						<strong>infinitely many</strong> hyperplanes can separate the
 						classes. The SVM chooses the one that
-						<strong>maximizes the margin</strong> — the distance to the closest
+						<strong>maximizes the margin</strong> - the distance to the closest
 						training points.
 					</p>
 
@@ -1155,7 +1157,7 @@
 					<div class="note-box">
 						<span class="label">Why Maximize Margin?</span>
 						<p>
-							A larger margin provides better <strong>generalization</strong> —
+							A larger margin provides better <strong>generalization</strong> -
 							the classifier is more robust to noise and new data. Intuitively,
 							it leaves more "breathing room" around the decision boundary.
 						</p>
@@ -1169,7 +1171,7 @@
 					</p>
 					<ul>
 						<li>
-							Only support vectors matter — other points could be removed
+							Only support vectors matter - other points could be removed
 							without changing the solution
 						</li>
 						<li>
@@ -1321,7 +1323,7 @@
 						</div>
 						<div class="quiz-feedback incorrect">
 							Not quite. Think about what $\xi_n$ values mean: 0 = outside
-							margin, between 0-1 = inside margin but correct side, ≥1 =
+							margin, between 0-1 = inside margin but correct side, â‰¥1 =
 							misclassified.
 						</div>
 					</div>
@@ -1486,24 +1488,24 @@
 					<h3>Core Concepts Recap</h3>
 					<div class="key-concepts">
 						<div class="concept-card">
-							<div class="icon">1⃣</div>
+							<div class="icon">1âƒ£</div>
 							<h5>Hyperplane</h5>
 							<p>
 								Linear decision boundary $\mathbf{w}^\top\mathbf{x} + b = 0$
 							</p>
 						</div>
 						<div class="concept-card">
-							<div class="icon">2⃣</div>
+							<div class="icon">2âƒ£</div>
 							<h5>Maximum Margin</h5>
 							<p>Find the widest "street" between classes</p>
 						</div>
 						<div class="concept-card">
-							<div class="icon">3⃣</div>
+							<div class="icon">3âƒ£</div>
 							<h5>Support Vectors</h5>
 							<p>Points on the margin that define the boundary</p>
 						</div>
 						<div class="concept-card">
-							<div class="icon">4⃣</div>
+							<div class="icon">4âƒ£</div>
 							<h5>Kernels</h5>
 							<p>Enable nonlinear boundaries via the kernel trick</p>
 						</div>
@@ -1715,7 +1717,7 @@
 						svmCtx.lineWidth = lineWidth;
 						svmCtx.beginPath();
 
-						// Line: w·x + b + offset = 0
+						// Line: wÂ·x + b + offset = 0
 						// For each x, y = -(w[0]*x + b + offset) / w[1]
 						if (Math.abs(svmW[1]) > 0.001) {
 							for (let px = 0; px <= width; px++) {
@@ -1799,7 +1801,7 @@
 				});
 
 				// Update stats
-				const marginVal = wNorm > 0 ? (2 / wNorm).toFixed(2) : "—";
+				const marginVal = wNorm > 0 ? (2 / wNorm).toFixed(2) : "-";
 				document.getElementById("margin").textContent = marginVal;
 				document.getElementById("svCount").textContent = svCount;
 				document.getElementById("accuracy").textContent =

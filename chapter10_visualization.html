@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 	<head>
 		<meta charset="UTF-8" />
@@ -402,7 +402,7 @@
 				gap: 0.5rem;
 			}
 			.seaborn-box .label::before {
-				content: "🎨";
+				content: "📝Ž¨";
 			}
 			.chart-box {
 				background: linear-gradient(
@@ -452,7 +452,7 @@
 				gap: 0.5rem;
 			}
 			.style-box .label::before {
-				content: "✨";
+				content: "âœ¨";
 			}
 			.quanskill-box {
 				background: linear-gradient(
@@ -648,7 +648,7 @@
 				gap: 0.5rem;
 			}
 			.summary-item::before {
-				content: "✓";
+				content: "🐍";
 				background: var(--quanskill-orange);
 				width: 20px;
 				height: 20px;
@@ -800,11 +800,11 @@
 		</style>
 	</head>
 	<body>
-		<a href="index.html" class="floating-back-btn">← Main Page</a>
+		<a href="index.html" class="floating-back-btn">← Main Page</a>
 		<header class="header">
 			<div class="header-content">
 				<!-- <a href="index.html" class="header-logo"><img src="Logo_for_Print.jpg" alt="Quanskill" style="height: 40px; border-radius: 8px;"></a> -->
-				<button class="mobile-menu-btn" onclick="toggleSidebar()">☰</button>
+				<button class="mobile-menu-btn" onclick="toggleSidebar()">â˜°</button>
 			</div>
 		</header>
 		<div class="progress-bar">
@@ -818,7 +818,7 @@
 						alt="Quanskill"
 						style="height: 36px; border-radius: 6px"
 				/></a>
-				<div class="chapter-title">Chapter 10 · Visualization</div>
+				<div class="chapter-title">Chapter 10 Â· Visualization</div>
 			</div>
 			<div class="nav-section">
 				<div class="nav-section-title">Overview</div>
@@ -858,7 +858,7 @@
 						</p>
 						<div class="hero-quote">
 							"The greatest value of a picture is when it forces us to notice
-							what we never expected to see."<br /><br />—
+							what we never expected to see."<br /><br />-
 							<strong>John Tukey, Statistician</strong>
 						</div>
 					</div>
@@ -872,7 +872,7 @@
 						<p>Foundation library</p>
 					</div>
 					<div class="concept-card seaborn">
-						<div class="icon">🎨</div>
+						<div class="icon">📝Ž¨</div>
 						<h5>Seaborn</h5>
 						<p>Statistical graphics</p>
 					</div>
@@ -882,17 +882,17 @@
 						<p>Line, bar, scatter</p>
 					</div>
 					<div class="concept-card style">
-						<div class="icon">✨</div>
+						<div class="icon">âœ¨</div>
 						<h5>Styling</h5>
 						<p>Colors & themes</p>
 					</div>
 					<div class="concept-card matplotlib">
-						<div class="icon">🖼</div>
+						<div class="icon">📝–¼</div>
 						<h5>Subplots</h5>
 						<p>Multiple plots</p>
 					</div>
 					<div class="concept-card seaborn">
-						<div class="icon">💾</div>
+						<div class="icon">📝’¾</div>
 						<h5>Export</h5>
 						<p>Save to files</p>
 					</div>
@@ -942,9 +942,9 @@ plt.<span class="code-function">show</span>()</code></pre>
 					<div class="matplotlib-box">
 						<span class="label">Object-Oriented vs Pyplot</span>
 						<p>
-							<strong>Pyplot style:</strong> <code>plt.plot(x, y)</code> — Quick
+							<strong>Pyplot style:</strong> <code>plt.plot(x, y)</code> - Quick
 							and simple.<br />
-							<strong>OO style:</strong> <code>ax.plot(x, y)</code> — More
+							<strong>OO style:</strong> <code>ax.plot(x, y)</code> - More
 							control, recommended for complex plots.
 						</p>
 					</div>
@@ -957,7 +957,7 @@ plt.<span class="code-function">show</span>()</code></pre>
 						<h2>Line Plots</h2>
 					</div>
 					<p>
-						Line plots connect data points with lines — ideal for showing trends
+						Line plots connect data points with lines - ideal for showing trends
 						over time or continuous data.
 					</p>
 					<pre><code>fig, ax = plt.<span class="code-function">subplots</span>(figsize=(<span class="code-number">10</span>, <span class="code-number">6</span>))
@@ -1044,7 +1044,7 @@ ax.<span class="code-function">annotate</span>(<span class="code-string">'Peak!'
 <span class="code-comment"># Save to file</span>
 fig.<span class="code-function">savefig</span>(<span class="code-string">'my_plot.png'</span>, dpi=<span class="code-number">300</span>, bbox_inches=<span class="code-string">'tight'</span>)</code></pre>
 					<div class="note-box">
-						<span class="label">💡 Saving Plots</span>
+						<span class="label">📝’¡ Saving Plots</span>
 						<p>
 							Use <code>savefig()</code> with <code>dpi=300</code> for print
 							quality. Supported formats: PNG, PDF, SVG, JPG.
@@ -1169,7 +1169,7 @@ tips = sns.<span class="code-function">load_dataset</span>(<span class="code-str
 							<p class="desc">Line with CI</p>
 						</div>
 						<div class="plot-card">
-							<div class="plot-icon">🔵</div>
+							<div class="plot-icon">🔍µ</div>
 							<h5>scatterplot()</h5>
 							<p class="desc">Enhanced scatter</p>
 						</div>
@@ -1179,12 +1179,12 @@ tips = sns.<span class="code-function">load_dataset</span>(<span class="code-str
 							<p class="desc">Box & whisker</p>
 						</div>
 						<div class="plot-card">
-							<div class="plot-icon">🎻</div>
+							<div class="plot-icon">📝Ž»</div>
 							<h5>violinplot()</h5>
 							<p class="desc">Distribution shape</p>
 						</div>
 						<div class="plot-card">
-							<div class="plot-icon">🔥</div>
+							<div class="plot-icon">🔍¥</div>
 							<h5>heatmap()</h5>
 							<p class="desc">Correlation matrix</p>
 						</div>
@@ -1286,7 +1286,7 @@ plt.style.<span class="code-function">use</span>(<span class="code-string">'ggpl
 						<h2>Chapter 10 Review</h2>
 					</div>
 					<p>
-						You've learned data visualization with Matplotlib and Seaborn —
+						You've learned data visualization with Matplotlib and Seaborn -
 						essential for communicating insights.
 					</p>
 					<div class="summary-box">
@@ -1365,7 +1365,7 @@ plt.style.<span class="code-function">use</span>(<span class="code-string">'ggpl
 				const options = element.parentElement.querySelectorAll(".quiz-option");
 				const feedbacks =
 					element.parentElement.parentElement.querySelectorAll(
-						".quiz-feedback"
+						".quiz-feedback",
 					);
 				options.forEach((opt) => opt.classList.remove("correct", "incorrect"));
 				feedbacks.forEach((fb) => fb.classList.remove("show"));

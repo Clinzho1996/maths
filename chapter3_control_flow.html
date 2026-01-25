@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 	<head>
 		<meta charset="UTF-8" />
@@ -214,7 +214,7 @@
 			}
 
 			.hero::after {
-				content: "🔄";
+				content: "🔍„";
 				position: absolute;
 				bottom: 20px;
 				right: 40px;
@@ -275,7 +275,9 @@
 				border: 1px solid var(--border-color);
 				padding: 1.25rem;
 				border-radius: 12px;
-				transition: transform 0.2s, box-shadow 0.2s;
+				transition:
+					transform 0.2s,
+					box-shadow 0.2s;
 			}
 
 			.concept-card:hover {
@@ -436,7 +438,7 @@
 			}
 
 			.conditional-box .label::before {
-				content: "🔀";
+				content: "🔍€";
 			}
 
 			.loop-box {
@@ -465,7 +467,7 @@
 			}
 
 			.loop-box .label::before {
-				content: "🔁";
+				content: '🐍"';
 			}
 
 			.function-box {
@@ -494,7 +496,7 @@
 			}
 
 			.function-box .label::before {
-				content: "⚡";
+				content: "âš¡";
 			}
 
 			.quanskill-box {
@@ -587,7 +589,7 @@
 			}
 
 			.realworld-box .label::before {
-				content: "🌍";
+				content: "🌍";
 			}
 
 			code {
@@ -959,7 +961,7 @@
 			}
 
 			.summary-item::before {
-				content: "✓";
+				content: "🐍";
 				background: var(--quanskill-orange);
 				width: 20px;
 				height: 20px;
@@ -1018,17 +1020,12 @@
 		</style>
 	</head>
 	<body>
-		<a href="index.html" class="floating-back-btn">← Main Page</a>
+		<a href="index.html" class="floating-back-btn">← Main Page</a>
 
 		<header class="header">
 			<div class="header-content">
-				<a href="index.html" class="header-logo"
-					><img
-						src="Logo_for_Print.jpg"
-						alt="Quanskill"
-						style="height: 40px; border-radius: 8px"
-				/></a>
-				<button class="mobile-menu-btn" onclick="toggleSidebar()">☰</button>
+				<!-- <a href="index.html" class="header-logo"><img src="Logo_for_Print.jpg" alt="Quanskill" style="height: 40px; border-radius: 8px;"></a> -->
+				<button class="mobile-menu-btn" onclick="toggleSidebar()">â˜°</button>
 			</div>
 		</header>
 
@@ -1038,8 +1035,13 @@
 
 		<nav class="sidebar" id="sidebar">
 			<div class="sidebar-header">
-				<!-- <a href="index.html" class="logo"><img src="Logo_for_Print.jpg" alt="Quanskill" style="height: 36px; border-radius: 6px;"></a> -->
-				<div class="chapter-title">Chapter 3 · Control Flow</div>
+				<a href="index.html" class="logo"
+					><img
+						src="Logo_for_Print.jpg"
+						alt="Quanskill"
+						style="height: 36px; border-radius: 6px"
+				/></a>
+				<div class="chapter-title">Chapter 3 Â· Control Flow</div>
 			</div>
 
 			<div class="nav-section">
@@ -1081,13 +1083,13 @@
 						<h1>Control Flow & Functions</h1>
 						<p class="hero-subtitle">
 							Master decision-making with conditionals, automate repetitive
-							tasks with loops, and create reusable code blocks with functions —
+							tasks with loops, and create reusable code blocks with functions -
 							the building blocks of every data science workflow.
 						</p>
 						<div class="hero-quote">
 							"Good code is like a good story: it flows logically, repeats key
 							themes elegantly, and each function plays its part perfectly."
-							<br /><br />— <strong>Quanskill Programming Philosophy</strong>
+							<br /><br />- <strong>Quanskill Programming Philosophy</strong>
 						</div>
 					</div>
 				</section>
@@ -1095,32 +1097,32 @@
 				<!-- Key Concepts Overview -->
 				<div class="key-concepts">
 					<div class="concept-card conditional">
-						<div class="icon">🔀</div>
+						<div class="icon">🔍€</div>
 						<h5>if Statement</h5>
 						<p>Execute code based on conditions</p>
 					</div>
 					<div class="concept-card conditional">
-						<div class="icon">🔄</div>
+						<div class="icon">🔍„</div>
 						<h5>elif / else</h5>
 						<p>Handle multiple conditions</p>
 					</div>
 					<div class="concept-card loop">
-						<div class="icon">🔁</div>
+						<div class="icon">🐍"</div>
 						<h5>for Loop</h5>
 						<p>Iterate over sequences</p>
 					</div>
 					<div class="concept-card loop">
-						<div class="icon">∂</div>
+						<div class="icon">âˆ‚</div>
 						<h5>while Loop</h5>
 						<p>Repeat until condition false</p>
 					</div>
 					<div class="concept-card function">
-						<div class="icon">⚡</div>
+						<div class="icon">âš¡</div>
 						<h5>Functions</h5>
 						<p>Reusable code blocks</p>
 					</div>
 					<div class="concept-card function">
-						<div class="icon">λ</div>
+						<div class="icon">Î»</div>
 						<h5>Lambda</h5>
 						<p>Anonymous functions</p>
 					</div>
@@ -1173,18 +1175,18 @@
 						<div class="flowchart-title">if Statement Flow</div>
 						<div class="flow-container">
 							<div class="flow-box flow-start">Start</div>
-							<div class="flow-arrow">↓</div>
+							<div class="flow-arrow">←“</div>
 							<div class="flow-box flow-process">Check Condition</div>
-							<div class="flow-arrow">↓</div>
+							<div class="flow-arrow">←“</div>
 							<div class="flow-branch">
 								<div style="text-align: center">
-									<div class="flow-label">True ✓</div>
-									<div class="flow-arrow">↓</div>
+									<div class="flow-label">True âœ“</div>
+									<div class="flow-arrow">←“</div>
 									<div class="flow-box flow-process">Execute Code Block</div>
 								</div>
 								<div style="text-align: center">
-									<div class="flow-label">False ✗</div>
-									<div class="flow-arrow">↓</div>
+									<div class="flow-label">False âœ—</div>
+									<div class="flow-arrow">←“</div>
 									<div
 										class="flow-box"
 										style="background: #f1f5f9; color: var(--text-secondary)">
@@ -1192,7 +1194,7 @@
 									</div>
 								</div>
 							</div>
-							<div class="flow-arrow">↓</div>
+							<div class="flow-arrow">←“</div>
 							<div class="flow-box flow-end">Continue</div>
 						</div>
 					</div>
@@ -1354,13 +1356,13 @@ credit_score = <span class="code-number">720</span>
 
 <span class="code-keyword">if</span> income >= <span class="code-number">50000</span>:
     <span class="code-keyword">if</span> credit_score >= <span class="code-number">700</span>:
-        <span class="code-function">print</span>(<span class="code-string">"✅ Loan approved!"</span>)
+        <span class="code-function">print</span>(<span class="code-string">"âœ… Loan approved!"</span>)
     <span class="code-keyword">else</span>:
-        <span class="code-function">print</span>(<span class="code-string">"❌ Loan denied: Credit score too low"</span>)
+        <span class="code-function">print</span>(<span class="code-string">"âŒ Loan denied: Credit score too low"</span>)
 <span class="code-keyword">else</span>:
-    <span class="code-function">print</span>(<span class="code-string">"❌ Loan denied: Income too low"</span>)
+    <span class="code-function">print</span>(<span class="code-string">"âŒ Loan denied: Income too low"</span>)
 
-<span class="code-comment"># Output: ✅ Loan approved!</span></code></pre>
+<span class="code-comment"># Output: âœ… Loan approved!</span></code></pre>
 
 					<div class="conditional-box">
 						<span class="label">Logical Operators</span>
@@ -1584,7 +1586,7 @@ count = <span class="code-number">1</span>
 					</table>
 
 					<div class="note-box">
-						<span class="label">⚠ Infinite Loop Warning</span>
+						<span class="label">âš  Infinite Loop Warning</span>
 						<p>
 							Always ensure your while loop condition will eventually become
 							False. Otherwise, your program will run forever! Common fix:
@@ -1593,12 +1595,12 @@ count = <span class="code-number">1</span>
 						<pre
 							style="
 								margin-bottom: 0;
-							"><code><span class="code-comment"># ❌ Infinite loop - BAD!</span>
+							"><code><span class="code-comment"># âŒ Infinite loop - BAD!</span>
 x = <span class="code-number">5</span>
 <span class="code-keyword">while</span> x > <span class="code-number">0</span>:
     <span class="code-function">print</span>(x)  <span class="code-comment"># x never changes!</span>
 
-<span class="code-comment"># ✅ Proper loop - GOOD!</span>
+<span class="code-comment"># âœ… Proper loop - GOOD!</span>
 x = <span class="code-number">5</span>
 <span class="code-keyword">while</span> x > <span class="code-number">0</span>:
     <span class="code-function">print</span>(x)
@@ -1620,17 +1622,17 @@ x = <span class="code-number">5</span>
 
 					<div class="control-comparison">
 						<div class="control-type">
-							<div class="symbol">🛑</div>
+							<div class="symbol">📝›‘</div>
 							<h5>break</h5>
 							<p class="desc">Exit the loop immediately</p>
 						</div>
 						<div class="control-type">
-							<div class="symbol">⏭</div>
+							<div class="symbol">â­</div>
 							<h5>continue</h5>
 							<p class="desc">Skip to next iteration</p>
 						</div>
 						<div class="control-type">
-							<div class="symbol">⏸</div>
+							<div class="symbol">â¸</div>
 							<h5>pass</h5>
 							<p class="desc">Do nothing (placeholder)</p>
 						</div>
@@ -1755,8 +1757,8 @@ result = calculate_area(width=<span class="code-number">4</span>, length=<span c
     <span class="code-string">"""Calculate base raised to exponent (default: squared)."""</span>
     <span class="code-keyword">return</span> base ** exponent
 
-<span class="code-function">print</span>(power(<span class="code-number">5</span>))       <span class="code-comment"># 25 (5²)</span>
-<span class="code-function">print</span>(power(<span class="code-number">2</span>, <span class="code-number">10</span>))   <span class="code-comment"># 1024 (2¹⁰)</span></code></pre>
+<span class="code-function">print</span>(power(<span class="code-number">5</span>))       <span class="code-comment"># 25 (5Â²)</span>
+<span class="code-function">print</span>(power(<span class="code-number">2</span>, <span class="code-number">10</span>))   <span class="code-comment"># 1024 (2Ã‚Â¹â°)</span></code></pre>
 
 					<h3>Return Multiple Values</h3>
 
@@ -1794,27 +1796,27 @@ total, avg, low, high = get_statistics(data)
 								<tr>
 									<td><code>len()</code></td>
 									<td>Get length</td>
-									<td><code>len([1,2,3])</code> → 3</td>
+									<td><code>len([1,2,3])</code> ←’ 3</td>
 								</tr>
 								<tr>
 									<td><code>type()</code></td>
 									<td>Get data type</td>
-									<td><code>type(42)</code> → int</td>
+									<td><code>type(42)</code> ←’ int</td>
 								</tr>
 								<tr>
 									<td><code>sum()</code></td>
 									<td>Sum of iterable</td>
-									<td><code>sum([1,2,3])</code> → 6</td>
+									<td><code>sum([1,2,3])</code> ←’ 6</td>
 								</tr>
 								<tr>
 									<td><code>max()</code></td>
 									<td>Maximum value</td>
-									<td><code>max([1,5,3])</code> → 5</td>
+									<td><code>max([1,5,3])</code> ←’ 5</td>
 								</tr>
 								<tr>
 									<td><code>min()</code></td>
 									<td>Minimum value</td>
-									<td><code>min([1,5,3])</code> → 1</td>
+									<td><code>min([1,5,3])</code> ←’ 1</td>
 								</tr>
 							</tbody>
 						</table>
@@ -1950,7 +1952,7 @@ top_students = <span class="code-function">sorted</span>(students, key=<span cla
 
 					<p>
 						Congratulations! You've mastered Python's control flow structures
-						and functions — the tools that transform static code into dynamic,
+						and functions - the tools that transform static code into dynamic,
 						intelligent programs.
 					</p>
 
@@ -2006,7 +2008,7 @@ top_students = <span class="code-function">sorted</span>(students, key=<span cla
 							</li>
 						</ol>
 						<p>
-							This exercise combines conditionals, loops, and functions — the
+							This exercise combines conditionals, loops, and functions - the
 							complete toolkit!
 						</p>
 					</div>
@@ -2025,7 +2027,7 @@ top_students = <span class="code-function">sorted</span>(students, key=<span cla
 				const options = element.parentElement.querySelectorAll(".quiz-option");
 				const feedbacks =
 					element.parentElement.parentElement.querySelectorAll(
-						".quiz-feedback"
+						".quiz-feedback",
 					);
 
 				options.forEach((opt) => opt.classList.remove("correct", "incorrect"));

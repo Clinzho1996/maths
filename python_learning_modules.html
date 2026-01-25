@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 	<head>
 		<meta charset="UTF-8" />
@@ -209,7 +209,9 @@
 				border-radius: 16px;
 				box-shadow: 0 2px 12px rgba(11, 47, 160, 0.08);
 				overflow: hidden;
-				transition: transform 0.3s ease, box-shadow 0.3s ease;
+				transition:
+					transform 0.3s ease,
+					box-shadow 0.3s ease;
 				border: 2px solid transparent;
 			}
 
@@ -376,7 +378,7 @@
 			}
 
 			.objectives-list li:before {
-				content: "✓";
+				content: "âœ“";
 				position: absolute;
 				left: 0;
 				color: var(--quanskill-orange);
@@ -420,7 +422,9 @@
 				font-size: 1em;
 				font-weight: 600;
 				cursor: pointer;
-				transition: transform 0.2s ease, box-shadow 0.2s ease;
+				transition:
+					transform 0.2s ease,
+					box-shadow 0.2s ease;
 				font-family: "Space Grotesk", sans-serif;
 				display: flex;
 				align-items: center;
@@ -445,7 +449,9 @@
 				font-size: 1em;
 				font-weight: 600;
 				cursor: pointer;
-				transition: transform 0.2s ease, box-shadow 0.2s ease;
+				transition:
+					transform 0.2s ease,
+					box-shadow 0.2s ease;
 				font-family: "Space Grotesk", sans-serif;
 				display: flex;
 				align-items: center;
@@ -619,21 +625,21 @@
 						</div>
 					</div>
 					<div class="stat-card">
-						<span class="stat-icon">🧪</span>
+						<span class="stat-icon">📝§ª</span>
 						<div class="stat-info">
 							<div class="stat-value">120+</div>
 							<div class="stat-label">Interactive Labs</div>
 						</div>
 					</div>
 					<div class="stat-card">
-						<span class="stat-icon">⭐</span>
+						<span class="stat-icon">â­</span>
 						<div class="stat-info">
 							<div class="stat-value">12,000+</div>
 							<div class="stat-label">Total XP</div>
 						</div>
 					</div>
 					<div class="stat-card">
-						<span class="stat-icon">∂</span>
+						<span class="stat-icon">âˆ‚</span>
 						<div class="stat-info">
 							<div class="stat-value">14-16</div>
 							<div class="stat-label">Weeks</div>
@@ -662,7 +668,7 @@
 
 			<!-- Data Structures & Algorithms Section -->
 			<h2 class="section-title">
-				<span class="emoji">🔧</span> Data Structures & Algorithms
+				<span class="emoji">🔍§</span> Data Structures & Algorithms
 			</h2>
 			<div class="modules-grid" id="dsaGrid">
 				<!-- DSA modules will be inserted here -->
@@ -677,7 +683,7 @@
 			</div>
 
 			<div class="learning-path">
-				<h3>🗺 Learning Path Structure</h3>
+				<h3>📝—º Learning Path Structure</h3>
 				<div class="path-tracks">
 					<div class="path-track">
 						<h4>🐍 Python Foundations</h4>
@@ -688,7 +694,7 @@
 						<div class="chapters">Chapters 1-5</div>
 					</div>
 					<div class="path-track">
-						<h4>🔧 DSA & Algorithms</h4>
+						<h4>🔍§ DSA & Algorithms</h4>
 						<p>
 							Learn essential data structures, Big O notation, searching and
 							sorting algorithms
@@ -1080,11 +1086,11 @@
 				const dataScienceGrid = document.getElementById("dataScienceGrid");
 
 				const foundationModules = modules.filter(
-					(m) => m.section === "foundations"
+					(m) => m.section === "foundations",
 				);
 				const dsaModules = modules.filter((m) => m.section === "dsa");
 				const dataScienceModules = modules.filter(
-					(m) => m.section === "datascience"
+					(m) => m.section === "datascience",
 				);
 
 				foundationsGrid.innerHTML = foundationModules
@@ -1105,75 +1111,40 @@
 					module.difficulty.slice(1);
 
 				return `
-                <div class="module-card ${
-									completedModules.has(module.id) ? "completed" : ""
-								}" id="module-${module.id}">
-                    <div class="module-header" onclick="toggleModule(${
-											module.id
-										})">
+                <div class="module-card ${completedModules.has(module.id) ? "completed" : ""}" id="module-${module.id}">
+                    <div class="module-header" onclick="toggleModule(${module.id})">
                         <input type="checkbox" class="checkbox" 
                             ${completedModules.has(module.id) ? "checked" : ""} 
-                            onclick="event.stopPropagation(); toggleComplete(${
-															module.id
-														})">
+                            onclick="event.stopPropagation(); toggleComplete(${module.id})">
                         <div class="module-info">
-                            <span class="module-number">Chapter ${
-															module.id
-														}</span>
+                            <span class="module-number">Chapter ${module.id}</span>
                             <div class="module-title">${module.title}</div>
                             <div class="module-meta">
-                                <span class="meta-item">∂ ${
-																	module.duration
-																}</span>
-                                <span class="meta-item xp">⭐ ${
-																	module.xp
-																} XP</span>
+                                <span class="meta-item">âˆ‚ ${module.duration}</span>
+                                <span class="meta-item xp">â­ ${module.xp} XP</span>
                                 <span class="difficulty-badge ${difficultyClass}">${difficultyLabel}</span>
-                                ${
-																	module.prerequisites.length > 0
-																		? `<span class="meta-item">📋 Prereq: Ch. ${module.prerequisites.join(
-																				", "
-																		  )}</span>`
-																		: ""
-																}
+                                ${module.prerequisites.length > 0 ? `<span class="meta-item">📝‹ Prereq: Ch. ${module.prerequisites.join(", ")}</span>` : ""}
                             </div>
                         </div>
-                        <span class="expand-btn" id="expand-${
-													module.id
-												}">▼</span>
+                        <span class="expand-btn" id="expand-${module.id}">â–¼</span>
                     </div>
                     <div class="module-content" id="content-${module.id}">
                         <div class="module-content-inner">
                             <div class="content-section">
                                 <h4>🎯 Learning Objectives</h4>
                                 <ul class="objectives-list">
-                                    ${module.objectives
-																			.map((obj) => `<li>${obj}</li>`)
-																			.join("")}
+                                    ${module.objectives.map((obj) => `<li>${obj}</li>`).join("")}
                                 </ul>
                             </div>
                             <div class="content-section">
                                 <h4>📚 Key Topics</h4>
                                 <div class="topics-container">
-                                    ${module.keyTopics
-																			.map(
-																				(topic) =>
-																					`<span class="topic-tag">${topic}</span>`
-																			)
-																			.join("")}
+                                    ${module.keyTopics.map((topic) => `<span class="topic-tag">${topic}</span>`).join("")}
                                 </div>
                             </div>
                             <div class="btn-group">
-                                ${
-																	module.hasTheory
-																		? `<button class="start-btn" onclick="openModule('${module.theoryFile}')">📖 Start Chapter ${module.id}</button>`
-																		: ""
-																}
-                                ${
-																	module.hasLab
-																		? `<button class="lab-btn" onclick="openModule('${module.labFile}')">🧪 Open Lab</button>`
-																		: ""
-																}
+                                ${module.hasTheory ? `<button class="start-btn" onclick="openModule('${module.theoryFile}')">📝– Start Chapter ${module.id}</button>` : ""}
+                                ${module.hasLab ? `<button class="lab-btn" onclick="openModule('${module.labFile}')">📝§ª Open Lab</button>` : ""}
                             </div>
                         </div>
                     </div>
@@ -1204,9 +1175,8 @@
 				const completed = completedModules.size;
 				const percentage = (completed / total) * 100;
 				document.getElementById("progressFill").style.width = percentage + "%";
-				document.getElementById(
-					"progressText"
-				).textContent = `${completed}/${total} chapters completed`;
+				document.getElementById("progressText").textContent =
+					`${completed}/${total} chapters completed`;
 			}
 
 			function openModule(filename) {

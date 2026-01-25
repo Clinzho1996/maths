@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 	<head>
 		<meta charset="UTF-8" />
@@ -383,7 +383,7 @@
 			}
 
 			.case-study-box .label::before {
-				content: "🏢";
+				content: "🐍Â¢";
 			}
 
 			.agentic-ai-box {
@@ -424,7 +424,7 @@
 			}
 
 			.agentic-ai-box .label::before {
-				content: "🤓";
+				content: "📝¤“";
 			}
 
 			.quiz-container {
@@ -564,7 +564,7 @@
 			}
 
 			.demo-header::before {
-				content: "⚡";
+				content: "âš¡";
 			}
 
 			.demo-number {
@@ -773,7 +773,7 @@
 	</head>
 	<body>
 		<!-- Floating Back to Main Page Button -->
-		<a href="index.html" class="floating-back-btn">← Main Page</a>
+		<a href="index.html" class="floating-back-btn">← Main Page</a>
 
 		<header class="header">
 			<div class="header-content">
@@ -811,7 +811,7 @@
 			</div>
 
 			<div class="nav-section">
-				<div class="nav-section-title">📊¡ Interactive Labs (15)</div>
+				<div class="nav-section-title">📊Â¡ Interactive Labs (15)</div>
 				<a class="nav-link" href="#lab1">Lab 1: Euclidean Norm</a>
 				<a class="nav-link" href="#lab2">Lab 2: Manhattan Norm</a>
 				<a class="nav-link" href="#lab3">Lab 3: Comparing Norms</a>
@@ -830,7 +830,7 @@
 			</div>
 
 			<div class="nav-section">
-				<div class="nav-section-title">✍ MCQ Quiz (25)</div>
+				<div class="nav-section-title">âœ“ MCQ Quiz (25)</div>
 				<a class="nav-link" href="#q1"
 					>Q1-8: Easy
 					<span class="difficulty-badge difficulty-easy">Easy</span></a
@@ -854,16 +854,16 @@
 			<div class="content-wrapper">
 				<section class="hero">
 					<div class="hero-content">
-						<span class="hero-badge">📐 Chapter 3</span>
+						<span class="hero-badge">🐍" Chapter 3</span>
 						<h1>Analytic Geometry</h1>
 						<p class="hero-subtitle">
-							Master norms, inner products, distances, angles, and projections —
+							Master norms, inner products, distances, angles, and projections -
 							the geometric foundations that measure similarity and
 							relationships between vectors in machine learning.
 						</p>
 						<div class="hero-equation">
-							cos(ω) = ⟨x, y⟩ / (‗x‗ · ‗y‗) &nbsp;|&nbsp; proj_u(v) = (⟨v, u⟩ /
-							⟨u, u⟩) · u
+							cos(Ï‰) = âŸ¨x, yâŸ© / (â€—xâ€— Â· â€—yâ€—) &nbsp;|&nbsp;
+							proj_u(v) = (âŸ¨v, uâŸ© / âŸ¨u, uâŸ©) Â· u
 						</div>
 					</div>
 				</section>
@@ -883,8 +883,8 @@
 					</p>
 
 					<div class="formula-box">
-						<strong>Definition:</strong> ‗x‗₂ = √(x₁² + x₂² + ... + xₙ²) =
-						√(xᵀx)
+						<strong>Definition:</strong> â€—xâ€—â‚‚ = âˆš(xâ‚Ã‚Â² + xâ‚‚Â² + ...
+						+ xâ‚™Â²) = âˆš(xáµ€x)
 					</div>
 
 					<div class="demo-container">
@@ -894,15 +894,15 @@
 						</div>
 						<div class="demo-controls">
 							<div class="control-group">
-								<label>x₁</label>
+								<label>xâ‚</label>
 								<input type="number" id="l2_x1" value="3" step="0.5" />
 							</div>
 							<div class="control-group">
-								<label>x₂</label>
+								<label>xâ‚‚</label>
 								<input type="number" id="l2_x2" value="4" step="0.5" />
 							</div>
 							<div class="control-group">
-								<label>x₃</label>
+								<label>xâ‚ƒ</label>
 								<input type="number" id="l2_x3" value="0" step="0.5" />
 							</div>
 							<button class="btn btn-primary" onclick="calcL2Norm()">
@@ -941,7 +941,7 @@
 					</p>
 
 					<div class="formula-box">
-						<strong>Definition:</strong> ‗x‗₁ = |x₁| + |x₂| + ... + |xₙ|
+						<strong>Definition:</strong> â€—x-â‚ = |xâ‚| + |xâ‚‚| + ... + |xâ‚™|
 					</div>
 
 					<div class="demo-container">
@@ -951,11 +951,11 @@
 						</div>
 						<div class="demo-controls">
 							<div class="control-group">
-								<label>x₁</label>
+								<label>xâ‚</label>
 								<input type="number" id="l1_x1" value="3" step="0.5" />
 							</div>
 							<div class="control-group">
-								<label>x₂</label>
+								<label>xâ‚‚</label>
 								<input type="number" id="l1_x2" value="4" step="0.5" />
 							</div>
 							<button class="btn btn-primary" onclick="calcL1Norm()">
@@ -984,18 +984,18 @@
 				<section class="section" id="lab3">
 					<div class="section-header">
 						<span class="section-number">Lab 3</span>
-						<h2>Comparing L1, L2, and L∞ Norms</h2>
+						<h2>Comparing L1, L2, and Lâˆž Norms</h2>
 					</div>
 
 					<p>
-						Different norms create different "unit balls" — the set of all
-						vectors with norm ≤ 1. Understanding these shapes helps choose the
+						Different norms create different "unit balls" - the set of all
+						vectors with norm â‰¤ 1. Understanding these shapes helps choose the
 						right norm for your ML task.
 					</p>
 
 					<div class="formula-box">
-						<strong>L∞ Norm (Max Norm):</strong> ‗x‗∞ = max(|x₁|, |x₂|, ...,
-						|xₙ|)
+						<strong>Lâˆž Norm (Max Norm):</strong> â€—xâ€—âˆž = max(|xâ‚|,
+						|xâ‚‚|, ..., |xâ‚™|)
 					</div>
 
 					<div class="demo-container">
@@ -1010,7 +1010,7 @@
 									<option value="all">Show All</option>
 									<option value="l1">L1 Only</option>
 									<option value="l2">L2 Only</option>
-									<option value="linf">L∞ Only</option>
+									<option value="linf">Lâˆž Only</option>
 								</select>
 							</div>
 						</div>
@@ -1029,16 +1029,17 @@
 					</div>
 
 					<p>
-						An <strong>inner product</strong> ⟨·,·⟩ is a generalization of the
-						dot product that defines geometry on vector spaces. It allows us to
-						measure angles, lengths, and orthogonality.
+						An <strong>inner product</strong> âŸ¨Â·,Â·âŸ© is a generalization of
+						the dot product that defines geometry on vector spaces. It allows us
+						to measure angles, lengths, and orthogonality.
 					</p>
 
 					<div class="formula-box">
 						<strong>Properties:</strong><br />
-						• Symmetric: ⟨x, y⟩ = ⟨y, x⟩<br />
-						• Linear: ⟨αx + βy, z⟩ = α⟨x, z⟩ + β⟨y, z⟩<br />
-						• Positive definite: ⟨x, x⟩ ≥ 0, and ⟨x, x⟩ = 0 ⟺ x = 0
+						â€¢ Symmetric: âŸ¨x, yâŸ© = âŸ¨y, xâŸ©<br />
+						â€¢ Linear: âŸ¨Î±x + Î²y, zâŸ© = Î±âŸ¨x, zâŸ© + Î²âŸ¨y, zâŸ©<br />
+						â€¢ Positive definite: âŸ¨x, xâŸ© â‰¥ 0, and âŸ¨x, xâŸ© = 0 âŸº x =
+						0
 					</div>
 
 					<div class="demo-container">
@@ -1048,11 +1049,11 @@
 						</div>
 						<div class="demo-controls">
 							<div class="control-group">
-								<label>x = [x₁, x₂]</label>
+								<label>x = [xâ‚, xâ‚‚]</label>
 								<input type="text" id="ipX" value="3,4" style="width: 80px" />
 							</div>
 							<div class="control-group">
-								<label>y = [y₁, y₂]</label>
+								<label>y = [yâ‚, yâ‚‚]</label>
 								<input type="text" id="ipY" value="1,2" style="width: 80px" />
 							</div>
 							<button class="btn btn-primary" onclick="calcInnerProduct()">
@@ -1083,8 +1084,9 @@
 					</div>
 
 					<p>
-						The <strong>dot product</strong> (standard inner product) in ℝⁿ is
-						the sum of element-wise products: x·y = Σᵀ¢ xᵀ¢yᵀ¢ = xᵀy
+						The <strong>dot product</strong> (standard inner product) in â„â¿ is
+						the sum of element-wise products: xÂ·y = Î£áµ€Â¢ xáµ€Â¢yáµ€Â¢ =
+						xáµ€y
 					</p>
 
 					<div class="demo-container">
@@ -1094,19 +1096,19 @@
 						</div>
 						<div class="demo-controls">
 							<div class="control-group">
-								<label>x₁</label>
+								<label>xâ‚</label>
 								<input type="number" id="dp_x1" value="2" step="0.5" />
 							</div>
 							<div class="control-group">
-								<label>x₂</label>
+								<label>xâ‚‚</label>
 								<input type="number" id="dp_x2" value="3" step="0.5" />
 							</div>
 							<div class="control-group">
-								<label>y₁</label>
+								<label>yâ‚</label>
 								<input type="number" id="dp_y1" value="4" step="0.5" />
 							</div>
 							<div class="control-group">
-								<label>y₂</label>
+								<label>yâ‚‚</label>
 								<input type="number" id="dp_y2" value="1" step="0.5" />
 							</div>
 							<button class="btn btn-primary" onclick="calcDotProduct()">
@@ -1128,14 +1130,15 @@
 					</div>
 
 					<p>
-						The angle ω between two vectors is defined through the inner
+						The angle Ï‰ between two vectors is defined through the inner
 						product. This is fundamental to understanding vector relationships
 						in ML.
 					</p>
 
 					<div class="formula-box">
-						<strong>Formula:</strong> cos(ω) = ⟨x, y⟩ / (‗x‗ · ‗y‗)<br />
-						<strong>Range:</strong> ω ∈ [0, π] (0° to 180°)
+						<strong>Formula:</strong> cos(Ï‰) = âŸ¨x, yâŸ© / (â€—xâ€— Â·
+						â€—yâ€—)<br />
+						<strong>Range:</strong> Ï‰ âˆˆ [0, Ï€] (0Â° to 180Â°)
 					</div>
 
 					<div class="demo-container">
@@ -1191,8 +1194,8 @@
 
 					<p>
 						Two vectors are <strong>orthogonal</strong> (perpendicular) if their
-						inner product is zero: ⟨x, y⟩ = 0. Orthogonality is central to PCA,
-						linear regression, and many ML algorithms.
+						inner product is zero: âŸ¨x, yâŸ© = 0. Orthogonality is central to
+						PCA, linear regression, and many ML algorithms.
 					</p>
 
 					<div class="demo-container">
@@ -1238,9 +1241,10 @@
 					</p>
 
 					<div class="formula-box">
-						<strong>Scalar projection:</strong> comp_u(v) = ⟨v, u⟩ / ‗u‗<br />
-						<strong>Vector projection:</strong> proj_u(v) = (⟨v, u⟩ / ⟨u, u⟩) ·
-						u
+						<strong>Scalar projection:</strong> comp_u(v) = âŸ¨v, uâŸ© /
+						â€—uâ€—<br />
+						<strong>Vector projection:</strong> proj_u(v) = (âŸ¨v, uâŸ© / âŸ¨u,
+						uâŸ©) Â· u
 					</div>
 
 					<div class="demo-container">
@@ -1287,7 +1291,7 @@
 
 					<p>
 						When projecting onto a subspace spanned by multiple vectors, we use
-						the <strong>projection matrix</strong>: P = A(AᵀA)⁻¹Aᵀ
+						the <strong>projection matrix</strong>: P = A(Aáµ€A)â»Â¹Aáµ€
 					</p>
 
 					<div class="demo-container">
@@ -1345,9 +1349,9 @@
 
 					<div class="formula-box">
 						<strong>Conditions:</strong><br />
-						• Orthogonal: ⟨bᵀ¢, b∂¼⟩ = 0 for i ≠ j<br />
-						• Normalized: ‗bᵀ¢‖ = 1 for all i<br />
-						• Combined: ⟨bᵀ¢, b∂¼⟩ = δᵀ¢∂¼ (Kronecker delta)
+						â€¢ Orthogonal: âŸ¨báµ€Â¢, bâˆ‚Â¼âŸ© = 0 for i â‰  j<br />
+						â€¢ Normalized: â€—báµ€Â¢â€– = 1 for all i<br />
+						â€¢ Combined: âŸ¨báµ€Â¢, bâˆ‚Â¼âŸ© = Î´áµ€Â¢âˆ‚Â¼ (Kronecker delta)
 					</div>
 
 					<div class="demo-container">
@@ -1357,11 +1361,11 @@
 						</div>
 						<div class="demo-controls">
 							<div class="control-group">
-								<label>Vector b₁</label>
+								<label>Vector bâ‚</label>
 								<input type="text" id="onb1" value="1,0" style="width: 80px" />
 							</div>
 							<div class="control-group">
-								<label>Vector b₂</label>
+								<label>Vector bâ‚‚</label>
 								<input type="text" id="onb2" value="0,1" style="width: 80px" />
 							</div>
 							<button class="btn btn-primary" onclick="checkONB()">
@@ -1389,9 +1393,10 @@
 
 					<div class="formula-box">
 						<strong>Algorithm:</strong><br />
-						u₁ = v₁, &nbsp; e₁ = u₁/‗u₁‗<br />
-						u₂ = v₂ - ⟨v₂, e₁⟩e₁, &nbsp; e₂ = u₂/‗u₂‗<br />
-						uₖ = vₖ - Σ∂¼ⱼ₁ᵀ ⟨vₖ, e∂¼⟩e∂¼, &nbsp; eₖ = uₖ/‗uₗ‗
+						uâ‚ = vâ‚, &nbsp; eâ‚ = uâ‚/â€—uâ‚-<br />
+						uâ‚‚ = vâ‚‚ - âŸ¨vâ‚‚, eâ‚âŸ©eâ‚, &nbsp; eâ‚‚ = uâ‚‚/â€—uâ‚‚â€—<br />
+						uâ‚– = vâ‚– - Î£âˆ‚áµ¢â±¼â‚áµ€ âŸ¨vâ‚–, eâˆ‚Â¼âŸ©eâˆ‚Â¼, &nbsp; eâ‚–
+						= uâ‚–/â€—uâ‚—â€—
 					</div>
 
 					<div class="demo-container">
@@ -1401,11 +1406,11 @@
 						</div>
 						<div class="demo-controls">
 							<div class="control-group">
-								<label>Vector v₁</label>
+								<label>Vector vâ‚</label>
 								<input type="text" id="gs_v1" value="3,1" style="width: 80px" />
 							</div>
 							<div class="control-group">
-								<label>Vector v₂</label>
+								<label>Vector vâ‚‚</label>
 								<input type="text" id="gs_v2" value="2,2" style="width: 80px" />
 							</div>
 							<button class="btn btn-primary" onclick="gramSchmidt()">
@@ -1443,11 +1448,12 @@
 					</p>
 
 					<div class="formula-box">
-						<strong>Euclidean distance:</strong> d₂(x,y) = ‗x - y‗₂ = √(Σᵀ¢(xᵀ¢
-						- yᵀ¢)²)<br />
-						<strong>Manhattan distance:</strong> d₁(x,y) = ‗x - y‗₁ = Σᵀ¢|xᵀ¢ -
-						yᵀ¢|<br />
-						<strong>Chebyshev distance:</strong> d∞(x,y) = maxᵀ¢|xᵀ¢ - yᵀ¢|
+						<strong>Euclidean distance:</strong> dâ‚‚(x,y) = â€—x - yâ€—â‚‚ =
+						âˆš(Î£áµ€Â¢(xáµ€Â¢ - yáµ€Â¢)Â²)<br />
+						<strong>Manhattan distance:</strong> dâ‚(x,y) = â€—x - y-â‚ =
+						Î£áµ€Â¢|xáµ€Â¢ - yáµ€Â¢|<br />
+						<strong>Chebyshev distance:</strong> dâˆž(x,y) = maxáµ€Â¢|xáµ€Â¢ -
+						yáµ€Â¢|
 					</div>
 
 					<div class="demo-container">
@@ -1497,8 +1503,8 @@
 					</p>
 
 					<div class="formula-box">
-						<strong>Formula:</strong> cos_sim(x, y) = ⟨x, y⟩ / (‗x‗ · ‗y‗) ∈
-						[-1, 1]<br />
+						<strong>Formula:</strong> cos_sim(x, y) = âŸ¨x, yâŸ© / (â€—xâ€— Â·
+						â€—yâ€—) âˆˆ [-1, 1]<br />
 						<strong>Interpretation:</strong> 1 = identical direction, 0 =
 						orthogonal, -1 = opposite
 					</div>
@@ -1555,15 +1561,15 @@
 
 					<p>
 						Rotations preserve lengths and angles. The
-						<strong>rotation matrix</strong> in 2D rotates vectors by angle θ
+						<strong>rotation matrix</strong> in 2D rotates vectors by angle Î¸
 						counterclockwise.
 					</p>
 
 					<div class="formula-box">
 						<strong>Rotation Matrix:</strong><br />
-						R(θ) = [cos(θ) -sin(θ)]<br />
-						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[sin(θ)
-						cos(θ)]
+						R(Î¸) = [cos(Î¸) -sin(Î¸)]<br />
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[sin(Î¸)
+						cos(Î¸)]
 					</div>
 
 					<div class="demo-container">
@@ -1609,7 +1615,7 @@
 							>Reflection formula (across line through origin with direction
 							u):</strong
 						><br />
-						ref_u(v) = 2·proj_u(v) - v = 2(⟨v,u⟩/⟨u,u⟩)u - v
+						ref_u(v) = 2Â·proj_u(v) - v = 2(âŸ¨v,uâŸ©/âŸ¨u,uâŸ©)u - v
 					</div>
 
 					<div class="demo-container">
@@ -1663,16 +1669,16 @@
 						</div>
 						<div class="quiz-question">What is a norm?</div>
 						<div class="quiz-options">
-							<div class="quiz-option" onclick="checkAnswer(1,0)">
+							<div class="quiz-option" onclick="checkAnswer(1, 0)">
 								A) A function that assigns a length to each vector
 							</div>
-							<div class="quiz-option" onclick="checkAnswer(1,1)">
+							<div class="quiz-option" onclick="checkAnswer(1, 1)">
 								B) A matrix operation
 							</div>
-							<div class="quiz-option" onclick="checkAnswer(1,2)">
+							<div class="quiz-option" onclick="checkAnswer(1, 2)">
 								C) A type of linear transformation
 							</div>
-							<div class="quiz-option" onclick="checkAnswer(1,3)">
+							<div class="quiz-option" onclick="checkAnswer(1, 3)">
 								D) A scalar value always equal to 1
 							</div>
 						</div>
@@ -1687,16 +1693,16 @@
 						</div>
 						<div class="quiz-question">The Euclidean norm is also called:</div>
 						<div class="quiz-options">
-							<div class="quiz-option" onclick="checkAnswer(2,0)">
+							<div class="quiz-option" onclick="checkAnswer(2, 0)">
 								A) L1 norm
 							</div>
-							<div class="quiz-option" onclick="checkAnswer(2,1)">
+							<div class="quiz-option" onclick="checkAnswer(2, 1)">
 								B) L2 norm
 							</div>
-							<div class="quiz-option" onclick="checkAnswer(2,2)">
-								C) L∞ norm
+							<div class="quiz-option" onclick="checkAnswer(2, 2)">
+								C) Lâˆž norm
 							</div>
-							<div class="quiz-option" onclick="checkAnswer(2,3)">
+							<div class="quiz-option" onclick="checkAnswer(2, 3)">
 								D) L0 norm
 							</div>
 						</div>
@@ -1709,19 +1715,21 @@
 							<span class="quiz-number">Q3</span>
 							<span class="difficulty-badge difficulty-easy">Easy</span>
 						</div>
-						<div class="quiz-context">⟨x, y⟩ = 0</div>
+						<div class="quiz-context">âŸ¨x, yâŸ© = 0</div>
 						<div class="quiz-question">
 							When the inner product of two vectors equals zero, they are:
 						</div>
 						<div class="quiz-options">
-							<div class="quiz-option" onclick="checkAnswer(3,0)">
+							<div class="quiz-option" onclick="checkAnswer(3, 0)">
 								A) Orthogonal (perpendicular)
 							</div>
-							<div class="quiz-option" onclick="checkAnswer(3,1)">
+							<div class="quiz-option" onclick="checkAnswer(3, 1)">
 								B) Parallel
 							</div>
-							<div class="quiz-option" onclick="checkAnswer(3,2)">C) Equal</div>
-							<div class="quiz-option" onclick="checkAnswer(3,3)">
+							<div class="quiz-option" onclick="checkAnswer(3, 2)">
+								C) Equal
+							</div>
+							<div class="quiz-option" onclick="checkAnswer(3, 3)">
 								D) Linearly dependent
 							</div>
 						</div>
@@ -1734,16 +1742,16 @@
 							<span class="quiz-number">Q4</span>
 							<span class="difficulty-badge difficulty-easy">Easy</span>
 						</div>
-						<div class="quiz-question">The dot product x·x equals:</div>
+						<div class="quiz-question">The dot product xÂ·x equals:</div>
 						<div class="quiz-options">
-							<div class="quiz-option" onclick="checkAnswer(4,0)">
-								A) The squared norm ‗x‗²
+							<div class="quiz-option" onclick="checkAnswer(4, 0)">
+								A) The squared norm â€—xâ€—Â²
 							</div>
-							<div class="quiz-option" onclick="checkAnswer(4,1)">
+							<div class="quiz-option" onclick="checkAnswer(4, 1)">
 								B) The vector x
 							</div>
-							<div class="quiz-option" onclick="checkAnswer(4,2)">C) Zero</div>
-							<div class="quiz-option" onclick="checkAnswer(4,3)">
+							<div class="quiz-option" onclick="checkAnswer(4, 2)">C) Zero</div>
+							<div class="quiz-option" onclick="checkAnswer(4, 3)">
 								D) The inverse of x
 							</div>
 						</div>
@@ -1760,16 +1768,16 @@
 							Which property must every norm satisfy?
 						</div>
 						<div class="quiz-options">
-							<div class="quiz-option" onclick="checkAnswer(5,0)">
-								A) Triangle inequality: ‗x+y‗ ≤ ‗x‗ + ‗y‗
+							<div class="quiz-option" onclick="checkAnswer(5, 0)">
+								A) Triangle inequality: â€—x+yâ€— â‰¤ â€—xâ€— + â€—yâ€—
 							</div>
-							<div class="quiz-option" onclick="checkAnswer(5,1)">
+							<div class="quiz-option" onclick="checkAnswer(5, 1)">
 								B) Can output negative values
 							</div>
-							<div class="quiz-option" onclick="checkAnswer(5,2)">
+							<div class="quiz-option" onclick="checkAnswer(5, 2)">
 								C) Always equals 1
 							</div>
-							<div class="quiz-option" onclick="checkAnswer(5,3)">
+							<div class="quiz-option" onclick="checkAnswer(5, 3)">
 								D) Only defined for matrices
 							</div>
 						</div>
@@ -1786,14 +1794,14 @@
 							The angle between vectors uses which trigonometric function?
 						</div>
 						<div class="quiz-options">
-							<div class="quiz-option" onclick="checkAnswer(6,0)">
-								A) Cosine: cos(ω) = ⟨x,y⟩ / (‗x‗‗y‗)
+							<div class="quiz-option" onclick="checkAnswer(6, 0)">
+								A) Cosine: cos(Ï‰) = âŸ¨x,yâŸ© / (â€—xâ€—â€—yâ€—)
 							</div>
-							<div class="quiz-option" onclick="checkAnswer(6,1)">B) Sine</div>
-							<div class="quiz-option" onclick="checkAnswer(6,2)">
+							<div class="quiz-option" onclick="checkAnswer(6, 1)">B) Sine</div>
+							<div class="quiz-option" onclick="checkAnswer(6, 2)">
 								C) Tangent
 							</div>
-							<div class="quiz-option" onclick="checkAnswer(6,3)">
+							<div class="quiz-option" onclick="checkAnswer(6, 3)">
 								D) Secant
 							</div>
 						</div>
@@ -1810,16 +1818,16 @@
 							An orthonormal basis has vectors that are:
 						</div>
 						<div class="quiz-options">
-							<div class="quiz-option" onclick="checkAnswer(7,0)">
+							<div class="quiz-option" onclick="checkAnswer(7, 0)">
 								A) Mutually orthogonal and each has unit length
 							</div>
-							<div class="quiz-option" onclick="checkAnswer(7,1)">
+							<div class="quiz-option" onclick="checkAnswer(7, 1)">
 								B) Parallel to each other
 							</div>
-							<div class="quiz-option" onclick="checkAnswer(7,2)">
+							<div class="quiz-option" onclick="checkAnswer(7, 2)">
 								C) Of any arbitrary length
 							</div>
-							<div class="quiz-option" onclick="checkAnswer(7,3)">
+							<div class="quiz-option" onclick="checkAnswer(7, 3)">
 								D) Linearly dependent
 							</div>
 						</div>
@@ -1834,16 +1842,16 @@
 						</div>
 						<div class="quiz-question">The Manhattan (L1) norm sums:</div>
 						<div class="quiz-options">
-							<div class="quiz-option" onclick="checkAnswer(8,0)">
-								A) Absolute values of components: Σ|xᵀ¢|
+							<div class="quiz-option" onclick="checkAnswer(8, 0)">
+								A) Absolute values of components: Î£|xáµ€Â¢|
 							</div>
-							<div class="quiz-option" onclick="checkAnswer(8,1)">
+							<div class="quiz-option" onclick="checkAnswer(8, 1)">
 								B) Squared components
 							</div>
-							<div class="quiz-option" onclick="checkAnswer(8,2)">
+							<div class="quiz-option" onclick="checkAnswer(8, 2)">
 								C) Products of components
 							</div>
-							<div class="quiz-option" onclick="checkAnswer(8,3)">
+							<div class="quiz-option" onclick="checkAnswer(8, 3)">
 								D) Ratios of components
 							</div>
 						</div>
@@ -1864,21 +1872,21 @@
 							<span class="quiz-number">Q9</span>
 							<span class="difficulty-badge difficulty-medium">Medium</span>
 						</div>
-						<div class="quiz-context">P² = P</div>
+						<div class="quiz-context">PÂ² = P</div>
 						<div class="quiz-question">
-							A projection matrix P satisfies P² = P. This property is called:
+							A projection matrix P satisfies PÂ² = P. This property is called:
 						</div>
 						<div class="quiz-options">
-							<div class="quiz-option" onclick="checkAnswer(9,0)">
+							<div class="quiz-option" onclick="checkAnswer(9, 0)">
 								A) Idempotent
 							</div>
-							<div class="quiz-option" onclick="checkAnswer(9,1)">
+							<div class="quiz-option" onclick="checkAnswer(9, 1)">
 								B) Orthogonal
 							</div>
-							<div class="quiz-option" onclick="checkAnswer(9,2)">
+							<div class="quiz-option" onclick="checkAnswer(9, 2)">
 								C) Symmetric
 							</div>
-							<div class="quiz-option" onclick="checkAnswer(9,3)">
+							<div class="quiz-option" onclick="checkAnswer(9, 3)">
 								D) Invertible
 							</div>
 						</div>
@@ -1895,17 +1903,17 @@
 							The projection of v onto u is given by:
 						</div>
 						<div class="quiz-options">
-							<div class="quiz-option" onclick="checkAnswer(10,0)">
-								A) proj_u(v) = (⟨v,u⟩ / ⟨u,u⟩) · u
+							<div class="quiz-option" onclick="checkAnswer(10, 0)">
+								A) proj_u(v) = (âŸ¨v,uâŸ© / âŸ¨u,uâŸ©) Â· u
 							</div>
-							<div class="quiz-option" onclick="checkAnswer(10,1)">
+							<div class="quiz-option" onclick="checkAnswer(10, 1)">
 								B) proj_u(v) = v - u
 							</div>
-							<div class="quiz-option" onclick="checkAnswer(10,2)">
+							<div class="quiz-option" onclick="checkAnswer(10, 2)">
 								C) proj_u(v) = v × u
 							</div>
-							<div class="quiz-option" onclick="checkAnswer(10,3)">
-								D) proj_u(v) = ‗v‗ · u
+							<div class="quiz-option" onclick="checkAnswer(10, 3)">
+								D) proj_u(v) = â€—vâ€— Â· u
 							</div>
 						</div>
 						<div class="quiz-feedback" id="feedback10"></div>
@@ -1919,17 +1927,17 @@
 						</div>
 						<div class="quiz-question">Cosine similarity ranges from:</div>
 						<div class="quiz-options">
-							<div class="quiz-option" onclick="checkAnswer(11,0)">
+							<div class="quiz-option" onclick="checkAnswer(11, 0)">
 								A) -1 to 1
 							</div>
-							<div class="quiz-option" onclick="checkAnswer(11,1)">
+							<div class="quiz-option" onclick="checkAnswer(11, 1)">
 								B) 0 to 1
 							</div>
-							<div class="quiz-option" onclick="checkAnswer(11,2)">
-								C) 0 to ∞
+							<div class="quiz-option" onclick="checkAnswer(11, 2)">
+								C) 0 to âˆž
 							</div>
-							<div class="quiz-option" onclick="checkAnswer(11,3)">
-								D) -∞ to ∞
+							<div class="quiz-option" onclick="checkAnswer(11, 3)">
+								D) -âˆž to âˆž
 							</div>
 						</div>
 						<div class="quiz-feedback" id="feedback11"></div>
@@ -1945,16 +1953,16 @@
 							The Gram-Schmidt process converts a basis into:
 						</div>
 						<div class="quiz-options">
-							<div class="quiz-option" onclick="checkAnswer(12,0)">
+							<div class="quiz-option" onclick="checkAnswer(12, 0)">
 								A) An orthonormal basis
 							</div>
-							<div class="quiz-option" onclick="checkAnswer(12,1)">
+							<div class="quiz-option" onclick="checkAnswer(12, 1)">
 								B) A diagonal matrix
 							</div>
-							<div class="quiz-option" onclick="checkAnswer(12,2)">
+							<div class="quiz-option" onclick="checkAnswer(12, 2)">
 								C) A scalar
 							</div>
-							<div class="quiz-option" onclick="checkAnswer(12,3)">
+							<div class="quiz-option" onclick="checkAnswer(12, 3)">
 								D) An eigenvalue
 							</div>
 						</div>
@@ -1967,19 +1975,19 @@
 							<span class="quiz-number">Q13</span>
 							<span class="difficulty-badge difficulty-medium">Medium</span>
 						</div>
-						<div class="quiz-context">d(x,y) = ‗x - y‗₂</div>
+						<div class="quiz-context">d(x,y) = â€—x - yâ€—â‚‚</div>
 						<div class="quiz-question">This formula represents:</div>
 						<div class="quiz-options">
-							<div class="quiz-option" onclick="checkAnswer(13,0)">
+							<div class="quiz-option" onclick="checkAnswer(13, 0)">
 								A) Euclidean distance
 							</div>
-							<div class="quiz-option" onclick="checkAnswer(13,1)">
+							<div class="quiz-option" onclick="checkAnswer(13, 1)">
 								B) Manhattan distance
 							</div>
-							<div class="quiz-option" onclick="checkAnswer(13,2)">
+							<div class="quiz-option" onclick="checkAnswer(13, 2)">
 								C) Cosine similarity
 							</div>
-							<div class="quiz-option" onclick="checkAnswer(13,3)">
+							<div class="quiz-option" onclick="checkAnswer(13, 3)">
 								D) Inner product
 							</div>
 						</div>
@@ -1993,19 +2001,19 @@
 							<span class="difficulty-badge difficulty-medium">Medium</span>
 						</div>
 						<div class="quiz-question">
-							The L∞ norm (max norm) of a vector equals:
+							The Lâˆž norm (max norm) of a vector equals:
 						</div>
 						<div class="quiz-options">
-							<div class="quiz-option" onclick="checkAnswer(14,0)">
+							<div class="quiz-option" onclick="checkAnswer(14, 0)">
 								A) The maximum absolute component value
 							</div>
-							<div class="quiz-option" onclick="checkAnswer(14,1)">
+							<div class="quiz-option" onclick="checkAnswer(14, 1)">
 								B) The sum of all components
 							</div>
-							<div class="quiz-option" onclick="checkAnswer(14,2)">
+							<div class="quiz-option" onclick="checkAnswer(14, 2)">
 								C) The product of components
 							</div>
-							<div class="quiz-option" onclick="checkAnswer(14,3)">
+							<div class="quiz-option" onclick="checkAnswer(14, 3)">
 								D) The minimum component value
 							</div>
 						</div>
@@ -2020,16 +2028,16 @@
 						</div>
 						<div class="quiz-question">A rotation matrix in 2D preserves:</div>
 						<div class="quiz-options">
-							<div class="quiz-option" onclick="checkAnswer(15,0)">
+							<div class="quiz-option" onclick="checkAnswer(15, 0)">
 								A) Lengths and angles
 							</div>
-							<div class="quiz-option" onclick="checkAnswer(15,1)">
+							<div class="quiz-option" onclick="checkAnswer(15, 1)">
 								B) Only lengths
 							</div>
-							<div class="quiz-option" onclick="checkAnswer(15,2)">
+							<div class="quiz-option" onclick="checkAnswer(15, 2)">
 								C) Only angles
 							</div>
-							<div class="quiz-option" onclick="checkAnswer(15,3)">
+							<div class="quiz-option" onclick="checkAnswer(15, 3)">
 								D) Neither lengths nor angles
 							</div>
 						</div>
@@ -2046,17 +2054,17 @@
 							For orthogonal matrix Q, which is true?
 						</div>
 						<div class="quiz-options">
-							<div class="quiz-option" onclick="checkAnswer(16,0)">
-								A) QᵀQ = QQᵀ = I (identity)
+							<div class="quiz-option" onclick="checkAnswer(16, 0)">
+								A) Qáµ€Q = QQáµ€ = I (identity)
 							</div>
-							<div class="quiz-option" onclick="checkAnswer(16,1)">
-								B) Q² = Q
+							<div class="quiz-option" onclick="checkAnswer(16, 1)">
+								B) QÂ² = Q
 							</div>
-							<div class="quiz-option" onclick="checkAnswer(16,2)">
+							<div class="quiz-option" onclick="checkAnswer(16, 2)">
 								C) det(Q) = 0
 							</div>
-							<div class="quiz-option" onclick="checkAnswer(16,3)">
-								D) Q = Qᵀ
+							<div class="quiz-option" onclick="checkAnswer(16, 3)">
+								D) Q = Qáµ€
 							</div>
 						</div>
 						<div class="quiz-feedback" id="feedback16"></div>
@@ -2072,17 +2080,17 @@
 							The Cauchy-Schwarz inequality states:
 						</div>
 						<div class="quiz-options">
-							<div class="quiz-option" onclick="checkAnswer(17,0)">
-								A) |⟨x,y⟩| ≤ ‗x‗ · ‗y‗
+							<div class="quiz-option" onclick="checkAnswer(17, 0)">
+								A) |âŸ¨x,yâŸ©| â‰¤ â€—xâ€— Â· â€—yâ€—
 							</div>
-							<div class="quiz-option" onclick="checkAnswer(17,1)">
-								B) ⟨x,y⟩ = ‗x‗ + ‗y‗
+							<div class="quiz-option" onclick="checkAnswer(17, 1)">
+								B) âŸ¨x,yâŸ© = â€—xâ€— + â€—yâ€—
 							</div>
-							<div class="quiz-option" onclick="checkAnswer(17,2)">
-								C) ‗x+y‗ = ‗x‗ · ‗y‗
+							<div class="quiz-option" onclick="checkAnswer(17, 2)">
+								C) â€—x+yâ€— = â€—xâ€— Â· â€—yâ€—
 							</div>
-							<div class="quiz-option" onclick="checkAnswer(17,3)">
-								D) ⟨x,y⟩ ≥ 0 always
+							<div class="quiz-option" onclick="checkAnswer(17, 3)">
+								D) âŸ¨x,yâŸ© â‰¥ 0 always
 							</div>
 						</div>
 						<div class="quiz-feedback" id="feedback17"></div>
@@ -2102,21 +2110,21 @@
 							<span class="quiz-number">Q18</span>
 							<span class="difficulty-badge difficulty-hard">Hard</span>
 						</div>
-						<div class="quiz-context">P = A(AᵀA)⁻¹Aᵀ</div>
+						<div class="quiz-context">P = A(Aáµ€A)â»Â¹Aáµ€</div>
 						<div class="quiz-question">
 							This formula gives the projection matrix onto:
 						</div>
 						<div class="quiz-options">
-							<div class="quiz-option" onclick="checkAnswer(18,0)">
+							<div class="quiz-option" onclick="checkAnswer(18, 0)">
 								A) The column space of A
 							</div>
-							<div class="quiz-option" onclick="checkAnswer(18,1)">
+							<div class="quiz-option" onclick="checkAnswer(18, 1)">
 								B) The null space of A
 							</div>
-							<div class="quiz-option" onclick="checkAnswer(18,2)">
+							<div class="quiz-option" onclick="checkAnswer(18, 2)">
 								C) The row space of A
 							</div>
-							<div class="quiz-option" onclick="checkAnswer(18,3)">
+							<div class="quiz-option" onclick="checkAnswer(18, 3)">
 								D) The eigenspace of A
 							</div>
 						</div>
@@ -2130,20 +2138,20 @@
 							<span class="difficulty-badge difficulty-hard">Hard</span>
 						</div>
 						<div class="quiz-question">
-							In linear regression, the residual vector (y - Xθ) is orthogonal
+							In linear regression, the residual vector (y - XÎ¸) is orthogonal
 							to:
 						</div>
 						<div class="quiz-options">
-							<div class="quiz-option" onclick="checkAnswer(19,0)">
+							<div class="quiz-option" onclick="checkAnswer(19, 0)">
 								A) The column space of X
 							</div>
-							<div class="quiz-option" onclick="checkAnswer(19,1)">
+							<div class="quiz-option" onclick="checkAnswer(19, 1)">
 								B) The vector y
 							</div>
-							<div class="quiz-option" onclick="checkAnswer(19,2)">
-								C) The parameter θ
+							<div class="quiz-option" onclick="checkAnswer(19, 2)">
+								C) The parameter Î¸
 							</div>
-							<div class="quiz-option" onclick="checkAnswer(19,3)">
+							<div class="quiz-option" onclick="checkAnswer(19, 3)">
 								D) All vectors
 							</div>
 						</div>
@@ -2160,16 +2168,17 @@
 							The Frobenius norm of a matrix A is:
 						</div>
 						<div class="quiz-options">
-							<div class="quiz-option" onclick="checkAnswer(20,0)">
-								A) ‗A‗_F = √(Σᵀ¢∂¼ aᵀ¢∂¼²) = √(trace(AᵀA))
+							<div class="quiz-option" onclick="checkAnswer(20, 0)">
+								A) â€—Aâ€—_F = âˆš(Î£áµ€Â¢âˆ‚Â¼ aáµ€Â¢âˆ‚Â¼Â²) =
+								âˆš(trace(Aáµ€A))
 							</div>
-							<div class="quiz-option" onclick="checkAnswer(20,1)">
+							<div class="quiz-option" onclick="checkAnswer(20, 1)">
 								B) The maximum singular value
 							</div>
-							<div class="quiz-option" onclick="checkAnswer(20,2)">
+							<div class="quiz-option" onclick="checkAnswer(20, 2)">
 								C) The determinant
 							</div>
-							<div class="quiz-option" onclick="checkAnswer(20,3)">
+							<div class="quiz-option" onclick="checkAnswer(20, 3)">
 								D) The trace of A
 							</div>
 						</div>
@@ -2184,16 +2193,16 @@
 						</div>
 						<div class="quiz-question">The dual norm of the L1 norm is:</div>
 						<div class="quiz-options">
-							<div class="quiz-option" onclick="checkAnswer(21,0)">
-								A) The L∞ norm
+							<div class="quiz-option" onclick="checkAnswer(21, 0)">
+								A) The Lâˆž norm
 							</div>
-							<div class="quiz-option" onclick="checkAnswer(21,1)">
+							<div class="quiz-option" onclick="checkAnswer(21, 1)">
 								B) The L2 norm
 							</div>
-							<div class="quiz-option" onclick="checkAnswer(21,2)">
+							<div class="quiz-option" onclick="checkAnswer(21, 2)">
 								C) The L1 norm itself
 							</div>
-							<div class="quiz-option" onclick="checkAnswer(21,3)">
+							<div class="quiz-option" onclick="checkAnswer(21, 3)">
 								D) The L0 norm
 							</div>
 						</div>
@@ -2211,16 +2220,16 @@
 							converges) is called:
 						</div>
 						<div class="quiz-options">
-							<div class="quiz-option" onclick="checkAnswer(22,0)">
+							<div class="quiz-option" onclick="checkAnswer(22, 0)">
 								A) A Hilbert space
 							</div>
-							<div class="quiz-option" onclick="checkAnswer(22,1)">
+							<div class="quiz-option" onclick="checkAnswer(22, 1)">
 								B) A Banach space
 							</div>
-							<div class="quiz-option" onclick="checkAnswer(22,2)">
+							<div class="quiz-option" onclick="checkAnswer(22, 2)">
 								C) A normed space
 							</div>
-							<div class="quiz-option" onclick="checkAnswer(22,3)">
+							<div class="quiz-option" onclick="checkAnswer(22, 3)">
 								D) A metric space
 							</div>
 						</div>
@@ -2234,22 +2243,22 @@
 							<span class="difficulty-badge difficulty-hard">Hard</span>
 						</div>
 						<div class="quiz-context">
-							f(x,y) = xᵀMy where M is symmetric positive definite
+							f(x,y) = xáµ€My where M is symmetric positive definite
 						</div>
 						<div class="quiz-question">
 							This defines a valid inner product because M being SPD ensures:
 						</div>
 						<div class="quiz-options">
-							<div class="quiz-option" onclick="checkAnswer(23,0)">
+							<div class="quiz-option" onclick="checkAnswer(23, 0)">
 								A) Positive definiteness and symmetry of the bilinear form
 							</div>
-							<div class="quiz-option" onclick="checkAnswer(23,1)">
+							<div class="quiz-option" onclick="checkAnswer(23, 1)">
 								B) M is invertible
 							</div>
-							<div class="quiz-option" onclick="checkAnswer(23,2)">
+							<div class="quiz-option" onclick="checkAnswer(23, 2)">
 								C) M has real eigenvalues
 							</div>
-							<div class="quiz-option" onclick="checkAnswer(23,3)">
+							<div class="quiz-option" onclick="checkAnswer(23, 3)">
 								D) M is diagonal
 							</div>
 						</div>
@@ -2266,16 +2275,16 @@
 							PCA finds principal components by maximizing:
 						</div>
 						<div class="quiz-options">
-							<div class="quiz-option" onclick="checkAnswer(24,0)">
+							<div class="quiz-option" onclick="checkAnswer(24, 0)">
 								A) Variance of projected data (using inner products)
 							</div>
-							<div class="quiz-option" onclick="checkAnswer(24,1)">
+							<div class="quiz-option" onclick="checkAnswer(24, 1)">
 								B) The norm of the data
 							</div>
-							<div class="quiz-option" onclick="checkAnswer(24,2)">
+							<div class="quiz-option" onclick="checkAnswer(24, 2)">
 								C) Classification accuracy
 							</div>
-							<div class="quiz-option" onclick="checkAnswer(24,3)">
+							<div class="quiz-option" onclick="checkAnswer(24, 3)">
 								D) The distance from origin
 							</div>
 						</div>
@@ -2293,16 +2302,16 @@
 							enables:
 						</div>
 						<div class="quiz-options">
-							<div class="quiz-option" onclick="checkAnswer(25,0)">
+							<div class="quiz-option" onclick="checkAnswer(25, 0)">
 								A) Semantic retrieval and tool selection based on relevance
 							</div>
-							<div class="quiz-option" onclick="checkAnswer(25,1)">
+							<div class="quiz-option" onclick="checkAnswer(25, 1)">
 								B) Faster training only
 							</div>
-							<div class="quiz-option" onclick="checkAnswer(25,2)">
+							<div class="quiz-option" onclick="checkAnswer(25, 2)">
 								C) Random exploration
 							</div>
-							<div class="quiz-option" onclick="checkAnswer(25,3)">
+							<div class="quiz-option" onclick="checkAnswer(25, 3)">
 								D) Memory compression only
 							</div>
 						</div>
@@ -2391,21 +2400,23 @@
 
 					<div class="formula-box">
 						<strong>Key Formulas to Remember:</strong><br /><br />
-						• Euclidean norm: ‗x‗₂ = √(xᵀx)<br />
-						• Manhattan norm: ‗x‗₁ = Σᵀ¢|xᵀ¢|<br />
-						• Inner product: ⟨x,y⟩ = xᵀy (standard)<br />
-						• Angle: cos(ω) = ⟨x,y⟩ / (‗x‗·‖y‗)<br />
-						• Projection: proj_u(v) = (⟨v,u⟩/⟨u,u⟩)u<br />
-						• Cosine similarity: cos_sim = ⟨x,y⟩/(‗x‗‗y‗)<br />
-						• Projection matrix: P = A(AᵀA)⁻¹Aᵀ<br />
-						• Cauchy-Schwarz: |⟨x,y⟩| ≤ ‗x‗·‖y‗
+						â€¢ Euclidean norm: â€—xâ€—â‚‚ = âˆš(xáµ€x)<br />
+						â€¢ Manhattan norm: â€—x-â‚ = Î£áµ€Â¢|xáµ€Â¢|<br />
+						â€¢ Inner product: âŸ¨x,yâŸ© = xáµ€y (standard)<br />
+						â€¢ Angle: cos(Ï‰) = âŸ¨x,yâŸ© / (â€—xâ€—Â·â€–yâ€—)<br />
+						â€¢ Projection: proj_u(v) = (âŸ¨v,uâŸ©/âŸ¨u,uâŸ©)u<br />
+						â€¢ Cosine similarity: cos_sim = âŸ¨x,yâŸ©/(â€—xâ€—â€—yâ€—)<br />
+						â€¢ Projection matrix: P = A(Aáµ€A)â»Â¹Aáµ€<br />
+						â€¢ Cauchy-Schwarz: |âŸ¨x,yâŸ©| â‰¤ â€—xâ€—Â·â€–yâ€—
 					</div>
 
 					<div class="agentic-ai-box">
 						<span class="label">Next Steps in MML Series</span>
 						<ul>
-							<li><strong>Chapter 2:</strong> Linear Algebra ✓</li>
-							<li><strong>Chapter 3:</strong> Analytic Geometry ✓ (Current)</li>
+							<li><strong>Chapter 2:</strong> Linear Algebra âœ“</li>
+							<li>
+								<strong>Chapter 3:</strong> Analytic Geometry âœ“ (Current)
+							</li>
 							<li><strong>Chapter 4:</strong> Matrix Decompositions</li>
 							<li><strong>Chapter 5:</strong> Vector Calculus</li>
 							<li><strong>Chapter 6:</strong> Probability and Distributions</li>
@@ -2428,12 +2439,12 @@
 							class="btn btn-primary"
 							onclick="resetQuiz()"
 							style="margin-right: 1rem">
-							🔄 Reset Quiz
+							🔍„ Reset Quiz
 						</button>
 						<button
 							class="btn btn-orange"
-							onclick="window.scrollTo({top: 0, behavior: 'smooth'})">
-							⬆ Back to Top
+							onclick="window.scrollTo({ top: 0, behavior: 'smooth' })">
+							â¬† Back to Top
 						</button>
 					</div>
 				</section>
@@ -2473,28 +2484,28 @@
 
 			const explanations = {
 				1: "A norm is a function that assigns a non-negative length/size to each vector.",
-				2: "The Euclidean norm is the L2 norm: ‗x‗₂ = √(Σxᵀ¢²).",
+				2: "The Euclidean norm is the L2 norm: â€—xâ€—â‚‚ = âˆš(Î£xáµ€Â¢Â²).",
 				3: "Vectors with zero inner product are orthogonal (perpendicular) to each other.",
-				4: "x·x = Σxᵀ¢² = ‗x‗², the squared Euclidean norm.",
+				4: "xÂ·x = Î£xáµ€Â¢Â² = â€—xâ€—Â², the squared Euclidean norm.",
 				5: "Triangle inequality is a fundamental property of all norms.",
-				6: "Cosine of the angle: cos(ω) = ⟨x,y⟩/(‗x‗‗y‗).",
+				6: "Cosine of the angle: cos(Ï‰) = âŸ¨x,yâŸ©/(â€—xâ€—â€—yâ€—).",
 				7: "Orthonormal basis: mutually orthogonal vectors each with unit length.",
-				8: "Manhattan/L1 norm: ‗x‗₁ = Σ|xᵀ¢|.",
+				8: "Manhattan/L1 norm: â€—x-â‚ = Î£|xáµ€Â¢|.",
 				9: "Projection matrices are idempotent: applying twice equals applying once.",
-				10: "Projection formula: proj_u(v) = (⟨v,u⟩/⟨u,u⟩)·u.",
+				10: "Projection formula: proj_u(v) = (âŸ¨v,uâŸ©/âŸ¨u,uâŸ©)Â·u.",
 				11: "Cosine similarity ranges from -1 (opposite) to 1 (identical direction).",
 				12: "Gram-Schmidt converts any basis to an orthonormal basis.",
 				13: "Euclidean distance is the L2 norm of the difference vector.",
-				14: "L∞ (max/Chebyshev) norm equals the largest absolute component.",
+				14: "Lâˆž (max/Chebyshev) norm equals the largest absolute component.",
 				15: "Rotation matrices preserve both lengths and angles (isometry).",
-				16: "Orthogonal matrices satisfy QᵀQ = QQᵀ = I.",
-				17: "Cauchy-Schwarz: |⟨x,y⟩| ≤ ‗x‗·‖y‗ with equality iff x,y are parallel.",
-				18: "P = A(AᵀA)⁻¹Aᵀ projects onto the column space (range) of A.",
+				16: "Orthogonal matrices satisfy Qáµ€Q = QQáµ€ = I.",
+				17: "Cauchy-Schwarz: |âŸ¨x,yâŸ©| â‰¤ â€—xâ€—Â·â€–yâ€— with equality iff x,y are parallel.",
+				18: "P = A(Aáµ€A)â»Â¹Aáµ€ projects onto the column space (range) of A.",
 				19: "In least squares, residuals are orthogonal to the column space of X.",
-				20: "Frobenius norm: √(sum of squared entries) = √(trace(AᵀA)).",
-				21: "The dual of L1 is L∞ and vice versa.",
+				20: "Frobenius norm: âˆš(sum of squared entries) = âˆš(trace(Aáµ€A)).",
+				21: "The dual of L1 is Lâˆž and vice versa.",
 				22: "A complete inner product space is a Hilbert space.",
-				23: "SPD M ensures positive definiteness ⟨x,x⟩_M > 0 and symmetry of the form.",
+				23: "SPD M ensures positive definiteness âŸ¨x,xâŸ©_M > 0 and symmetry of the form.",
 				24: "PCA maximizes variance of projections (using inner products to compute projections).",
 				25: "Agentic AI uses embedding similarity for semantic retrieval and relevance-based tool selection.",
 			};
@@ -2523,14 +2534,14 @@
 					correctCount++;
 					container.classList.add("answered-correct");
 					feedback.className = "quiz-feedback show correct";
-					feedback.innerHTML = `✅ <strong>Correct!</strong> ${explanations[q]}`;
+					feedback.innerHTML = `âœ… <strong>Correct!</strong> ${explanations[q]}`;
 					if (q <= 8) easyCorrect++;
 					else if (q <= 17) mediumCorrect++;
 					else hardCorrect++;
 				} else {
 					container.classList.add("answered-wrong");
 					feedback.className = "quiz-feedback show incorrect";
-					feedback.innerHTML = `❌ <strong>Incorrect.</strong> ${explanations[q]}`;
+					feedback.innerHTML = `âŒ <strong>Incorrect.</strong> ${explanations[q]}`;
 				}
 				updateStats();
 			}
@@ -2541,24 +2552,20 @@
 						? Math.round((correctCount / attemptedCount) * 100)
 						: 0;
 				const prog = Math.round((attemptedCount / totalQuestions) * 100);
-				document.getElementById(
-					"headerScore"
-				).textContent = `${correctCount}/${totalQuestions}`;
+				document.getElementById("headerScore").textContent =
+					`${correctCount}/${totalQuestions}`;
 				document.getElementById("headerAccuracy").textContent = `${acc}%`;
-				document.getElementById(
-					"sidebarScore"
-				).textContent = `${correctCount}/${totalQuestions}`;
-				document.getElementById("scoreProgress").style.width = `${
-					(correctCount / totalQuestions) * 100
-				}%`;
+				document.getElementById("sidebarScore").textContent =
+					`${correctCount}/${totalQuestions}`;
+				document.getElementById("scoreProgress").style.width =
+					`${(correctCount / totalQuestions) * 100}%`;
 				document.getElementById("totalCorrect").textContent = correctCount;
 				document.getElementById("totalAttempted").textContent = attemptedCount;
 				document.getElementById("accuracyPercent").textContent = `${acc}%`;
 				document.getElementById("progressPercent").textContent = `${prog}%`;
 				document.getElementById("easyScore").textContent = `${easyCorrect}/8`;
-				document.getElementById(
-					"mediumScore"
-				).textContent = `${mediumCorrect}/9`;
+				document.getElementById("mediumScore").textContent =
+					`${mediumCorrect}/9`;
 				document.getElementById("hardScore").textContent = `${hardCorrect}/8`;
 			}
 
@@ -2574,7 +2581,7 @@
 					if (c) {
 						c.classList.remove("answered-correct", "answered-wrong");
 						c.querySelectorAll(".quiz-option").forEach((o) =>
-							o.classList.remove("disabled", "correct", "incorrect")
+							o.classList.remove("disabled", "correct", "incorrect"),
 						);
 						document.getElementById(`feedback${i}`).className = "quiz-feedback";
 					}
@@ -2625,12 +2632,12 @@
 				ctx.fill();
 
 				document.getElementById("l2Output").innerHTML = `Euclidean (L2) Norm
-══════════════════
+â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
 Vector x = [${x1}, ${x2}, ${x3}]
 
-‗x‗₂ = √(${x1}² + ${x2}² + ${x3}²)
-     = √(${x1 * x1} + ${x2 * x2} + ${x3 * x3})
-     = √${x1 * x1 + x2 * x2 + x3 * x3}
+â€—xâ€—â‚‚ = âˆš(${x1}Â² + ${x2}Â² + ${x3}Â²)
+     = âˆš(${x1 * x1} + ${x2 * x2} + ${x3 * x3})
+     = âˆš${x1 * x1 + x2 * x2 + x3 * x3}
      = ${norm.toFixed(4)}
 
 The Euclidean norm measures the
@@ -2688,14 +2695,14 @@ The Euclidean norm measures the
 				ctx.fill();
 
 				document.getElementById("l1Output").innerHTML = `Manhattan (L1) Norm
-═══════════════════
+â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
 Vector x = [${x1}, ${x2}]
 
-‗x‗₁ = |${x1}| + |${x2}|
+â€—x-â‚ = |${x1}| + |${x2}|
      = ${Math.abs(x1)} + ${Math.abs(x2)}
      = ${l1.toFixed(4)}
 
-Compare to L2: ‗x‗₂ = ${l2.toFixed(4)}
+Compare to L2: â€—xâ€—â‚‚ = ${l2.toFixed(4)}
 
 Orange dashed: Manhattan path
 Blue solid: Euclidean path`;
@@ -2745,25 +2752,24 @@ Blue solid: Euclidean path`;
 					ctx.stroke();
 				}
 
-				// L∞ ball (square)
+				// Lâˆž ball (square)
 				if (type === "all" || type === "linf") {
 					ctx.strokeStyle = "#7c3aed";
 					ctx.lineWidth = 2;
 					ctx.strokeRect(cx - scale, cy - scale, scale * 2, scale * 2);
 				}
 
-				document.getElementById(
-					"unitBallOutput"
-				).innerHTML = `Unit Balls Comparison
-════════════════════
-Orange diamond: L1 ball {x: ‗x‗₁ ≤ 1}
-Blue circle: L2 ball {x: ‗x‗₂ ≤ 1}
-Purple square: L∞ ball {x: ‗x‗∞ ≤ 1}
+				document.getElementById("unitBallOutput").innerHTML =
+					`Unit Balls Comparison
+â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
+Orange diamond: L1 ball {x: â€—x-â‚ â‰¤ 1}
+Blue circle: L2 ball {x: â€—xâ€—â‚‚ â‰¤ 1}
+Purple square: Lâˆž ball {x: â€—xâ€—âˆž â‰¤ 1}
 
 Key insight:
-• L1 promotes sparse solutions (corners)
-• L2 is rotation-invariant (circular)
-• L∞ bounds max component`;
+â€¢ L1 promotes sparse solutions (corners)
+â€¢ L2 is rotation-invariant (circular)
+â€¢ Lâˆž bounds max component`;
 			}
 
 			// Lab 4: Inner Product
@@ -2774,21 +2780,20 @@ Key insight:
 				const normX = Math.sqrt(x.reduce((sum, xi) => sum + xi * xi, 0));
 				const normY = Math.sqrt(y.reduce((sum, yi) => sum + yi * yi, 0));
 
-				document.getElementById(
-					"ipOutput"
-				).innerHTML = `Inner Product Computation
-═════════════════════════
+				document.getElementById("ipOutput").innerHTML =
+					`Inner Product Computation
+â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
 x = [${x.join(", ")}]
 y = [${y.join(", ")}]
 
-⟨x, y⟩ = ${x.map((xi, i) => `${xi}×${y[i]}`).join(" + ")}
+âŸ¨x, yâŸ© = ${x.map((xi, i) => `${xi}×${y[i]}`).join(" + ")}
        = ${ip}
 
 Verification of properties:
-• ‗x‗ = ${normX.toFixed(4)}
-• ‗y‗ = ${normY.toFixed(4)}
-• Cauchy-Schwarz: |⟨x,y⟩| ≤ ‗x‗·‖y‗
-  ${Math.abs(ip).toFixed(4)} ≤ ${(normX * normY).toFixed(4)} ✓`;
+â€¢ â€—xâ€— = ${normX.toFixed(4)}
+â€¢ â€—yâ€— = ${normY.toFixed(4)}
+â€¢ Cauchy-Schwarz: |âŸ¨x,yâŸ©| â‰¤ â€—xâ€—Â·â€–yâ€—
+  ${Math.abs(ip).toFixed(4)} â‰¤ ${(normX * normY).toFixed(4)} âœ“`;
 			}
 
 			// Lab 5: Dot Product
@@ -2841,11 +2846,11 @@ Verification of properties:
 				ctx.fill();
 
 				document.getElementById("dpOutput").innerHTML = `Dot Product
-═══════════
+â•â•â•â•â•â•â•â•â•â•â•
 x = [${x1}, ${x2}] (blue)
 y = [${y1}, ${y2}] (orange)
 
-x · y = x₁y₁ + x₂y₂
+x Â· y = xâ‚yâ‚ + xâ‚‚yâ‚‚
       = ${x1}×${y1} + ${x2}×${y2}
       = ${x1 * y1} + ${x2 * y2}
       = ${dp}
@@ -2853,10 +2858,10 @@ x · y = x₁y₁ + x₂y₂
 Interpretation:
 ${
 	dp > 0
-		? "• Positive: vectors point roughly same direction"
+		? "â€¢ Positive: vectors point roughly same direction"
 		: dp < 0
-		? "• Negative: vectors point roughly opposite"
-		: "• Zero: vectors are orthogonal"
+			? "â€¢ Negative: vectors point roughly opposite"
+			: "â€¢ Zero: vectors are orthogonal"
 }`;
 			}
 
@@ -2919,20 +2924,19 @@ ${
 				ctx.lineTo(cx + y[0] * scale, cy - y[1] * scale);
 				ctx.stroke();
 
-				document.getElementById(
-					"angleOutput"
-				).innerHTML = `Angle Between Vectors
-═════════════════════
+				document.getElementById("angleOutput").innerHTML =
+					`Angle Between Vectors
+â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
 x = [${x.join(", ")}] (blue)
 y = [${y.join(", ")}] (orange)
 
-cos(ω) = ⟨x,y⟩ / (‗x‗·‖y‗)
+cos(Ï‰) = âŸ¨x,yâŸ© / (â€—xâ€—Â·â€–yâ€—)
        = ${dp.toFixed(4)} / (${normX.toFixed(4)} × ${normY.toFixed(4)})
        = ${cosAngle.toFixed(4)}
 
-ω = arccos(${cosAngle.toFixed(4)})
+Ï‰ = arccos(${cosAngle.toFixed(4)})
   = ${angleRad.toFixed(4)} radians
-  = ${angleDeg.toFixed(2)}°`;
+  = ${angleDeg.toFixed(2)}Â°`;
 			}
 
 			// Lab 7: Orthogonality
@@ -2988,17 +2992,17 @@ cos(ω) = ⟨x,y⟩ / (‗x‗·‖y‗)
 				ctx.stroke();
 
 				document.getElementById("orthOutput").innerHTML = `Orthogonality Check
-═══════════════════
+â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
 x = [${x.join(", ")}]
 y = [${y.join(", ")}]
 
-⟨x, y⟩ = ${dp.toFixed(6)}
+âŸ¨x, yâŸ© = ${dp.toFixed(6)}
 
-Result: ${isOrth ? "✅ ORTHOGONAL (⟨x,y⟩ ≈ 0)" : "❌ NOT ORTHOGONAL"}
+Result: ${isOrth ? "âœ… ORTHOGONAL (âŸ¨x,yâŸ© â‰ˆ 0)" : "âŒ NOT ORTHOGONAL"}
 
 ${
 	isOrth
-		? "The vectors are perpendicular.\nGreen square shows 90° angle."
+		? "The vectors are perpendicular.\nGreen square shows 90Â° angle."
 		: "The vectors are not perpendicular."
 }`;
 			}
@@ -3066,13 +3070,13 @@ ${
 				ctx.setLineDash([]);
 
 				document.getElementById("projOutput").innerHTML = `Vector Projection
-═════════════════
+â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
 v = [${v.join(", ")}] (blue)
 u = [${u.join(", ")}] (direction)
 
-proj_u(v) = (⟨v,u⟩ / ⟨u,u⟩) · u
-          = (${vDotU} / ${uDotU}) · [${u.join(", ")}]
-          = ${scalar.toFixed(4)} · [${u.join(", ")}]
+proj_u(v) = (âŸ¨v,uâŸ© / âŸ¨u,uâŸ©) Â· u
+          = (${vDotU} / ${uDotU}) Â· [${u.join(", ")}]
+          = ${scalar.toFixed(4)} Â· [${u.join(", ")}]
           = [${proj[0].toFixed(4)}, ${proj[1].toFixed(4)}] (green)
 
 Residual = v - proj_u(v) (orange dashed)
@@ -3097,18 +3101,17 @@ Residual = v - proj_u(v) (orange dashed)
 				// Project onto span{b1, b2} - simplified for xy-plane case
 				const proj = [p[0], p[1], 0]; // Assuming b1=[1,0,0], b2=[0,1,0]
 
-				document.getElementById(
-					"subspaceProjOutput"
-				).innerHTML = `Subspace Projection
-═══════════════════
+				document.getElementById("subspaceProjOutput").innerHTML =
+					`Subspace Projection
+â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
 Point p = [${p.join(", ")}]
-Basis b₁ = [${b1.join(", ")}]
-Basis b₂ = [${b2.join(", ")}]
+Basis bâ‚ = [${b1.join(", ")}]
+Basis bâ‚‚ = [${b2.join(", ")}]
 
-Projection matrix: P = A(AᵀA)⁻¹Aᵀ
-where A = [b₁ | b₂]
+Projection matrix: P = A(Aáµ€A)â»Â¹Aáµ€
+where A = [bâ‚ | bâ‚‚]
 
-For standard xy-plane (b₁=[1,0,0], b₂=[0,1,0]):
+For standard xy-plane (bâ‚=[1,0,0], bâ‚‚=[0,1,0]):
 proj = [${proj.join(", ")}]
 
 The projection is the closest point
@@ -3129,19 +3132,18 @@ in the subspace to the original point.`;
 				const isNorm2 = Math.abs(norm2 - 1) < 0.0001;
 				const isONB = isOrtho && isNorm1 && isNorm2;
 
-				document.getElementById(
-					"onbOutput"
-				).innerHTML = `Orthonormal Basis Check
-═══════════════════════
-b₁ = [${b1.join(", ")}]
-b₂ = [${b2.join(", ")}]
+				document.getElementById("onbOutput").innerHTML =
+					`Orthonormal Basis Check
+â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
+bâ‚ = [${b1.join(", ")}]
+bâ‚‚ = [${b2.join(", ")}]
 
 Checks:
-• ‗b₁‗ = ${norm1.toFixed(4)} ${isNorm1 ? "= 1 ✓" : "≠ 1 ✗"}
-• ‗b₂‗ = ${norm2.toFixed(4)} ${isNorm2 ? "= 1 ✓" : "≠ 1 ✗"}
-• ⟨b₁,b₂⟩ = ${dp.toFixed(4)} ${isOrtho ? "= 0 ✓" : "≠ 0 ✗"}
+â€¢ â€—bâ‚- = ${norm1.toFixed(4)} ${isNorm1 ? "= 1 âœ“" : "â‰  1 âœ—"}
+â€¢ â€—bâ‚‚â€— = ${norm2.toFixed(4)} ${isNorm2 ? "= 1 âœ“" : "â‰  1 âœ—"}
+â€¢ âŸ¨bâ‚,bâ‚‚âŸ© = ${dp.toFixed(4)} ${isOrtho ? "= 0 âœ“" : "â‰  0 âœ—"}
 
-Result: ${isONB ? "✅ ORTHONORMAL BASIS" : "❌ NOT ORTHONORMAL"}`;
+Result: ${isONB ? "âœ… ORTHONORMAL BASIS" : "âŒ NOT ORTHONORMAL"}`;
 			}
 
 			// Lab 11: Gram-Schmidt
@@ -3212,21 +3214,21 @@ Result: ${isONB ? "✅ ORTHONORMAL BASIS" : "❌ NOT ORTHONORMAL"}`;
 				ctx.stroke();
 
 				document.getElementById("gsOutput").innerHTML = `Gram-Schmidt Process
-════════════════════
+â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
 Input:
-v₁ = [${v1.join(", ")}] (gray dashed)
-v₂ = [${v2.join(", ")}] (gray dashed)
+vâ‚ = [${v1.join(", ")}] (gray dashed)
+vâ‚‚ = [${v2.join(", ")}] (gray dashed)
 
-Step 1: e₁ = v₁/‗v₁‗
-        e₁ = [${e1[0].toFixed(4)}, ${e1[1].toFixed(4)}] (blue)
+Step 1: eâ‚ = vâ‚/â€—vâ‚-
+        eâ‚ = [${e1[0].toFixed(4)}, ${e1[1].toFixed(4)}] (blue)
 
-Step 2: u₂ = v₂ - ⟨v₂,e₁⟩e₁
-        ⟨v₂,e₁⟩ = ${v2e1.toFixed(4)}
-        u₂ = [${u2[0].toFixed(4)}, ${u2[1].toFixed(4)}]
-        e₂ = u₂/‗u₂‗
-        e₂ = [${e2[0].toFixed(4)}, ${e2[1].toFixed(4)}] (orange)
+Step 2: uâ‚‚ = vâ‚‚ - âŸ¨vâ‚‚,eâ‚âŸ©eâ‚
+        âŸ¨vâ‚‚,eâ‚âŸ© = ${v2e1.toFixed(4)}
+        uâ‚‚ = [${u2[0].toFixed(4)}, ${u2[1].toFixed(4)}]
+        eâ‚‚ = uâ‚‚/â€—uâ‚‚â€—
+        eâ‚‚ = [${e2[0].toFixed(4)}, ${e2[1].toFixed(4)}] (orange)
 
-Verify: ⟨e₁,e₂⟩ = ${(e1[0] * e2[0] + e1[1] * e2[1]).toFixed(6)} ≈ 0 ✓`;
+Verify: âŸ¨eâ‚,eâ‚‚âŸ© = ${(e1[0] * e2[0] + e1[1] * e2[1]).toFixed(6)} â‰ˆ 0 âœ“`;
 			}
 
 			// Lab 12: Distances
@@ -3293,20 +3295,20 @@ Verify: ⟨e₁,e₂⟩ = ${(e1[0] * e2[0] + e1[1] * e2[1]).toFixed(6)} ≈ 0 �
 				ctx.setLineDash([]);
 
 				document.getElementById("distOutput").innerHTML = `Distance Metrics
-════════════════
+â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
 x = [${x.join(", ")}] (blue point)
 y = [${y.join(", ")}] (orange point)
 
-Euclidean (L2): d₂ = ${l2.toFixed(4)}
+Euclidean (L2): dâ‚‚ = ${l2.toFixed(4)}
   (blue line - shortest path)
 
-Manhattan (L1): d₁ = ${l1.toFixed(4)}
+Manhattan (L1): dâ‚ = ${l1.toFixed(4)}
   (orange dashed - axis-aligned path)
 
-Chebyshev (L∞): d∞ = ${linf.toFixed(4)}
+Chebyshev (Lâˆž): dâˆž = ${linf.toFixed(4)}
   (max component difference)
 
-Always: d∞ ≤ d₂ ≤ d₁`;
+Always: dâˆž â‰¤ dâ‚‚ â‰¤ dâ‚`;
 			}
 
 			// Lab 13: Cosine Similarity
@@ -3320,25 +3322,25 @@ Always: d∞ ≤ d₂ ≤ d₁`;
 				const cosSim = dp / (normX * normY);
 
 				document.getElementById("cosOutput").innerHTML = `Cosine Similarity
-═════════════════
+â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
 x = [${x.join(", ")}]
 y = [${y.join(", ")}]
 
-cos_sim(x, y) = ⟨x,y⟩ / (‗x‗·‖y‗)
+cos_sim(x, y) = âŸ¨x,yâŸ© / (â€—xâ€—Â·â€–yâ€—)
               = ${dp.toFixed(4)} / (${normX.toFixed(4)} × ${normY.toFixed(4)})
               = ${cosSim.toFixed(6)}
 
 Interpretation:
 ${
 	cosSim > 0.9
-		? "• Very similar (cos > 0.9)"
+		? "â€¢ Very similar (cos > 0.9)"
 		: cosSim > 0.5
-		? "• Moderately similar (0.5 < cos < 0.9)"
-		: cosSim > 0
-		? "• Weakly similar (0 < cos < 0.5)"
-		: cosSim > -0.5
-		? "• Weakly dissimilar (-0.5 < cos < 0)"
-		: "• Strongly dissimilar (cos < -0.5)"
+			? "â€¢ Moderately similar (0.5 < cos < 0.9)"
+			: cosSim > 0
+				? "â€¢ Weakly similar (0 < cos < 0.5)"
+				: cosSim > -0.5
+					? "â€¢ Weakly dissimilar (-0.5 < cos < 0)"
+					: "â€¢ Strongly dissimilar (cos < -0.5)"
 }
 
 Note: Cosine similarity is invariant to scaling!`;
@@ -3397,30 +3399,24 @@ Note: Cosine similarity is invariant to scaling!`;
 					30,
 					-Math.atan2(v[1], v[0]),
 					-Math.atan2(rotated[1], rotated[0]),
-					angleDeg < 0
+					angleDeg < 0,
 				);
 				ctx.stroke();
 
 				document.getElementById("rotOutput").innerHTML = `2D Rotation
-═══════════
+â•â•â•â•â•â•â•â•â•â•â•
 v = [${v.join(", ")}] (blue)
-θ = ${angleDeg}°
+Î¸ = ${angleDeg}Â°
 
-Rotation matrix R(θ):
-[cos(${angleDeg}°)  -sin(${angleDeg}°)]   [${cos.toFixed(4)}  ${(-sin).toFixed(
-					4
-				)}]
-[sin(${angleDeg}°)   cos(${angleDeg}°)] = [${sin.toFixed(4)}   ${cos.toFixed(
-					4
-				)}]
+Rotation matrix R(Î¸):
+[cos(${angleDeg}Â°)  -sin(${angleDeg}Â°)]   [${cos.toFixed(4)}  ${(-sin).toFixed(4)}]
+[sin(${angleDeg}Â°)   cos(${angleDeg}Â°)] = [${sin.toFixed(4)}   ${cos.toFixed(4)}]
 
-R(θ)·v = [${rotated[0].toFixed(4)}, ${rotated[1].toFixed(4)}] (orange)
+R(Î¸)Â·v = [${rotated[0].toFixed(4)}, ${rotated[1].toFixed(4)}] (orange)
 
-Verify ‗v‗ = ${Math.sqrt(v[0] * v[0] + v[1] * v[1]).toFixed(4)}
-       ‗Rv‗ = ${Math.sqrt(
-					rotated[0] * rotated[0] + rotated[1] * rotated[1]
-				).toFixed(4)}
-       (length preserved ✓)`;
+Verify â€—vâ€— = ${Math.sqrt(v[0] * v[0] + v[1] * v[1]).toFixed(4)}
+       â€—Rvâ€— = ${Math.sqrt(rotated[0] * rotated[0] + rotated[1] * rotated[1]).toFixed(4)}
+       (length preserved âœ“)`;
 			}
 
 			// Lab 15: Reflection
@@ -3477,20 +3473,18 @@ Verify ‗v‗ = ${Math.sqrt(v[0] * v[0] + v[1] * v[1]).toFixed(4)}
 				ctx.stroke();
 
 				document.getElementById("refOutput").innerHTML = `Reflection Across Line
-══════════════════════
+â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
 v = [${v.join(", ")}] (blue)
 Line direction u = [${u.join(", ")}] (purple dashed)
 
-ref_u(v) = 2·proj_u(v) - v
-         = 2·(⟨v,u⟩/⟨u,u⟩)·u - v
-         = 2·(${vDotU}/${uDotU})·[${u.join(",")}] - [${v.join(",")}]
+ref_u(v) = 2Â·proj_u(v) - v
+         = 2Â·(âŸ¨v,uâŸ©/âŸ¨u,uâŸ©)Â·u - v
+         = 2Â·(${vDotU}/${uDotU})Â·[${u.join(",")}] - [${v.join(",")}]
          = [${reflected[0].toFixed(4)}, ${reflected[1].toFixed(4)}] (orange)
 
-Verify ‗v‗ = ${Math.sqrt(v[0] * v[0] + v[1] * v[1]).toFixed(4)}
-       ‗ref‗ = ${Math.sqrt(
-					reflected[0] * reflected[0] + reflected[1] * reflected[1]
-				).toFixed(4)}
-       (length preserved ✓)`;
+Verify â€—vâ€— = ${Math.sqrt(v[0] * v[0] + v[1] * v[1]).toFixed(4)}
+       â€—refâ€— = ${Math.sqrt(reflected[0] * reflected[0] + reflected[1] * reflected[1]).toFixed(4)}
+       (length preserved âœ“)`;
 			}
 
 			// Initialize

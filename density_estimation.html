@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 	<head>
 		<meta charset="UTF-8" />
@@ -268,7 +268,9 @@
 				border: 1px solid var(--border-color);
 				padding: 1.25rem;
 				border-radius: 12px;
-				transition: transform 0.2s, box-shadow 0.2s;
+				transition:
+					transform 0.2s,
+					box-shadow 0.2s;
 			}
 
 			.concept-card:hover {
@@ -409,7 +411,7 @@
 			}
 
 			.ml-box .label::before {
-				content: "🤓";
+				content: "📝¤“";
 			}
 
 			.quanskill-box {
@@ -475,7 +477,7 @@
 			}
 
 			.example-box .label::before {
-				content: "▸";
+				content: "â–¸";
 				color: var(--quanskill-orange);
 			}
 
@@ -528,7 +530,7 @@
 			}
 
 			.realworld-box .label::before {
-				content: "🎁";
+				content: "🎯";
 			}
 
 			code {
@@ -684,7 +686,7 @@
 			}
 
 			.demo-header::before {
-				content: "⚡";
+				content: "âš¡";
 			}
 
 			.demo-controls {
@@ -916,12 +918,12 @@
 	</head>
 	<body>
 		<!-- Floating Back to Main Page Button -->
-		<a href="index.html" class="floating-back-btn">← Main Page</a>
+		<a href="index.html" class="floating-back-btn">← Main Page</a>
 
 		<header class="header">
 			<div class="header-content">
 				<!-- <a href="index.html" class="header-logo"><img src="Logo_for_Print.jpg" alt="Quanskill" style="height: 40px; border-radius: 8px;"></a> -->
-				<button class="mobile-menu-btn" onclick="toggleSidebar()">☰</button>
+				<button class="mobile-menu-btn" onclick="toggleSidebar()">â˜°</button>
 			</div>
 		</header>
 
@@ -937,7 +939,7 @@
 						alt="Quanskill"
 						style="height: 36px; border-radius: 6px"
 				/></a>
-				<div class="chapter-title">Chapter 11 · Density Estimation</div>
+				<div class="chapter-title">Chapter 11 Â· Density Estimation</div>
 			</div>
 
 			<div class="nav-section">
@@ -972,7 +974,7 @@
 							parameter optimization.
 						</p>
 						<div class="hero-quote">
-							"A mixture model says: your data isn't one thing — it's a blend of
+							"A mixture model says: your data isn't one thing - it's a blend of
 							several underlying patterns, each waiting to be discovered."
 						</div>
 					</div>
@@ -991,7 +993,7 @@
 						<p>Each Gaussian captures a cluster in data</p>
 					</div>
 					<div class="concept-card">
-						<div class="icon">🔄</div>
+						<div class="icon">🔍„</div>
 						<h5>EM Algorithm</h5>
 						<p>Iteratively optimize parameters</p>
 					</div>
@@ -1001,12 +1003,12 @@
 						<p>Soft cluster assignments</p>
 					</div>
 					<div class="concept-card">
-						<div class="icon">🔮</div>
+						<div class="icon">🔍®</div>
 						<h5>Latent Variables</h5>
 						<p>Hidden cluster memberships</p>
 					</div>
 					<div class="concept-card">
-						<div class="icon">⚗</div>
+						<div class="icon">âš—</div>
 						<h5>Mixture Weights</h5>
 						<p>Prior probability of each component</p>
 					</div>
@@ -1020,7 +1022,7 @@
 					</div>
 
 					<p>
-						A single Gaussian distribution cannot capture multimodal data — data
+						A single Gaussian distribution cannot capture multimodal data - data
 						with multiple "clusters" or peaks.
 						<strong>Mixture models</strong> solve this by combining multiple
 						simple distributions.
@@ -1079,7 +1081,7 @@
 									step="0.5" />
 							</div>
 							<div class="control-group">
-								<label>Weight π₁: <span id="pi1Val">0.5</span></label>
+								<label>Weight Ï€â‚: <span id="pi1Val">0.5</span></label>
 								<input
 									type="range"
 									id="pi1Slider"
@@ -1091,11 +1093,11 @@
 						<canvas id="gmmCanvas" class="demo-canvas"></canvas>
 						<div class="demo-results">
 							<div class="result-item">
-								<div class="value" id="gmmMean">—</div>
+								<div class="value" id="gmmMean">-</div>
 								<div class="label">Mixture Mean</div>
 							</div>
 							<div class="result-item">
-								<div class="value" id="gmmVar">—</div>
+								<div class="value" id="gmmVar">-</div>
 								<div class="label">Mixture Variance</div>
 							</div>
 						</div>
@@ -1109,8 +1111,8 @@
 							can model:
 						</p>
 						<ul>
-							<li>Component 1: Children's heights (μ ≈ 120cm)</li>
-							<li>Component 2: Adults' heights (μ ≈ 170cm)</li>
+							<li>Component 1: Children's heights (Î¼ â‰ˆ 120cm)</li>
+							<li>Component 2: Adults' heights (Î¼ â‰ˆ 170cm)</li>
 						</ul>
 						<p>The mixture weights reflect the proportion of each group.</p>
 					</div>
@@ -1274,11 +1276,11 @@
 							</li>
 							<li>
 								<strong>M-step:</strong> Update parameters using current
-								responsibilities: <br />• $\boldsymbol{\mu}_k \leftarrow
-								\frac{1}{N_k}\sum_n r_{nk}\mathbf{x}_n$ <br />•
+								responsibilities: <br />â€¢ $\boldsymbol{\mu}_k \leftarrow
+								\frac{1}{N_k}\sum_n r_{nk}\mathbf{x}_n$ <br />â€¢
 								$\boldsymbol{\Sigma}_k \leftarrow \frac{1}{N_k}\sum_n
 								r_{nk}(\mathbf{x}_n - \boldsymbol{\mu}_k)(\mathbf{x}_n -
-								\boldsymbol{\mu}_k)^\top$ <br />• $\pi_k \leftarrow N_k / N$
+								\boldsymbol{\mu}_k)^\top$ <br />â€¢ $\pi_k \leftarrow N_k / N$
 							</li>
 							<li>
 								<strong>Evaluate:</strong> Compute log-likelihood
@@ -1312,7 +1314,7 @@
 								<div class="label">EM Iteration</div>
 							</div>
 							<div class="result-item">
-								<div class="value" id="logLik">—</div>
+								<div class="value" id="logLik">-</div>
 								<div class="label">Log-Likelihood</div>
 							</div>
 							<div class="result-item">
@@ -1332,7 +1334,7 @@
 							<strong>Convergence:</strong> Guaranteed to reach a local optimum
 						</li>
 						<li>
-							<strong>Initialization sensitive:</strong> Different starts →
+							<strong>Initialization sensitive:</strong> Different starts ←’
 							different solutions
 						</li>
 						<li><strong>No learning rate:</strong> Unlike gradient descent</li>
@@ -1535,22 +1537,22 @@
 					<h3>Core Concepts Recap</h3>
 					<div class="key-concepts">
 						<div class="concept-card">
-							<div class="icon">1⃣</div>
+							<div class="icon">1âƒ£</div>
 							<h5>Mixture Models</h5>
 							<p>Convex combination of base distributions</p>
 						</div>
 						<div class="concept-card">
-							<div class="icon">2⃣</div>
+							<div class="icon">2âƒ£</div>
 							<h5>Responsibilities</h5>
 							<p>Soft cluster assignments (posterior probabilities)</p>
 						</div>
 						<div class="concept-card">
-							<div class="icon">3⃣</div>
+							<div class="icon">3âƒ£</div>
 							<h5>EM Algorithm</h5>
 							<p>E-step (responsibilities) + M-step (parameters)</p>
 						</div>
 						<div class="concept-card">
-							<div class="icon">4⃣</div>
+							<div class="icon">4âƒ£</div>
 							<h5>Latent Variables</h5>
 							<p>Hidden cluster membership indicators</p>
 						</div>
@@ -1737,9 +1739,9 @@
 				// Legend
 				gmmCtx.font = "12px Space Grotesk, sans-serif";
 				gmmCtx.fillStyle = "#ff9000";
-				gmmCtx.fillText("π₁·N(μ₁)", width - 100, 25);
+				gmmCtx.fillText("Ï€â‚Ã‚Â·N(Î¼â‚)", width - 100, 25);
 				gmmCtx.fillStyle = "#10b981";
-				gmmCtx.fillText("π₂·N(μ₂)", width - 100, 45);
+				gmmCtx.fillText("Ï€â‚‚Â·N(Î¼â‚‚)", width - 100, 45);
 				gmmCtx.fillStyle = "#0b2fa0";
 				gmmCtx.fillText("GMM", width - 100, 65);
 
@@ -1947,7 +1949,7 @@
 						param.sigma * scale * 2,
 						0,
 						0,
-						Math.PI * 2
+						Math.PI * 2,
 					);
 					emCtx.stroke();
 
@@ -1959,7 +1961,7 @@
 						scaleY(param.mu[1]),
 						8,
 						0,
-						Math.PI * 2
+						Math.PI * 2,
 					);
 					emCtx.fill();
 
@@ -1979,7 +1981,7 @@
 				const converged =
 					Math.abs(logLik - prevLogLik) < 0.1 && emIteration > 0;
 				document.getElementById("converged").textContent = converged
-					? "Yes ✓"
+					? "Yes âœ“"
 					: "No";
 				document.getElementById("converged").style.color = converged
 					? "#10b981"

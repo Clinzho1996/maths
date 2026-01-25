@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 	<head>
 		<meta charset="UTF-8" />
@@ -377,7 +377,7 @@
 				gap: 0.5rem;
 			}
 			.workflow-box .label::before {
-				content: "🔄";
+				content: "🔍„";
 			}
 			.eda-box {
 				background: linear-gradient(
@@ -402,7 +402,7 @@
 				gap: 0.5rem;
 			}
 			.eda-box .label::before {
-				content: "🔍";
+				content: '🐍"';
 			}
 			.model-box {
 				background: linear-gradient(
@@ -427,7 +427,7 @@
 				gap: 0.5rem;
 			}
 			.model-box .label::before {
-				content: "🤖";
+				content: "📝¤–";
 			}
 			.deploy-box {
 				background: linear-gradient(
@@ -648,7 +648,7 @@
 				gap: 0.5rem;
 			}
 			.summary-item::before {
-				content: "✓";
+				content: "🐍";
 				background: var(--quanskill-orange);
 				width: 20px;
 				height: 20px;
@@ -849,11 +849,11 @@
 		</style>
 	</head>
 	<body>
-		<a href="index.html" class="floating-back-btn">← Main Page</a>
+		<a href="index.html" class="floating-back-btn">← Main Page</a>
 		<header class="header">
 			<div class="header-content">
 				<!-- <a href="index.html" class="header-logo"><img src="Logo_for_Print.jpg" alt="Quanskill" style="height: 40px; border-radius: 8px;"></a> -->
-				<button class="mobile-menu-btn" onclick="toggleSidebar()">☰</button>
+				<button class="mobile-menu-btn" onclick="toggleSidebar()">â˜°</button>
 			</div>
 		</header>
 		<div class="progress-bar">
@@ -867,7 +867,7 @@
 						alt="Quanskill"
 						style="height: 36px; border-radius: 6px"
 				/></a>
-				<div class="chapter-title">Chapter 11 · Capstone</div>
+				<div class="chapter-title">Chapter 11 Â· Capstone</div>
 			</div>
 			<div class="nav-section">
 				<div class="nav-section-title">Overview</div>
@@ -899,7 +899,7 @@
 				<!-- Hero Section -->
 				<section class="hero" id="intro">
 					<div class="hero-content">
-						<span class="hero-badge">Chapter 11 · Capstone</span>
+						<span class="hero-badge">Chapter 11 Â· Capstone</span>
 						<h1>Real-World Data Science Project</h1>
 						<p class="hero-subtitle">
 							Apply everything you've learned! Build a complete data science
@@ -907,7 +907,7 @@
 						</p>
 						<div class="hero-quote">
 							"The 80/20 rule: Data scientists spend 80% of their time preparing
-							data. Master this, and you master data science."<br /><br />—
+							data. Master this, and you master data science."<br /><br />-
 							<strong>Industry Wisdom</strong>
 						</div>
 					</div>
@@ -916,22 +916,22 @@
 				<!-- Key Concepts -->
 				<div class="key-concepts">
 					<div class="concept-card workflow">
-						<div class="icon">🔄</div>
+						<div class="icon">🔍„</div>
 						<h5>Workflow</h5>
 						<p>End-to-end pipeline</p>
 					</div>
 					<div class="concept-card eda">
-						<div class="icon">🔍</div>
+						<div class="icon">🐍"</div>
 						<h5>EDA</h5>
 						<p>Explore & understand</p>
 					</div>
 					<div class="concept-card eda">
-						<div class="icon">🧹</div>
+						<div class="icon">📝§¹</div>
 						<h5>Cleaning</h5>
 						<p>Handle messy data</p>
 					</div>
 					<div class="concept-card model">
-						<div class="icon">🤖</div>
+						<div class="icon">📝¤–</div>
 						<h5>Modeling</h5>
 						<p>scikit-learn basics</p>
 					</div>
@@ -1125,7 +1125,7 @@ feature_cols = [<span class="code-string">'tenure'</span>, <span class="code-str
 X = df_encoded[feature_cols]
 y = df_encoded[<span class="code-string">'Churn_binary'</span>]</code></pre>
 					<div class="note-box">
-						<span class="label">💡 Feature Engineering Tips</span>
+						<span class="label">📝’¡ Feature Engineering Tips</span>
 						<p>
 							Create features that capture business logic: tenure groups, total
 							services count, charge ratios. Domain knowledge is invaluable!
@@ -1169,8 +1169,8 @@ rf_model.<span class="code-function">fit</span>(X_train_scaled, y_train)</code><
 					<div class="model-box">
 						<span class="label">Scikit-Learn Pattern</span>
 						<p>
-							<strong>1. Import</strong> → <strong>2. Instantiate</strong> →
-							<strong>3. Fit</strong> → <strong>4. Predict</strong><br />
+							<strong>1. Import</strong> ←’ <strong>2. Instantiate</strong> ←’
+							<strong>3. Fit</strong> ←’ <strong>4. Predict</strong><br />
 							This pattern works for almost every model in scikit-learn!
 						</p>
 					</div>
@@ -1272,15 +1272,15 @@ plt.<span class="code-function">savefig</span>(<span class="code-string">'featur
 						<span class="label">Key Business Insights</span>
 						<ul style="margin-bottom: 0">
 							<li>
-								<strong>Contract type</strong> is the strongest predictor —
+								<strong>Contract type</strong> is the strongest predictor -
 								month-to-month customers churn most
 							</li>
 							<li>
-								<strong>Tenure</strong> matters — new customers are at highest
+								<strong>Tenure</strong> matters - new customers are at highest
 								risk
 							</li>
 							<li>
-								<strong>Monthly charges</strong> — higher charges correlate with
+								<strong>Monthly charges</strong> - higher charges correlate with
 								higher churn
 							</li>
 							<li>
@@ -1303,7 +1303,7 @@ plt.<span class="code-function">savefig</span>(<span class="code-string">'featur
 					</div>
 
 					<div class="congrats-banner">
-						<h3>🏆 Congratulations!</h3>
+						<h3>🐍â€  Congratulations!</h3>
 						<p>
 							You've completed the Python for Data Science course. You now have
 							the skills to tackle real-world data problems!
@@ -1401,7 +1401,7 @@ plt.<span class="code-function">savefig</span>(<span class="code-string">'featur
 				const options = element.parentElement.querySelectorAll(".quiz-option");
 				const feedbacks =
 					element.parentElement.parentElement.querySelectorAll(
-						".quiz-feedback"
+						".quiz-feedback",
 					);
 				options.forEach((opt) => opt.classList.remove("correct", "incorrect"));
 				feedbacks.forEach((fb) => fb.classList.remove("show"));

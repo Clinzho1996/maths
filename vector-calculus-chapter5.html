@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 	<head>
 		<meta charset="UTF-8" />
@@ -203,7 +203,7 @@
 			}
 
 			.hero::after {
-				content: "";
+				content: "âž¡ï¸";
 				position: absolute;
 				bottom: -30%;
 				left: -10%;
@@ -385,7 +385,7 @@
 			}
 
 			.ml-box .label::before {
-				content: "🤓";
+				content: "📝¤“";
 			}
 
 			/* Quanskill Training Box */
@@ -457,7 +457,7 @@
 			}
 
 			.realworld-box .label::before {
-				content: "🎁";
+				content: "🎯";
 			}
 
 			/* Example Boxes */
@@ -483,7 +483,7 @@
 			}
 
 			.example-box .label::before {
-				content: "▸";
+				content: "â–¸";
 				color: var(--quanskill-orange);
 			}
 
@@ -626,7 +626,7 @@
 			}
 
 			.interactive-demo h4::before {
-				content: "⚡";
+				content: "âš¡";
 			}
 
 			.demo-controls {
@@ -674,7 +674,9 @@
 				font-family: "Space Grotesk", sans-serif;
 				font-weight: 600;
 				cursor: pointer;
-				transition: transform 0.2s, box-shadow 0.2s;
+				transition:
+					transform 0.2s,
+					box-shadow 0.2s;
 			}
 
 			.demo-btn:hover {
@@ -724,7 +726,9 @@
 				border: 1px solid var(--border-color);
 				border-radius: 12px;
 				padding: 1.25rem;
-				transition: transform 0.2s, box-shadow 0.2s;
+				transition:
+					transform 0.2s,
+					box-shadow 0.2s;
 			}
 
 			.concept-card:hover {
@@ -822,7 +826,9 @@
 			.section {
 				opacity: 0;
 				transform: translateY(20px);
-				transition: opacity 0.5s ease, transform 0.5s ease;
+				transition:
+					opacity 0.5s ease,
+					transform 0.5s ease;
 			}
 
 			.section.visible {
@@ -909,7 +915,7 @@
 	</head>
 	<body>
 		<!-- Floating Back to Main Page Button -->
-		<a href="index.html" class="floating-back-btn">← Main Page</a>
+		<a href="index.html" class="floating-back-btn">← Main Page</a>
 
 		<!-- Header -->
 		<header class="header">
@@ -918,7 +924,7 @@
                 <a href="index.html"><img src="Logo_for_Print.jpg" alt="Quanskill" style="height: 50px; border-radius: 8px;"></a>
                 <span>Quanskill</span>
             </div> -->
-				<button class="nav-toggle" onclick="toggleSidebar()">☰</button>
+				<button class="nav-toggle" onclick="toggleSidebar()">â˜°</button>
 			</div>
 		</header>
 
@@ -964,7 +970,7 @@
 						<p>
 							Master the mathematics of change and optimization. Gradients are
 							the compass that guides machine learning models toward optimal
-							solutions — this chapter gives you the tools to compute and
+							solutions - this chapter gives you the tools to compute and
 							understand them.
 						</p>
 					</div>
@@ -976,28 +982,28 @@
 						<div class="icon">📈</div>
 						<h5>Derivatives</h5>
 						<p>
-							Measure instantaneous rate of change — the foundation of
+							Measure instantaneous rate of change - the foundation of
 							optimization
 						</p>
 					</div>
 					<div class="concept-card">
-						<div class="icon">🧭</div>
+						<div class="icon">📝§­</div>
 						<h5>Gradients</h5>
 						<p>
-							Point in the direction of steepest ascent — the compass for
+							Point in the direction of steepest ascent - the compass for
 							learning
 						</p>
 					</div>
 					<div class="concept-card">
-						<div class="icon">🔔</div>
+						<div class="icon">🔍”</div>
 						<h5>Chain Rule</h5>
 						<p>
-							Compose derivatives through function layers — powers
+							Compose derivatives through function layers - powers
 							backpropagation
 						</p>
 					</div>
 					<div class="concept-card">
-						<div class="icon">⚡</div>
+						<div class="icon">âš¡</div>
 						<h5>Backpropagation</h5>
 						<p>Efficient gradient computation for neural networks</p>
 					</div>
@@ -1025,7 +1031,7 @@
 						Before tackling multivariate calculus, let's refresh our
 						understanding of derivatives for functions of a single variable. The
 						derivative measures how a function's output changes as its input
-						changes — the instantaneous rate of change.
+						changes - the instantaneous rate of change.
 					</p>
 
 					<div class="ml-box">
@@ -1033,7 +1039,7 @@
 						<p>
 							Even though ML typically involves many variables, understanding
 							univariate derivatives is essential. When we compute gradients,
-							we're essentially computing many partial derivatives — each one is
+							we're essentially computing many partial derivatives - each one is
 							a univariate derivative holding other variables constant. Plus,
 							activation functions like sigmoid, tanh, and ReLU are univariate
 							functions whose derivatives we need constantly!
@@ -1060,20 +1066,20 @@
 					<div class="interactive-demo">
 						<h4>Interactive: Visualize the Derivative</h4>
 						<p style="margin-bottom: 1rem; color: var(--text-secondary)">
-							See how the secant line approaches the tangent as h → 0:
+							See how the secant line approaches the tangent as h ←’ 0:
 						</p>
 						<div class="demo-controls">
 							<div class="demo-input">
 								<label>Function:</label>
 								<select id="derivFunc" onchange="updateDerivativeDemo()">
-									<option value="x2">f(x) = x²</option>
-									<option value="x3">f(x) = x³</option>
+									<option value="x2">f(x) = xÂ²</option>
+									<option value="x3">f(x) = xÂ³</option>
 									<option value="sin">f(x) = sin(x)</option>
-									<option value="exp">f(x) = eˣ</option>
+									<option value="exp">f(x) = eË£</option>
 								</select>
 							</div>
 							<div class="demo-input">
-								<label>Point x₁:</label>
+								<label>Point xâ‚:</label>
 								<input
 									type="number"
 									id="derivX0"
@@ -1140,7 +1146,7 @@
 							<strong>Quotient rule:</strong> \((f/g)' = (f'g - fg')/g^2\)
 						</li>
 						<li>
-							<strong>Chain rule:</strong> \((g \circ f)' = g'(f) \cdot f'\) —
+							<strong>Chain rule:</strong> \((g \circ f)' = g'(f) \cdot f'\) -
 							<em>the most important!</em>
 						</li>
 					</ul>
@@ -1149,7 +1155,7 @@
 					<div class="quiz-box">
 						<div class="label">Quick Check: Derivatives</div>
 						<p class="quiz-question">
-							What is the derivative of f(x) = x³ at x = 2?
+							What is the derivative of f(x) = xÂ³ at x = 2?
 						</p>
 						<div class="quiz-options" id="quiz1">
 							<div
@@ -1195,7 +1201,7 @@
 
 					<p>
 						When functions depend on multiple variables, we compute
-						<strong>partial derivatives</strong> — derivatives with respect to
+						<strong>partial derivatives</strong> - derivatives with respect to
 						one variable while holding all others constant. The collection of
 						all partial derivatives forms the <strong>gradient</strong>.
 					</p>
@@ -1206,7 +1212,7 @@
 							Every ML model with multiple parameters needs gradients for
 							optimization. A neural network with millions of parameters
 							requires partial derivatives with respect to each one. The
-							gradient tells us the direction of steepest ascent — to minimize a
+							gradient tells us the direction of steepest ascent - to minimize a
 							loss, we move in the <em>opposite</em> direction (gradient
 							descent)!
 						</p>
@@ -1235,7 +1241,7 @@
 					<div class="interactive-demo">
 						<h4>Interactive: Gradient as Direction of Steepest Ascent</h4>
 						<p style="margin-bottom: 1rem; color: var(--text-secondary)">
-							Visualize the gradient field for f(x,y) = x² + y²:
+							Visualize the gradient field for f(x,y) = xÂ² + yÂ²:
 						</p>
 						<canvas
 							id="gradientCanvas"
@@ -1266,16 +1272,18 @@
 
 					<div class="chain-rule-diagram">
 						<div class="chain-node input">t</div>
-						<div class="chain-arrow">→</div>
-						<div class="chain-node">x₁(t), x₂(t)</div>
-						<div class="chain-arrow">→</div>
-						<div class="chain-node output">f(x₁, x₂)</div>
+						<div class="chain-arrow">←’</div>
+						<div class="chain-node">xâ‚(t), xâ‚‚(t)</div>
+						<div class="chain-arrow">←’</div>
+						<div class="chain-node output">f(xâ‚, xâ‚‚)</div>
 					</div>
 
 					<!-- Quiz -->
 					<div class="quiz-box">
 						<div class="label">Quick Check: Gradients</div>
-						<p class="quiz-question">For f(x,y) = 3x²y + y³, what is ∂f/∂x?</p>
+						<p class="quiz-question">
+							For f(x,y) = 3xÂ²y + yÂ³, what is âˆ‚f/âˆ‚x?
+						</p>
 						<div class="quiz-options" id="quiz2">
 							<div class="quiz-option" onclick="checkQuiz('quiz2', this, true)">
 								A) 6xy
@@ -1283,17 +1291,17 @@
 							<div
 								class="quiz-option"
 								onclick="checkQuiz('quiz2', this, false)">
-								B) 3x² + 3y²
+								B) 3xÂ² + 3yÂ²
 							</div>
 							<div
 								class="quiz-option"
 								onclick="checkQuiz('quiz2', this, false)">
-								C) 6x + y³
+								C) 6x + yÂ³
 							</div>
 							<div
 								class="quiz-option"
 								onclick="checkQuiz('quiz2', this, false)">
-								D) 3x²y
+								D) 3xÂ²y
 							</div>
 						</div>
 						<div class="quiz-feedback" id="quiz2-feedback"></div>
@@ -1377,7 +1385,7 @@
 					<div class="quiz-box">
 						<div class="label">Quick Check: Jacobians</div>
 						<p class="quiz-question">
-							If f: ℝ³ → ℝ², what are the dimensions of the Jacobian?
+							If f: â„Ã‚Â³ ←’ â„Ã‚Â², what are the dimensions of the Jacobian?
 						</p>
 						<div class="quiz-options" id="quiz3">
 							<div
@@ -1476,7 +1484,7 @@
 							= x_q\).
 						</p>
 						<p>
-							The full gradient is an \(M \times (M \times N)\) tensor — in
+							The full gradient is an \(M \times (M \times N)\) tensor - in
 							practice, we work with this as a vectorized gradient.
 						</p>
 					</div>
@@ -1503,7 +1511,7 @@
 
 					<p>
 						Here are the most frequently used gradient identities in ML.
-						Memorize these — you'll use them constantly!
+						Memorize these - you'll use them constantly!
 					</p>
 
 					<div class="ml-box">
@@ -1696,7 +1704,7 @@
 								><span id="fValue">--</span>
 							</p>
 							<p>
-								<strong>∇f = 2x<sup>T</sup>B = </strong
+								<strong>âˆ‡f = 2x<sup>T</sup>B = </strong
 								><span id="gradValue">--</span>
 							</p>
 						</div>
@@ -1706,7 +1714,7 @@
 					<div class="quiz-box">
 						<div class="label">Quick Check: Gradient Identities</div>
 						<p class="quiz-question">
-							What is ∂(a<sup>T</sup>x)/∂x for a constant vector a?
+							What is âˆ‚(a<sup>T</sup>x)/âˆ‚x for a constant vector a?
 						</p>
 						<div class="quiz-options" id="quiz4">
 							<div
@@ -1751,7 +1759,7 @@
 						<p>
 							Without backpropagation, training neural networks would be
 							computationally infeasible. A network with 1 million parameters
-							needs gradients for all of them — backprop computes all of these
+							needs gradients for all of them - backprop computes all of these
 							in roughly the same time as a single forward pass! This is the key
 							insight that enabled the deep learning revolution.
 						</p>
@@ -1765,14 +1773,14 @@
 
 					<div class="chain-rule-diagram">
 						<div class="chain-node input">x</div>
-						<div class="chain-arrow">→</div>
-						<div class="chain-node">a = x²</div>
-						<div class="chain-arrow">→</div>
+						<div class="chain-arrow">←’</div>
+						<div class="chain-node">a = xÂ²</div>
+						<div class="chain-arrow">←’</div>
 						<div class="chain-node">b = exp(a)</div>
-						<div class="chain-arrow">→</div>
+						<div class="chain-arrow">←’</div>
 						<div class="chain-node">c = a + b</div>
-						<div class="chain-arrow">→</div>
-						<div class="chain-node output">f = √c</div>
+						<div class="chain-arrow">←’</div>
+						<div class="chain-node output">f = âˆšc</div>
 					</div>
 
 					<h3>Forward vs Backward Pass</h3>
@@ -1820,7 +1828,7 @@
 					<div class="interactive-demo">
 						<h4>Interactive: Step Through Backpropagation</h4>
 						<p style="margin-bottom: 1rem; color: var(--text-secondary)">
-							For f(x) = (x² + 1)², compute df/dx at x = 2:
+							For f(x) = (xÂ² + 1)Â², compute df/dx at x = 2:
 						</p>
 						<div class="demo-controls" style="justify-content: center">
 							<button class="demo-btn" onclick="stepBackprop('forward')">
@@ -1838,7 +1846,7 @@
 						<div class="demo-result" id="backpropResult">
 							<div
 								id="backpropSteps"
-								style="font-family: 'JetBrains Mono', monospace">
+								style="font-family: &quot;JetBrains Mono&quot;, monospace">
 								<p>Click "Forward Pass" to start...</p>
 							</div>
 						</div>
@@ -1911,7 +1919,7 @@
 					<div class="ml-box">
 						<div class="label">Why This Matters in ML</div>
 						<p>
-							The Hessian tells us about curvature — important for second-order
+							The Hessian tells us about curvature - important for second-order
 							optimization (Newton's method), understanding loss landscape
 							geometry, and computing uncertainty in Bayesian methods (Laplace
 							approximation). Large eigenvalues of the Hessian indicate sharp
@@ -1944,12 +1952,12 @@
 						<div class="label">Key Properties</div>
 						<ul>
 							<li>
-								<strong>Positive definite Hessian</strong> → local minimum
+								<strong>Positive definite Hessian</strong> ←’ local minimum
 							</li>
 							<li>
-								<strong>Negative definite Hessian</strong> → local maximum
+								<strong>Negative definite Hessian</strong> ←’ local maximum
 							</li>
-							<li><strong>Indefinite Hessian</strong> → saddle point</li>
+							<li><strong>Indefinite Hessian</strong> ←’ saddle point</li>
 							<li>
 								Eigenvalues of H determine the "shape" of the loss landscape
 							</li>
@@ -1960,7 +1968,7 @@
 					<div class="quiz-box">
 						<div class="label">Quick Check: Hessian</div>
 						<p class="quiz-question">
-							For f: ℝ³ → ℝ, what are the dimensions of the Hessian?
+							For f: â„Ã‚Â³ ←’ â„, what are the dimensions of the Hessian?
 						</p>
 						<div class="quiz-options" id="quiz6">
 							<div
@@ -2041,7 +2049,7 @@
 					<div class="interactive-demo">
 						<h4>Interactive: Taylor Approximation</h4>
 						<p style="margin-bottom: 1rem; color: var(--text-secondary)">
-							See how Taylor polynomials approximate sin(x) around x₁ = 0:
+							See how Taylor polynomials approximate sin(x) around xâ‚ = 0:
 						</p>
 						<div class="demo-controls">
 							<div class="demo-input">
@@ -2063,7 +2071,7 @@
 						<div class="demo-result">
 							<p
 								id="taylorFormula"
-								style="font-family: 'JetBrains Mono', monospace"></p>
+								style="font-family: &quot;JetBrains Mono&quot;, monospace"></p>
 							<p style="color: var(--text-secondary)">
 								Higher-order polynomials give better approximations over wider
 								ranges
@@ -2097,7 +2105,7 @@
 					<div class="quiz-box">
 						<div class="label">Quick Check: Taylor Series</div>
 						<p class="quiz-question">
-							First-order Taylor approximation at x₁ gives a:
+							First-order Taylor approximation at xâ‚ gives a:
 						</p>
 						<div class="quiz-options" id="quiz7">
 							<div
@@ -2128,7 +2136,7 @@
 							<strong>Extended Kalman Filter:</strong> In robotics and
 							autonomous vehicles, the EKF uses first-order Taylor expansion to
 							linearize nonlinear motion models. This allows Gaussian belief
-							propagation even with nonlinear dynamics — a technique you'll
+							propagation even with nonlinear dynamics - a technique you'll
 							implement in Quanskill's <strong>State Estimation</strong> module!
 						</p>
 					</div>
@@ -2137,7 +2145,7 @@
 				<!-- Summary Section -->
 				<section class="section" id="summary">
 					<div class="section-header">
-						<span class="section-number">📝</span>
+						<span class="section-number">🐍"</span>
 						<h2>Chapter Summary</h2>
 					</div>
 
@@ -2145,32 +2153,32 @@
 						<div class="concept-card">
 							<div class="icon">📈</div>
 							<h5>Derivative</h5>
-							<p>Rate of change. Limit of difference quotient as h → 0.</p>
+							<p>Rate of change. Limit of difference quotient as h ←’ 0.</p>
 						</div>
 						<div class="concept-card">
-							<div class="icon">🧭</div>
+							<div class="icon">📝§­</div>
 							<h5>Gradient</h5>
 							<p>
 								Vector of partial derivatives. Points toward steepest ascent.
 							</p>
 						</div>
 						<div class="concept-card">
-							<div class="icon">📐</div>
+							<div class="icon">🐍"</div>
 							<h5>Jacobian</h5>
 							<p>Matrix of partial derivatives for vector-valued functions.</p>
 						</div>
 						<div class="concept-card">
-							<div class="icon">🔔</div>
+							<div class="icon">🔍”</div>
 							<h5>Chain Rule</h5>
-							<p>df/dx = df/dg · dg/dx. Compose derivatives through layers.</p>
+							<p>df/dx = df/dg Â· dg/dx. Compose derivatives through layers.</p>
 						</div>
 						<div class="concept-card">
-							<div class="icon">⚡</div>
+							<div class="icon">âš¡</div>
 							<h5>Backpropagation</h5>
 							<p>Efficient gradient computation. Reuse intermediate values.</p>
 						</div>
 						<div class="concept-card">
-							<div class="icon">〰</div>
+							<div class="icon">ã€°</div>
 							<h5>Hessian</h5>
 							<p>Matrix of 2nd derivatives. Measures curvature.</p>
 						</div>
@@ -2180,7 +2188,7 @@
 						<div class="label">Key ML Takeaways</div>
 						<ul>
 							<li>
-								<strong>Gradient descent</strong> uses ∇L to find direction of
+								<strong>Gradient descent</strong> uses âˆ‡L to find direction of
 								steepest descent
 							</li>
 							<li>
@@ -2205,17 +2213,17 @@
 					<div class="quanskill-box">
 						<div class="label">Your Next Steps with Quanskill</div>
 						<p>
-							🎯° <strong>Congratulations!</strong> You now have the calculus
+							🎯Â° <strong>Congratulations!</strong> You now have the calculus
 							foundation for understanding how ML models learn. Here's your
 							Quanskill learning path:
 						</p>
 						<ul>
 							<li>
-								<strong>Chapter 6</strong>: Probability — the other mathematical
+								<strong>Chapter 6</strong>: Probability - the other mathematical
 								pillar of ML
 							</li>
 							<li>
-								<strong>Chapter 7</strong>: Optimization — put gradients to
+								<strong>Chapter 7</strong>: Optimization - put gradients to
 								work!
 							</li>
 							<li>
@@ -2239,7 +2247,7 @@
 						color: var(--text-secondary);
 						font-size: 0.9rem;
 					">
-					<p><strong>Quanskill</strong> — Making ML Education Accessible</p>
+					<p><strong>Quanskill</strong> - Making ML Education Accessible</p>
 					<p style="margin-top: 1rem; font-size: 0.8rem">
 						© 2024 Quanskill. All rights reserved.
 					</p>
@@ -2276,7 +2284,7 @@
 							}
 						});
 					},
-					{ threshold: 0.1 }
+					{ threshold: 0.1 },
 				);
 
 				sections.forEach((section) => observer.observe(section));
@@ -2337,7 +2345,7 @@
 
 				if (isCorrect) {
 					element.classList.add("correct");
-					feedback.innerHTML = "✅ Correct! Great understanding!";
+					feedback.innerHTML = "âœ… Correct! Great understanding!";
 					feedback.className = "quiz-feedback show correct";
 				} else {
 					element.classList.add("incorrect");
@@ -2347,7 +2355,7 @@
 						}
 					});
 					feedback.innerHTML =
-						"❌ Not quite. The correct answer is highlighted above.";
+						"âŒ Not quite. The correct answer is highlighted above.";
 					feedback.className = "quiz-feedback show incorrect";
 				}
 			}
@@ -2362,14 +2370,14 @@
 
 				// Define functions and their derivatives
 				const funcs = {
-					x2: { f: (x) => x * x, df: (x) => 2 * x, name: "x²" },
-					x3: { f: (x) => x * x * x, df: (x) => 3 * x * x, name: "x³" },
+					x2: { f: (x) => x * x, df: (x) => 2 * x, name: "xÂ²" },
+					x3: { f: (x) => x * x * x, df: (x) => 3 * x * x, name: "xÂ³" },
 					sin: {
 						f: (x) => Math.sin(x),
 						df: (x) => Math.cos(x),
 						name: "sin(x)",
 					},
-					exp: { f: (x) => Math.exp(x), df: (x) => Math.exp(x), name: "eˣ" },
+					exp: { f: (x) => Math.exp(x), df: (x) => Math.exp(x), name: "eË£" },
 				};
 
 				const func = funcs[funcType];
@@ -2380,11 +2388,8 @@
 					secantSlope.toFixed(4);
 				document.getElementById("trueDerivative").textContent =
 					trueDeriv.toFixed(4);
-				document.getElementById(
-					"derivExplanation"
-				).textContent = `Error: ${Math.abs(secantSlope - trueDeriv).toFixed(
-					4
-				)} — as h → 0, secant approaches tangent`;
+				document.getElementById("derivExplanation").textContent =
+					`Error: ${Math.abs(secantSlope - trueDeriv).toFixed(4)} - as h ←’ 0, secant approaches tangent`;
 
 				// Draw canvas
 				const canvas = document.getElementById("derivCanvas");
@@ -2447,7 +2452,7 @@
 				ctx.moveTo(cx + (x0 - 2) * scale, cy - (y0 + secantSlope * -2) * scale);
 				ctx.lineTo(
 					cx + (x0 + h + 1) * scale,
-					cy - (y0 + secantSlope * (h + 1)) * scale
+					cy - (y0 + secantSlope * (h + 1)) * scale,
 				);
 				ctx.stroke();
 
@@ -2458,11 +2463,11 @@
 				ctx.beginPath();
 				ctx.moveTo(
 					cx + (x0 - 1.5) * scale,
-					cy - (y0 + trueDeriv * -1.5) * scale
+					cy - (y0 + trueDeriv * -1.5) * scale,
 				);
 				ctx.lineTo(
 					cx + (x0 + 1.5) * scale,
-					cy - (y0 + trueDeriv * 1.5) * scale
+					cy - (y0 + trueDeriv * 1.5) * scale,
 				);
 				ctx.stroke();
 				ctx.setLineDash([]);
@@ -2492,7 +2497,7 @@
 				const cy = height / 2;
 				const scale = 20;
 
-				// Draw contours for f(x,y) = x² + y²
+				// Draw contours for f(x,y) = xÂ² + yÂ²
 				ctx.strokeStyle = "#e0e0e0";
 				ctx.lineWidth = 1;
 				for (let r = 1; r <= 8; r++) {
@@ -2525,7 +2530,7 @@
 						const px = cx + x * scale;
 						const py = cy - y * scale;
 
-						// Gradient of x² + y² is [2x, 2y]
+						// Gradient of xÂ² + yÂ² is [2x, 2y]
 						const gx = 2 * x;
 						const gy = 2 * y;
 						const mag = Math.sqrt(gx * gx + gy * gy);
@@ -2546,11 +2551,11 @@
 							ctx.moveTo(px + nx, py - ny);
 							ctx.lineTo(
 								px + nx - 5 * Math.cos(angle - Math.PI / 6),
-								py - ny - 5 * Math.sin(angle - Math.PI / 6)
+								py - ny - 5 * Math.sin(angle - Math.PI / 6),
 							);
 							ctx.lineTo(
 								px + nx - 5 * Math.cos(angle + Math.PI / 6),
-								py - ny - 5 * Math.sin(angle + Math.PI / 6)
+								py - ny - 5 * Math.sin(angle + Math.PI / 6),
 							);
 							ctx.closePath();
 							ctx.fill();
@@ -2588,9 +2593,8 @@
 				const g2 = 2 * (b12 * x1 + b22 * x2);
 
 				document.getElementById("fValue").textContent = f.toFixed(2);
-				document.getElementById("gradValue").textContent = `[${g1.toFixed(
-					2
-				)}, ${g2.toFixed(2)}]`;
+				document.getElementById("gradValue").textContent =
+					`[${g1.toFixed(2)}, ${g2.toFixed(2)}]`;
 			}
 
 			// Backprop Demo
@@ -2606,10 +2610,10 @@
 
 				if (action === "forward") {
 					result.innerHTML = `
-                    <p><strong>Forward Pass:</strong> f(x) = (x² + 1)² at x = 2</p>
-                    <p style="margin-left: 1rem;">Step 1: a = x² = 2² = <span style="color: var(--quanskill-blue);">4</span></p>
+                    <p><strong>Forward Pass:</strong> f(x) = (xÂ² + 1)Â² at x = 2</p>
+                    <p style="margin-left: 1rem;">Step 1: a = xÂ² = 2Â² = <span style="color: var(--quanskill-blue);">4</span></p>
                     <p style="margin-left: 1rem;">Step 2: b = a + 1 = 4 + 1 = <span style="color: var(--quanskill-blue);">5</span></p>
-                    <p style="margin-left: 1rem;">Step 3: f = b² = 5² = <span style="color: var(--quanskill-blue);">25</span></p>
+                    <p style="margin-left: 1rem;">Step 3: f = bÂ² = 5Â² = <span style="color: var(--quanskill-blue);">25</span></p>
                     <p style="margin-top: 1rem; color: var(--text-secondary);">Stored: x=2, a=4, b=5, f=25</p>
                 `;
 					backpropState = "forward";
@@ -2622,13 +2626,13 @@
 						return;
 					}
 					result.innerHTML = `
-                    <p><strong>Forward Pass:</strong> x=2 → a=4 → b=5 → f=25</p>
+                    <p><strong>Forward Pass:</strong> x=2 ←’ a=4 ←’ b=5 ←’ f=25</p>
                     <hr style="margin: 1rem 0; border: none; border-top: 1px solid var(--border-color);">
                     <p><strong>Backward Pass:</strong></p>
-                    <p style="margin-left: 1rem;">∂f/∂f = <span style="color: var(--quanskill-orange);">1</span> (initialize)</p>
-                    <p style="margin-left: 1rem;">∂f/∂b = ∂f/∂f · ∂(b²)/∂b = 1 · 2b = 2(5) = <span style="color: var(--quanskill-orange);">10</span></p>
-                    <p style="margin-left: 1rem;">∂f/∂a = ∂f/∂b · ∂(a+1)/∂a = 10 · 1 = <span style="color: var(--quanskill-orange);">10</span></p>
-                    <p style="margin-left: 1rem;">∂f/∂x = ∂f/∂a · ∂(x²)/∂x = 10 · 2x = 10 · 4 = <span style="color: var(--quanskill-orange);">40</span></p>
+                    <p style="margin-left: 1rem;">âˆ‚f/âˆ‚f = <span style="color: var(--quanskill-orange);">1</span> (initialize)</p>
+                    <p style="margin-left: 1rem;">âˆ‚f/âˆ‚b = âˆ‚f/âˆ‚f Â· âˆ‚(bÂ²)/âˆ‚b = 1 Â· 2b = 2(5) = <span style="color: var(--quanskill-orange);">10</span></p>
+                    <p style="margin-left: 1rem;">âˆ‚f/âˆ‚a = âˆ‚f/âˆ‚b Â· âˆ‚(a+1)/âˆ‚a = 10 Â· 1 = <span style="color: var(--quanskill-orange);">10</span></p>
+                    <p style="margin-left: 1rem;">âˆ‚f/âˆ‚x = âˆ‚f/âˆ‚a Â· âˆ‚(xÂ²)/âˆ‚x = 10 Â· 2x = 10 Â· 4 = <span style="color: var(--quanskill-orange);">40</span></p>
                     <p style="margin-top: 1rem; font-weight: 600;">Result: df/dx at x=2 is <span style="color: var(--success);">40</span></p>
                 `;
 				}
@@ -2689,7 +2693,7 @@
 				}
 				ctx.stroke();
 
-				// Taylor polynomial for sin(x): x - x³/3! + x⁵/5! - x⁷/7! + ...
+				// Taylor polynomial for sin(x): x - xÂ³/3! + xâµ/5! - xâ·/7! + ...
 				function taylorSin(x, order) {
 					let result = 0;
 					for (let k = 0; k <= Math.floor(order / 2); k++) {
@@ -2722,10 +2726,10 @@
 
 				// Formula
 				let formula = "T_n(x) = x";
-				if (n >= 3) formula += " - x³/6";
-				if (n >= 5) formula += " + x⁵/120";
-				if (n >= 7) formula += " - x⁷/5040";
-				if (n >= 9) formula += " + x⁹/362880";
+				if (n >= 3) formula += " - xÂ³/6";
+				if (n >= 5) formula += " + xâµ/120";
+				if (n >= 7) formula += " - xâ·/5040";
+				if (n >= 9) formula += " + xâ¹/362880";
 				document.getElementById("taylorFormula").textContent = formula;
 
 				// Legend

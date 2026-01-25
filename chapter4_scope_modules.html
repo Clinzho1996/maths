@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 	<head>
 		<meta charset="UTF-8" />
@@ -276,7 +276,9 @@
 				border: 1px solid var(--border-color);
 				padding: 1.25rem;
 				border-radius: 12px;
-				transition: transform 0.2s, box-shadow 0.2s;
+				transition:
+					transform 0.2s,
+					box-shadow 0.2s;
 			}
 
 			.concept-card:hover {
@@ -443,7 +445,7 @@
 			}
 
 			.scope-box .label::before {
-				content: "🔒";
+				content: "🔍’";
 			}
 
 			.module-box {
@@ -501,7 +503,7 @@
 			}
 
 			.random-box .label::before {
-				content: "🎲";
+				content: "📝Ž²";
 			}
 
 			.math-box {
@@ -530,7 +532,7 @@
 			}
 
 			.math-box .label::before {
-				content: "🔢";
+				content: "🔍¢";
 			}
 
 			.quanskill-box {
@@ -623,7 +625,7 @@
 			}
 
 			.realworld-box .label::before {
-				content: "🌍";
+				content: "🌍";
 			}
 
 			code {
@@ -989,7 +991,7 @@
 			}
 
 			.summary-item::before {
-				content: "✓";
+				content: "🐍";
 				background: var(--quanskill-orange);
 				width: 20px;
 				height: 20px;
@@ -1057,12 +1059,12 @@
 		</style>
 	</head>
 	<body>
-		<a href="index.html" class="floating-back-btn">← Main Page</a>
+		<a href="index.html" class="floating-back-btn">← Main Page</a>
 
 		<header class="header">
 			<div class="header-content">
 				<!-- <a href="index.html" class="header-logo"><img src="Logo_for_Print.jpg" alt="Quanskill" style="height: 40px; border-radius: 8px;"></a> -->
-				<button class="mobile-menu-btn" onclick="toggleSidebar()">☰</button>
+				<button class="mobile-menu-btn" onclick="toggleSidebar()">â˜°</button>
 			</div>
 		</header>
 
@@ -1078,7 +1080,7 @@
 						alt="Quanskill"
 						style="height: 36px; border-radius: 6px"
 				/></a>
-				<div class="chapter-title">Chapter 4 · Scope & Modules</div>
+				<div class="chapter-title">Chapter 4 Â· Scope & Modules</div>
 			</div>
 
 			<div class="nav-section">
@@ -1126,7 +1128,7 @@
 						<div class="hero-quote">
 							"Well-organized code is like a well-organized toolbox: every tool
 							has its place, and you always know where to find what you need."
-							<br /><br />— <strong>Quanskill Programming Philosophy</strong>
+							<br /><br />- <strong>Quanskill Programming Philosophy</strong>
 						</div>
 					</div>
 				</section>
@@ -1134,12 +1136,12 @@
 				<!-- Key Concepts Overview -->
 				<div class="key-concepts">
 					<div class="concept-card scope">
-						<div class="icon">🔒</div>
+						<div class="icon">🔍’</div>
 						<h5>Local Scope</h5>
 						<p>Variables inside functions</p>
 					</div>
 					<div class="concept-card scope">
-						<div class="icon">🌐</div>
+						<div class="icon">🌍</div>
 						<h5>Global Scope</h5>
 						<p>Variables everywhere</p>
 					</div>
@@ -1149,17 +1151,17 @@
 						<p>Organize & reuse code</p>
 					</div>
 					<div class="concept-card module">
-						<div class="icon">📥</div>
+						<div class="icon">🔥</div>
 						<h5>Import</h5>
 						<p>Use external code</p>
 					</div>
 					<div class="concept-card random">
-						<div class="icon">🎲</div>
+						<div class="icon">📝Ž²</div>
 						<h5>random</h5>
 						<p>Generate random data</p>
 					</div>
 					<div class="concept-card math">
-						<div class="icon">🔢</div>
+						<div class="icon">🔍¢</div>
 						<h5>math</h5>
 						<p>Mathematical functions</p>
 					</div>
@@ -1309,7 +1311,7 @@ increment()                      <span class="code-comment"># Counter is now: 2<
 <span class="code-function">print</span>(<span class="code-string">f"Final: {counter}"</span>)    <span class="code-comment"># Final: 2</span></code></pre>
 
 					<div class="note-box">
-						<span class="label">⚠ Without the global Keyword</span>
+						<span class="label">âš  Without the global Keyword</span>
 						<p>
 							Without <code>global</code>, Python creates a NEW local variable
 							instead of modifying the global one:
@@ -1384,17 +1386,17 @@ change_x()               <span class="code-comment"># Inside: x = 999</span>
 						<span class="label">LEGB Scope Resolution</span>
 						<p>Python searches for variables in this order:</p>
 						<ol style="margin-bottom: 0">
-							<li><strong>L</strong>ocal — Inside the current function</li>
+							<li><strong>L</strong>ocal - Inside the current function</li>
 							<li>
-								<strong>E</strong>nclosing — In outer/enclosing functions (for
+								<strong>E</strong>nclosing - In outer/enclosing functions (for
 								nested functions)
 							</li>
 							<li>
-								<strong>G</strong>lobal — At the module level (outside all
+								<strong>G</strong>lobal - At the module level (outside all
 								functions)
 							</li>
 							<li>
-								<strong>B</strong>uilt-in — Python's built-in names (print, len,
+								<strong>B</strong>uilt-in - Python's built-in names (print, len,
 								etc.)
 							</li>
 						</ol>
@@ -1404,11 +1406,11 @@ change_x()               <span class="code-comment"># Inside: x = 999</span>
 						<div class="scope-diagram-title">LEGB Scope Hierarchy</div>
 						<div class="scope-layers">
 							<div class="scope-layer scope-global">
-								🌐 <strong>Global Scope</strong> (Module level)
+								🌍 <strong>Global Scope</strong> (Module level)
 								<div class="scope-layer scope-enclosing">
 									📦 <strong>Enclosing Scope</strong> (Outer function)
 									<div class="scope-layer scope-local">
-										🔒 <strong>Local Scope</strong> (Inner function)
+										🔍’ <strong>Local Scope</strong> (Inner function)
 									</div>
 								</div>
 							</div>
@@ -1419,7 +1421,7 @@ change_x()               <span class="code-comment"># Inside: x = 999</span>
 								font-size: 0.9rem;
 								color: var(--text-secondary);
 							">
-							Python searches from inside out: Local → Enclosing → Global →
+							Python searches from inside out: Local ←’ Enclosing ←’ Global ←’
 							Built-in
 						</p>
 					</div>
@@ -1601,7 +1603,7 @@ PI = <span class="code-number">3.14159</span></code></pre>
 							<h5>4. Import Everything</h5>
 							<code>from calculator import *</code>
 							<p class="desc">
-								Access all: <code>add(5, 3)</code> ⚠ Not recommended
+								Access all: <code>add(5, 3)</code> âš  Not recommended
 							</p>
 						</div>
 					</div>
@@ -1651,7 +1653,7 @@ result = calc.multiply(<span class="code-number">4</span>, <span class="code-num
 					</div>
 
 					<p>
-						The <code>random</code> module generates pseudo-random numbers —
+						The <code>random</code> module generates pseudo-random numbers -
 						essential for simulations, games, sampling, and data science
 						applications like Monte Carlo methods.
 					</p>
@@ -1680,12 +1682,12 @@ result = calc.multiply(<span class="code-number">4</span>, <span class="code-num
 							<tr>
 								<td><code>randint(a, b)</code></td>
 								<td>Random integer from a to b (inclusive)</td>
-								<td><code>randint(1, 6)</code> → dice roll</td>
+								<td><code>randint(1, 6)</code> ←’ dice roll</td>
 							</tr>
 							<tr>
 								<td><code>random()</code></td>
 								<td>Random float from 0.0 to 1.0</td>
-								<td><code>random()</code> → 0.7234...</td>
+								<td><code>random()</code> ←’ 0.7234...</td>
 							</tr>
 							<tr>
 								<td><code>uniform(a, b)</code></td>
@@ -1789,10 +1791,10 @@ random.seed(<span class="code-number">42</span>)
 
 					<pre><code><span class="code-keyword">import</span> math
 
-<span class="code-function">print</span>(<span class="code-string">f"π (pi): {math.pi}"</span>)      <span class="code-comment"># 3.141592653589793</span>
+<span class="code-function">print</span>(<span class="code-string">f"Ï€ (pi): {math.pi}"</span>)      <span class="code-comment"># 3.141592653589793</span>
 <span class="code-function">print</span>(<span class="code-string">f"e (Euler): {math.e}"</span>)    <span class="code-comment"># 2.718281828459045</span>
-<span class="code-function">print</span>(<span class="code-string">f"τ (tau): {math.tau}"</span>)    <span class="code-comment"># 6.283185307179586</span>
-<span class="code-function">print</span>(<span class="code-string">f"∞ (inf): {math.inf}"</span>)    <span class="code-comment"># inf</span></code></pre>
+<span class="code-function">print</span>(<span class="code-string">f"Ï„ (tau): {math.tau}"</span>)    <span class="code-comment"># 6.283185307179586</span>
+<span class="code-function">print</span>(<span class="code-string">f"âˆž (inf): {math.inf}"</span>)    <span class="code-comment"># inf</span></code></pre>
 
 					<h3>Numeric Functions</h3>
 
@@ -1808,32 +1810,32 @@ random.seed(<span class="code-number">42</span>)
 							<tr>
 								<td><code>ceil(x)</code></td>
 								<td>Round up to nearest integer</td>
-								<td><code>ceil(4.2)</code> → 5</td>
+								<td><code>ceil(4.2)</code> ←’ 5</td>
 							</tr>
 							<tr>
 								<td><code>floor(x)</code></td>
 								<td>Round down to nearest integer</td>
-								<td><code>floor(4.9)</code> → 4</td>
+								<td><code>floor(4.9)</code> ←’ 4</td>
 							</tr>
 							<tr>
 								<td><code>trunc(x)</code></td>
 								<td>Truncate decimal part</td>
-								<td><code>trunc(-4.9)</code> → -4</td>
+								<td><code>trunc(-4.9)</code> ←’ -4</td>
 							</tr>
 							<tr>
 								<td><code>fabs(x)</code></td>
 								<td>Absolute value (as float)</td>
-								<td><code>fabs(-5.5)</code> → 5.5</td>
+								<td><code>fabs(-5.5)</code> ←’ 5.5</td>
 							</tr>
 							<tr>
 								<td><code>factorial(n)</code></td>
 								<td>n! (n factorial)</td>
-								<td><code>factorial(5)</code> → 120</td>
+								<td><code>factorial(5)</code> ←’ 120</td>
 							</tr>
 							<tr>
 								<td><code>gcd(a, b)</code></td>
 								<td>Greatest common divisor</td>
-								<td><code>gcd(48, 18)</code> → 6</td>
+								<td><code>gcd(48, 18)</code> ←’ 6</td>
 							</tr>
 						</tbody>
 					</table>
@@ -1864,32 +1866,32 @@ random.seed(<span class="code-number">42</span>)
 							<tr>
 								<td><code>sqrt(x)</code></td>
 								<td>Square root</td>
-								<td><code>sqrt(16)</code> → 4.0</td>
+								<td><code>sqrt(16)</code> ←’ 4.0</td>
 							</tr>
 							<tr>
 								<td><code>pow(x, y)</code></td>
 								<td>x raised to power y</td>
-								<td><code>pow(2, 10)</code> → 1024.0</td>
+								<td><code>pow(2, 10)</code> ←’ 1024.0</td>
 							</tr>
 							<tr>
 								<td><code>exp(x)</code></td>
 								<td>e raised to power x</td>
-								<td><code>exp(1)</code> → 2.718...</td>
+								<td><code>exp(1)</code> ←’ 2.718...</td>
 							</tr>
 							<tr>
 								<td><code>log(x)</code></td>
 								<td>Natural logarithm (base e)</td>
-								<td><code>log(math.e)</code> → 1.0</td>
+								<td><code>log(math.e)</code> ←’ 1.0</td>
 							</tr>
 							<tr>
 								<td><code>log10(x)</code></td>
 								<td>Logarithm base 10</td>
-								<td><code>log10(100)</code> → 2.0</td>
+								<td><code>log10(100)</code> ←’ 2.0</td>
 							</tr>
 							<tr>
 								<td><code>log2(x)</code></td>
 								<td>Logarithm base 2</td>
-								<td><code>log2(8)</code> → 3.0</td>
+								<td><code>log2(8)</code> ←’ 3.0</td>
 							</tr>
 						</tbody>
 					</table>
@@ -1914,12 +1916,12 @@ random.seed(<span class="code-number">42</span>)
 <span class="code-comment"># Trigonometry (angles in RADIANS)</span>
 angle = math.pi / <span class="code-number">4</span>  <span class="code-comment"># 45 degrees in radians</span>
 
-<span class="code-function">print</span>(<span class="code-string">f"sin(45°): {math.sin(angle):.4f}"</span>)  <span class="code-comment"># 0.7071</span>
-<span class="code-function">print</span>(<span class="code-string">f"cos(45°): {math.cos(angle):.4f}"</span>)  <span class="code-comment"># 0.7071</span>
-<span class="code-function">print</span>(<span class="code-string">f"tan(45°): {math.tan(angle):.4f}"</span>)  <span class="code-comment"># 1.0000</span>
+<span class="code-function">print</span>(<span class="code-string">f"sin(45Â°): {math.sin(angle):.4f}"</span>)  <span class="code-comment"># 0.7071</span>
+<span class="code-function">print</span>(<span class="code-string">f"cos(45Â°): {math.cos(angle):.4f}"</span>)  <span class="code-comment"># 0.7071</span>
+<span class="code-function">print</span>(<span class="code-string">f"tan(45Â°): {math.tan(angle):.4f}"</span>)  <span class="code-comment"># 1.0000</span>
 
 <span class="code-comment"># Convert degrees to radians and vice versa</span>
-<span class="code-function">print</span>(math.radians(<span class="code-number">180</span>))  <span class="code-comment"># 3.14159... (π)</span>
+<span class="code-function">print</span>(math.radians(<span class="code-number">180</span>))  <span class="code-comment"># 3.14159... (Ï€)</span>
 <span class="code-function">print</span>(math.degrees(math.pi))  <span class="code-comment"># 180.0</span></code></pre>
 
 					<div class="math-box">
@@ -1990,7 +1992,7 @@ distance = euclidean_distance(point_a, point_b)
 								Global variables accessible everywhere
 							</div>
 							<div class="summary-item">
-								LEGB: Local → Enclosing → Global → Built-in
+								LEGB: Local ←’ Enclosing ←’ Global ←’ Built-in
 							</div>
 							<div class="summary-item">
 								Modules are .py files with reusable code
@@ -2008,8 +2010,8 @@ distance = euclidean_distance(point_a, point_b)
 						<thead>
 							<tr>
 								<th>Topic</th>
-								<th>✅ Do This</th>
-								<th>❌ Avoid This</th>
+								<th>âœ… Do This</th>
+								<th>âŒ Avoid This</th>
 							</tr>
 						</thead>
 						<tbody>
@@ -2096,7 +2098,7 @@ distance = euclidean_distance(point_a, point_b)
 				const options = element.parentElement.querySelectorAll(".quiz-option");
 				const feedbacks =
 					element.parentElement.parentElement.querySelectorAll(
-						".quiz-feedback"
+						".quiz-feedback",
 					);
 
 				options.forEach((opt) => opt.classList.remove("correct", "incorrect"));

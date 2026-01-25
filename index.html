@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 	<head>
 		<meta charset="UTF-8" />
@@ -54,7 +54,7 @@
 				margin: 0 auto;
 				display: flex;
 				justify-content: flex-end;
-				align-items: center;
+				align-items: flex-end;
 			}
 			.header-logo {
 				font-family: "Space Grotesk", sans-serif;
@@ -141,26 +141,13 @@
 				margin: 0 auto;
 				padding: 3rem 2rem;
 			}
-			.section-intro {
-				text-align: center;
-				margin-bottom: 2.5rem;
-			}
-			.section-intro h2 {
-				font-family: "Space Grotesk", sans-serif;
-				font-size: 2rem;
-				color: var(--quanskill-blue);
-				margin-bottom: 0.5rem;
-			}
-			.section-intro p {
-				color: var(--text-secondary);
-				max-width: 600px;
-				margin: 0 auto;
-			}
+
+			/* Track Cards */
 			.tracks-grid {
 				display: grid;
 				grid-template-columns: repeat(2, 1fr);
 				gap: 2rem;
-				margin-bottom: 3rem;
+				margin-bottom: 2rem;
 			}
 			.track-card {
 				background: var(--bg-card);
@@ -169,6 +156,8 @@
 				overflow: hidden;
 				transition: all 0.3s ease;
 				border: 2px solid transparent;
+				display: flex;
+				flex-direction: column;
 			}
 			.track-card:hover {
 				transform: translateY(-5px);
@@ -235,11 +224,39 @@
 				font-size: 0.85rem;
 				color: var(--text-secondary);
 			}
+
+			/* Track Modules with Scrollbar */
 			.track-modules {
 				padding: 1.5rem 2rem 2rem;
-				max-height: 500px;
+				height: 420px;
 				overflow-y: auto;
+				flex: 1;
 			}
+			.track-modules::-webkit-scrollbar {
+				width: 8px;
+			}
+			.track-modules::-webkit-scrollbar-track {
+				background: var(--bg-primary);
+				border-radius: 4px;
+			}
+			.track-modules::-webkit-scrollbar-thumb {
+				background: linear-gradient(
+					180deg,
+					var(--quanskill-blue) 0%,
+					var(--quanskill-blue-light) 100%
+				);
+				border-radius: 4px;
+			}
+			.track-modules::-webkit-scrollbar-thumb:hover {
+				background: var(--quanskill-blue-dark);
+			}
+			.track-card.math .track-modules::-webkit-scrollbar-thumb {
+				background: linear-gradient(180deg, #7c3aed 0%, #a78bfa 100%);
+			}
+			.track-card.math .track-modules::-webkit-scrollbar-thumb:hover {
+				background: #6d28d9;
+			}
+
 			.module-group {
 				margin-bottom: 1.5rem;
 			}
@@ -339,12 +356,14 @@
 			.module-link.lab:hover {
 				background: var(--quanskill-orange-dark);
 			}
+
+			/* Roadmap Section */
 			.roadmap-section {
 				background: var(--bg-card);
 				border-radius: 16px;
 				padding: 2.5rem;
 				box-shadow: 0 4px 20px rgba(11, 47, 160, 0.08);
-				margin-bottom: 3rem;
+				margin-bottom: 2rem;
 			}
 			.roadmap-title {
 				font-family: "Space Grotesk", sans-serif;
@@ -424,10 +443,12 @@
 				font-size: 0.8rem;
 				color: var(--text-secondary);
 			}
-			.assessment-banner {
+
+			/* CTA Banners - Unified Style */
+			.cta-banner {
 				background: var(--gradient-blue);
 				border-radius: 16px;
-				padding: 2.5rem;
+				padding: 2rem 2.5rem;
 				color: white;
 				display: flex;
 				align-items: center;
@@ -435,8 +456,10 @@
 				gap: 2rem;
 				position: relative;
 				overflow: hidden;
+				margin-bottom: 1.5rem;
+				box-shadow: 0 8px 30px rgba(11, 47, 160, 0.25);
 			}
-			.assessment-banner::before {
+			.cta-banner::before {
 				content: "";
 				position: absolute;
 				top: 0;
@@ -447,19 +470,32 @@
 				clip-path: polygon(30% 0, 100% 0, 100% 100%, 0% 100%);
 				opacity: 0.9;
 			}
-			.assessment-content {
+			.cta-content {
 				position: relative;
 				z-index: 1;
+				flex: 1;
 			}
-			.assessment-content h2 {
+			.cta-content h2 {
 				font-family: "Space Grotesk", sans-serif;
 				font-size: 1.5rem;
 				margin-bottom: 0.5rem;
+				display: flex;
+				align-items: center;
+				gap: 0.75rem;
 			}
-			.assessment-content p {
+			.cta-content h2 .badge {
+				background: white;
+				color: var(--quanskill-blue);
+				padding: 0.25rem 0.7rem;
+				border-radius: 20px;
+				font-size: 0.75rem;
+				font-weight: 700;
+			}
+			.cta-content p {
 				opacity: 0.9;
+				font-size: 1rem;
 			}
-			.assessment-btn {
+			.cta-btn {
 				position: relative;
 				z-index: 1;
 				background: white;
@@ -472,11 +508,115 @@
 				font-size: 1rem;
 				transition: all 0.3s ease;
 				white-space: nowrap;
+				display: flex;
+				align-items: center;
+				gap: 0.5rem;
 			}
-			.assessment-btn:hover {
+			.cta-btn:hover {
 				transform: scale(1.05);
 				box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
 			}
+
+			/* Expert Section */
+			.expert-section {
+				background: var(--bg-card);
+				border-radius: 16px;
+				padding: 2.5rem;
+				box-shadow: 0 4px 20px rgba(11, 47, 160, 0.08);
+				margin-top: 1rem;
+				display: flex;
+				align-items: center;
+				gap: 2.5rem;
+			}
+			.expert-image {
+				width: 160px;
+				height: 160px;
+				border-radius: 16px;
+				object-fit: cover;
+				flex-shrink: 0;
+				box-shadow: 0 8px 25px rgba(11, 47, 160, 0.15);
+				border: 4px solid var(--quanskill-blue);
+			}
+			.expert-content {
+				flex: 1;
+			}
+			.expert-label {
+				font-family: "Space Grotesk", sans-serif;
+				font-size: 0.75rem;
+				text-transform: uppercase;
+				letter-spacing: 1.5px;
+				color: var(--quanskill-orange);
+				font-weight: 600;
+				margin-bottom: 0.5rem;
+				display: flex;
+				align-items: center;
+				gap: 0.5rem;
+			}
+			.expert-label::before {
+				content: "";
+				width: 24px;
+				height: 3px;
+				background: var(--gradient-orange);
+				border-radius: 2px;
+			}
+			.expert-name {
+				font-family: "Space Grotesk", sans-serif;
+				font-size: 1.6rem;
+				font-weight: 700;
+				color: var(--quanskill-blue);
+				margin-bottom: 0.5rem;
+			}
+			.expert-title {
+				font-size: 1rem;
+				color: var(--ml-accent);
+				font-weight: 600;
+				margin-bottom: 0.75rem;
+				font-family: "Space Grotesk", sans-serif;
+			}
+			.expert-bio {
+				color: var(--text-secondary);
+				font-size: 0.95rem;
+				line-height: 1.7;
+				margin-bottom: 1rem;
+			}
+			.expert-tags {
+				display: flex;
+				flex-wrap: wrap;
+				gap: 0.5rem;
+				margin-bottom: 1rem;
+			}
+			.expert-tag {
+				background: linear-gradient(
+					135deg,
+					rgba(11, 47, 160, 0.08) 0%,
+					rgba(124, 58, 237, 0.08) 100%
+				);
+				color: var(--quanskill-blue);
+				padding: 0.4rem 0.9rem;
+				border-radius: 20px;
+				font-family: "Space Grotesk", sans-serif;
+				font-size: 0.8rem;
+				font-weight: 500;
+			}
+			.expert-link {
+				display: inline-flex;
+				align-items: center;
+				gap: 0.5rem;
+				background: var(--gradient-blue);
+				color: white;
+				padding: 0.7rem 1.4rem;
+				border-radius: 25px;
+				text-decoration: none;
+				font-family: "Space Grotesk", sans-serif;
+				font-weight: 600;
+				font-size: 0.9rem;
+				transition: all 0.3s ease;
+			}
+			.expert-link:hover {
+				transform: translateY(-2px);
+				box-shadow: 0 6px 20px rgba(11, 47, 160, 0.3);
+			}
+
 			.footer {
 				background: var(--text-primary);
 				color: white;
@@ -488,20 +628,22 @@
 				opacity: 0.7;
 				font-size: 0.9rem;
 			}
-			.track-modules::-webkit-scrollbar {
-				width: 5px;
-			}
-			.track-modules::-webkit-scrollbar-track {
-				background: var(--bg-primary);
-				border-radius: 3px;
-			}
-			.track-modules::-webkit-scrollbar-thumb {
-				background: var(--border-color);
-				border-radius: 3px;
-			}
+
+			/* Responsive */
 			@media (max-width: 1000px) {
 				.tracks-grid {
 					grid-template-columns: 1fr;
+				}
+				.hero h1 {
+					font-size: 2.2rem;
+				}
+				.cta-banner {
+					flex-direction: column;
+					text-align: center;
+					padding: 2rem;
+				}
+				.cta-banner::before {
+					display: none;
 				}
 				.roadmap {
 					flex-direction: column;
@@ -511,15 +653,15 @@
 				.roadmap::before {
 					display: none;
 				}
-				.hero h1 {
-					font-size: 2.2rem;
-				}
-				.assessment-banner {
+				.expert-section {
 					flex-direction: column;
 					text-align: center;
 				}
-				.assessment-banner::before {
-					display: none;
+				.expert-label {
+					justify-content: center;
+				}
+				.expert-tags {
+					justify-content: center;
 				}
 			}
 			@media (max-width: 600px) {
@@ -555,6 +697,13 @@
 				.module-info {
 					width: 100%;
 				}
+				.expert-image {
+					width: 120px;
+					height: 120px;
+				}
+				.track-modules {
+					height: 350px;
+				}
 			}
 		</style>
 	</head>
@@ -564,8 +713,8 @@
 				<!-- <a href="index.html" class="header-logo">
                 <img src="Logo_for_Print.jpg" alt="Quanskill">
             </a> -->
-				<a href="final_appraisal.html" class="assessment-link"
-					>Final Assessment</a
+				<a href="jupyter_lab_practice__15_.html" class="assessment-link"
+					>Start Coding</a
 				>
 			</div>
 		</header>
@@ -593,13 +742,39 @@
 		</section>
 
 		<main class="main">
-			<div class="section-intro">
-				<h2>Choose Your Learning Path</h2>
-				<p>
-					Start with Python fundamentals or dive into mathematical concepts.
-					Both paths complement each other.
+			<section class="roadmap-section">
+				<h2 class="roadmap-title">Recommended Learning Path</h2>
+				<p class="roadmap-subtitle">
+					Follow this roadmap for the most effective learning experience
 				</p>
-			</div>
+				<div class="roadmap">
+					<div class="roadmap-step">
+						<div class="roadmap-icon">1</div>
+						<h4 class="roadmap-step-title">Python Basics</h4>
+						<p class="roadmap-step-desc">Ch. 1-4</p>
+					</div>
+					<div class="roadmap-step">
+						<div class="roadmap-icon">2</div>
+						<h4 class="roadmap-step-title">Linear Algebra</h4>
+						<p class="roadmap-step-desc">Math Ch. 2-4</p>
+					</div>
+					<div class="roadmap-step">
+						<div class="roadmap-icon">3</div>
+						<h4 class="roadmap-step-title">NumPy and Pandas</h4>
+						<p class="roadmap-step-desc">Python Ch. 8-9</p>
+					</div>
+					<div class="roadmap-step">
+						<div class="roadmap-icon">4</div>
+						<h4 class="roadmap-step-title">Calculus and Prob</h4>
+						<p class="roadmap-step-desc">Math Ch. 5-7</p>
+					</div>
+					<div class="roadmap-step">
+						<div class="roadmap-icon">5</div>
+						<h4 class="roadmap-step-title">ML Algorithms</h4>
+						<p class="roadmap-step-desc">Math Ch. 8-12</p>
+					</div>
+				</div>
+			</section>
 
 			<div class="tracks-grid">
 				<!-- PYTHON TRACK -->
@@ -1030,57 +1205,78 @@
 				</div>
 			</div>
 
-			<section class="roadmap-section">
-				<h2 class="roadmap-title">Recommended Learning Path</h2>
-				<p class="roadmap-subtitle">
-					Follow this roadmap for the most effective learning experience
-				</p>
-				<div class="roadmap">
-					<div class="roadmap-step">
-						<div class="roadmap-icon">1</div>
-						<h4 class="roadmap-step-title">Python Basics</h4>
-						<p class="roadmap-step-desc">Ch. 1-4</p>
-					</div>
-					<div class="roadmap-step">
-						<div class="roadmap-icon">2</div>
-						<h4 class="roadmap-step-title">Linear Algebra</h4>
-						<p class="roadmap-step-desc">Math Ch. 2-4</p>
-					</div>
-					<div class="roadmap-step">
-						<div class="roadmap-icon">3</div>
-						<h4 class="roadmap-step-title">NumPy and Pandas</h4>
-						<p class="roadmap-step-desc">Python Ch. 8-9</p>
-					</div>
-					<div class="roadmap-step">
-						<div class="roadmap-icon">4</div>
-						<h4 class="roadmap-step-title">Calculus and Prob</h4>
-						<p class="roadmap-step-desc">Math Ch. 5-7</p>
-					</div>
-					<div class="roadmap-step">
-						<div class="roadmap-icon">5</div>
-						<h4 class="roadmap-step-title">ML Algorithms</h4>
-						<p class="roadmap-step-desc">Math Ch. 8-12</p>
-					</div>
+			<!-- Python Challenge Arena CTA -->
+			<section class="cta-banner">
+				<div class="cta-content">
+					<h2>🐍 Python Challenge Arena <span class="badge">NEW</span></h2>
+					<p>
+						250 hands-on exercises across 14 topics with online compiler - from
+						basics to advanced OOP!
+					</p>
 				</div>
+				<a href="jupyter_lab_practice__15_.html" class="cta-btn"
+					>Start Coding</a
+				>
 			</section>
 
-			<section class="assessment-banner">
-				<div class="assessment-content">
-					<h2>Ready to Test Your Knowledge?</h2>
+			<!-- Assessment CTA -->
+			<section class="cta-banner">
+				<div class="cta-content">
+					<h2>📝 Ready to Test Your Knowledge?</h2>
 					<p>
 						Complete the comprehensive final assessment covering both Python and
 						Mathematics
 					</p>
 				</div>
-				<a href="final_appraisal.html" class="assessment-btn"
-					>Start Assessment</a
-				>
+				<a href="final_appraisal.html" class="cta-btn">Start Assessment</a>
+			</section>
+
+			<!-- Expert Section -->
+			<section class="expert-section">
+				<img
+					src="expert_hoang_dang.webp"
+					alt="HoÃ ng Äáº·ng - Expert Instructor"
+					class="expert-image" />
+				<div class="expert-content">
+					<div class="expert-label">Meet Your Instructor</div>
+					<h3 class="expert-name">HoÃ ng Äáº·ng</h3>
+					<p class="expert-title">Python & Machine Learning Expert</p>
+					<p class="expert-bio">
+						A seasoned technology professional with deep expertise in Python
+						programming and Machine Learning. Specializing in transforming
+						complex AI concepts into accessible, practical knowledge through
+						hands-on training and real-world projects. Committed to making AI
+						education inclusive and impactful for learners at all levels.
+					</p>
+					<div class="expert-tags">
+						<span class="expert-tag">Python</span>
+						<span class="expert-tag">Machine Learning</span>
+						<span class="expert-tag">Data Science</span>
+						<span class="expert-tag">AI/ML Engineering</span>
+					</div>
+					<a
+						href="https://www.quanskill.com/experts/35b9fca4-c988-4932-81a1-98e9963bcba6"
+						class="expert-link"
+						target="_blank">
+						<svg
+							width="16"
+							height="16"
+							viewBox="0 0 24 24"
+							fill="none"
+							stroke="currentColor"
+							stroke-width="2.5">
+							<path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2" />
+							<circle cx="12" cy="7" r="4" />
+						</svg>
+						View Full Profile
+					</a>
+				</div>
 			</section>
 		</main>
 
 		<footer class="footer">
 			<p>
-				2024 Quanskill. All rights reserved. | AI Engineer Foundation Program
+				© 2024 Quanskill. All rights reserved. | AI Engineer Foundation Program
 			</p>
 		</footer>
 	</body>

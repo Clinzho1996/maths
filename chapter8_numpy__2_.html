@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 	<head>
 		<meta charset="UTF-8" />
@@ -173,7 +173,7 @@
 				overflow: hidden;
 			}
 			.hero::after {
-				content: "[ ]";
+				content: "🔍¢";
 				position: absolute;
 				bottom: 20px;
 				right: 40px;
@@ -403,7 +403,7 @@
 				gap: 0.5rem;
 			}
 			.index-box .label::before {
-				content: "🔢";
+				content: "🔍¢";
 			}
 			.ops-box {
 				background: linear-gradient(
@@ -428,7 +428,7 @@
 				gap: 0.5rem;
 			}
 			.ops-box .label::before {
-				content: "⚡";
+				content: "âš¡";
 			}
 			.quanskill-box {
 				background: linear-gradient(
@@ -624,7 +624,7 @@
 				gap: 0.5rem;
 			}
 			.summary-item::before {
-				content: "✓";
+				content: "🐍";
 				background: var(--quanskill-orange);
 				width: 20px;
 				height: 20px;
@@ -814,11 +814,11 @@
 		</style>
 	</head>
 	<body>
-		<a href="index.html" class="floating-back-btn">← Main Page</a>
+		<a href="index.html" class="floating-back-btn">← Main Page</a>
 		<header class="header">
 			<div class="header-content">
 				<!-- <a href="index.html" class="header-logo"><img src="Logo_for_Print.jpg" alt="Quanskill" style="height: 40px; border-radius: 8px;"></a> -->
-				<button class="mobile-menu-btn" onclick="toggleSidebar()">☰</button>
+				<button class="mobile-menu-btn" onclick="toggleSidebar()">â˜°</button>
 			</div>
 		</header>
 		<div class="progress-bar">
@@ -832,7 +832,7 @@
 						alt="Quanskill"
 						style="height: 36px; border-radius: 6px"
 				/></a>
-				<div class="chapter-title">Chapter 8 · NumPy</div>
+				<div class="chapter-title">Chapter 8 Â· NumPy</div>
 			</div>
 			<div class="nav-section">
 				<div class="nav-section-title">Overview</div>
@@ -868,12 +868,12 @@
 						<span class="hero-badge">Chapter 8</span>
 						<h1>NumPy Fundamentals</h1>
 						<p class="hero-subtitle">
-							Master NumPy — the foundation of scientific computing in Python.
+							Master NumPy - the foundation of scientific computing in Python.
 							Learn to work with powerful multidimensional arrays.
 						</p>
 						<div class="hero-quote">
 							"NumPy is the backbone of data science in Python. Understanding
-							arrays is essential for everything that follows."<br /><br />—
+							arrays is essential for everything that follows."<br /><br />-
 							<strong>Quanskill Data Science Philosophy</strong>
 						</div>
 					</div>
@@ -887,12 +887,12 @@
 						<p>N-dimensional arrays</p>
 					</div>
 					<div class="concept-card index">
-						<div class="icon">🔢</div>
+						<div class="icon">🔍¢</div>
 						<h5>Indexing</h5>
 						<p>Access elements</p>
 					</div>
 					<div class="concept-card ops">
-						<div class="icon">⚡</div>
+						<div class="icon">âš¡</div>
 						<h5>Vectorization</h5>
 						<p>Fast operations</p>
 					</div>
@@ -902,12 +902,12 @@
 						<p>Different shapes</p>
 					</div>
 					<div class="concept-card array">
-						<div class="icon">🧮</div>
+						<div class="icon">📝§®</div>
 						<h5>Aggregations</h5>
 						<p>sum, mean, std</p>
 					</div>
 					<div class="concept-card index">
-						<div class="icon">✂</div>
+						<div class="icon">âœ‚</div>
 						<h5>Slicing</h5>
 						<p>Extract subarrays</p>
 					</div>
@@ -920,7 +920,7 @@
 						<h2>The NumPy ndarray</h2>
 					</div>
 					<p>
-						NumPy's core is the <strong>ndarray</strong> (N-dimensional array) —
+						NumPy's core is the <strong>ndarray</strong> (N-dimensional array) -
 						a fast, flexible container for large datasets.
 					</p>
 					<div class="definition-box">
@@ -1078,7 +1078,7 @@ arr2d = np.array([[<span class="code-number">1</span>, <span class="code-number"
 <span class="code-function">print</span>(arr2d[:, <span class="code-number">0</span>])    <span class="code-comment"># [1 4 7] (first column)</span>
 <span class="code-function">print</span>(arr2d[:<span class="code-number">2</span>, <span class="code-number">1</span>:])  <span class="code-comment"># [[2 3] [5 6]]</span></code></pre>
 					<div class="note-box">
-						<span class="label">⚠ Views vs Copies</span>
+						<span class="label">âš  Views vs Copies</span>
 						<p>
 							NumPy slices are <strong>views</strong>, not copies! Changes
 							affect the original array. Use <code>.copy()</code> for
@@ -1347,7 +1347,7 @@ scores = np.array([[<span class="code-number">85</span>,<span class="code-number
 						<h2>Chapter 8 Review</h2>
 					</div>
 					<p>
-						You've learned the fundamentals of NumPy — essential for data
+						You've learned the fundamentals of NumPy - essential for data
 						science and scientific computing in Python.
 					</p>
 					<div class="summary-box">
@@ -1423,7 +1423,7 @@ scores = np.array([[<span class="code-number">85</span>,<span class="code-number
 				const options = element.parentElement.querySelectorAll(".quiz-option");
 				const feedbacks =
 					element.parentElement.parentElement.querySelectorAll(
-						".quiz-feedback"
+						".quiz-feedback",
 					);
 				options.forEach((opt) => opt.classList.remove("correct", "incorrect"));
 				feedbacks.forEach((fb) => fb.classList.remove("show"));

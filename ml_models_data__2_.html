@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 	<head>
 		<meta charset="UTF-8" />
@@ -226,7 +226,7 @@
 			}
 
 			.hero::after {
-				content: "";
+				content: "📝¤–";
 				position: absolute;
 				bottom: -30%;
 				left: -10%;
@@ -291,7 +291,9 @@
 				border: 1px solid var(--border-color);
 				padding: 1.25rem;
 				border-radius: 12px;
-				transition: transform 0.2s, box-shadow 0.2s;
+				transition:
+					transform 0.2s,
+					box-shadow 0.2s;
 			}
 
 			.concept-card:hover {
@@ -434,7 +436,7 @@
 			}
 
 			.ml-box .label::before {
-				content: "🤓";
+				content: "📝¤“";
 			}
 
 			.quanskill-box {
@@ -500,7 +502,7 @@
 			}
 
 			.example-box .label::before {
-				content: "▸";
+				content: "â–¸";
 				color: var(--quanskill-orange);
 			}
 
@@ -553,7 +555,7 @@
 			}
 
 			.realworld-box .label::before {
-				content: "🎁";
+				content: "🎯";
 			}
 
 			/* Code Blocks */
@@ -736,7 +738,7 @@
 			}
 
 			.demo-header::before {
-				content: "⚡";
+				content: "âš¡";
 			}
 
 			.demo-controls {
@@ -972,13 +974,13 @@
 	</head>
 	<body>
 		<!-- Floating Back to Main Page Button -->
-		<a href="index.html" class="floating-back-btn">← Main Page</a>
+		<a href="index.html" class="floating-back-btn">← Main Page</a>
 
 		<!-- Header -->
 		<header class="header">
 			<div class="header-content">
 				<!-- <a href="index.html" class="header-logo"><img src="Logo_for_Print.jpg" alt="Quanskill" style="height: 40px; border-radius: 8px;"></a> -->
-				<button class="mobile-menu-btn" onclick="toggleSidebar()">☰</button>
+				<button class="mobile-menu-btn" onclick="toggleSidebar()">â˜°</button>
 			</div>
 		</header>
 
@@ -995,7 +997,7 @@
 						alt="Quanskill"
 						style="height: 36px; border-radius: 6px"
 				/></a>
-				<div class="chapter-title">Chapter 8 · ML Models and Data</div>
+				<div class="chapter-title">Chapter 8 Â· ML Models and Data</div>
 			</div>
 
 			<div class="nav-section">
@@ -1030,7 +1032,7 @@
 						<h1>ML Models and Data</h1>
 						<p class="hero-subtitle">
 							The bridge between mathematical foundations and machine learning
-							practice — understanding how data meets theory to create
+							practice - understanding how data meets theory to create
 							intelligent predictors.
 						</p>
 						<div class="hero-quote">
@@ -1064,19 +1066,19 @@
 						<p>Estimate parameters that make observed data most probable</p>
 					</div>
 					<div class="concept-card">
-						<div class="icon">🔮</div>
+						<div class="icon">🔍®</div>
 						<h5>Bayesian Inference</h5>
 						<p>
 							Update beliefs about parameters using probability distributions
 						</p>
 					</div>
 					<div class="concept-card">
-						<div class="icon">🕒¸</div>
+						<div class="icon">📝•’Â¸</div>
 						<h5>Graphical Models</h5>
 						<p>Visual language for probabilistic dependencies</p>
 					</div>
 					<div class="concept-card">
-						<div class="icon">⚗</div>
+						<div class="icon">âš—</div>
 						<h5>Model Selection</h5>
 						<p>Choose the right model complexity for your data</p>
 					</div>
@@ -1433,7 +1435,7 @@
 					<!-- Interactive Demo: Overfitting -->
 					<div class="demo-container">
 						<div class="demo-header">
-							<span>🎮</span>
+							<span>📝Ž®</span>
 							<h4>Interactive Demo: Overfitting vs. Regularization</h4>
 						</div>
 						<div class="demo-controls">
@@ -1449,7 +1451,7 @@
 							</div>
 							<div class="control-group">
 								<label
-									>Regularization λ: <span id="lambdaVal">0.01</span></label
+									>Regularization Î»: <span id="lambdaVal">0.01</span></label
 								>
 								<input
 									type="range"
@@ -1522,7 +1524,7 @@
 					<div class="quiz-box">
 						<div class="label">Quick Check: Regularization</div>
 						<p class="quiz-question">
-							What happens if the regularization parameter λ is too large?
+							What happens if the regularization parameter Î» is too large?
 						</p>
 						<div class="quiz-options" id="quiz2">
 							<div
@@ -1603,8 +1605,8 @@
 						<p>
 							MLE provides a principled, probabilistic foundation for many ML
 							algorithms. Different likelihood choices lead to different models:
-							Gaussian → regression, Bernoulli → logistic regression, Poisson →
-							count data models.
+							Gaussian ←’ regression, Bernoulli ←’ logistic regression, Poisson
+							←’ count data models.
 						</p>
 					</div>
 
@@ -1682,7 +1684,7 @@
 								<td><strong>Good Fit</strong></td>
 								<td>Model class appropriate</td>
 								<td>Similar train/test error</td>
-								<td>✓ Keep this model</td>
+								<td>âœ“ Keep this model</td>
 							</tr>
 						</tbody>
 					</table>
@@ -1722,7 +1724,7 @@
 						<p>
 							<strong>Spam Classification:</strong> MLE would estimate word
 							frequencies from spam/ham emails. MAP can incorporate prior
-							knowledge — we know certain words (like "viagra") are more likely
+							knowledge - we know certain words (like "viagra") are more likely
 							in spam, so we add informative priors to improve classification on
 							small datasets.
 						</p>
@@ -1766,7 +1768,7 @@
 					<div class="ml-box">
 						<div class="label">Why This Matters in ML</div>
 						<p>
-							Probabilistic models let you quantify uncertainty in predictions —
+							Probabilistic models let you quantify uncertainty in predictions -
 							critical for applications like medical diagnosis, autonomous
 							driving, and financial risk assessment where knowing "how
 							confident" a prediction is can be as important as the prediction
@@ -1949,7 +1951,7 @@
 					<!-- Interactive Demo: Graphical Model -->
 					<div class="demo-container">
 						<div class="demo-header">
-							<span>🕒¸</span>
+							<span>📝•’Â¸</span>
 							<h4>Interactive Demo: Bernoulli Experiment Graphical Model</h4>
 						</div>
 						<div class="demo-controls">
@@ -1966,7 +1968,7 @@
 									oninput="updateGraphDemo()" />
 							</div>
 							<div class="control-group">
-								<label>True μ: <span id="muVal">0.6</span></label>
+								<label>True Î¼: <span id="muVal">0.6</span></label>
 								<input
 									type="range"
 									id="muSlider"
@@ -1987,7 +1989,7 @@
 								text-align: center;
 								color: var(--text-muted);
 							">
-							The latent parameter μ (unobserved, white) generates N observed
+							The latent parameter Î¼ (unobserved, white) generates N observed
 							outcomes x<sub>n</sub> (shaded) via Bernoulli distribution.
 						</p>
 					</div>
@@ -2015,10 +2017,10 @@
 							e\)
 						</p>
 						<ul>
-							<li>\(b \perp\!\!\!\perp d \,|\, a, c\) ✓ (path blocked)</li>
-							<li>\(a \perp\!\!\!\perp c \,|\, b\) ✓ (chain rule)</li>
+							<li>\(b \perp\!\!\!\perp d \,|\, a, c\) âœ“ (path blocked)</li>
+							<li>\(a \perp\!\!\!\perp c \,|\, b\) âœ“ (chain rule)</li>
 							<li>
-								\(b \not\perp\!\!\!\perp d \,|\, c\) ✗ (c is a collider,
+								\(b \not\perp\!\!\!\perp d \,|\, c\) âœ— (c is a collider,
 								conditioning opens path)
 							</li>
 						</ul>
@@ -2074,8 +2076,8 @@
 					</div>
 
 					<p>
-						High-level modeling choices — polynomial degree, number of
-						components, network architecture — critically influence performance.
+						High-level modeling choices - polynomial degree, number of
+						components, network architecture - critically influence performance.
 						<strong>Model selection</strong> is about finding the simplest model
 						that explains data well (<strong>Occam's Razor</strong>).
 					</p>
@@ -2197,7 +2199,7 @@
 								A) No Free Lunch Theorem
 							</div>
 							<div class="quiz-option" onclick="checkQuiz('quiz6', this, true)">
-								B) Occam's Razor — prefer simpler models
+								B) Occam's Razor - prefer simpler models
 							</div>
 							<div
 								class="quiz-option"
@@ -2227,7 +2229,7 @@
 				<!-- Summary Section -->
 				<section class="section" id="summary">
 					<div class="section-header">
-						<span class="section-number">📝</span>
+						<span class="section-number">🐍"</span>
 						<h2>Chapter Summary</h2>
 					</div>
 
@@ -2243,22 +2245,22 @@
 							<p>Average loss over training data</p>
 						</div>
 						<div class="concept-card">
-							<div class="icon">🖊¡</div>
+							<div class="icon">📝–ŠÂ¡</div>
 							<h5>Regularization</h5>
 							<p>Penalty term to prevent overfitting</p>
 						</div>
 						<div class="concept-card">
 							<div class="icon">📈</div>
 							<h5>MLE</h5>
-							<p>Find θ that maximizes data likelihood</p>
+							<p>Find Î¸ that maximizes data likelihood</p>
 						</div>
 						<div class="concept-card">
-							<div class="icon">🏠</div>
+							<div class="icon">🐍Â </div>
 							<h5>MAP</h5>
 							<p>MLE + prior = regularized estimation</p>
 						</div>
 						<div class="concept-card">
-							<div class="icon">🔮</div>
+							<div class="icon">🔍®</div>
 							<h5>Bayesian Inference</h5>
 							<p>Full posterior distribution on parameters</p>
 						</div>
@@ -2281,7 +2283,7 @@
 							</li>
 							<li>
 								<strong>Overfitting:</strong> Low train error + high test error
-								→ too complex model
+								←’ too complex model
 							</li>
 							<li>
 								<strong>Graphical models</strong> visualize joint distribution
@@ -2297,24 +2299,24 @@
 					<div class="quanskill-box">
 						<div class="label">Your Next Steps with Quanskill</div>
 						<p>
-							🎯° <strong>Congratulations!</strong> You now have the foundations
-							for all four pillars of ML:
+							🎯Â° <strong>Congratulations!</strong> You now have the
+							foundations for all four pillars of ML:
 						</p>
 						<ul>
 							<li>
-								<strong>Chapter 9:</strong> Linear Regression — apply
+								<strong>Chapter 9:</strong> Linear Regression - apply
 								MLE/MAP/Bayesian inference
 							</li>
 							<li>
-								<strong>Chapter 10:</strong> Dimensionality Reduction (PCA) —
+								<strong>Chapter 10:</strong> Dimensionality Reduction (PCA) -
 								latent variables
 							</li>
 							<li>
-								<strong>Chapter 11:</strong> Density Estimation (GMM) — EM
+								<strong>Chapter 11:</strong> Density Estimation (GMM) - EM
 								algorithm
 							</li>
 							<li>
-								<strong>Chapter 12:</strong> Classification (SVM) — ERM with
+								<strong>Chapter 12:</strong> Classification (SVM) - ERM with
 								hinge loss
 							</li>
 						</ul>
@@ -2351,7 +2353,7 @@
 
 				if (isCorrect) {
 					element.classList.add("correct");
-					feedback.textContent = "✓ Correct! Well done!";
+					feedback.textContent = "âœ“ Correct! Well done!";
 					feedback.className = "quiz-feedback show correct";
 				} else {
 					element.classList.add("incorrect");
@@ -2362,7 +2364,7 @@
 						}
 					});
 					feedback.textContent =
-						"✗ Not quite. The correct answer is highlighted.";
+						"âœ— Not quite. The correct answer is highlighted.";
 					feedback.className = "quiz-feedback show incorrect";
 				}
 			}
@@ -2409,7 +2411,7 @@
 				}
 
 				// Simplified least squares (just return function for demo)
-				// In practice, would solve (X^T X + λI)^{-1} X^T y
+				// In practice, would solve (X^T X + Î»I)^{-1} X^T y
 				return function (x) {
 					// Approximate fit using simple polynomial interpolation
 					let result = 0;
@@ -2440,7 +2442,7 @@
 			function updateOverfitDemo() {
 				const degree = parseInt(document.getElementById("degreeSlider").value);
 				const lambdaExp = parseFloat(
-					document.getElementById("lambdaSlider").value
+					document.getElementById("lambdaSlider").value,
 				);
 				const lambda = Math.pow(10, lambdaExp);
 				const noise = parseFloat(document.getElementById("noiseSlider").value);
@@ -2590,7 +2592,7 @@
 				} else {
 					status = "Good Fit";
 					explanation =
-						"Model complexity is appropriate for the data — good balance of bias and variance.";
+						"Model complexity is appropriate for the data - good balance of bias and variance.";
 				}
 
 				document.getElementById("fitStatus").textContent = status;
@@ -2617,7 +2619,7 @@
 				const obsY = 170;
 				const nodeRadius = 25;
 
-				// Draw μ node (latent)
+				// Draw Î¼ node (latent)
 				ctx.strokeStyle = "#0b2fa0";
 				ctx.lineWidth = 3;
 				ctx.fillStyle = "white";
@@ -2630,7 +2632,7 @@
 				ctx.font = "bold 20px Space Grotesk, sans-serif";
 				ctx.textAlign = "center";
 				ctx.textBaseline = "middle";
-				ctx.fillText("μ", centerX, muY);
+				ctx.fillText("Î¼", centerX, muY);
 
 				// Draw observation nodes
 				const spacing = Math.min(70, (width - 100) / N);
@@ -2645,7 +2647,7 @@
 				for (let i = 0; i < N; i++) {
 					const nodeX = startX + i * spacing;
 
-					// Draw arrow from μ to observation
+					// Draw arrow from Î¼ to observation
 					ctx.strokeStyle = "#94a3b8";
 					ctx.lineWidth = 2;
 					ctx.beginPath();
@@ -2656,18 +2658,18 @@
 					// Arrowhead
 					const angle = Math.atan2(
 						obsY - nodeRadius - 5 - (muY + nodeRadius + 5),
-						nodeX - centerX
+						nodeX - centerX,
 					);
 					ctx.beginPath();
 					ctx.moveTo(nodeX, obsY - nodeRadius - 5);
 					ctx.lineTo(
 						nodeX - 8 * Math.cos(angle - 0.4),
-						obsY - nodeRadius - 5 - 8 * Math.sin(angle - 0.4)
+						obsY - nodeRadius - 5 - 8 * Math.sin(angle - 0.4),
 					);
 					ctx.moveTo(nodeX, obsY - nodeRadius - 5);
 					ctx.lineTo(
 						nodeX - 8 * Math.cos(angle + 0.4),
-						obsY - nodeRadius - 5 - 8 * Math.sin(angle + 0.4)
+						obsY - nodeRadius - 5 - 8 * Math.sin(angle + 0.4),
 					);
 					ctx.stroke();
 
@@ -2699,7 +2701,7 @@
 					plateX,
 					obsY - nodeRadius - 25,
 					plateWidth,
-					nodeRadius * 2 + 50
+					nodeRadius * 2 + 50,
 				);
 				ctx.setLineDash([]);
 
@@ -2714,11 +2716,9 @@
 				ctx.font = "14px JetBrains Mono, monospace";
 				ctx.textAlign = "center";
 				ctx.fillText(
-					`p(x₁,...,x${N} | μ) = ∏ p(xₙ | μ) = Ber(μ)^${
-						samples.filter((s) => s).length
-					} × (1-μ)^${samples.filter((s) => !s).length}`,
+					`p(xâ‚,...,x${N} | Î¼) = âˆ p(xâ‚™ | Î¼) = Ber(Î¼)^${samples.filter((s) => s).length} × (1-Î¼)^${samples.filter((s) => !s).length}`,
 					centerX,
-					height - 20
+					height - 20,
 				);
 			}
 

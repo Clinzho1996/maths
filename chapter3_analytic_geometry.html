@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 	<head>
 		<meta charset="UTF-8" />
@@ -220,7 +220,7 @@
 			}
 
 			.hero::after {
-				content: "";
+				content: "📝";
 				position: absolute;
 				bottom: -30%;
 				left: -10%;
@@ -285,7 +285,9 @@
 				border: 1px solid var(--border-color);
 				padding: 1.25rem;
 				border-radius: 12px;
-				transition: transform 0.2s, box-shadow 0.2s;
+				transition:
+					transform 0.2s,
+					box-shadow 0.2s;
 			}
 
 			.concept-card:hover {
@@ -428,7 +430,7 @@
 			}
 
 			.ml-box .label::before {
-				content: "🤓";
+				content: "📝¤“";
 			}
 
 			.quanskill-box {
@@ -494,7 +496,7 @@
 			}
 
 			.example-box .label::before {
-				content: "▸";
+				content: "â–¸";
 				color: var(--quanskill-orange);
 			}
 
@@ -547,7 +549,7 @@
 			}
 
 			.realworld-box .label::before {
-				content: "🎁";
+				content: "🎯";
 			}
 
 			/* Code Blocks */
@@ -724,7 +726,7 @@
 			}
 
 			.demo-header::before {
-				content: "⚡";
+				content: "âš¡";
 			}
 
 			.demo-controls {
@@ -947,19 +949,14 @@
 	</head>
 	<body>
 		<!-- Floating Back to Main Page Button -->
-		<a href="index.html" class="floating-back-btn">← Main Page</a>
+		<a href="index.html" class="floating-back-btn">← Main Page</a>
 
-		<button class="mobile-menu-btn" onclick="toggleSidebar()">☰</button>
+		<button class="mobile-menu-btn" onclick="toggleSidebar()">â˜°</button>
 
 		<header class="header">
-			<div class="header-content">
-				<a href="index.html" class="header-logo"
-					><img
-						src="Logo_for_Print.jpg"
-						alt="Quanskill"
-						style="height: 40px; border-radius: 8px"
-				/></a>
-			</div>
+			<!-- <div class="header-content">
+            <a href="index.html" class="header-logo"><img src="Logo_for_Print.jpg" alt="Quanskill" style="height: 40px; border-radius: 8px;"></a>
+        </div> -->
 		</header>
 
 		<div class="progress-bar">
@@ -968,7 +965,12 @@
 
 		<nav class="sidebar" id="sidebar">
 			<div class="sidebar-header">
-				<!-- <a href="index.html" class="logo"><img src="Logo_for_Print.jpg" alt="Quanskill" style="height: 36px; border-radius: 6px;"></a> -->
+				<a href="index.html" class="logo"
+					><img
+						src="Logo_for_Print.jpg"
+						alt="Quanskill"
+						style="height: 36px; border-radius: 6px"
+				/></a>
 				<div class="chapter-title">Chapter 3 of 12</div>
 			</div>
 
@@ -1000,12 +1002,12 @@
 						<span class="hero-badge">Chapter 3</span>
 						<h1>Analytic Geometry</h1>
 						<p class="hero-subtitle">
-							Master norms, inner products, distances, angles, and projections —
+							Master norms, inner products, distances, angles, and projections -
 							the geometric foundations that measure similarity and
 							relationships between vectors in machine learning.
 						</p>
 						<div class="hero-quote">
-							"Geometry is the archetype of the beauty of the world." — Johannes
+							"Geometry is the archetype of the beauty of the world." - Johannes
 							Kepler
 						</div>
 					</div>
@@ -1014,22 +1016,22 @@
 				<!-- Key Concepts -->
 				<div class="key-concepts">
 					<div class="concept-card">
-						<div class="icon">📏</div>
+						<div class="icon">🐍"</div>
 						<h5>Norms</h5>
 						<p>Functions that measure the "length" or "size" of vectors.</p>
 					</div>
 					<div class="concept-card">
-						<div class="icon">⟨·,·⟩</div>
+						<div class="icon">âŸ¨Â·,Â·âŸ©</div>
 						<h5>Inner Products</h5>
 						<p>Operations that define angles, lengths, and orthogonality.</p>
 					</div>
 					<div class="concept-card">
-						<div class="icon">📐</div>
+						<div class="icon">🐍"</div>
 						<h5>Projections</h5>
 						<p>Decomposing vectors into components along directions.</p>
 					</div>
 					<div class="concept-card">
-						<div class="icon">🔄</div>
+						<div class="icon">🔍„</div>
 						<h5>Rotations</h5>
 						<p>Length-preserving transformations in vector spaces.</p>
 					</div>
@@ -1044,7 +1046,7 @@
 
 					<p>
 						In Chapter 2, we studied vectors and linear mappings. Now we add
-						<strong>geometric structure</strong> — the ability to measure
+						<strong>geometric structure</strong> - the ability to measure
 						lengths, angles, and distances. This is what transforms abstract
 						linear algebra into a powerful tool for machine learning.
 					</p>
@@ -1079,7 +1081,7 @@
 							Modern AI agents use vector embeddings to represent concepts,
 							tools, and knowledge. When an agent needs to find the right tool
 							for a task, it computes similarities using inner products and
-							distances — the exact concepts we'll learn in this chapter.
+							distances - the exact concepts we'll learn in this chapter.
 						</p>
 					</div>
 				</section>
@@ -1100,22 +1102,28 @@
 					<div class="definition-box">
 						<span class="label">Definition: Norm</span>
 						<p>
-							A norm on a vector space V is a function ‗·‖ : V → ℝ that
+							A norm on a vector space V is a function â€—Â·â€– : V ←’ â„ that
 							satisfies:
 						</p>
 						<ul>
 							<li>
-								<strong>Positive definiteness:</strong> ‗x‗ ≥ 0 and ‗x‗ = 0 ⟺ x
-								= 0
+								<strong>Positive definiteness:</strong> â€—xâ€— â‰¥ 0 and
+								â€—xâ€— = 0 âŸº x = 0
 							</li>
-							<li><strong>Absolute homogeneity:</strong> ‗λx‗ = |λ| · ‗x‗</li>
-							<li><strong>Triangle inequality:</strong> ‗x + y‗ ≤ ‗x‗ + ‗y‗</li>
+							<li>
+								<strong>Absolute homogeneity:</strong> â€—Î»xâ€— = |Î»| Â·
+								â€—xâ€—
+							</li>
+							<li>
+								<strong>Triangle inequality:</strong> â€—x + yâ€— â‰¤ â€—xâ€— +
+								â€—yâ€—
+							</li>
 						</ul>
 					</div>
 
 					<h3>Common Norms</h3>
 
-					<h4>Euclidean Norm (L² Norm)</h4>
+					<h4>Euclidean Norm (LÂ² Norm)</h4>
 					<p>
 						The most familiar norm, measuring "straight-line" distance from the
 						origin:
@@ -1125,13 +1133,13 @@
 						x}$$
 					</div>
 
-					<h4>Manhattan Norm (L¹ Norm)</h4>
+					<h4>Manhattan Norm (LÂ¹ Norm)</h4>
 					<p>Sum of absolute values, measuring "city block" distance:</p>
 					<div class="math-display">
 						$$\|x\|_1 = |x_1| + |x_2| + \cdots + |x_n|$$
 					</div>
 
-					<h4>Max Norm (L∞ Norm)</h4>
+					<h4>Max Norm (Lâˆž Norm)</h4>
 					<p>The maximum absolute component:</p>
 					<div class="math-display">$$\|x\|_\infty = \max_i |x_i|$$</div>
 
@@ -1142,7 +1150,7 @@
 						</div>
 						<div class="demo-controls">
 							<div class="control-group">
-								<label>x₁</label>
+								<label>xâ‚</label>
 								<input
 									type="number"
 									id="norm_x1"
@@ -1151,7 +1159,7 @@
 									onchange="updateNorms()" />
 							</div>
 							<div class="control-group">
-								<label>x₂</label>
+								<label>xâ‚‚</label>
 								<input
 									type="number"
 									id="norm_x2"
@@ -1164,15 +1172,15 @@
 						<div class="demo-results">
 							<div class="result-item">
 								<div class="value" id="l2Result">5.00</div>
-								<div class="label">L² (Euclidean)</div>
+								<div class="label">LÂ² (Euclidean)</div>
 							</div>
 							<div class="result-item">
 								<div class="value" id="l1Result">7.00</div>
-								<div class="label">L¹ (Manhattan)</div>
+								<div class="label">LÂ¹ (Manhattan)</div>
 							</div>
 							<div class="result-item">
 								<div class="value" id="linfResult">4.00</div>
-								<div class="label">L∞ (Max)</div>
+								<div class="label">Lâˆž (Max)</div>
 							</div>
 						</div>
 					</div>
@@ -1181,9 +1189,9 @@
 						<span class="label">Key Insight</span>
 						<p>
 							Different norms create different "unit balls" (set of vectors with
-							norm ≤ 1). L¹ creates a diamond, L² creates a circle, and L∞
-							creates a square. These shapes affect how ML algorithms behave —
-							L¹ regularization promotes <em>sparsity</em> because its corners
+							norm â‰¤ 1). LÂ¹ creates a diamond, LÂ² creates a circle, and Lâˆž
+							creates a square. These shapes affect how ML algorithms behave -
+							LÂ¹ regularization promotes <em>sparsity</em> because its corners
 							lie on axes.
 						</p>
 					</div>
@@ -1192,7 +1200,7 @@
 						<span class="label">Real-World Application</span>
 						<p>
 							<strong>Recommendation Systems:</strong> Vietnamese e-commerce
-							platforms like Tiki and Shopee use L² distances between product
+							platforms like Tiki and Shopee use LÂ² distances between product
 							embedding vectors to find similar items. When you view a product,
 							the "similar items" section shows products whose embedding vectors
 							are closest in Euclidean distance.
@@ -1217,24 +1225,25 @@
 					<div class="definition-box">
 						<span class="label">Definition: Inner Product</span>
 						<p>
-							An inner product on a vector space V is a function ⟨·,·⟩ : V × V →
-							ℝ that satisfies:
+							An inner product on a vector space V is a function âŸ¨Â·,Â·âŸ© : V
+							× V ←’ â„ that satisfies:
 						</p>
 						<ul>
-							<li><strong>Symmetry:</strong> ⟨x, y⟩ = ⟨y, x⟩</li>
+							<li><strong>Symmetry:</strong> âŸ¨x, yâŸ© = âŸ¨y, xâŸ©</li>
 							<li>
-								<strong>Linearity:</strong> ⟨αx + βy, z⟩ = α⟨x, z⟩ + β⟨y, z⟩
+								<strong>Linearity:</strong> âŸ¨Î±x + Î²y, zâŸ© = Î±âŸ¨x, zâŸ© +
+								Î²âŸ¨y, zâŸ©
 							</li>
 							<li>
-								<strong>Positive definiteness:</strong> ⟨x, x⟩ ≥ 0 and ⟨x, x⟩ =
-								0 ⟺ x = 0
+								<strong>Positive definiteness:</strong> âŸ¨x, xâŸ© â‰¥ 0 and
+								âŸ¨x, xâŸ© = 0 âŸº x = 0
 							</li>
 						</ul>
 					</div>
 
 					<h3>The Standard Dot Product</h3>
 					<p>
-						The most common inner product on ℝⁿ is the
+						The most common inner product on â„â¿ is the
 						<strong>dot product</strong>:
 					</p>
 					<div class="math-display">
@@ -1255,8 +1264,8 @@
 						$$\|x\| = \sqrt{\langle x, x \rangle}$$
 					</div>
 					<p>
-						This is how the Euclidean norm arises from the dot product: ‗x‗₂ =
-						√(x·x).
+						This is how the Euclidean norm arises from the dot product:
+						â€—xâ€—â‚‚ = âˆš(xÂ·x).
 					</p>
 
 					<div class="quanskill-box">
@@ -1285,13 +1294,14 @@
 
 					<div class="definition-box">
 						<span class="label">Definition: Angle Between Vectors</span>
-						<p>The angle ω between vectors x and y is defined by:</p>
+						<p>The angle Ï‰ between vectors x and y is defined by:</p>
 						<div class="math-display">
 							$$\cos(\omega) = \frac{\langle x, y \rangle}{\|x\| \cdot \|y\|}$$
 						</div>
 						<p>
 							This formula is valid because of the
-							<strong>Cauchy-Schwarz inequality</strong>: |⟨x,y⟩| ≤ ‗x‗·‖y‗
+							<strong>Cauchy-Schwarz inequality</strong>: |âŸ¨x,yâŸ©| â‰¤
+							â€—xâ€—Â·â€–yâ€—
 						</p>
 					</div>
 
@@ -1302,7 +1312,7 @@
 						</div>
 						<div class="demo-controls">
 							<div class="control-group">
-								<label>Vector x: [x₁, x₂]</label>
+								<label>Vector x: [xâ‚, xâ‚‚]</label>
 								<input
 									type="number"
 									id="angle_x1"
@@ -1317,7 +1327,7 @@
 									onchange="updateAngle()" />
 							</div>
 							<div class="control-group">
-								<label>Vector y: [y₁, y₂]</label>
+								<label>Vector y: [yâ‚, yâ‚‚]</label>
 								<input
 									type="number"
 									id="angle_y1"
@@ -1340,11 +1350,11 @@
 							</div>
 							<div class="result-item">
 								<div class="value" id="cosResult">0.71</div>
-								<div class="label">cos(ω)</div>
+								<div class="label">cos(Ï‰)</div>
 							</div>
 							<div class="result-item">
-								<div class="value" id="angleResult">45°</div>
-								<div class="label">Angle ω</div>
+								<div class="value" id="angleResult">45Â°</div>
+								<div class="label">Angle Ï‰</div>
 							</div>
 						</div>
 					</div>
@@ -1406,8 +1416,8 @@
 					<div class="definition-box">
 						<span class="label">Definition: Orthogonality</span>
 						<p>
-							Vectors x and y are <strong>orthogonal</strong> if ⟨x, y⟩ = 0,
-							written x ⊥ y.
+							Vectors x and y are <strong>orthogonal</strong> if âŸ¨x, yâŸ© = 0,
+							written x âŠ¥ y.
 						</p>
 						<p>
 							The <strong>orthogonal complement</strong> of a set S is all
@@ -1433,9 +1443,9 @@
 						<span class="label">Why Orthonormal Bases Matter</span>
 						<p>
 							Working with orthonormal bases simplifies many computations. For
-							an orthonormal basis {b₁, ..., bₙ}, the coordinates of any vector
-							x are simply the inner products: xᵀ¢ = ⟨x, bᵀ¢⟩. No matrix
-							inversion needed!
+							an orthonormal basis {bâ‚, ..., bâ‚™}, the coordinates of any
+							vector x are simply the inner products: xáµ€Â¢ = âŸ¨x, báµ€Â¢âŸ©.
+							No matrix inversion needed!
 						</p>
 					</div>
 
@@ -1448,9 +1458,14 @@
 					<div class="algorithm-box">
 						<h4>Algorithm: Gram-Schmidt Process</h4>
 						<ol>
-							<li>u₁ = v₁, then e₁ = u₁/‗u₁‗</li>
-							<li>u₂ = v₂ - ⟨v₂, e₁⟩e₁, then e₂ = u₂/‗u₂‗</li>
-							<li>uₖ = vₖ - Σ∂¼ⱼ₁ᵀ ⟨vₖ, e∂¼⟩e∂¼, then eₖ = uₖ/‗uₗ‗</li>
+							<li>uâ‚ = vâ‚, then eâ‚ = uâ‚/â€—uâ‚-</li>
+							<li>
+								uâ‚‚ = vâ‚‚ - âŸ¨vâ‚‚, eâ‚âŸ©eâ‚, then eâ‚‚ = uâ‚‚/â€—uâ‚‚â€—
+							</li>
+							<li>
+								uâ‚– = vâ‚– - Î£âˆ‚áµ¢â±¼â‚áµ€ âŸ¨vâ‚–, eâˆ‚Â¼âŸ©eâˆ‚Â¼, then
+								eâ‚– = uâ‚–/â€—uâ‚—â€—
+							</li>
 						</ol>
 					</div>
 
@@ -1490,7 +1505,7 @@
 							\rangle} u = \frac{\langle v, u \rangle}{\|u\|^2} u$$
 						</div>
 						<p>
-							The scalar coefficient ⟨v,u⟩/‗u‗ is called the
+							The scalar coefficient âŸ¨v,uâŸ©/â€—uâ€— is called the
 							<strong>scalar projection</strong> or <strong>component</strong>.
 						</p>
 					</div>
@@ -1502,7 +1517,7 @@
 						</div>
 						<div class="demo-controls">
 							<div class="control-group">
-								<label>Vector v: [v₁, v₂]</label>
+								<label>Vector v: [vâ‚, vâ‚‚]</label>
 								<input
 									type="number"
 									id="proj_v1"
@@ -1517,7 +1532,7 @@
 									onchange="updateProjection()" />
 							</div>
 							<div class="control-group">
-								<label>Onto u: [u₁, u₂]</label>
+								<label>Onto u: [uâ‚, uâ‚‚]</label>
 								<input
 									type="number"
 									id="proj_u1"
@@ -1559,8 +1574,8 @@
 					<div class="note-box">
 						<span class="label">Key Property</span>
 						<p>
-							Projection matrices are <strong>idempotent</strong>: P² = P.
-							Projecting twice gives the same result as projecting once — you're
+							Projection matrices are <strong>idempotent</strong>: PÂ² = P.
+							Projecting twice gives the same result as projecting once - you're
 							already in the subspace!
 						</p>
 					</div>
@@ -1568,11 +1583,11 @@
 					<div class="quanskill-box">
 						<span class="label">Connection to Linear Regression</span>
 						<p>
-							In linear regression, we find θ that minimizes ‗y - Xθ‗². The
-							solution projects y onto the column space of X. The predicted
-							values Å· = Xθ = Py are the projection, and the residuals y - Å·
-							are orthogonal to the column space. This is why we call it "least
-							squares" — we minimize the squared length of the residual!
+							In linear regression, we find Î¸ that minimizes â€—y - XÎ¸â€—Â².
+							The solution projects y onto the column space of X. The predicted
+							values Ã…Â· = XÎ¸ = Py are the projection, and the residuals y -
+							Ã…Â· are orthogonal to the column space. This is why we call it
+							"least squares" - we minimize the squared length of the residual!
 						</p>
 					</div>
 				</section>
@@ -1595,24 +1610,24 @@
 						<p>A matrix Q is <strong>orthogonal</strong> if:</p>
 						<div class="math-display">$$Q^\top Q = Q Q^\top = I$$</div>
 						<p>
-							Equivalently, Q⁻¹ = Qᵀ, and the columns (and rows) form an
+							Equivalently, Qâ»Â¹ = Qáµ€, and the columns (and rows) form an
 							orthonormal basis.
 						</p>
 					</div>
 
 					<h3>2D Rotation Matrix</h3>
-					<p>Rotation by angle θ counterclockwise:</p>
+					<p>Rotation by angle Î¸ counterclockwise:</p>
 					<div class="math-display">
 						$$R(\theta) = \begin{bmatrix} \cos\theta & -\sin\theta \\ \sin\theta
 						& \cos\theta \end{bmatrix}$$
 					</div>
 
 					<div class="example-box">
-						<span class="label">Example: 45° Rotation</span>
-						<p>Rotating [1, 0] by 45°:</p>
+						<span class="label">Example: 45Â° Rotation</span>
+						<p>Rotating [1, 0] by 45Â°:</p>
 						<div class="math-display">
-							$$R(45°) \begin{bmatrix} 1 \\ 0 \end{bmatrix} = \begin{bmatrix}
-							\cos 45° \\ \sin 45° \end{bmatrix} = \begin{bmatrix} 0.707 \\
+							$$R(45Â°) \begin{bmatrix} 1 \\ 0 \end{bmatrix} = \begin{bmatrix}
+							\cos 45Â° \\ \sin 45Â° \end{bmatrix} = \begin{bmatrix} 0.707 \\
 							0.707 \end{bmatrix}$$
 						</div>
 					</div>
@@ -1640,7 +1655,7 @@
 					<div class="quiz-box" id="quiz1">
 						<span class="label">Quick Check 1</span>
 						<p class="quiz-question">
-							For vectors x = [3, 4], what is the L² (Euclidean) norm?
+							For vectors x = [3, 4], what is the LÂ² (Euclidean) norm?
 						</p>
 						<div class="quiz-options">
 							<div class="quiz-option" onclick="checkQuiz(1, 0)">A) 7</div>
@@ -1747,12 +1762,12 @@
 			const quizAnswers = {
 				1: {
 					correct: 1,
-					explanation: "‗x‗₂ = √(3² + 4²) = √(9 + 16) = √25 = 5",
+					explanation: "â€—xâ€—â‚‚ = âˆš(3Â² + 4Â²) = âˆš(9 + 16) = âˆš25 = 5",
 				},
 				2: {
 					correct: 1,
 					explanation:
-						"Orthogonal vectors have ⟨x,y⟩ = 0, meaning they are perpendicular.",
+						"Orthogonal vectors have âŸ¨x,yâŸ© = 0, meaning they are perpendicular.",
 				},
 				3: {
 					correct: 1,
@@ -1762,7 +1777,7 @@
 				4: {
 					correct: 0,
 					explanation:
-						"Cosine similarity of 1 means cos(ω) = 1, so ω = 0°, vectors point same direction.",
+						"Cosine similarity of 1 means cos(Ï‰) = 1, so Ï‰ = 0Â°, vectors point same direction.",
 				},
 			};
 
@@ -1782,10 +1797,10 @@
 				feedback.classList.add("show");
 				if (selected === answer.correct) {
 					feedback.classList.add("correct");
-					feedback.innerHTML = `✓ Correct! ${answer.explanation}`;
+					feedback.innerHTML = `âœ“ Correct! ${answer.explanation}`;
 				} else {
 					feedback.classList.add("incorrect");
-					feedback.innerHTML = `✗ Incorrect. ${answer.explanation}`;
+					feedback.innerHTML = `âœ— Incorrect. ${answer.explanation}`;
 				}
 			}
 
@@ -1880,7 +1895,7 @@
 				document.getElementById("dotResult").textContent = dot.toFixed(2);
 				document.getElementById("cosResult").textContent = cosAngle.toFixed(2);
 				document.getElementById("angleResult").textContent =
-					angle.toFixed(0) + "°";
+					angle.toFixed(0) + "Â°";
 
 				drawAngleCanvas(x1, x2, y1, y2);
 			}
@@ -1961,12 +1976,10 @@
 				const resY = v2 - projY;
 
 				document.getElementById("projScalar").textContent = scalar.toFixed(2);
-				document.getElementById("projVector").textContent = `[${projX.toFixed(
-					1
-				)}, ${projY.toFixed(1)}]`;
-				document.getElementById("residual").textContent = `[${resX.toFixed(
-					1
-				)}, ${resY.toFixed(1)}]`;
+				document.getElementById("projVector").textContent =
+					`[${projX.toFixed(1)}, ${projY.toFixed(1)}]`;
+				document.getElementById("residual").textContent =
+					`[${resX.toFixed(1)}, ${resY.toFixed(1)}]`;
 
 				drawProjectionCanvas(v1, v2, u1, u2, projX, projY);
 			}

@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 	<head>
 		<meta charset="UTF-8" />
@@ -282,7 +282,9 @@
 				border: 1px solid var(--border-color);
 				padding: 1.25rem;
 				border-radius: 12px;
-				transition: transform 0.2s, box-shadow 0.2s;
+				transition:
+					transform 0.2s,
+					box-shadow 0.2s;
 			}
 
 			.concept-card:hover {
@@ -449,7 +451,7 @@
 			}
 
 			.list-box .label::before {
-				content: "📋";
+				content: "📝‹";
 			}
 
 			.tuple-box {
@@ -478,7 +480,7 @@
 			}
 
 			.tuple-box .label::before {
-				content: "🔒";
+				content: "🔍’";
 			}
 
 			.dict-box {
@@ -507,7 +509,7 @@
 			}
 
 			.dict-box .label::before {
-				content: "🗂";
+				content: "📝—‚";
 			}
 
 			.set-box {
@@ -602,7 +604,7 @@
 			}
 
 			.example-box .label::before {
-				content: "▸";
+				content: "â–¸";
 				color: var(--quanskill-orange);
 			}
 
@@ -655,7 +657,7 @@
 			}
 
 			.realworld-box .label::before {
-				content: "🌍";
+				content: "🌍";
 			}
 
 			code {
@@ -1035,7 +1037,7 @@
 			}
 
 			.summary-item::before {
-				content: "✓";
+				content: "🐍";
 				background: var(--quanskill-orange);
 				width: 20px;
 				height: 20px;
@@ -1059,12 +1061,12 @@
 		</style>
 	</head>
 	<body>
-		<a href="index.html" class="floating-back-btn">← Main Page</a>
+		<a href="index.html" class="floating-back-btn">← Main Page</a>
 
 		<header class="header">
 			<div class="header-content">
 				<!-- <a href="index.html" class="header-logo"><img src="Logo_for_Print.jpg" alt="Quanskill" style="height: 40px; border-radius: 8px;"></a> -->
-				<button class="mobile-menu-btn" onclick="toggleSidebar()">☰</button>
+				<button class="mobile-menu-btn" onclick="toggleSidebar()">â˜°</button>
 			</div>
 		</header>
 
@@ -1080,7 +1082,7 @@
 						alt="Quanskill"
 						style="height: 36px; border-radius: 6px"
 				/></a>
-				<div class="chapter-title">Chapter 2 · Collections</div>
+				<div class="chapter-title">Chapter 2 Â· Collections</div>
 			</div>
 
 			<div class="nav-section">
@@ -1111,7 +1113,7 @@
 						<span class="hero-badge">Chapter 2</span>
 						<h1>Python Collections & Data Structures</h1>
 						<p class="hero-subtitle">
-							Master Python's powerful built-in collection types — Lists,
+							Master Python's powerful built-in collection types - Lists,
 							Tuples, Dictionaries, and Sets. These data structures are the
 							backbone of data manipulation in data science.
 						</p>
@@ -1119,7 +1121,7 @@
 							"The right data structure can make the difference between a
 							program that runs in seconds and one that runs in hours. Choose
 							wisely!"
-							<br /><br />— <strong>Quanskill Data Science Principle</strong>
+							<br /><br />- <strong>Quanskill Data Science Principle</strong>
 						</div>
 					</div>
 				</section>
@@ -1139,28 +1141,28 @@
 
 					<div class="collection-comparison">
 						<div class="collection-type list">
-							<div class="symbol">📋</div>
+							<div class="symbol">📝‹</div>
 							<h5>List</h5>
 							<span class="syntax">[1, 2, 3]</span>
-							<p class="feature">Ordered • Mutable • Allows Duplicates</p>
+							<p class="feature">Ordered â€¢ Mutable â€¢ Allows Duplicates</p>
 						</div>
 						<div class="collection-type tuple">
-							<div class="symbol">🔒</div>
+							<div class="symbol">🔍’</div>
 							<h5>Tuple</h5>
 							<span class="syntax">(1, 2, 3)</span>
-							<p class="feature">Ordered • Immutable • Allows Duplicates</p>
+							<p class="feature">Ordered â€¢ Immutable â€¢ Allows Duplicates</p>
 						</div>
 						<div class="collection-type dict">
-							<div class="symbol">🗂</div>
+							<div class="symbol">📝—‚</div>
 							<h5>Dictionary</h5>
 							<span class="syntax">{"a": 1}</span>
-							<p class="feature">Key-Value • Mutable • No Duplicate Keys</p>
+							<p class="feature">Key-Value â€¢ Mutable â€¢ No Duplicate Keys</p>
 						</div>
 						<div class="collection-type set">
 							<div class="symbol">🎯</div>
 							<h5>Set</h5>
 							<span class="syntax">{1, 2, 3}</span>
-							<p class="feature">Unordered • Mutable • No Duplicates</p>
+							<p class="feature">Unordered â€¢ Mutable â€¢ No Duplicates</p>
 						</div>
 					</div>
 
@@ -1177,31 +1179,31 @@
 						<tbody>
 							<tr>
 								<td><strong>Ordered</strong></td>
-								<td>✅ Yes</td>
-								<td>✅ Yes</td>
-								<td>✅ Yes (3.7+)</td>
-								<td>❌ No</td>
+								<td>âœ… Yes</td>
+								<td>âœ… Yes</td>
+								<td>âœ… Yes (3.7+)</td>
+								<td>âŒ No</td>
 							</tr>
 							<tr>
 								<td><strong>Mutable</strong></td>
-								<td>✅ Yes</td>
-								<td>❌ No</td>
-								<td>✅ Yes</td>
-								<td>✅ Yes</td>
+								<td>âœ… Yes</td>
+								<td>âŒ No</td>
+								<td>âœ… Yes</td>
+								<td>âœ… Yes</td>
 							</tr>
 							<tr>
 								<td><strong>Duplicates</strong></td>
-								<td>✅ Allowed</td>
-								<td>✅ Allowed</td>
-								<td>❌ Keys unique</td>
-								<td>❌ No</td>
+								<td>âœ… Allowed</td>
+								<td>âœ… Allowed</td>
+								<td>âŒ Keys unique</td>
+								<td>âŒ No</td>
 							</tr>
 							<tr>
 								<td><strong>Indexing</strong></td>
-								<td>✅ Yes</td>
-								<td>✅ Yes</td>
+								<td>âœ… Yes</td>
+								<td>âœ… Yes</td>
 								<td>By key</td>
-								<td>❌ No</td>
+								<td>âŒ No</td>
 							</tr>
 						</tbody>
 					</table>
@@ -1241,7 +1243,7 @@
 						Lists are one of the most versatile and commonly used data
 						structures in Python. They are
 						<strong>ordered collections</strong> that can hold items of any data
-						type, and they're <strong>mutable</strong> — meaning you can modify
+						type, and they're <strong>mutable</strong> - meaning you can modify
 						them after creation.
 					</p>
 
@@ -1503,8 +1505,8 @@ rgb = <span class="code-number">255</span>, <span class="code-number">128</span>
 							</tr>
 							<tr>
 								<td><strong>Use as Dict Key</strong></td>
-								<td>✅ Yes (hashable)</td>
-								<td>❌ No</td>
+								<td>âœ… Yes (hashable)</td>
+								<td>âŒ No</td>
 							</tr>
 						</tbody>
 					</table>
@@ -2000,7 +2002,7 @@ valid_ids_set = <span class="code-function">set</span>(valid_ids)
 				const options = element.parentElement.querySelectorAll(".quiz-option");
 				const feedbacks =
 					element.parentElement.parentElement.querySelectorAll(
-						".quiz-feedback"
+						".quiz-feedback",
 					);
 
 				options.forEach((opt) => opt.classList.remove("correct", "incorrect"));

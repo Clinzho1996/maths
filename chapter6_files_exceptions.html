@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 	<head>
 		<meta charset="UTF-8" />
@@ -215,7 +215,7 @@
 			}
 
 			.hero::after {
-				content: "📁";
+				content: "📝‚";
 				position: absolute;
 				bottom: 20px;
 				right: 40px;
@@ -276,7 +276,9 @@
 				border: 1px solid var(--border-color);
 				padding: 1.25rem;
 				border-radius: 12px;
-				transition: transform 0.2s, box-shadow 0.2s;
+				transition:
+					transform 0.2s,
+					box-shadow 0.2s;
 			}
 
 			.concept-card:hover {
@@ -443,7 +445,7 @@
 			}
 
 			.file-box .label::before {
-				content: "📁";
+				content: '🐍"';
 			}
 
 			.read-box {
@@ -472,7 +474,7 @@
 			}
 
 			.read-box .label::before {
-				content: "📖";
+				content: "📝–";
 			}
 
 			.write-box {
@@ -501,7 +503,7 @@
 			}
 
 			.write-box .label::before {
-				content: "✏";
+				content: "âœ“";
 			}
 
 			.exception-box {
@@ -530,7 +532,7 @@
 			}
 
 			.exception-box .label::before {
-				content: "⚠";
+				content: "âš ";
 			}
 
 			.quanskill-box {
@@ -623,7 +625,7 @@
 			}
 
 			.realworld-box .label::before {
-				content: "🌍";
+				content: "🌍";
 			}
 
 			code {
@@ -930,7 +932,7 @@
 			}
 
 			.summary-item::before {
-				content: "✓";
+				content: "🐍";
 				background: var(--quanskill-orange);
 				width: 20px;
 				height: 20px;
@@ -1091,12 +1093,12 @@
 		</style>
 	</head>
 	<body>
-		<a href="index.html" class="floating-back-btn">← Main Page</a>
+		<a href="index.html" class="floating-back-btn">← Main Page</a>
 
 		<header class="header">
 			<div class="header-content">
 				<!-- <a href="index.html" class="header-logo"><img src="Logo_for_Print.jpg" alt="Quanskill" style="height: 40px; border-radius: 8px;"></a> -->
-				<button class="mobile-menu-btn" onclick="toggleSidebar()">☰</button>
+				<button class="mobile-menu-btn" onclick="toggleSidebar()">â˜°</button>
 			</div>
 		</header>
 
@@ -1112,7 +1114,7 @@
 						alt="Quanskill"
 						style="height: 36px; border-radius: 6px"
 				/></a>
-				<div class="chapter-title">Chapter 6 · Files & Exceptions</div>
+				<div class="chapter-title">Chapter 6 Â· Files & Exceptions</div>
 			</div>
 
 			<div class="nav-section">
@@ -1154,10 +1156,10 @@
 							are essential for any data science workflow.
 						</p>
 						<div class="hero-quote">
-							"A robust program doesn't just work — it fails gracefully.
+							"A robust program doesn't just work - it fails gracefully.
 							Exception handling is the difference between a crash and a helpful
 							error message."
-							<br /><br />— <strong>Quanskill Programming Philosophy</strong>
+							<br /><br />- <strong>Quanskill Programming Philosophy</strong>
 						</div>
 					</div>
 				</section>
@@ -1165,32 +1167,32 @@
 				<!-- Key Concepts Overview -->
 				<div class="key-concepts">
 					<div class="concept-card file">
-						<div class="icon">📁</div>
+						<div class="icon">🐍"</div>
 						<h5>open()</h5>
 						<p>Open files for reading/writing</p>
 					</div>
 					<div class="concept-card read">
-						<div class="icon">📖</div>
+						<div class="icon">📝–</div>
 						<h5>Read Modes</h5>
 						<p>read(), readline(), readlines()</p>
 					</div>
 					<div class="concept-card write">
-						<div class="icon">✏</div>
+						<div class="icon">âœ“</div>
 						<h5>Write Modes</h5>
 						<p>write(), writelines()</p>
 					</div>
 					<div class="concept-card file">
-						<div class="icon">🔐</div>
+						<div class="icon">🐍"</div>
 						<h5>with Statement</h5>
 						<p>Auto-close files safely</p>
 					</div>
 					<div class="concept-card exception">
-						<div class="icon">⚠</div>
+						<div class="icon">âš </div>
 						<h5>try/except</h5>
 						<p>Catch and handle errors</p>
 					</div>
 					<div class="concept-card exception">
-						<div class="icon">🛡</div>
+						<div class="icon">🛡️</div>
 						<h5>finally</h5>
 						<p>Always execute cleanup</p>
 					</div>
@@ -1324,7 +1326,7 @@ f = <span class="code-function">open</span>(<span class="code-string">"log.txt"<
 f.close()</code></pre>
 
 					<div class="note-box">
-						<span class="label">⚠ Always Specify Encoding</span>
+						<span class="label">âš  Always Specify Encoding</span>
 						<p>
 							The default encoding varies by operating system. For consistent
 							behavior, always specify <code>encoding="utf-8"</code> when
@@ -1455,7 +1457,7 @@ f.close()</code></pre>
 					<p>
 						Writing to files allows you to save data, generate reports, and
 						create output for other programs. Be careful with
-						<code>"w"</code> mode — it will overwrite existing content!
+						<code>"w"</code> mode - it will overwrite existing content!
 					</p>
 
 					<h3>Writing Methods</h3>
@@ -1500,7 +1502,9 @@ f.write(<span class="code-string">"New log entry\n"</span>)
 f.close()</code></pre>
 
 					<div class="note-box">
-						<span class="label">⚠ Important: write() Doesn't Add Newlines</span>
+						<span class="label"
+							>âš  Important: write() Doesn't Add Newlines</span
+						>
 						<p>
 							Unlike <code>print()</code>, the <code>write()</code> method does
 							not automatically add newline characters. You must include
@@ -1556,11 +1560,11 @@ f.close()</code></pre>
 					<div class="flow-diagram">
 						<div class="flow-diagram-title">File Handling Flow</div>
 						<div class="flow-steps">
-							<div class="flow-step open">📂 Open File</div>
-							<div class="flow-arrow">→</div>
-							<div class="flow-step process">📝 Read/Write</div>
-							<div class="flow-arrow">→</div>
-							<div class="flow-step close">🔒 Close File</div>
+							<div class="flow-step open">📝‚ Open File</div>
+							<div class="flow-arrow">←’</div>
+							<div class="flow-step process">🐍" Read/Write</div>
+							<div class="flow-arrow">←’</div>
+							<div class="flow-step close">🔍’ Close File</div>
 						</div>
 						<p
 							style="
@@ -1573,7 +1577,7 @@ f.close()</code></pre>
 						</p>
 					</div>
 
-					<pre><code><span class="code-comment"># ✅ RECOMMENDED: Using 'with' statement</span>
+					<pre><code><span class="code-comment"># âœ… RECOMMENDED: Using 'with' statement</span>
 <span class="code-keyword">with</span> <span class="code-function">open</span>(<span class="code-string">"data.txt"</span>, <span class="code-string">"r"</span>, encoding=<span class="code-string">"utf-8"</span>) <span class="code-keyword">as</span> f:
     content = f.read()
     <span class="code-function">print</span>(content)
@@ -1853,7 +1857,7 @@ valid_data = [x <span class="code-keyword">for</span> x <span class="code-keywor
 					<h3>The finally Clause</h3>
 
 					<p>
-						<code>finally</code> runs <strong>always</strong> — whether an
+						<code>finally</code> runs <strong>always</strong> - whether an
 						exception occurred or not. Use it for cleanup code that must
 						execute.
 					</p>
@@ -1940,13 +1944,13 @@ valid_data = [x <span class="code-keyword">for</span> x <span class="code-keywor
 						</p>
 						<div class="quiz-options">
 							<div class="quiz-option" onclick="checkQuiz(this, false)">
-								try → except → finally
+								try ←’ except ←’ finally
 							</div>
 							<div class="quiz-option" onclick="checkQuiz(this, true)">
-								try → else → finally
+								try ←’ else ←’ finally
 							</div>
 							<div class="quiz-option" onclick="checkQuiz(this, false)">
-								try → finally → else
+								try ←’ finally ←’ else
 							</div>
 							<div class="quiz-option" onclick="checkQuiz(this, false)">
 								try only
@@ -1972,7 +1976,7 @@ valid_data = [x <span class="code-keyword">for</span> x <span class="code-keywor
 
 					<p>
 						You've learned essential skills for working with files and handling
-						errors — critical capabilities for any data science project that
+						errors - critical capabilities for any data science project that
 						reads, processes, and saves data.
 					</p>
 
@@ -1995,8 +1999,8 @@ valid_data = [x <span class="code-keyword">for</span> x <span class="code-keywor
 					<table class="comparison-table">
 						<thead>
 							<tr>
-								<th>Do ✅</th>
-								<th>Don't ❌</th>
+								<th>Do âœ…</th>
+								<th>Don't âŒ</th>
 							</tr>
 						</thead>
 						<tbody>
@@ -2072,7 +2076,7 @@ valid_data = [x <span class="code-keyword">for</span> x <span class="code-keywor
 				const options = element.parentElement.querySelectorAll(".quiz-option");
 				const feedbacks =
 					element.parentElement.parentElement.querySelectorAll(
-						".quiz-feedback"
+						".quiz-feedback",
 					);
 
 				options.forEach((opt) => opt.classList.remove("correct", "incorrect"));
