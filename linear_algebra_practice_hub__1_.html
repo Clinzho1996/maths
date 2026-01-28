@@ -261,7 +261,7 @@
         }
 
         .hero::after {
-            content: '🔍¢';
+            content: '';;
             position: absolute;
             bottom: -30%;
             left: -10%;
@@ -368,7 +368,7 @@
             gap: 0.5rem;
         }
 
-        .case-study-box .label::before { content: '🐍Â¢'; }
+        .case-study-box .label::before { content: '';; }
 
         .agentic-ai-box {
             background: linear-gradient(135deg, rgba(11, 47, 160, 0.1) 0%, rgba(255, 144, 0, 0.1) 100%);
@@ -403,7 +403,7 @@
             gap: 0.5rem;
         }
 
-        .agentic-ai-box .label::before { content: '📝¤“'; }
+        .agentic-ai-box .label::before { content: '';; }
 
         .quiz-container {
             background: var(--bg-card);
@@ -527,7 +527,7 @@
             font-size: 1.1rem;
         }
 
-        .demo-header::before { content: 'âš¡'; }
+        .demo-header::before { content: '';; }
 
         .demo-number {
             background: var(--gradient-orange);
@@ -878,11 +878,11 @@
 </head>
 <body>
     <!-- Floating Back to Main Page Button -->
-    <a href="index.html" class="floating-back-btn">← Main Page</a>
+    <a href="index.html" class="floating-back-btn">← Main Page</a>
 
     <header class="header">
         <div class="header-content">
-            <a href="index.html" class="header-logo"><img src="Logo_for_Print.jpg" alt="Quanskill" style="height: 40px; border-radius: 8px;"></a>
+            <!-- <a href="index.html" class="header-logo"><img src="Logo_for_Print.jpg" alt="Quanskill" style="height: 40px; border-radius: 8px;"></a> -->
             <div class="header-stats">
                 <div class="stat-item">
                     <span>Score:</span>
@@ -893,7 +893,7 @@
                     <span class="stat-value" id="headerAccuracy">0%</span>
                 </div>
             </div>
-            <button class="mobile-menu-btn" onclick="toggleSidebar()">â˜°</button>
+            <button class="mobile-menu-btn" onclick="toggleSidebar()"></button>
         </div>
     </header>
 
@@ -904,7 +904,7 @@
     <nav class="sidebar" id="sidebar">
         <div class="sidebar-header">
             <a href="index.html" class="logo"><img src="Logo_for_Print.jpg" alt="Quanskill" style="height: 36px; border-radius: 6px;"></a>
-            <div class="chapter-title">Chapter 2 Â· Linear Algebra Practice Hub</div>
+            <div class="chapter-title">Chapter 2 · Linear Algebra Practice Hub</div>
         </div>
 
         <div class="score-display">
@@ -918,7 +918,7 @@
         <div class="nav-section">
             <div class="nav-section-title">Overview</div>
             <a href="#intro" class="nav-link active">🎯 Practice Hub Home</a>
-            <a href="#interactive" class="nav-link">âš¡ Interactive Labs (15)</a>
+            <a href="#interactive" class="nav-link">⚡ Interactive Labs (15)</a>
         </div>
 
         <div class="nav-section">
@@ -1013,21 +1013,21 @@
                 </div>
                 <div class="demo-controls">
                     <div class="control-group">
-                        <label>Vector A [aâ‚, aâ‚‚]</label>
+                        <label>Vector A [a₀, a₀]</label>
                         <div style="display: flex; gap: 0.5rem;">
                             <input type="number" id="vecA1" value="3" step="0.5">
                             <input type="number" id="vecA2" value="2" step="0.5">
                         </div>
                     </div>
                     <div class="control-group">
-                        <label>Vector B [bâ‚, bâ‚‚]</label>
+                        <label>Vector B [b₀, b₀]</label>
                         <div style="display: flex; gap: 0.5rem;">
                             <input type="number" id="vecB1" value="1" step="0.5">
                             <input type="number" id="vecB2" value="4" step="0.5">
                         </div>
                     </div>
                     <div class="control-group">
-                        <label>Scalar Î»</label>
+                        <label>Scalar λ</label>
                         <input type="number" id="scalar" value="1.5" step="0.1">
                     </div>
                     <button class="btn btn-primary" onclick="updateVectorViz()">Update</button>
@@ -1260,7 +1260,7 @@
                         <select id="ltPreset" onchange="setLTPreset()">
                             <option value="custom">Custom</option>
                             <option value="scale">Scale (2x, 1x)</option>
-                            <option value="rotate">Rotate 45Â°</option>
+                            <option value="rotate">Rotate 45°</option>
                             <option value="shear">Shear X</option>
                             <option value="reflect">Reflect Y</option>
                         </select>
@@ -1371,14 +1371,14 @@
                         </div>
                     </div>
                     <div class="control-group">
-                        <label>New Basis bâ‚</label>
+                        <label>New Basis b₀</label>
                         <div style="display: flex; gap: 0.25rem;">
                             <input type="number" id="cob_b1_1" value="1" style="width:60px">
                             <input type="number" id="cob_b1_2" value="1" style="width:60px">
                         </div>
                     </div>
                     <div class="control-group">
-                        <label>New Basis bâ‚‚</label>
+                        <label>New Basis b₀</label>
                         <div style="display: flex; gap: 0.25rem;">
                             <input type="number" id="cob_b2_1" value="-1" style="width:60px">
                             <input type="number" id="cob_b2_2" value="1" style="width:60px">
@@ -1473,7 +1473,7 @@
                     <span class="quiz-difficulty difficulty-easy">Easy</span>
                 </div>
                 <div class="quiz-context">
-                    <strong>ShopViet Scenario:</strong> A product "Ã£o DÃ i Traditional" is represented as vector $\mathbf{p} = [50, 450000, 0.3, 4.8]$ representing [quantity, price (VND), weight (kg), rating].
+                    <strong>ShopViet Scenario:</strong> A product "ão D i Traditional" is represented as vector $\mathbf{p} = [50, 450000, 0.3, 4.8]$ representing [quantity, price (VND), weight (kg), rating].
                 </div>
                 <div class="quiz-question">
                     What is the dimension of this product vector?
@@ -1536,7 +1536,7 @@
                     <span class="quiz-difficulty difficulty-easy">Easy</span>
                 </div>
                 <div class="quiz-context">
-                    <strong>Flash Sale:</strong> During Táº¿t sale, all prices are scaled by factor 0.7 (30% off). Original price vector: $\mathbf{p} = [200000, 500000, 150000]$ VND.
+                    <strong>Flash Sale:</strong> During Tết sale, all prices are scaled by factor 0.7 (30% off). Original price vector: $\mathbf{p} = [200000, 500000, 150000]$ VND.
                 </div>
                 <div class="quiz-question">
                     What is the new price vector $0.7 \cdot \mathbf{p}$?
@@ -1677,7 +1677,7 @@
                 <div class="quiz-question">Which statement about linear independence is TRUE?</div>
                 <div class="quiz-options">
                     <div class="quiz-option" onclick="checkAnswer(10, 0)">A) All three features are linearly independent</div>
-                    <div class="quiz-option" onclick="checkAnswer(10, 1)">B) $\mathbf{f}_2$ is linearly dependent on $\mathbf{f}_1$ (fâ‚‚ = 2Â·fâ‚)</div>
+                    <div class="quiz-option" onclick="checkAnswer(10, 1)">B) $\mathbf{f}_2$ is linearly dependent on $\mathbf{f}_1$ (f₀ = 2·f₀)</div>
                     <div class="quiz-option" onclick="checkAnswer(10, 2)">C) $\mathbf{f}_3$ is linearly dependent on $\mathbf{f}_1$</div>
                     <div class="quiz-option" onclick="checkAnswer(10, 3)">D) None are linearly dependent</div>
                 </div>
@@ -1842,12 +1842,12 @@
                 <div class="quiz-context">
                     <strong>Sensor Covariance:</strong> Matrix $\mathbf{C} = \begin{bmatrix} 4 & 2 \\ 2 & 3 \end{bmatrix}$. If $\lambda_1 = 5$, find $\lambda_2$. (Hint: trace = sum of eigenvalues)
                 </div>
-                <div class="quiz-question">What is Î»â‚‚?</div>
+                <div class="quiz-question">What is λ₀?</div>
                 <div class="quiz-options">
-                    <div class="quiz-option" onclick="checkAnswer(18, 0)">A) Î»â‚‚ = 2</div>
-                    <div class="quiz-option" onclick="checkAnswer(18, 1)">B) Î»â‚‚ = 7</div>
-                    <div class="quiz-option" onclick="checkAnswer(18, 2)">C) Î»â‚‚ = 3</div>
-                    <div class="quiz-option" onclick="checkAnswer(18, 3)">D) Î»â‚‚ = 1</div>
+                    <div class="quiz-option" onclick="checkAnswer(18, 0)">A) λ₀ = 2</div>
+                    <div class="quiz-option" onclick="checkAnswer(18, 1)">B) λ₀ = 7</div>
+                    <div class="quiz-option" onclick="checkAnswer(18, 2)">C) λ₀ = 3</div>
+                    <div class="quiz-option" onclick="checkAnswer(18, 3)">D) λ₀ = 1</div>
                 </div>
                 <div class="quiz-feedback" id="feedback18"></div>
             </div>
@@ -1987,7 +1987,7 @@
             </div>
 
             <div class="summary-card">
-                <h3>📈 Performance Summary</h3>
+                <h3>Performance Summary</h3>
                 <div class="summary-stats">
                     <div class="summary-stat">
                         <div class="value" id="totalCorrect">0</div>
@@ -2031,12 +2031,12 @@
                     <li><strong>Agentic AI Specialization:</strong> Master autonomous AI systems</li>
                     <li><strong>Hands-on Projects:</strong> Build AI agents with NumPy & PyTorch</li>
                 </ul>
-                <p style="margin-top: 1rem; font-weight: 600;">🎓 Join Quanskill's Agentic AI Bootcamp!</p>
+                <p style="margin-top: 1rem; font-weight: 600;"> Join Quanskill's Agentic AI Bootcamp!</p>
             </div>
 
             <div style="text-align: center; margin-top: 2rem;">
-                <button class="btn btn-primary" onclick="resetQuiz()" style="margin-right: 1rem;">🔍„ Reset Quiz</button>
-                <button class="btn btn-orange" onclick="window.scrollTo({top: 0, behavior: 'smooth'})">â¬† Back to Top</button>
+                <button class="btn btn-primary" onclick="resetQuiz()" style="margin-right: 1rem;">Reset Quiz</button>
+                <button class="btn btn-orange" onclick="window.scrollTo({top: 0, behavior: 'smooth'})">Back to Top</button>
             </div>
         </section>
 
@@ -2055,20 +2055,20 @@
             5: "Identity matrix has 1s on diagonal, 0s elsewhere.",
             6: "Transpose swaps rows and columns: 2×3 becomes 3×2.",
             7: "Categorical variables can't be added/scaled meaningfully.",
-            8: "Râ‚‚,â‚ƒ = element at row 2, column 3 = 3.5.",
+            8: "R₀,Æ’ = element at row 2, column 3 = 3.5.",
             9: "(3×2) × (2×4) = 3×4. Inner dimensions match.",
-            10: "fâ‚‚ = [2,4,6] = 2×[1,2,3] = 2Â·fâ‚, so linearly dependent.",
-            11: "Invertible iff square and full rank (det â‰  0).",
+            10: "f₀ = [2,4,6] = 2×[1,2,3] = 2·f₀, so linearly dependent.",
+            11: "Invertible iff square and full rank (det ≤  0).",
             12: "Rank 3 with 5 columns means 2 are redundant.",
             13: "[2,4] = 2×[1,2], same direction = line through origin.",
             14: "[0,0,0|5] means 0=5, which is impossible.",
             15: "Dot product: 1×4 + 2×5 + 3×6 = 32.",
-            16: "dim(â„Ã‚Â³) = 3, so exactly 3 basis vectors.",
+            16: "dim(ℝ²³) = 3, so exactly 3 basis vectors.",
             17: "det = 1×6 - 2×3 = 0. Not invertible.",
-            18: "trace = 4+3 = 7 = Î»â‚+Î»â‚‚. If Î»â‚=5, then Î»â‚‚=2.",
+            18: "trace = 4+3 = 7 = λ₀+λ₀. If λ₀=5, then λ₀=2.",
             19: "Linear = preserves addition and scalar multiplication.",
             20: "Rank-Nullity: 5 = 3 + dim(ker), so dim(ker) = 2.",
-            21: "Basis change:  = Sâ»Â¹AS.",
+            21: "Basis change:  = S⁻¹AS.",
             22: "PCA keeps largest eigenvalue eigenvectors (most variance).",
             23: "(512×768) × (768×64) = 512×64.",
             24: "Latent space = hidden features explaining preferences.",
@@ -2095,14 +2095,14 @@
                 correctCount++;
                 container.classList.add('answered-correct');
                 feedback.className = 'quiz-feedback show correct';
-                feedback.innerHTML = `âœ… <strong>Correct!</strong> ${explanations[q]}`;
+                feedback.innerHTML = `✅ <strong>Correct!</strong> ${explanations[q]}`;
                 if (q <= 8) easyCorrect++;
                 else if (q <= 17) mediumCorrect++;
                 else hardCorrect++;
             } else {
                 container.classList.add('answered-wrong');
                 feedback.className = 'quiz-feedback show incorrect';
-                feedback.innerHTML = `âŒ <strong>Incorrect.</strong> ${explanations[q]}`;
+                feedback.innerHTML = `❌ <strong>Incorrect.</strong> ${explanations[q]}`;
             }
             updateStats();
         }
@@ -2182,7 +2182,7 @@
 `A = [${a1}, ${a2}]  |  B = [${b1}, ${b2}]
 A + B = [${a1+b1}, ${a2+b2}]
 ${s}A = [${(s*a1).toFixed(2)}, ${(s*a2).toFixed(2)}]
-Dot Product AÂ·B = ${dot}`;
+Dot Product A·B = ${dot}`;
         }
 
         // ========== LAB 2: Matrix Multiplication ==========
@@ -2195,8 +2195,8 @@ Dot Product AÂ·B = ${dot}`;
                        [A[1][0]*B[0][0]+A[1][1]*B[1][0], A[1][0]*B[0][1]+A[1][1]*B[1][1]]];
             document.getElementById('matrixOutput').innerHTML = 
 `Result C = A × B:
-"Ã…' ${C[0][0].toFixed(1)}  ${C[0][1].toFixed(1)} â”€
-â„“ ${C[1][0].toFixed(1)}  ${C[1][1].toFixed(1)} "Ã‹Å“
+"…' ${C[0][0].toFixed(1)}  ${C[0][1].toFixed(1)} ─
+ℓ ${C[1][0].toFixed(1)}  ${C[1][1].toFixed(1)} "×
 det(A) = ${(A[0][0]*A[1][1]-A[0][1]*A[1][0]).toFixed(2)}`;
         }
 
@@ -2206,9 +2206,9 @@ det(A) = ${(A[0][0]*A[1][1]-A[0][1]*A[1][0]).toFixed(2)}`;
                        [+document.getElementById('t10').value,+document.getElementById('t11').value,+document.getElementById('t12').value]];
             document.getElementById('transposeOutput').innerHTML = 
 `Original (2×3):          Transpose (3×2):
-"Ã…' ${M[0][0]} ${M[0][1]} ${M[0][2]} â”€        "Ã…' ${M[0][0]} ${M[1][0]} â”€
-â„“ ${M[1][0]} ${M[1][1]} ${M[1][2]} "Ã‹Å“        â”‚ ${M[0][1]} ${M[1][1]} â”‚
-                         â„“ ${M[0][2]} ${M[1][2]} "Ã‹Å“`;
+"…' ${M[0][0]} ${M[0][1]} ${M[0][2]} ─        "…' ${M[0][0]} ${M[1][0]} ─
+ℓ ${M[1][0]} ${M[1][1]} ${M[1][2]} "×        | ${M[0][1]} ${M[1][1]} |
+                         ℓ ${M[0][2]} ${M[1][2]} "×`;
         }
 
         // ========== LAB 4: Determinant ==========
@@ -2218,7 +2218,7 @@ det(A) = ${(A[0][0]*A[1][1]-A[0][1]*A[1][0]).toFixed(2)}`;
             const det = a*d - b*c;
             document.getElementById('detOutput').innerHTML = 
 `det(A) = (${a})(${d}) - (${b})(${c}) = ${a*d} - ${b*c} = ${det}
-Invertible: ${det !== 0 ? 'âœ… YES (det â‰  0)' : 'âŒ NO (det = 0)'}`;
+Invertible: ${det !== 0 ? '✅ YES (det ≤  0)' : '❌ NO (det = 0)'}`;
         }
 
         // ========== LAB 5: Matrix Inverse ==========
@@ -2227,16 +2227,16 @@ Invertible: ${det !== 0 ? 'âœ… YES (det â‰  0)' : 'âŒ NO (det = 0)'}
             const c=+document.getElementById('inv10').value, d=+document.getElementById('inv11').value;
             const det = a*d - b*c;
             if (det === 0) {
-                document.getElementById('inverseOutput').innerHTML = `det = 0 ←’ Matrix is NOT invertible!`;
+                document.getElementById('inverseOutput').innerHTML = `det = 0 → Matrix is NOT invertible!`;
                 return;
             }
             const inv = [[d/det, -b/det], [-c/det, a/det]];
             document.getElementById('inverseOutput').innerHTML = 
 `det(A) = ${det}
-Aâ»Â¹ = (1/${det}) × "Ã…' ${d}  ${-b} â”€
-                   â„“ ${-c}   ${a} "Ã‹Å“
-     = "Ã…' ${inv[0][0].toFixed(3)}  ${inv[0][1].toFixed(3)} â”€
-       â„“ ${inv[1][0].toFixed(3)}  ${inv[1][1].toFixed(3)} "Ã‹Å“`;
+A⁻¹ = (1/${det}) × "…' ${d}  ${-b} ─
+                   ℓ ${-c}   ${a} "×
+     = "…' ${inv[0][0].toFixed(3)}  ${inv[0][1].toFixed(3)} ─
+       ℓ ${inv[1][0].toFixed(3)}  ${inv[1][1].toFixed(3)} "×`;
         }
 
         // ========== LAB 6: Dot Product ==========
@@ -2249,11 +2249,11 @@ Aâ»Â¹ = (1/${det}) × "Ã…' ${d}  ${-b} â”€
             const cosTheta = dot/(magU*magV);
             const angle = Math.acos(Math.max(-1,Math.min(1,cosTheta))) * 180/Math.PI;
             document.getElementById('dotOutput').innerHTML = 
-`UÂ·V = ${u[0]}×${v[0]} + ${u[1]}×${v[1]} + ${u[2]}×${v[2]} = ${dot}
+`U·V = ${u[0]}×${v[0]} + ${u[1]}×${v[1]} + ${u[2]}×${v[2]} = ${dot}
 |U| = ${magU.toFixed(3)}, |V| = ${magV.toFixed(3)}
-cos(Î¸) = ${cosTheta.toFixed(4)}
-Angle = ${angle.toFixed(1)}Â°
-${Math.abs(dot) < 0.001 ? 'âŠ¥ Vectors are ORTHOGONAL!' : ''}`;
+cos(θ) = ${cosTheta.toFixed(4)}
+Angle = ${angle.toFixed(1)}°
+${Math.abs(dot) < 0.001 ? '≥ Vectors are ORTHOGONAL!' : ''}`;
         }
 
         // ========== LAB 7: Linear Independence ==========
@@ -2264,14 +2264,14 @@ ${Math.abs(dot) < 0.001 ? 'âŠ¥ Vectors are ORTHOGONAL!' : ''}`;
             const ratio1 = v2[0]/v1[0], ratio2 = v2[1]/v1[1];
             const isDependent = Math.abs(det) < 0.0001;
             document.getElementById('liOutput').innerHTML = 
-`Vâ‚ = [${v1[0]}, ${v1[1]}], Vâ‚‚ = [${v2[0]}, ${v2[1]}]
-det([Vâ‚|Vâ‚‚]) = ${v1[0]}×${v2[1]} - ${v1[1]}×${v2[0]} = ${det.toFixed(4)}
+`V₀ = [${v1[0]}, ${v1[1]}], V₀ = [${v2[0]}, ${v2[1]}]
+det([V₀|V₀]) = ${v1[0]}×${v2[1]} - ${v1[1]}×${v2[0]} = ${det.toFixed(4)}
 
 Result: ${isDependent ? 
-    `âŒ LINEARLY DEPENDENT (det â‰ˆ 0)
-Vâ‚‚ = ${(v2[0]/v1[0]).toFixed(2)} × Vâ‚` : 
-    `âœ… LINEARLY INDEPENDENT (det â‰  0)
-Vectors span all of â„Ã‚Â²`}`;
+    `❌ LINEARLY DEPENDENT (det ≈ 0)
+V₀ = ${(v2[0]/v1[0]).toFixed(2)} × V₀` : 
+    `✅ LINEARLY INDEPENDENT (det ≤  0)
+Vectors span all of ℝ²²`}`;
         }
 
         // ========== LAB 8: Span Visualizer ==========
@@ -2315,12 +2315,12 @@ Vectors span all of â„Ã‚Â²`}`;
                 spanCtx.fillStyle=col; spanCtx.font='bold 12px Space Grotesk';
                 spanCtx.fillText(lbl,ex+5,ey-5);
             }
-            drawVec(v1x, v1y, '#0b2fa0', 'Vâ‚');
-            drawVec(v2x, v2y, '#ff9000', 'Vâ‚‚');
+            drawVec(v1x, v1y, '#0b2fa0', 'V₀');
+            drawVec(v2x, v2y, '#ff9000', 'V₀');
             
             document.getElementById('spanOutput').innerHTML = 
 `det = ${det.toFixed(3)}
-Span = ${isLine ? '1D (a line through origin)' : '2D (entire â„Ã‚Â² plane)'}
+Span = ${isLine ? '1D (a line through origin)' : '2D (entire ℝ²² plane)'}
 ${isLine ? 'Vectors are parallel/collinear!' : 'Vectors are linearly independent!'}`;
         }
 
@@ -2377,9 +2377,9 @@ ${isLine ? 'Vectors are parallel/collinear!' : 'Vectors are linearly independent
             const det = a*d - b*c;
             document.getElementById('ltOutput').innerHTML = 
 `Transformation Matrix:
-"Ã…' ${a.toFixed(2)}  ${b.toFixed(2)} â”€
-â„“ ${c.toFixed(2)}  ${d.toFixed(2)} "Ã‹Å“
-det = ${det.toFixed(3)} ←’ ${det > 0 ? 'Preserves orientation' : det < 0 ? 'Flips orientation' : 'Collapses to line/point'}
+"…' ${a.toFixed(2)}  ${b.toFixed(2)} ─
+ℓ ${c.toFixed(2)}  ${d.toFixed(2)} "×
+det = ${det.toFixed(3)} → ${det > 0 ? 'Preserves orientation' : det < 0 ? 'Flips orientation' : 'Collapses to line/point'}
 ${Math.abs(det).toFixed(2)}x area scaling`;
         }
 
@@ -2405,7 +2405,7 @@ ${Math.abs(det).toFixed(2)}x area scaling`;
             } else {
                 const y = newC2/newB2;
                 const x = (c1 - b1*y)/a1;
-                steps += `Step 2: Back substitution\ny = ${y.toFixed(3)}\nx = ${x.toFixed(3)}\n\nâœ… Solution: x = ${x.toFixed(3)}, y = ${y.toFixed(3)}`;
+                steps += `Step 2: Back substitution\ny = ${y.toFixed(3)}\nx = ${x.toFixed(3)}\n\n✅ Solution: x = ${x.toFixed(3)}, y = ${y.toFixed(3)}`;
             }
             document.getElementById('geOutput').innerHTML = steps;
         }
@@ -2436,7 +2436,7 @@ ${Math.abs(det).toFixed(2)}x area scaling`;
             document.getElementById('rankOutput').innerHTML = 
 `Rank = ${rank}
 Null space dimension = ${3 - rank}
-${rank === 3 ? 'âœ… Full rank - Matrix is invertible!' : 'Ã…Â¡Ã‚Â  Rank deficient - Columns are linearly dependent'}`;
+${rank === 3 ? '✅ Full rank - Matrix is invertible!' : '  Rank deficient - Columns are linearly dependent'}`;
         }
 
         // ========== LAB 12: Eigenvalues ==========
@@ -2450,13 +2450,13 @@ ${rank === 3 ? 'âœ… Full rank - Matrix is invertible!' : 'Ã…Â¡Ã‚Â 
             const det = a*d - b*c;
             const disc = trace*trace - 4*det;
             
-            let output = `Characteristic equation: Î»Â² - ${trace}Î» + ${det} = 0\n`;
+            let output = `Characteristic equation: λ² - ${trace}λ + ${det} = 0\n`;
             output += `Discriminant = ${disc.toFixed(3)}\n\n`;
             
             if (disc >= 0) {
                 const l1 = (trace + Math.sqrt(disc))/2;
                 const l2 = (trace - Math.sqrt(disc))/2;
-                output += `Î»â‚ = ${l1.toFixed(3)}, Î»â‚‚ = ${l2.toFixed(3)}\n`;
+                output += `λ₀ = ${l1.toFixed(3)}, λ₀ = ${l2.toFixed(3)}\n`;
                 
                 // Draw eigenvectors
                 const w=eigenCanvas.width=eigenCanvas.offsetWidth, h=eigenCanvas.height=eigenCanvas.offsetHeight;
@@ -2479,9 +2479,9 @@ ${rank === 3 ? 'âœ… Full rank - Matrix is invertible!' : 'Ã…Â¡Ã‚Â 
                 eigenCtx.lineTo(cx + v1x*scale*3, cy - v1y*scale*3);
                 eigenCtx.stroke();
                 eigenCtx.fillStyle = '#ff9000';
-                eigenCtx.fillText('Î»â‚=' + l1.toFixed(1), cx + v1x*scale*3 + 5, cy - v1y*scale*3);
+                eigenCtx.fillText('λ₀=' + l1.toFixed(1), cx + v1x*scale*3 + 5, cy - v1y*scale*3);
                 
-                output += `Eigenvector for Î»â‚: [${v1x.toFixed(3)}, ${v1y.toFixed(3)}]`;
+                output += `Eigenvector for λ₀: [${v1x.toFixed(3)}, ${v1y.toFixed(3)}]`;
             } else {
                 output += `Complex eigenvalues (no real eigenvectors)`;
             }
@@ -2497,7 +2497,7 @@ ${rank === 3 ? 'âœ… Full rank - Matrix is invertible!' : 'Ã…Â¡Ã‚Â 
             
             const det = b1[0]*b2[1] - b1[1]*b2[0];
             if (Math.abs(det) < 0.0001) {
-                document.getElementById('cobOutput').innerHTML = 'âŒ Error: New basis vectors are not linearly independent!';
+                document.getElementById('cobOutput').innerHTML = '❌ Error: New basis vectors are not linearly independent!';
                 return;
             }
             
@@ -2508,18 +2508,18 @@ ${rank === 3 ? 'âœ… Full rank - Matrix is invertible!' : 'Ã…Â¡Ã‚Â 
             document.getElementById('cobOutput').innerHTML = 
 `Standard basis: v = [${v[0]}, ${v[1]}]
 
-New basis B = {bâ‚, bâ‚‚}:
-bâ‚ = [${b1[0]}, ${b1[1]}]
-bâ‚‚ = [${b2[0]}, ${b2[1]}]
+New basis B = {b₀, b₀}:
+b₀ = [${b1[0]}, ${b1[1]}]
+b₀ = [${b2[0]}, ${b2[1]}]
 
 Change of basis matrix S:
-"Ã…' ${b1[0]}  ${b2[0]} â”€
-â„“ ${b1[1]}  ${b2[1]} "Ã‹Å“
+"…' ${b1[0]}  ${b2[0]} ─
+ℓ ${b1[1]}  ${b2[1]} "×
 
 Coordinates in new basis:
 [v]_B = [${c1.toFixed(3)}, ${c2.toFixed(3)}]
 
-Verification: ${c1.toFixed(2)}Â·bâ‚ + ${c2.toFixed(2)}Â·bâ‚‚ = [${(c1*b1[0]+c2*b2[0]).toFixed(2)}, ${(c1*b1[1]+c2*b2[1]).toFixed(2)}] âœ“`;
+Verification: ${c1.toFixed(2)}·b₀ + ${c2.toFixed(2)}·b₀ = [${(c1*b1[0]+c2*b2[0]).toFixed(2)}, ${(c1*b1[1]+c2*b2[1]).toFixed(2)}] ✓`;
         }
 
         // ========== LAB 14: System Solver ==========
@@ -2576,7 +2576,7 @@ Verification: ${c1.toFixed(2)}Â·bâ‚ + ${c2.toFixed(2)}Â·bâ‚‚ = [${
             output += `Equation 2 (orange): ${a2}x + ${b2}y = ${c2}\n\n`;
             
             if (Math.abs(det) < 0.0001) {
-                output += `det = 0 ←’ Lines are parallel\n${Math.abs(a1*c2-a2*c1) < 0.0001 ? 'Infinitely many solutions (same line)' : 'No solution (parallel lines)'}`;
+                output += `det = 0 → Lines are parallel\n${Math.abs(a1*c2-a2*c1) < 0.0001 ? 'Infinitely many solutions (same line)' : 'No solution (parallel lines)'}`;
             } else {
                 const x = (c1*b2 - c2*b1)/det;
                 const y = (a1*c2 - a2*c1)/det;
@@ -2624,17 +2624,17 @@ Verification: ${c1.toFixed(2)}Â·bâ‚ + ${c2.toFixed(2)}Â·bâ‚‚ = [${
 `Input (3D): x = [${x.map(v=>v.toFixed(2)).join(', ')}]
 
 Weight Matrix W (3×2):
-"Ã…' ${W[0][0].toFixed(1)}  ${W[0][1].toFixed(1)} â”€
-â”‚ ${W[1][0].toFixed(1)}  ${W[1][1].toFixed(1)} â”‚
-â„“ ${W[2][0].toFixed(1)}  ${W[2][1].toFixed(1)} "Ã‹Å“
+"…' ${W[0][0].toFixed(1)}  ${W[0][1].toFixed(1)} ─
+| ${W[1][0].toFixed(1)}  ${W[1][1].toFixed(1)} |
+ℓ ${W[2][0].toFixed(1)}  ${W[2][1].toFixed(1)} "×
 
 Bias: b = [${b.map(v=>v.toFixed(1)).join(', ')}]
 
-Linear: z = Wáµ€x + b = [${z.map(v=>v.toFixed(3)).join(', ')}]
+Linear: z = Wᵀx + b = [${z.map(v=>v.toFixed(3)).join(', ')}]
 
 Activation (${activation}): a = [${a.map(v=>v.toFixed(3)).join(', ')}]
 
-Output dimension: 2 (from 3D input ←’ 2D output)`;
+Output dimension: 2 (from 3D input → 2D output)`;
         }
 
         // Initialize

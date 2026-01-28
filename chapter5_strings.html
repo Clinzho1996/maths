@@ -201,7 +201,7 @@
         }
 
         .hero::after {
-            content: '📝';
+            content: '';;
             position: absolute;
             bottom: 20px;
             right: 40px;
@@ -400,7 +400,7 @@
             gap: 0.5rem;
         }
 
-        .string-box .label::before { content: '🐍"'; }
+        .string-box .label::before { content: '';; }
 
         .access-box {
             background: linear-gradient(135deg, rgba(139, 92, 246, 0.08) 0%, rgba(139, 92, 246, 0.03) 100%);
@@ -423,7 +423,7 @@
             gap: 0.5rem;
         }
 
-        .access-box .label::before { content: '🐍"'; }
+        .access-box .label::before { content: '';; }
 
         .operation-box {
             background: linear-gradient(135deg, rgba(6, 182, 212, 0.08) 0%, rgba(6, 182, 212, 0.03) 100%);
@@ -446,7 +446,7 @@
             gap: 0.5rem;
         }
 
-        .operation-box .label::before { content: 'âš™'; }
+        .operation-box .label::before { content: '';; }
 
         .method-box {
             background: linear-gradient(135deg, rgba(236, 72, 153, 0.08) 0%, rgba(236, 72, 153, 0.03) 100%);
@@ -469,7 +469,7 @@
             gap: 0.5rem;
         }
 
-        .method-box .label::before { content: '🔍§'; }
+        .method-box .label::before { content: '';; }
 
         .quanskill-box {
             background: linear-gradient(135deg, rgba(11, 47, 160, 0.1) 0%, rgba(255, 144, 0, 0.1) 100%);
@@ -504,18 +504,7 @@
             gap: 0.5rem;
         }
 
-        .quanskill-box .label::before { content: '🎓'; }
-
-        .note-box {
-            background: linear-gradient(135deg, rgba(255, 144, 0, 0.08) 0%, rgba(255, 144, 0, 0.03) 100%);
-            border-left: 4px solid var(--quanskill-orange);
-            padding: 1.5rem;
-            border-radius: 0 12px 12px 0;
-            margin: 1.5rem 0;
-        }
-
-        .note-box .label {
-            font-family: 'Space Grotesk', sans-serif;
+        .quanskill-box .label::before { content: '';Space Grotesk', sans-serif;
             font-size: 0.8rem;
             font-weight: 700;
             text-transform: uppercase;
@@ -546,7 +535,7 @@
             gap: 0.5rem;
         }
 
-        .realworld-box .label::before { content: '🌍'; }
+        .realworld-box .label::before { content: '';; }
 
         code {
             font-family: 'JetBrains Mono', monospace;
@@ -627,7 +616,7 @@
             gap: 0.5rem;
         }
 
-        .quiz-box .label::before { content: '🧠'; }
+        .quiz-box .label::before { content: '';; }
 
         .quiz-question { font-weight: 600; margin-bottom: 1rem; color: var(--text-primary); }
 
@@ -839,7 +828,7 @@
         }
 
         .summary-item::before {
-            content: '🐍';
+            content: '';;
             background: var(--quanskill-orange);
             width: 20px;
             height: 20px;
@@ -950,12 +939,12 @@
     </style>
 </head>
 <body>
-    <a href="index.html" class="floating-back-btn">← Main Page</a>
+    <a href="index.html" class="floating-back-btn">← Main Page</a>
 
     <header class="header">
         <div class="header-content">
             <!-- <a href="index.html" class="header-logo"><img src="Logo_for_Print.jpg" alt="Quanskill" style="height: 40px; border-radius: 8px;"></a> -->
-            <button class="mobile-menu-btn" onclick="toggleSidebar()">â˜°</button>
+            <button class="mobile-menu-btn" onclick="toggleSidebar()"></button>
         </div>
     </header>
 
@@ -966,7 +955,7 @@
     <nav class="sidebar" id="sidebar">
         <div class="sidebar-header">
             <a href="index.html" class="logo"><img src="Logo_for_Print.jpg" alt="Quanskill" style="height: 36px; border-radius: 6px;"></a>
-            <div class="chapter-title">Chapter 5 Â· Strings</div>
+            <div class="chapter-title">Chapter 5 · Strings</div>
         </div>
 
         <div class="nav-section">
@@ -1020,32 +1009,32 @@
         <!-- Key Concepts Overview -->
         <div class="key-concepts">
             <div class="concept-card string">
-                <div class="icon">🐍"</div>
+                <div class="icon"></div>
                 <h5>Creating Strings</h5>
                 <p>Single, double, triple quotes</p>
             </div>
             <div class="concept-card string">
-                <div class="icon">🔍’</div>
+                <div class="icon"></div>
                 <h5>Immutability</h5>
                 <p>Strings cannot be changed</p>
             </div>
             <div class="concept-card access">
-                <div class="icon">🐍"</div>
+                <div class="icon"></div>
                 <h5>Indexing</h5>
                 <p>Access individual characters</p>
             </div>
             <div class="concept-card access">
-                <div class="icon">âœ‚</div>
+                <div class="icon"></div>
                 <h5>Slicing</h5>
                 <p>Extract substrings</p>
             </div>
             <div class="concept-card operation">
-                <div class="icon">âž•</div>
+                <div class="icon"></div>
                 <h5>Operations</h5>
                 <p>Concatenate, repeat, compare</p>
             </div>
             <div class="concept-card method">
-                <div class="icon">🔍§</div>
+                <div class="icon"></div>
                 <h5>Methods</h5>
                 <p>Built-in transformations</p>
             </div>
@@ -1177,14 +1166,14 @@ new_text = text.replace(<span class="code-string">"H"</span>, <span class="code-
 <span class="code-function">print</span>(text)  <span class="code-comment"># "Hello"</span></code></pre>
 
             <div class="note-box">
-                <span class="label">âš  Memory Consideration</span>
+                <span class="label">⚡  Memory Consideration</span>
                 <p>Because strings are immutable, repeated concatenation in loops creates many temporary strings, which is inefficient. For building large strings, use <code>join()</code> or <code>StringIO</code> instead:</p>
-                <pre style="margin-bottom: 0;"><code><span class="code-comment"># âŒ Inefficient - creates new string each iteration</span>
+                <pre style="margin-bottom: 0;"><code><span class="code-comment"># ❌ Inefficient - creates new string each iteration</span>
 result = <span class="code-string">""</span>
 <span class="code-keyword">for</span> word <span class="code-keyword">in</span> [<span class="code-string">"Hello"</span>, <span class="code-string">"World"</span>, <span class="code-string">"Python"</span>]:
     result += word + <span class="code-string">" "</span>
 
-<span class="code-comment"># âœ… Efficient - single operation</span>
+<span class="code-comment"># ✅ Efficient - single operation</span>
 words = [<span class="code-string">"Hello"</span>, <span class="code-string">"World"</span>, <span class="code-string">"Python"</span>]
 result = <span class="code-string">" "</span>.join(words)</code></pre>
             </div>
@@ -1332,7 +1321,7 @@ extension = filename[<span class="code-number">-3</span>:]  <span class="code-co
                     <div class="quiz-option" onclick="checkQuiz(this, false)">BCDEF</div>
                     <div class="quiz-option" onclick="checkQuiz(this, false)">ACE</div>
                 </div>
-                <div class="quiz-feedback correct">Correct! Starting at index 1 (B), ending before 6, step 2: indices 1, 3, 5 ←’ B, D, F</div>
+                <div class="quiz-feedback correct">Correct! Starting at index 1 (B), ending before 6, step 2: indices 1, 3, 5 → B, D, F</div>
                 <div class="quiz-feedback incorrect">Think about: start=1 (B), stop=6 (exclusive), step=2 means every 2nd character.</div>
             </div>
         </section>
@@ -1445,27 +1434,27 @@ email = <span class="code-string">"<a href="/cdn-cgi/l/email-protection" class="
                 <div class="method-card">
                     <h5>.upper()</h5>
                     <p class="desc">Convert to uppercase</p>
-                    <code>"hello".upper() ←’ "HELLO"</code>
+                    <code>"hello".upper() → "HELLO"</code>
                 </div>
                 <div class="method-card">
                     <h5>.lower()</h5>
                     <p class="desc">Convert to lowercase</p>
-                    <code>"HELLO".lower() ←’ "hello"</code>
+                    <code>"HELLO".lower() → "hello"</code>
                 </div>
                 <div class="method-card">
                     <h5>.title()</h5>
                     <p class="desc">Capitalize each word</p>
-                    <code>"hello world".title() ←’ "Hello World"</code>
+                    <code>"hello world".title() → "Hello World"</code>
                 </div>
                 <div class="method-card">
                     <h5>.capitalize()</h5>
                     <p class="desc">Capitalize first letter</p>
-                    <code>"hello".capitalize() ←’ "Hello"</code>
+                    <code>"hello".capitalize() → "Hello"</code>
                 </div>
                 <div class="method-card">
                     <h5>.swapcase()</h5>
                     <p class="desc">Swap upper/lower</p>
-                    <code>"Hello".swapcase() ←’ "hELLO"</code>
+                    <code>"Hello".swapcase() → "hELLO"</code>
                 </div>
             </div>
 
@@ -1527,12 +1516,12 @@ sentence = <span class="code-string">" "</span>.join(words)
                     </tr>
                 </thead>
                 <tbody>
-                    <tr><td><code>.isalpha()</code></td><td>All alphabetic characters</td><td><code>"Hello".isalpha()</code> ←’ True</td></tr>
-                    <tr><td><code>.isdigit()</code></td><td>All digits</td><td><code>"123".isdigit()</code> ←’ True</td></tr>
-                    <tr><td><code>.isalnum()</code></td><td>All alphanumeric</td><td><code>"Hello123".isalnum()</code> ←’ True</td></tr>
-                    <tr><td><code>.isspace()</code></td><td>All whitespace</td><td><code>"   ".isspace()</code> ←’ True</td></tr>
-                    <tr><td><code>.isupper()</code></td><td>All uppercase</td><td><code>"HELLO".isupper()</code> ←’ True</td></tr>
-                    <tr><td><code>.islower()</code></td><td>All lowercase</td><td><code>"hello".islower()</code> ←’ True</td></tr>
+                    <tr><td><code>.isalpha()</code></td><td>All alphabetic characters</td><td><code>"Hello".isalpha()</code> → True</td></tr>
+                    <tr><td><code>.isdigit()</code></td><td>All digits</td><td><code>"123".isdigit()</code> → True</td></tr>
+                    <tr><td><code>.isalnum()</code></td><td>All alphanumeric</td><td><code>"Hello123".isalnum()</code> → True</td></tr>
+                    <tr><td><code>.isspace()</code></td><td>All whitespace</td><td><code>"   ".isspace()</code> → True</td></tr>
+                    <tr><td><code>.isupper()</code></td><td>All uppercase</td><td><code>"HELLO".isupper()</code> → True</td></tr>
+                    <tr><td><code>.islower()</code></td><td>All lowercase</td><td><code>"hello".islower()</code> → True</td></tr>
                 </tbody>
             </table>
 
@@ -1645,7 +1634,7 @@ template = <span class="code-string">"Dear {name}, your order #{order_id} is rea
             </p>
 
             <div class="summary-box">
-                <h3>🎯 Key Takeaways</h3>
+                <h3>Key Takeaways</h3>
                 <div class="summary-list">
                     <div class="summary-item">Create strings with ', ", or """ quotes</div>
                     <div class="summary-item">Strings are immutable (cannot be changed)</div>
@@ -1770,4 +1759,4 @@ template = <span class="code-string">"Dear {name}, your order #{order_id} is rea
         //     link.addEventListener('click', (e) => {
         //         e.preventDefault();
         //         const targetId = link.getAttribute('href');
-        //         document.querySelf
+        //         document.querySel

@@ -239,7 +239,7 @@
 			}
 
 			.nav-link.completed::after {
-				content: "🐍";
+				content: "";
 				color: var(--success);
 				font-weight: 700;
 			}
@@ -298,7 +298,7 @@
 			}
 
 			.hero::after {
-				content: "🐍";
+				content: "";
 				position: absolute;
 				bottom: 20px;
 				right: 40px;
@@ -547,7 +547,7 @@
 			}
 
 			.hint-box .hint-label::before {
-				content: "📝’¡";
+				content: "";
 			}
 
 			.task-box {
@@ -570,7 +570,7 @@
 			}
 
 			.task-box .task-label::before {
-				content: "🎯";
+				content: "";
 			}
 
 			.task-box p {
@@ -817,7 +817,7 @@
 		</style>
 	</head>
 	<body>
-		<a href="index.html" class="floating-back-btn">← Main Page</a>
+		<a href="index.html" class="floating-back-btn">← Main Page</a>
 		<div class="overlay" id="overlay"></div>
 
 		<div class="achievement-popup" id="achievementPopup">
@@ -835,18 +835,18 @@
 		<header class="header">
 			<div class="header-content">
 				<!-- <a href="index.html" class="header-logo"><img src="Logo_for_Print.jpg" alt="Quanskill" style="height: 40px; border-radius: 8px;"></a> -->
-				<button class="mobile-menu-btn" onclick="toggleSidebar()">â˜°</button>
+				<button class="mobile-menu-btn" onclick="toggleSidebar()"></button>
 				<div class="header-stats">
 					<div class="stat-item">
-						<span>🔍¥ Streak:</span>
+						<span>🔥 Streak:</span>
 						<span class="stat-value" id="streakCount">0</span>
 					</div>
 					<div class="stat-item">
-						<span>â­ XP:</span>
+						<span>⭐ XP:</span>
 						<span class="stat-value" id="totalXP">0</span>
 					</div>
 					<div class="stat-item">
-						<span>âœ… Completed:</span>
+						<span>✅ Completed:</span>
 						<span class="stat-value"><span id="completedLabs">0</span>/10</span>
 					</div>
 				</div>
@@ -861,7 +861,7 @@
 						alt="Quanskill"
 						style="height: 36px; border-radius: 6px"
 				/></a>
-				<div class="chapter-title">Chapter 1 Â· Python Lab</div>
+				<div class="chapter-title">Chapter 1 · Python Lab</div>
 			</div>
 
 			<div class="score-display">
@@ -940,7 +940,7 @@
 				<!-- Hero Section -->
 				<section class="hero">
 					<div class="hero-content">
-						<span class="hero-badge">📝§ª Interactive Lab</span>
+						<span class="hero-badge">🞪 Interactive Lab</span>
 						<h1>Python Basics Lab</h1>
 						<p class="hero-subtitle">
 							Practice Python fundamentals with interactive coding exercises.
@@ -992,9 +992,9 @@ print()"></textarea>
 					</div>
 
 					<div class="btn-group">
-						<button class="btn-run" onclick="runCode(1)">â–¶ Run Code</button>
+						<button class="btn-run" onclick="runCode(1)">Run Code</button>
 						<button class="btn-check" onclick="checkLab(1)">
-							âœ“ Check Answer
+							Check Answer
 						</button>
 					</div>
 
@@ -1053,9 +1053,9 @@ print(name)"></textarea>
 					</div>
 
 					<div class="btn-group">
-						<button class="btn-run" onclick="runCode(2)">â–¶ Run Code</button>
+						<button class="btn-run" onclick="runCode(2)">Run Code</button>
 						<button class="btn-check" onclick="checkLab(2)">
-							âœ“ Check Answer
+							Check Answer
 						</button>
 					</div>
 
@@ -1121,9 +1121,9 @@ print(type(my_string))"></textarea>
 					</div>
 
 					<div class="btn-group">
-						<button class="btn-run" onclick="runCode(3)">â–¶ Run Code</button>
+						<button class="btn-run" onclick="runCode(3)">Run Code</button>
 						<button class="btn-check" onclick="checkLab(3)">
-							âœ“ Check Answer
+							Check Answer
 						</button>
 					</div>
 
@@ -1176,9 +1176,9 @@ print(15 + 7)
 					</div>
 
 					<div class="btn-group">
-						<button class="btn-run" onclick="runCode(4)">â–¶ Run Code</button>
+						<button class="btn-run" onclick="runCode(4)">Run Code</button>
 						<button class="btn-check" onclick="checkLab(4)">
-							âœ“ Check Answer
+							Check Answer
 						</button>
 					</div>
 
@@ -1233,9 +1233,9 @@ print(full_name.upper())"></textarea>
 					</div>
 
 					<div class="btn-group">
-						<button class="btn-run" onclick="runCode(5)">â–¶ Run Code</button>
+						<button class="btn-run" onclick="runCode(5)">Run Code</button>
 						<button class="btn-check" onclick="checkLab(5)">
-							âœ“ Check Answer
+							Check Answer
 						</button>
 					</div>
 
@@ -1288,9 +1288,9 @@ num_str = '42'
 					</div>
 
 					<div class="btn-group">
-						<button class="btn-run" onclick="runCode(6)">â–¶ Run Code</button>
+						<button class="btn-run" onclick="runCode(6)">Run Code</button>
 						<button class="btn-check" onclick="checkLab(6)">
-							âœ“ Check Answer
+							Check Answer
 						</button>
 					</div>
 
@@ -1342,9 +1342,9 @@ age = int(age_str)
 					</div>
 
 					<div class="btn-group">
-						<button class="btn-run" onclick="runCode(7)">â–¶ Run Code</button>
+						<button class="btn-run" onclick="runCode(7)">Run Code</button>
 						<button class="btn-check" onclick="checkLab(7)">
-							âœ“ Check Answer
+							Check Answer
 						</button>
 					</div>
 
@@ -1401,9 +1401,9 @@ print(f'...')"></textarea>
 					</div>
 
 					<div class="btn-group">
-						<button class="btn-run" onclick="runCode(8)">â–¶ Run Code</button>
+						<button class="btn-run" onclick="runCode(8)">Run Code</button>
 						<button class="btn-check" onclick="checkLab(8)">
-							âœ“ Check Answer
+							Check Answer
 						</button>
 					</div>
 
@@ -1459,9 +1459,9 @@ print(f'...')"></textarea>
 					</div>
 
 					<div class="btn-group">
-						<button class="btn-run" onclick="runCode(9)">â–¶ Run Code</button>
+						<button class="btn-run" onclick="runCode(9)">Run Code</button>
 						<button class="btn-check" onclick="checkLab(9)">
-							âœ“ Check Answer
+							Check Answer
 						</button>
 					</div>
 
@@ -1809,9 +1809,7 @@ print(f'...')"></textarea>
 					</div>
 
 					<div class="btn-group">
-						<button class="btn-check" onclick="checkQuiz()">
-							âœ“ Submit Quiz
-						</button>
+						<button class="btn-check" onclick="checkQuiz()">Submit Quiz</button>
 					</div>
 
 					<div class="feedback-box" id="feedback10"></div>
@@ -1898,7 +1896,7 @@ print(f'...')"></textarea>
 				const feedback = document.getElementById("feedback" + labNum);
 				feedback.className = "feedback-box show " + type;
 				feedback.innerHTML =
-					(type === "success" ? "🎉 " : type === "error" ? "âŒ " : "âš  ") +
+					(type === "success" ? "🎉 " : type === "error" ? "❌ " : "⚡  ") +
 					message;
 			}
 
@@ -1980,7 +1978,7 @@ print(f'...')"></textarea>
 				}
 
 				outputEl.className = "code-output";
-				outputEl.textContent = "â³ Running code...";
+				outputEl.textContent = "⏳ Running code...";
 
 				const result = await executePython(code);
 
@@ -1999,7 +1997,7 @@ print(f'...')"></textarea>
 				const outputEl = document.getElementById("output" + labNum);
 
 				outputEl.className = "code-output";
-				outputEl.textContent = "â³ Checking...";
+				outputEl.textContent = "⏳ Checking...";
 
 				const result = await executePython(code);
 
