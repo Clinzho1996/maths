@@ -943,7 +943,7 @@
 
     <header class="header">
         <div class="header-content">
-            <!-- <a href="index.html" class="header-logo"><img src="Logo_for_Print.jpg" alt="Quanskill" style="height: 40px; border-radius: 8px;"></a> -->
+            <a href="index.html" class="header-logo"><img src="Logo_for_Print.jpg" alt="Quanskill" style="height: 40px; border-radius: 8px;"></a>
             <button class="mobile-menu-btn" onclick="toggleSidebar()"></button>
         </div>
     </header>
@@ -1755,8 +1755,8 @@ template = <span class="code-string">"Dear {name}, your order #{order_id} is rea
         });
 
         // Smooth scrolling for nav links
-        // navLinks.forEach(link => {
-        //     link.addEventListener('click', (e) => {
-        //         e.preventDefault();
-        //         const targetId = link.getAttribute('href');
-        //         document.querySel
+        navLinks.forEach(link => {
+            link.addEventListener('click', (e) => {
+                e.preventDefault();
+                const targetId = link.getAttribute('href');
+                document.querySel

@@ -621,6 +621,7 @@
             }
         }
     </style>
+<script src="https://cdn.jsdelivr.net/pyodide/v0.26.4/full/pyodide.js"></script>
 </head>
 <body>
     <a href="index.html" class="floating-back-btn">← Main Page</a>
@@ -635,7 +636,7 @@
 
     <header class="header">
         <div class="header-content">
-            <!-- <a href="index.html" class="header-logo"><img src="Logo_for_Print.jpg" alt="Quanskill" style="height: 40px; border-radius: 8px;"></a> -->
+            <a href="index.html" class="header-logo"><img src="Logo_for_Print.jpg" alt="Quanskill" style="height: 40px; border-radius: 8px;"></a>
             <button class="mobile-menu-btn" onclick="toggleSidebar()"></button>
             <div class="header-stats">
                 <div class="stat-item">
@@ -1525,50 +1526,35 @@ for i in range(1, 4):
 
             try {
 
-                const response = await fetch('https://emkc.org/api/v2/piston/execute', {
+                if (!window.pyodideInstance) {
 
-                    method: 'POST',
+                    window.pyodideInstance = await loadPyodide();
 
-                    headers: {
+                }
 
-                        'Content-Type': 'application/json',
+                const pyodide = window.pyodideInstance;
 
-                    },
+                pyodide.runPython('import sys, io\nsys.stdout = io.StringIO()\nsys.stderr = io.StringIO()');
 
-                    body: JSON.stringify({
+                try {
 
-                        language: 'python',
+                    pyodide.runPython(code);
 
-                        version: '3.10.0',
+                    const stdout = pyodide.runPython('sys.stdout.getvalue()');
 
-                        files: [{
+                    const stderr = pyodide.runPython('sys.stderr.getvalue()');
 
-                            content: code
+                    if (stderr && stderr.trim()) {
 
-                        }]
-
-                    })
-
-                });
-
-
-                const result = await response.json();
-
-                
-
-                if (result.run) {
-
-                    if (result.run.stderr && result.run.stderr.trim()) {
-
-                        return { success: false, output: result.run.stderr };
+                        return { success: false, output: stderr };
 
                     }
 
-                    return { success: true, output: result.run.output || '(No output)' };
+                    return { success: true, output: stdout || '(No output)' };
 
-                } else {
+                } catch (pyErr) {
 
-                    return { success: false, output: 'Error: Could not execute code' };
+                    return { success: false, output: pyErr.message };
 
                 }
 
